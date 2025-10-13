@@ -24,9 +24,10 @@
   .q:first-child{border-top:none}
   .qtitle{font-weight:600;margin-bottom:6px}
   .choices label{display:block;margin:6px 0;color:var(--sub)}
-  textarea{width:100%;min-height:70px;background:var(--bg);color:var(--fg);border:1px solid var(--muted);border-radius:8px;padding:8px}
+  textarea{width:100%;min-height:110px;background:var(--bg);color:var(--fg);border:1px solid var(--muted);border-radius:8px;padding:8px;font-family:ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace}
+  textarea.error{border-color:var(--red); box-shadow:0 0 0 2px color-mix(in srgb, var(--red) 20%, transparent)}
   select{background:var(--panel);color:var(--fg);border:1px solid var(--muted);border-radius:8px;padding:4px}
-  .legend{color:var(--sub);font-size:13px;margin:6px 0 4px}
+  .legend{color:var(--sub);font-size:13px;margin:6px 0 8px}
   .row{display:flex;gap:12px;align-items:center;margin:6px 0}
   .explain{display:none;margin-top:8px;color:#94a3b8}
   .foot{display:flex;justify-content:space-between;align-items:center;padding:14px 16px;border-top:1px solid var(--muted)}
@@ -43,6 +44,7 @@
   .filebtn{background:#1f2937;color:#e5e7eb;border:1px solid #374151;padding:8px 12px;border-radius:8px;cursor:pointer}
   a.dl{color:#93c5fd;text-decoration:none}
   .small{font-size:13px;color:#9ca3af}
+  .status{font-size:13px;margin-left:6px}
 </style>
 </head>
 <body>
@@ -54,6 +56,8 @@
 
   <div class="panel">
     <div class="head">Load exam</div>
+
+    <!-- File loader row -->
     <div class="q">
       <div class="controls">
         <label class="filebtn">
@@ -62,6 +66,17 @@
         </label>
         <button class="btn secondary" id="demoBtn">Load sample</button>
         <span class="small">Follows your desktop ExamSim schema exactly.</span>
+      </div>
+    </div>
+
+    <!-- Paste YAML row -->
+    <div class="q">
+      <div class="legend">Or paste YAML below</div>
+      <textarea id="yamlPaste" placeholder="Paste ExamSim YAML here…"></textarea>
+      <div class="controls">
+        <button class="btn" id="loadFromTextBtn">Load from text</button>
+        <button class="btn secondary" id="saveTextBtn">Download pasted YAML</button>
+        <span id="pasteStatus" class="status small"></span>
       </div>
     </div>
   </div>
@@ -94,6 +109,7 @@ function dl(filename, text) {
   a.download = filename;
   a.className = "dl";
   a.click();
+  setTimeout(()=>URL.revokeObjectURL(a.href), 5000);
 }
 function toBool(v){ if (typeof v === "boolean") return v; if (typeof v === "string") return v.trim().toLowerCase().startsWith("t"); return false; }
 
@@ -105,7 +121,7 @@ function loadYAML(text, name="Exam") {
   let data;
   try {
     data = jsyaml.load(text);
-    if (!Array.isArray(data)) throw new Error("Top-level YAML must be a list.");
+    if (!Array.isArray(data)) throw new Error("Top-level YAML must be a list of question objects.");
   } catch (e) {
     alert("YAML parse error:\n" + e.message);
     return;
@@ -134,7 +150,6 @@ function normalizeQuestion(q){
     return { ...base, choices: ch, answer: ans };
   }
   if (t === "Matching") {
-    // keys may be numbers or strings; coerce to string
     return { ...base, pairs: q.pairs, options: q.options, answer: q.answer };
   }
   if (t === "ShortAnswer" || t === "ProblemScen") {
@@ -331,12 +346,11 @@ function markChoicesMulti(container, ansList, picks, peekOnly){
 
 /* ---------- grading ---------- */
 function submitAll(){
-  let total = 0, got = 0;
+  let got = 0;
   let lines = [];
   RENDER.forEach((m, i)=>{
     const q = QUESTIONS[i];
     let score = m.grade(false);
-    total += (q.type==="Matching") ? 1 : 1; // per-question weight = 1 (Matching gives fractional inside)
     got += score;
     const userStr = userAsString(m, q);
     const expectStr = keyAsString(q);
@@ -389,6 +403,40 @@ $("#fileInput").addEventListener("change", async (e)=>{
   loadYAML(txt, f.name.replace(/\.(yml|yaml)$/i,""));
 });
 
+/* paste support */
+const pasteArea = $("#yamlPaste");
+const pasteStatus = $("#pasteStatus");
+const LS_KEY = "examsim_yaml_paste";
+
+pasteArea.value = localStorage.getItem(LS_KEY) || "";
+pasteArea.addEventListener("input", ()=>{
+  localStorage.setItem(LS_KEY, pasteArea.value);
+  pasteArea.classList.remove("error");
+  pasteStatus.textContent = pasteArea.value.trim() ? `${pasteArea.value.length} chars` : "";
+});
+
+$("#loadFromTextBtn").addEventListener("click", ()=>{
+  const text = pasteArea.value.trim();
+  if (!text){ pasteArea.classList.add("error"); pasteStatus.textContent = "Paste YAML first."; return; }
+  try{
+    const parsed = jsyaml.load(text);
+    if (!Array.isArray(parsed)) throw new Error("Top-level YAML must be a list.");
+    pasteArea.classList.remove("error");
+    loadYAML(text, "Pasted YAML");
+    pasteStatus.textContent = `Loaded ${parsed.length} questions`;
+  }catch(err){
+    pasteArea.classList.add("error");
+    pasteStatus.textContent = "YAML error — see alert";
+    alert("YAML parse error:\n" + err.message);
+  }
+});
+
+$("#saveTextBtn").addEventListener("click", ()=>{
+  const text = pasteArea.value || "";
+  dl("ExamSim_Pasted.yml", text);
+});
+
+/* demo */
 $("#demoBtn").addEventListener("click", ()=>{
   const sample = `- type: MultiChoice
   text: "Which drug is a direct renin inhibitor?"
@@ -415,6 +463,9 @@ $("#demoBtn").addEventListener("click", ()=>{
   answer: ""
   explain: "Potassium (risk of hyperkalemia)."
 `;
+  pasteArea.value = sample;
+  localStorage.setItem(LS_KEY, sample);
+  pasteStatus.textContent = `${sample.length} chars (sample)`;
   loadYAML(sample, "Demo Exam");
 });
 </script>
