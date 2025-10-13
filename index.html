@@ -1,0 +1,422 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>ExamSim Web</title>
+<!-- js-yaml for parsing YAML -->
+<script src="https://cdn.jsdelivr.net/npm/js-yaml@4.1.0/dist/js-yaml.min.js"></script>
+<style>
+  :root {
+    --bg:#0f1116; --panel:#111827; --fg:#e5e7eb; --sub:#cbd5e1; --accent:#2563eb;
+    --muted:#1f2937; --select:#0b1220; --green:#22c55e; --red:#ef4444;
+  }
+  html,body{margin:0;height:100%;background:var(--bg);color:var(--fg);font:16px/1.4 "Segoe UI",system-ui,-apple-system,sans-serif}
+  .wrap{max-width:1000px;margin:0 auto;padding:20px}
+  .topbar{display:flex;gap:12px;align-items:center;margin-bottom:14px}
+  h1{font-size:22px;margin:0 12px 0 0}
+  .btn{background:var(--accent);color:#fff;border:none;border-radius:10px;padding:10px 16px;cursor:pointer}
+  .btn.secondary{background:#374151}
+  .exam-title{color:var(--sub);font-weight:600}
+  .panel{background:var(--panel);border:1px solid var(--muted);border-radius:14px;margin:12px 0}
+  .panel .head{padding:14px 16px 6px 16px;font-weight:700}
+  .q{padding:10px 16px 14px 16px;border-top:1px solid var(--muted)}
+  .q:first-child{border-top:none}
+  .qtitle{font-weight:600;margin-bottom:6px}
+  .choices label{display:block;margin:6px 0;color:var(--sub)}
+  textarea{width:100%;min-height:70px;background:var(--bg);color:var(--fg);border:1px solid var(--muted);border-radius:8px;padding:8px}
+  select{background:var(--panel);color:var(--fg);border:1px solid var(--muted);border-radius:8px;padding:4px}
+  .legend{color:var(--sub);font-size:13px;margin:6px 0 4px}
+  .row{display:flex;gap:12px;align-items:center;margin:6px 0}
+  .explain{display:none;margin-top:8px;color:#94a3b8}
+  .foot{display:flex;justify-content:space-between;align-items:center;padding:14px 16px;border-top:1px solid var(--muted)}
+  .score{font-weight:700}
+  .mark{color:#94a3b8;font-size:13px}
+  .q.correct .qtitle{color:var(--green)}
+  .q.wrong .qtitle{color:var(--red)}
+  .flag{padding:2px 8px;border-radius:999px;font-size:12px;margin-left:8px}
+  .flag.correct{background:color-mix(in srgb, var(--green) 20%, transparent);color:var(--green);border:1px solid var(--green)}
+  .flag.wrong{background:color-mix(in srgb, var(--red) 20%, transparent);color:var(--red);border:1px solid var(--red)}
+  .hint{background:#0b1220;border:1px dashed #1f2a44;border-radius:10px;padding:8px 10px;margin-top:8px;color:#a5b4fc}
+  .controls{display:flex;gap:10px;flex-wrap:wrap}
+  input[type="file"]{display:none}
+  .filebtn{background:#1f2937;color:#e5e7eb;border:1px solid #374151;padding:8px 12px;border-radius:8px;cursor:pointer}
+  a.dl{color:#93c5fd;text-decoration:none}
+  .small{font-size:13px;color:#9ca3af}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="topbar">
+    <h1>ExamSim Web</h1>
+    <div class="exam-title" id="examName">— no exam loaded</div>
+  </div>
+
+  <div class="panel">
+    <div class="head">Load exam</div>
+    <div class="q">
+      <div class="controls">
+        <label class="filebtn">
+          Choose YAML…
+          <input id="fileInput" type="file" accept=".yml,.yaml" />
+        </label>
+        <button class="btn secondary" id="demoBtn">Load sample</button>
+        <span class="small">Follows your desktop ExamSim schema exactly.</span>
+      </div>
+    </div>
+  </div>
+
+  <div id="examContainer" class="panel" style="display:none;">
+    <div class="head" id="examHeader"></div>
+    <div id="qList"></div>
+    <div class="foot">
+      <div class="score" id="scoreBox">Score: —</div>
+      <div>
+        <button class="btn" id="submitBtn">Submit</button>
+        <button class="btn secondary" id="resetBtn">Reset</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="tips" class="small">
+    Tip: click the <b>?</b> on any question to grade just that item and show its explanation without submitting.
+  </div>
+</div>
+
+<script>
+/* ---------- helpers ---------- */
+const $ = sel => document.querySelector(sel);
+const el = (tag, cls) => { const e = document.createElement(tag); if (cls) e.className = cls; return e; };
+function dl(filename, text) {
+  const blob = new Blob([text], {type: "text/plain;charset=utf-8"});
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(blob);
+  a.download = filename;
+  a.className = "dl";
+  a.click();
+}
+function toBool(v){ if (typeof v === "boolean") return v; if (typeof v === "string") return v.trim().toLowerCase().startsWith("t"); return false; }
+
+/* ---------- render ---------- */
+let QUESTIONS = [];
+let RENDER = []; // holds per-q DOM/metadata for grading
+
+function loadYAML(text, name="Exam") {
+  let data;
+  try {
+    data = jsyaml.load(text);
+    if (!Array.isArray(data)) throw new Error("Top-level YAML must be a list.");
+  } catch (e) {
+    alert("YAML parse error:\n" + e.message);
+    return;
+  }
+  QUESTIONS = data.map(normalizeQuestion);
+  $("#examName").textContent = "— " + name;
+  $("#examHeader").textContent = `${name} — ${QUESTIONS.length} Questions`;
+  renderExam();
+}
+
+function normalizeQuestion(q){
+  const t = q.type;
+  const base = { type:t, text: String(q.text||"").trim(), explain: (q.explain ?? "").toString() };
+  if (t === "TrueFalse") {
+    return { ...base, answer: toBool(q.answer) };
+  }
+  if (t === "MultiChoice") {
+    const ch = q.choices||{};
+    return { ...base, choices: ch, answer: String(q.answer||"").toUpperCase() };
+  }
+  if (t === "MultiSelect") {
+    const ch = q.choices||{};
+    let ans = q.answer ?? [];
+    if (typeof ans === "string") ans = [ans];
+    ans = ans.map(s => String(s).toUpperCase()).sort();
+    return { ...base, choices: ch, answer: ans };
+  }
+  if (t === "Matching") {
+    // keys may be numbers or strings; coerce to string
+    return { ...base, pairs: q.pairs, options: q.options, answer: q.answer };
+  }
+  if (t === "ShortAnswer" || t === "ProblemScen") {
+    return { ...base, answer: "" }; // manual mark
+  }
+  throw new Error("Unsupported type: " + t);
+}
+
+function renderExam(){
+  RENDER = [];
+  const qList = $("#qList");
+  qList.innerHTML = "";
+  $("#examContainer").style.display = "block";
+  $("#scoreBox").textContent = "Score: —";
+
+  QUESTIONS.forEach((q, idx) => {
+    const qDiv = el("div", "q");
+    const title = el("div", "qtitle");
+    title.textContent = `${idx+1}. ${q.text}`;
+    qDiv.appendChild(title);
+
+    const area = el("div", "area");
+    qDiv.appendChild(area);
+
+    // per type inputs
+    let meta = { type:q.type, node:qDiv, titleNode:title, explain:q.explain };
+
+    if (q.type === "TrueFalse") {
+      const choices = el("div", "choices");
+      [["T","True"],["F","False"]].forEach(([v,lab])=>{
+        const id = `q${idx}_${v}`;
+        const r = el("input"); r.type="radio"; r.name=`q${idx}`; r.value=v; r.id=id;
+        const L = el("label"); L.setAttribute("for", id); L.textContent=lab;
+        choices.appendChild(r); choices.appendChild(L);
+      });
+      area.appendChild(choices);
+      meta.getUser = () => {
+        const sel = [...choices.querySelectorAll("input[type=radio]")].find(i=>i.checked);
+        return sel ? sel.value : "";
+      };
+      meta.grade = (peekOnly=false) => {
+        const val = meta.getUser();
+        const ans = q.answer ? "T" : "F";
+        colorize(qDiv, val && val===ans);
+        markChoicesTF(choices, ans, val, peekOnly);
+        return val===ans ? 1 : 0;
+      };
+
+    } else if (q.type === "MultiChoice") {
+      const choices = el("div", "choices");
+      ["A","B","C","D"].forEach(letter=>{
+        const id = `q${idx}_${letter}`;
+        const r = el("input"); r.type="radio"; r.name=`q${idx}`; r.value=letter; r.id=id;
+        const L = el("label"); L.setAttribute("for", id);
+        L.textContent = `${letter}. ${q.choices?.[letter] ?? ""}`;
+        choices.appendChild(r); choices.appendChild(L);
+      });
+      area.appendChild(choices);
+      meta.getUser = () => {
+        const sel = [...choices.querySelectorAll("input[type=radio]")].find(i=>i.checked);
+        return sel ? sel.value : "";
+      };
+      meta.grade = (peekOnly=false) => {
+        const val = meta.getUser();
+        const ans = q.answer;
+        colorize(qDiv, val && val===ans);
+        markChoicesABCD(choices, ans, val, peekOnly);
+        return val===ans ? 1 : 0;
+      };
+
+    } else if (q.type === "MultiSelect") {
+      const choices = el("div", "choices");
+      ["A","B","C","D"].forEach(letter=>{
+        const id = `q${idx}_${letter}`;
+        const c = el("input"); c.type="checkbox"; c.value=letter; c.id=id;
+        const L = el("label"); L.setAttribute("for", id);
+        L.textContent = `${letter}. ${q.choices?.[letter] ?? ""}`;
+        choices.appendChild(c); choices.appendChild(L);
+      });
+      area.appendChild(choices);
+      meta.getUser = () => {
+        return [...choices.querySelectorAll("input[type=checkbox]:checked")].map(i=>i.value).sort();
+      };
+      meta.grade = (peekOnly=false) => {
+        const picks = meta.getUser();
+        const ans = (q.answer||[]).slice().sort();
+        const ok = JSON.stringify(picks)===JSON.stringify(ans);
+        colorize(qDiv, ok);
+        markChoicesMulti(choices, ans, picks, peekOnly);
+        return ok ? 1 : 0;
+      };
+
+    } else if (q.type === "Matching") {
+      const legend = el("div", "legend");
+      legend.textContent = "Options: " + ["A","B","C","D"].map(k=>`${k}: ${q.options[k]}`).join("    ");
+      area.appendChild(legend);
+      const rows = [];
+      [1,2,3,4].forEach(n=>{
+        const row = el("div", "row");
+        const left = el("div"); left.textContent = `${n}) ${q.pairs[n] || q.pairs[String(n)] || ""}`;
+        const sel = el("select");
+        ["","A","B","C","D"].forEach(k=>{
+          const o = el("option");
+          o.value = k; o.textContent = k || "—";
+          sel.appendChild(o);
+        });
+        row.appendChild(left); row.appendChild(sel);
+        area.appendChild(row);
+        rows.push({left, sel});
+      });
+      meta.getUser = () => {
+        const m = {};
+        [1,2,3,4].forEach((n,i)=> m[n] = rows[i].sel.value || "");
+        return m;
+      };
+      meta.grade = (peekOnly=false) => {
+        const user = meta.getUser();
+        const ans = q.answer;
+        let score = 0;
+        [1,2,3,4].forEach((n,i)=>{
+          const correct = (user[n] === (ans[n] || ans[String(n)]));
+          rows[i].left.style.color = correct ? "var(--green)" : "var(--red)";
+          if (correct) score++;
+        });
+        colorize(qDiv, score===4);
+        return score/4;
+      };
+
+    } else if (q.type === "ShortAnswer" || q.type === "ProblemScen") {
+      const ta = el("textarea"); ta.placeholder = "Type your answer…";
+      const mark = el("label","mark");
+      const cb = el("input"); cb.type="checkbox"; cb.style.marginRight="6px";
+      mark.appendChild(cb); mark.appendChild(document.createTextNode("Mark as correct (manual)"));
+      area.appendChild(ta); area.appendChild(mark);
+      meta.getUser = () => ({ text: ta.value.trim(), marked: cb.checked });
+      meta.grade = (peekOnly=false) => {
+        const u = meta.getUser();
+        const ok = !!u.marked;
+        colorize(qDiv, ok);
+        return ok ? 1 : 0;
+      };
+    }
+
+    // peek / explanation button
+    const expl = el("div","explain");
+    const hint = el("div","hint"); hint.textContent = q.explain || "(no explanation)";
+    expl.appendChild(hint); area.appendChild(expl);
+
+    const controls = el("div"); controls.style.display="flex"; controls.style.gap="10px"; controls.style.marginTop="8px";
+    const peekBtn = el("button","btn secondary"); peekBtn.textContent = " ?";
+    peekBtn.title = "Grade this question and show the explanation (does not submit)";
+    peekBtn.addEventListener("click", ()=>{
+      meta.grade(true);
+      expl.style.display = "block";
+    });
+    controls.appendChild(peekBtn);
+    area.appendChild(controls);
+
+    qList.appendChild(qDiv);
+    RENDER.push(meta);
+  });
+
+  $("#submitBtn").onclick = submitAll;
+  $("#resetBtn").onclick = ()=>renderExam();
+}
+
+function colorize(node, ok){
+  node.classList.remove("correct","wrong");
+  node.classList.add(ok?"correct":"wrong");
+}
+
+/* mark helpers */
+function markChoicesABCD(container, ans, picked, peekOnly){
+  [...container.querySelectorAll("label")].forEach(l=>l.style.color="var(--sub)");
+  [...container.querySelectorAll("input[type=radio]")].forEach(i=>{
+    const lab = container.querySelector(`label[for="${i.id}"]`);
+    if (!lab) return;
+    if (i.value===ans) lab.style.color="var(--green)";
+    if (picked && i.value===picked && picked!==ans) lab.style.color="var(--red)";
+  });
+}
+function markChoicesTF(container, ans, picked, peekOnly){
+  markChoicesABCD(container, ans, picked, peekOnly);
+}
+function markChoicesMulti(container, ansList, picks, peekOnly){
+  [...container.querySelectorAll("label")].forEach(l=>l.style.color="var(--sub)");
+  [...container.querySelectorAll("input[type=checkbox]")].forEach(i=>{
+    const lab = container.querySelector(`label[for="${i.id}"]`);
+    if (!lab) return;
+    if (ansList.includes(i.value)) lab.style.color="var(--green)";
+    if (picks.includes(i.value) && !ansList.includes(i.value)) lab.style.color="var(--red)";
+  });
+}
+
+/* ---------- grading ---------- */
+function submitAll(){
+  let total = 0, got = 0;
+  let lines = [];
+  RENDER.forEach((m, i)=>{
+    const q = QUESTIONS[i];
+    let score = m.grade(false);
+    total += (q.type==="Matching") ? 1 : 1; // per-question weight = 1 (Matching gives fractional inside)
+    got += score;
+    const userStr = userAsString(m, q);
+    const expectStr = keyAsString(q);
+    const status = (q.type==="Matching" ? `${Math.round(score*4)}/4` : (score>=1 ? "CORRECT" : "WRONG"));
+    lines.push(`Q${i+1} [${q.type}] -> ${status}\n  Your: ${userStr}\n  Key:  ${expectStr}`);
+  });
+  const pct = (got / RENDER.length) * 100;
+  $("#scoreBox").textContent = `Score: ${got.toFixed(2)}/${RENDER.length}  (${pct.toFixed(1)}%)`;
+
+  const stamp = new Date().toISOString().replace('T',' ').slice(0,19);
+  const head = [
+    `Exam: ${$("#examName").textContent.replace("— ","")}`,
+    `Timestamp: ${stamp}`,
+    `Score: ${got.toFixed(2)}/${RENDER.length} (${pct.toFixed(1)}%)`,
+    "-".repeat(60)
+  ];
+  dl(`ExamSim_${Date.now()}.txt`, head.concat(lines).join("\n")+"\n");
+}
+
+function userAsString(m, q){
+  try{
+    if (q.type==="TrueFalse") return (m.getUser()||"(blank)");
+    if (q.type==="MultiChoice") return (m.getUser()||"(blank)");
+    if (q.type==="MultiSelect"){
+      const arr = m.getUser(); return arr.length?arr.join(","):"(none)";
+    }
+    if (q.type==="Matching"){
+      const mapp = m.getUser(); return [1,2,3,4].map(n=>`${n}->${mapp[n]||"_"}`).join(", ");
+    }
+    if (q.type==="ShortAnswer"||q.type==="ProblemScen"){
+      const u = m.getUser(); return (u.text||"(blank)") + (u.marked?"  [MARKED CORRECT]":"");
+    }
+  }catch(e){}
+  return "";
+}
+function keyAsString(q){
+  if (q.type==="TrueFalse") return q.answer ? "T" : "F";
+  if (q.type==="MultiChoice") return q.answer;
+  if (q.type==="MultiSelect") return (q.answer||[]).join(",");
+  if (q.type==="Matching") return [1,2,3,4].map(n=>`${n}->${q.answer[n]||q.answer[String(n)]}`).join(", ");
+  if (q.type==="ShortAnswer"||q.type==="ProblemScen") return "(manual)";
+  return "";
+}
+
+/* ---------- file + sample ---------- */
+$("#fileInput").addEventListener("change", async (e)=>{
+  const f = e.target.files[0];
+  if (!f) return;
+  const txt = await f.text();
+  loadYAML(txt, f.name.replace(/\.(yml|yaml)$/i,""));
+});
+
+$("#demoBtn").addEventListener("click", ()=>{
+  const sample = `- type: MultiChoice
+  text: "Which drug is a direct renin inhibitor?"
+  choices: {A: "Lisinopril", B: "Aliskiren", C: "Losartan", D: "Amlodipine"}
+  answer: B
+  explain: "Aliskiren blocks renin at the start of the RAAS."
+- type: TrueFalse
+  text: "High-dose loop diuretics can cause ototoxicity."
+  answer: true
+  explain: "Rapid/high doses can injure the inner ear."
+- type: MultiSelect
+  text: "Which ACE inhibitors are active (not prodrugs)?"
+  choices: {A: "Captopril", B: "Lisinopril", C: "Enalapril", D: "Ramipril"}
+  answer: [A, B]
+  explain: "Captopril and lisinopril are active; many others are ester prodrugs."
+- type: Matching
+  text: "Match class → target"
+  pairs: {"1":"Loops", "2":"Thiazides", "3":"Amiloride", "4":"Acetazolamide"}
+  options: {A:"NCC (DCT)", B:"ENaC (CD)", C:"CA (PCT)", D:"NKCC2 (TAL)"}
+  answer: {"1":"D","2":"A","3":"B","4":"C"}
+  explain: "Each class hits a signature transporter."
+- type: ShortAnswer
+  text: "What lab value do you monitor with spironolactone?"
+  answer: ""
+  explain: "Potassium (risk of hyperkalemia)."
+`;
+  loadYAML(sample, "Demo Exam");
+});
+</script>
+</body>
+</html>
