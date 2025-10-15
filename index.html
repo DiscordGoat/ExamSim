@@ -21,11 +21,16 @@
   .panel .head{padding:14px 16px 6px 16px;font-weight:700}
   .q{padding:10px 16px 14px 16px;border-top:1px solid var(--muted)}
   .q:first-child{border-top:none}
-  .qtitle{font-weight:600;margin-bottom:6px; display:flex; align-items:center; gap:10px; justify-content:space-between}
-  .titleText{flex:1}
+
+  /* TITLE ABOVE, BAR BELOW */
+  .qtitle{font-weight:600;margin-bottom:6px}
+  .accRow{display:flex;justify-content:flex-end;gap:8px;margin:2px 0 8px}
+  @media (max-width:700px){ .accRow{justify-content:flex-start} }
+
   .choices .row{display:flex; align-items:center; gap:10px; margin:8px 0}
   .choices input[type="radio"], .choices input[type="checkbox"]{transform:translateY(1px)}
   .choices label{color:var(--sub); cursor:pointer}
+
   textarea{width:100%;min-height:110px;background:var(--bg);color:var(--fg);border:1px solid var(--muted);border-radius:8px;padding:8px;font-family:ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace}
   textarea.error{border-color:var(--red); box-shadow:0 0 0 2px color-mix(in srgb, var(--red) 20%, transparent)}
   select{background:var(--panel);color:var(--fg);border:1px solid var(--muted);border-radius:8px;padding:4px}
@@ -35,8 +40,8 @@
   .foot{display:flex;justify-content:space-between;align-items:center;padding:14px 16px;border-top:1px solid var(--muted)}
   .score{font-weight:700}
   .mark{color:#94a3b8;font-size:13px}
-  .q.correct .titleText{color:var(--green)}
-  .q.wrong .titleText{color:var(--red)}
+  .q.correct .qtitle{color:var(--green)}
+  .q.wrong .qtitle{color:var(--red)}
   .hint{background:#0b1220;border:1px dashed #1f2a44;border-radius:10px;padding:8px 10px;margin-top:8px;color:#a5b4fc}
   .controls{display:flex;gap:10px;flex-wrap:wrap}
   input[type="file"]{display:none}
@@ -44,8 +49,9 @@
   a.dl{color:#93c5fd;text-decoration:none}
   .small{font-size:13px;color:#9ca3af}
   .status{font-size:13px;margin-left:6px}
+
   /* accuracy bar */
-  .acc{display:flex; align-items:center; gap:8px; min-width:220px; justify-content:flex-end}
+  .acc{display:flex; align-items:center; gap:8px; min-width:220px}
   .acc .bar{width:160px;height:8px;background:var(--muted);border-radius:999px;overflow:hidden;display:flex}
   .acc .g{height:100%;background:var(--green);width:0%}
   .acc .r{height:100%;background:var(--red);width:100%}
@@ -135,14 +141,14 @@ function hashStr(s){ let h=0; for (let i=0;i<s.length;i++){ h=(h<<5)-h + s.charC
 
 /* ---------- globals ---------- */
 let BASE_QUESTIONS = [];
-let QUESTIONS = [];     // expanded × iterations + shuffled
-let RENDER = [];        // per-instance metadata for grading
+let QUESTIONS = [];
+let RENDER = [];
 let EXAM_NAME = "Exam";
 let SETTINGS = { iterations: 3, showAccuracy: true };
 const LS_SETTINGS = "examsim_settings_v2";
 const PASTE_KEY = "examsim_yaml_paste";
-let ACCURACY = {};      // baseId -> {c:correct,t:total}
-let BAR_REGISTRY = {};  // baseId -> {bars:[], txts:[]}
+let ACCURACY = {};
+let BAR_REGISTRY = {};
 
 /* ---------- accuracy persistence ---------- */
 const accKey = () => "examsim_acc_"+EXAM_NAME;
@@ -215,9 +221,7 @@ function loadYAML(text, name="Exam"){
 }
 
 function buildDeck(){
-  // counts badge
   $("#counts").textContent = `Base: ${BASE_QUESTIONS.length} • Iter: ${SETTINGS.iterations} • Rendered: ${BASE_QUESTIONS.length*SETTINGS.iterations}`;
-  // base shuffle then expand then shuffle again
   const base = shuffle([...BASE_QUESTIONS]);
   QUESTIONS = [];
   for (let k=0;k<SETTINGS.iterations;k++){
@@ -239,19 +243,22 @@ function renderExam(){
 
   QUESTIONS.forEach((q, idx) => {
     const qDiv   = el("div","q");
+
+    // TITLE (line 1)
     const title  = el("div","qtitle");
-    const left   = el("div","titleText"); left.textContent = `${idx+1}. ${q.text}`;
-    title.appendChild(left);
-
-    // accuracy block (per base question)
-    const accWrap = createAccUI(q.baseId);
-    title.appendChild(accWrap.wrap);
-    if (!SETTINGS.showAccuracy) accWrap.wrap.classList.add("hide");
-
+    title.textContent = `${idx+1}. ${q.text}`;
     qDiv.appendChild(title);
+
+    // ACCURACY (line 2)
+    const accWrap = createAccUI(q.baseId);
+    const accRow  = el("div","accRow");
+    accRow.appendChild(accWrap.wrap);
+    if (!SETTINGS.showAccuracy) accWrap.wrap.classList.add("hide");
+    qDiv.appendChild(accRow);
+
     const area  = el("div","area"); qDiv.appendChild(area);
 
-    const meta = { type:q.type, node:qDiv, titleNode:left, explain:q.explain, baseId:q.baseId, counted:false, instanceId: `${q.baseId}_${idx}_${Date.now()%1e6}` };
+    const meta = { type:q.type, node:qDiv, titleNode:title, explain:q.explain, baseId:q.baseId, counted:false, instanceId: `${q.baseId}_${idx}_${Date.now()%1e6}` };
 
     if (q.type === "TrueFalse") {
       const choices = el("div","choices");
@@ -363,7 +370,6 @@ function renderExam(){
     qList.appendChild(qDiv);
     RENDER.push(meta);
 
-    // initialize accuracy visuals
     updateAccBar(q.baseId);
   });
 
@@ -413,7 +419,6 @@ function submitAll(){
     const q = QUESTIONS[i];
     const score = m.grade();
     got += score;
-    // count attempt (without double counting)
     if (!m.counted){ recordAttempt(m.baseId, score >= 1); m.counted = true; }
     const userStr = userAsString(m, q);
     const expectStr = keyAsString(q);
@@ -524,7 +529,6 @@ $("#accToggle").addEventListener("change", ()=>{
   localStorage.setItem(LS_SETTINGS, JSON.stringify(SETTINGS));
   document.querySelectorAll(".acc").forEach(elm => elm.classList.toggle("hide", !SETTINGS.showAccuracy));
 });
-
 </script>
 </body>
 </html>
