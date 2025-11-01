@@ -73,6 +73,7 @@
       <div class="controls">
         <label class="filebtn">Choose YAML… <input id="fileInput" type="file" accept=".yml,.yaml" /></label>
         <button class="btn secondary" id="demoBtn">Load sample</button>
+        <button class="btn secondary" id="exam5Btn">Load Exam5</button>
         <span class="small">Paste or pick a YAML that follows desktop ExamSim.</span>
       </div>
     </div>
@@ -516,6 +517,21 @@ $("#demoBtn").addEventListener("click", ()=>{
   loadYAML(sample, "Demo Exam");
 });
 
+  $("#exam5Btn").addEventListener("click", async ()=>{
+  try {
+    const response = await fetch("exam5.yml");
+    if (!response.ok) throw new Error("Could not fetch exam5.yml");
+    const yamlText = await response.text();
+    pasteArea.value = yamlText;
+    localStorage.setItem(PASTE_KEY, yamlText);
+    pasteStatus.textContent = `${yamlText.length} chars (Exam5)`;
+    loadYAML(yamlText, "Exam5");
+  } catch (err) {
+    alert("Failed to load Exam5:\n" + err.message);
+  }
+});
+
+
 /* ---------- settings ---------- */
 $("#applyBtn").addEventListener("click", ()=>{
   SETTINGS.iterations = Math.max(1, Number($("#iterInput").value||3));
@@ -532,3 +548,4 @@ $("#accToggle").addEventListener("change", ()=>{
 </script>
 </body>
 </html>
+
