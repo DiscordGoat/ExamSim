@@ -1,0 +1,1219 @@
+# ===============================
+# Chapter 12 — 31 focal points × 2 questions = 62 entries
+# Each second question is a "bonus" that deepens the first.
+# ===============================
+
+# FP1: Patterns of monohybrid & dihybrid crosses
+- type: MultiChoice
+  text: "In a classic monohybrid cross (Aa × Aa) with complete dominance, what is the expected F2 phenotypic ratio?"
+  choices:
+    A: "1:1"
+    B: "3:1"
+    C: "9:3:3:1"
+    D: "1:2:1"
+  answer: B
+  explain: "Monohybrid complete dominance yields 3 dominant : 1 recessive."
+- type: Matching
+  text: "BONUS: In a classic dihybrid cross (AaBb × AaBb) with independent assortment, match each class to its count in the 9:3:3:1 ratio."
+  pairs:
+    "1": "Both dominant traits"
+    "2": "Dominant A, recessive b"
+    "3": "Recessive a, dominant B"
+    "4": "Both recessive traits"
+  options:
+    A: "9"
+    B: "3 (A_ bb)"
+    C: "3 (aa B_)"
+    D: "1"
+  answer: {"1":"A","2":"B","3":"C","4":"D"}
+  explain: "9:3:3:1 arises when A/a and B/b assort independently."
+
+# FP2: Explain ratios clearly
+- type: ShortAnswer
+  text: "State in words what a 3:1 phenotypic ratio means for a monohybrid cross."
+  answer: "3 dominant : 1 recessive phenotype"
+  explain: "Ratios must be labeled by phenotype."
+- type: TrueFalse
+  text: "BONUS: A 3:1 phenotypic ratio in a monohybrid cross is consistent with a 1:2:1 genotypic ratio."
+  answer: true
+  explain: "Genotypes PP:Pp:pp = 1:2:1; phenotypes collapse to 3:1 under complete dominance."
+
+# FP3: Good model system characteristics
+- type: MultiChoice
+  text: "Which set best describes a good genetic model system?"
+  choices:
+    A: "Long generation time; few offspring; uncontrolled matings"
+    B: "Short generation time; many offspring; controlled matings"
+    C: "Rare traits; small populations; limited breeding"
+    D: "Complex life cycle; low fecundity; slow reproduction"
+  answer: B
+  explain: "Fast breeding, high numbers, and controlled crosses aid genetics."
+- type: MultiChoice
+  text: "BONUS: Which change most improves an organism’s suitability as a model?"
+  choices:
+    A: "Increase gestation length"
+    B: "Decrease brood size"
+    C: "Enable controlled matings"
+    D: "Reduce laboratory viability"
+  answer: C
+  explain: "Control over matings is critical to test hypotheses."
+
+# FP4: Humans as poor model system
+- type: MultiChoice
+  text: "Why are humans generally poor Mendelian model organisms?"
+  choices:
+    A: "Too many offspring"
+    B: "Short generation time"
+    C: "Ethical limits and few controlled matings"
+    D: "No genetic variation"
+  answer: C
+  explain: "Ethics, long generations, and small families limit crosses."
+- type: TrueFalse
+  text: "BONUS: Ethical constraints prevent performing test crosses in humans."
+  answer: true
+  explain: "We rely on pedigrees instead."
+
+# FP5: True-breeding line (definition)
+- type: ShortAnswer
+  text: "Define a true-breeding line."
+  answer: "A homozygous line that produces offspring identical for the trait when selfed or crossed within the line."
+  explain: "Homozygosity maintains uniform phenotype."
+- type: MultiSelect
+  text: "BONUS: Select all genotypes that are true-breeding at a single locus with complete dominance."
+  choices:
+    A: "PP"
+    B: "Pp"
+    C: "pp"
+    D: "pP"
+  answer: [A, C]
+  explain: "Only homozygotes (PP, pp) are true-breeding."
+
+# FP6: Genotype(s) of true-breeding line
+- type: MultiChoice
+  text: "A true-breeding dominant phenotype at one locus must have which genotype?"
+  choices:
+    A: "PP"
+    B: "Pp"
+    C: "pp"
+    D: "Either PP or Pp"
+  answer: A
+  explain: "Dominant true-breeding requires homozygous dominant."
+- type: TrueFalse
+  text: "BONUS: A true-breeding line can be heterozygous."
+  answer: false
+  explain: "Heterozygotes split in the next generation."
+
+# FP7: Define phenotype vs genotype
+- type: Matching
+  text: "Match the term to its definition."
+  pairs:
+    "1": "Phenotype"
+    "2": "Genotype"
+  options:
+    A: "Observable traits"
+    B: "Genetic makeup (alleles)"
+  answer: {"1":"A","2":"B"}
+  explain: "Phenotype = outward expression; genotype = allelic state."
+- type: ShortAnswer
+  text: "BONUS: A plant is Pp and purple. Identify its phenotype and genotype."
+  answer: "Phenotype: purple; Genotype: Pp"
+  explain: "Dominant P yields purple."
+
+# FP8: Mendel’s monohybrid cross (both perspectives)
+- type: MultiChoice
+  text: "In Mendel’s monohybrid flower-color cross, what is the F1 phenotype from PP × pp?"
+  choices:
+    A: "All white"
+    B: "1/2 purple, 1/2 white"
+    C: "All purple"
+    D: "3/4 purple, 1/4 white"
+  answer: C
+  explain: "All F1 are Pp → purple."
+- type: ShortAnswer
+  text: "BONUS: What is the F1 genotype from PP × pp?"
+  answer: "All Pp (heterozygous)"
+  explain: "Each offspring inherits P from PP parent and p from pp parent."
+
+# FP9: Parental (P) generation
+- type: MultiChoice
+  text: "What parental genotypes did Mendel typically use for a monohybrid cross?"
+  choices:
+    A: "PP × PP"
+    B: "pp × pp"
+    C: "PP × pp"
+    D: "Pp × Pp"
+  answer: C
+  explain: "True-breeding contrasting lines PP and pp."
+- type: TrueFalse
+  text: "BONUS: In the classic monohybrid demonstration, P-generation lines are homozygous for alternative alleles."
+  answer: true
+  explain: "That ensures contrasting but uniform parents."
+
+# FP10: F1 phenotype & genotype
+- type: TrueFalse
+  text: "In the classic PP × pp cross, all F1 are heterozygous."
+  answer: true
+  explain: "They receive P from one parent and p from the other."
+- type: ShortAnswer
+  text: "BONUS: State the F1 phenotype."
+  answer: "All dominant phenotype (e.g., purple)"
+  explain: "Dominant allele masks the recessive."
+
+# FP11: F2 phenotype & genotype ratios
+- type: MultiChoice
+  text: "For Aa × Aa, the F2 genotype ratio is:"
+  choices:
+    A: "3:1"
+    B: "1:2:1"
+    C: "9:3:3:1"
+    D: "1:1"
+  answer: B
+  explain: "Genotypes PP:Pp:pp = 1:2:1."
+- type: ShortAnswer
+  text: "BONUS: Give the F2 phenotypic ratio and label the categories."
+  answer: "3 dominant : 1 recessive"
+  explain: "Complete dominance collapses P_ to dominant."
+
+# FP12: Dominant vs recessive interactions
+- type: MultiChoice
+  text: "Which statement describes dominance in a heterozygote?"
+  choices:
+    A: "Only the recessive allele is expressed"
+    B: "Only the dominant allele is expressed phenotypically"
+    C: "Neither allele is present"
+    D: "Both alleles vanish in F1"
+  answer: B
+  explain: "Dominant allele masks recessive in phenotype."
+- type: TrueFalse
+  text: "BONUS: Recessive alleles disappear from the genome in the F1 generation."
+  answer: false
+  explain: "They are present but not expressed."
+
+# FP13: Define allele
+- type: ShortAnswer
+  text: "Define an allele."
+  answer: "Alternative form of a gene at the same locus."
+  explain: "Alleles occupy the same chromosomal position."
+- type: TrueFalse
+  text: "BONUS: Different alleles of a gene reside at the same locus on homologous chromosomes."
+  answer: true
+  explain: "Homologs carry corresponding loci."
+
+# FP14: Homozygous vs heterozygous (usage)
+- type: Matching
+  text: "Match genotype to zygosity."
+  pairs:
+    "1": "PP"
+    "2": "Pp"
+    "3": "pp"
+  options:
+    A: "Homozygous dominant"
+    B: "Heterozygous"
+    C: "Homozygous recessive"
+  answer: {"1":"A","2":"B","3":"C"}
+  explain: "Two identical vs two different alleles."
+- type: ShortAnswer
+  text: "BONUS: What is the zygosity of genotype Aa?"
+  answer: "Heterozygous"
+  explain: "Two different alleles."
+
+# FP15: Punnett square
+- type: MultiChoice
+  text: "What does a Punnett square allow you to calculate?"
+  choices:
+    A: "Mutation rates"
+    B: "Offspring genotype/phenotype probabilities"
+    C: "Chromosome numbers"
+    D: "Gamete ploidy errors"
+  answer: B
+  explain: "It enumerates gamete combinations."
+- type: ShortAnswer
+  text: "BONUS: For Aa × aa, what fraction of offspring are recessive phenotype?"
+  answer: "1/2"
+  explain: "Gametes from Aa: A or a; from aa: a; half are aa."
+
+# FP16: Test cross
+- type: MultiChoice
+  text: "Which cross is a test cross for a dominant-phenotype individual?"
+  choices:
+    A: "Unknown × AA"
+    B: "Unknown × aa"
+    C: "Unknown × Aa"
+    D: "AA × aa"
+  answer: B
+  explain: "Cross to a homozygous recessive to reveal hidden alleles."
+- type: ShortAnswer
+  text: "BONUS: A dominant-phenotype plant crossed to aa yields all dominant offspring. What is the unknown’s genotype?"
+  answer: "AA (homozygous dominant)"
+  explain: "A heterozygote would produce some recessive offspring."
+
+# FP17: Offspring ratios & meanings
+- type: Matching
+  text: "Match ratio to interpretation."
+  pairs:
+    "1": "3:1"
+    "2": "1:2:1"
+    "3": "9:3:3:1"
+    "4": "1:1"
+  options:
+    A: "Monohybrid phenotype (complete dominance)"
+    B: "Monohybrid genotype (AA:Aa:aa)"
+    C: "Dihybrid phenotype (independent assortment)"
+    D: "Test cross (heterozygote × recessive)"
+  answer: {"1":"A","2":"B","3":"C","4":"D"}
+  explain: "Canonical Mendelian ratios."
+- type: ShortAnswer
+  text: "BONUS: What parental cross typically yields a 1:1 phenotypic ratio in a monohybrid?"
+  answer: "Heterozygote (Aa) × homozygous recessive (aa)"
+  explain: "Half Aa (dominant), half aa (recessive)."
+
+# FP18: Inferring human genotypes without test crosses
+- type: MultiChoice
+  text: "What tool is used to infer human genotypes across generations?"
+  choices:
+    A: "Test cross"
+    B: "Pedigree analysis"
+    C: "Karyotyping only"
+    D: "Metaphase spreads"
+  answer: B
+  explain: "Pedigrees track trait inheritance."
+- type: ShortAnswer
+  text: "BONUS: Name one pedigree clue suggesting X-linked recessive inheritance."
+  answer: "More males affected; no father-to-son transmission; affected sons from carrier mothers."
+  explain: "These patterns indicate X-linked recessive."
+
+# FP19: Alternatives to dominance/recessiveness
+- type: MultiChoice
+  text: "Which is NOT an alternative to simple complete dominance?"
+  choices:
+    A: "Incomplete dominance"
+    B: "Codominance"
+    C: "Multiple alleles"
+    D: "Complete dominance"
+  answer: D
+  explain: "D is the baseline model, not an alternative."
+- type: ShortAnswer
+  text: "BONUS: Give one example of a non–complete-dominance pattern."
+  answer: "Incomplete dominance (e.g., pink snapdragons) or codominance (AB blood type)."
+  explain: "Both deviate from simple masking."
+
+# FP20: Recognize incomplete dominance
+- type: MultiChoice
+  text: "Which statement best describes incomplete dominance?"
+  choices:
+    A: "Heterozygote shows the dominant phenotype"
+    B: "Heterozygote shows an intermediate phenotype"
+    C: "Homozygote shows an intermediate phenotype"
+    D: "No phenotype is expressed"
+  answer: B
+  explain: "Heterozygotes blend phenotypes."
+- type: TrueFalse
+  text: "BONUS: In incomplete dominance, the F2 phenotypes follow a 1:2:1 ratio."
+  answer: true
+  explain: "Phenotype mirrors genotype under incomplete dominance."
+
+# FP21: ABO codominance
+- type: MultiChoice
+  text: "Which genotype expresses both A and B antigens in ABO blood groups?"
+  choices:
+    A: "IA i"
+    B: "IB i"
+    C: "IA IB"
+    D: "ii"
+  answer: C
+  explain: "IA and IB are codominant."
+- type: ShortAnswer
+  text: "BONUS: If one parent is IA i and the other is IB i, list all possible child phenotypes."
+  answer: "A, B, AB, or O"
+  explain: "All four phenotypes are possible."
+
+# FP22: X-linked recessive patterns
+- type: MultiChoice
+  text: "Which pattern supports X-linked recessive inheritance?"
+  choices:
+    A: "Father-to-son transmission is common"
+    B: "More males affected; affected males from carrier mothers"
+    C: "Equal sex ratio and father-to-son transmission"
+    D: "Only females affected"
+  answer: B
+  explain: "Males are hemizygous for X-linked loci."
+- type: ShortAnswer
+  text: "BONUS: Carrier mother (X^AX^a) × normal father (X^AY): probability a son is affected?"
+  answer: "50%"
+  explain: "Sons inherit Y from father and X from mother; half of her X are X^a."
+
+# FP23: Lethal recessive alleles altering ratios
+- type: MultiChoice
+  text: "A cross yields a 2:1 phenotypic ratio. Which explanation fits best?"
+  choices:
+    A: "Incomplete dominance"
+    B: "Recessive lethal genotype"
+    C: "Independent assortment"
+    D: "X-linked dominance"
+  answer: B
+  explain: "One genotype class is missing due to lethality."
+- type: ShortAnswer
+  text: "BONUS: Why does a recessive lethal allele produce a 2:1 ratio in Aa × Aa?"
+  answer: "aa dies; only AA and Aa survive in a 1:2 ratio."
+  explain: "Lethality removes the recessive class."
+
+# FP24: Sum rule vs product rule
+- type: MultiChoice
+  text: "Use the sum rule when calculating the probability of:"
+  choices:
+    A: "Independent events occurring together"
+    B: "Mutually exclusive events (either/or)"
+    C: "Linked genes recombining"
+    D: "Meiotic nondisjunction"
+  answer: B
+  explain: "Sum = either/or (mutually exclusive)."
+- type: TrueFalse
+  text: "BONUS: The product rule applies to independent events occurring together."
+  answer: true
+  explain: "Multiply probabilities for independent events."
+
+# FP25: Mendel’s four rules of inheritance
+- type: Matching
+  text: "Match Mendel’s principle to its description."
+  pairs:
+    "1": "Unit factors in pairs"
+    "2": "Dominance"
+    "3": "Segregation"
+    "4": "Independent assortment"
+  options:
+    A: "Alleles occur in pairs"
+    B: "One allele may mask another"
+    C: "Alleles separate into different gametes"
+    D: "Genes for different traits sort independently"
+  answer: {"1":"A","2":"B","3":"C","4":"D"}
+  explain: "Canonical Mendelian principles."
+- type: TrueFalse
+  text: "BONUS: Allelic segregation corresponds to homolog separation in meiosis I."
+  answer: true
+  explain: "Alleles segregate when homologs separate (anaphase I)."
+
+# FP26: Laws & Mendel’s experiments
+- type: ShortAnswer
+  text: "Which Mendelian experiment supports the Law of Segregation?"
+  answer: "Monohybrid crosses showing 3:1 phenotypic ratio from Aa × Aa."
+  explain: "Segregation yields 1:2:1 genotypes."
+- type: MultiChoice
+  text: "BONUS: Which result best supported the Law of Independent Assortment?"
+  choices:
+    A: "1:1 ratio"
+    B: "3:1 ratio"
+    C: "9:3:3:1 ratio"
+    D: "2:1 ratio"
+  answer: C
+  explain: "Dihybrid crosses with unlinked genes produce 9:3:3:1."
+
+# FP27: Mendel’s dihybrid cross (YR × gw)
+- type: MultiChoice
+  text: "Crossing true-breeding yellow round (YYRR) with green wrinkled (yyrr) gives F1:"
+  choices:
+    A: "All yyrr"
+    B: "All YyRr (yellow round)"
+    C: "1/2 YyRr, 1/2 yyrr"
+    D: "All Yyrr"
+  answer: B
+  explain: "F1 are double heterozygotes with dominant phenotypes."
+- type: Matching
+  text: "BONUS: Match each F2 class in 9:3:3:1 to its trait combination."
+  pairs:
+    "1": "9"
+    "2": "3 (class 1)"
+    "3": "3 (class 2)"
+    "4": "1"
+  options:
+    A: "Yellow round"
+    B: "Yellow wrinkled"
+    C: "Green round"
+    D: "Green wrinkled"
+  answer: {"1":"A","2":"B","3":"C","4":"D"}
+  explain: "Dominant/dominant is most frequent."
+
+# FP28: Chromosomal basis of independent assortment
+- type: MultiChoice
+  text: "Independent assortment occurs because:"
+  choices:
+    A: "Sister chromatids fail to separate"
+    B: "Random orientation of homologous pairs at metaphase I"
+    C: "DNA replication in S phase"
+    D: "Crossing over never happens"
+  answer: B
+  explain: "Random alignment of homologs drives assortment."
+- type: TrueFalse
+  text: "BONUS: Genes far apart on the same chromosome can assort ~independently due to recombination."
+  answer: true
+  explain: "High recombination can mimic independence."
+
+# FP29: Exceptions to independent assortment
+- type: MultiChoice
+  text: "Which scenario most directly violates independent assortment?"
+  choices:
+    A: "Linked genes on the same chromosome"
+    B: "Random mating"
+    C: "Large sample sizes"
+    D: "Equal sex ratio"
+  answer: A
+  explain: "Linkage reduces independent assortment."
+- type: ShortAnswer
+  text: "BONUS: Name a cause of dihybrid ratio distortion other than linkage."
+  answer: "Epistasis (gene interaction) or recessive lethality."
+  explain: "These alter phenotypic counts."
+
+# FP30: Define gene linkage
+- type: ShortAnswer
+  text: "Define gene linkage."
+  answer: "The tendency of loci close together on a chromosome to be inherited together."
+  explain: "Physical proximity reduces recombination."
+- type: TrueFalse
+  text: "BONUS: Linked genes are always inherited together without exception."
+  answer: false
+  explain: "Crossing over can separate them."
+
+# FP31: Recognize epistasis
+- type: MultiChoice
+  text: "Which best describes epistasis?"
+  choices:
+    A: "Two alleles at one locus"
+    B: "One gene’s alleles masking or modifying the effect of another gene"
+    C: "Independent assortment of unlinked genes"
+    D: "A mutation in mitochondrial DNA"
+  answer: B
+  explain: "Intergenic interaction affecting phenotype."
+- type: ShortAnswer
+  text: "BONUS: Give a classic example of epistasis."
+  answer: "Labrador coat color: E locus controls pigment deposition, masking B locus effects."
+  explain: "E is epistatic to B, modifying expected ratios."
+# ===============================
+# Chapter 13 — 20 focal points × 2 questions = 40 entries
+# Each second question is a "bonus" that deepens the first.
+# ===============================
+
+# FP1: Early evidence for the chromosomal theory of inheritance
+- type: MultiChoice
+  text: "Which observation most directly supported the chromosomal theory of inheritance?"
+  choices:
+    A: "Proteins localize to the cytosol"
+    B: "Chromosomes segregate during meiosis in patterns paralleling Mendel’s laws"
+    C: "Cells respire using mitochondria"
+    D: "Mutations always arise from the environment"
+  answer: B
+  explain: "The behavior of chromosomes in meiosis mirrored segregation and independent assortment."
+- type: TrueFalse
+  text: "BONUS: Morgan’s discovery of the white-eyed mutation in Drosophila and its X-linkage provided strong support for genes residing on chromosomes."
+  answer: true
+  explain: "Sex-linked inheritance tied specific traits to specific chromosomes."
+
+# FP2: Key model animal for early linkage/mapping
+- type: MultiChoice
+  text: "Which organism was foundational for early gene linkage and mapping studies?"
+  choices:
+    A: "Arabidopsis thaliana"
+    B: "Drosophila melanogaster (fruit fly)"
+    C: "Mus musculus (mouse)"
+    D: "Saccharomyces cerevisiae (yeast)"
+  answer: B
+  explain: "Morgan’s fly room used Drosophila to establish linkage and mapping."
+- type: ShortAnswer
+  text: "BONUS: Name one feature that made Drosophila an effective genetic model."
+  answer: "Short generation time, many offspring, easy crosses, visible traits."
+  explain: "These traits made large-scale genetic analyses feasible."
+
+# FP3: Sex determination in fruit flies
+- type: MultiChoice
+  text: "How is sex determined in Drosophila?"
+  choices:
+    A: "Presence of Y determines maleness absolutely"
+    B: "XX = female, XY = male; effectively an X-to-autosome (X:A) ratio system"
+    C: "Temperature during development"
+    D: "Mitochondrial genome content"
+  answer: B
+  explain: "Females are XX, males XY; the X:A ratio underlies determination; Y affects fertility."
+- type: TrueFalse
+  text: "BONUS: In Drosophila, the Y chromosome is required to determine maleness."
+  answer: false
+  explain: "Y is needed for male fertility, not for primary sex determination."
+
+# FP4: Homologous recombination
+- type: MultiChoice
+  text: "What occurs during homologous recombination?"
+  choices:
+    A: "Exchange of DNA between sister chromatids"
+    B: "Exchange of DNA between non-homologous chromosomes exclusively"
+    C: "Reciprocal exchange between homologous chromosomes at chiasmata"
+    D: "Random loss of entire chromosomes"
+  answer: C
+  explain: "Crossing over at chiasmata during prophase I increases variation and can break linkage."
+- type: ShortAnswer
+  text: "BONUS: In what meiotic stage do chiasmata first become visible?"
+  answer: "Prophase I (pachytene/diakinesis stages)"
+  explain: "Chiasmata reflect sites of crossover between homologs."
+
+# FP5: Parental vs non-parental types in dihybrid crosses
+- type: MultiChoice
+  text: "In a dihybrid cross, ‘parental types’ refer to:"
+  choices:
+    A: "Genotypes not seen in the parents"
+    B: "Phenotypic combinations matching the original parental combinations"
+    C: "Only dominant phenotypes"
+    D: "Only recessive phenotypes"
+  answer: B
+  explain: "Parental types preserve the original trait combinations."
+- type: ShortAnswer
+  text: "BONUS: What are ‘non-parental’ (recombinant) types?"
+  answer: "Phenotypic/genotypic combinations different from parental combinations."
+  explain: "Produced by independent assortment or crossing over."
+
+# FP6: Cause of non-parental types when linkage is involved
+- type: MultiChoice
+  text: "With linked genes, which process produces non-parental types?"
+  choices:
+    A: "Independent assortment alone"
+    B: "Crossing over between homologous chromosomes"
+    C: "Mutation during S phase"
+    D: "Random fertilization"
+  answer: B
+  explain: "Recombination via crossover generates new allele combinations between linked loci."
+- type: TrueFalse
+  text: "BONUS: The closer two genes are, the fewer recombinant types you will observe."
+  answer: true
+  explain: "Tight linkage reduces crossover frequency between them."
+
+# FP7: Max number of recombinant gametes in one meiosis
+- type: MultiChoice
+  text: "Considering two linked genes and a single crossover, how many of the four meiotic products are recombinant?"
+  choices:
+    A: "0"
+    B: "1"
+    C: "2"
+    D: "4"
+  answer: C
+  explain: "A single crossover involves two chromatids, yielding two recombinant and two parental chromatids."
+- type: TrueFalse
+  text: "BONUS: A single crossover involves all four chromatids."
+  answer: false
+  explain: "Typically only two of the four chromatids participate in a single crossover."
+
+# FP8: Linkage impact on offspring ratios
+- type: MultiChoice
+  text: "How does linkage affect dihybrid testcross offspring ratios?"
+  choices:
+    A: "Increases recombinant classes relative to parentals"
+    B: "Equalizes all classes at 1:1:1:1"
+    C: "Enriches parental classes and reduces recombinants"
+    D: "Eliminates parental classes"
+  answer: C
+  explain: "Linked genes travel together more often, reducing recombinant frequency."
+- type: ShortAnswer
+  text: "BONUS: If recombination frequency is 20%, what percentage of testcross progeny are recombinants?"
+  answer: "20% total recombinants (≈10% in each recombinant class), ≈80% parentals."
+  explain: "RF equals recombinant proportion in testcross progeny."
+
+# FP9: Concept of a genetic linkage map
+- type: MultiChoice
+  text: "What does 1 map unit (1 cM) represent on a linkage map?"
+  choices:
+    A: "1% DNA sequence identity"
+    B: "1% recombination frequency between two loci"
+    C: "1 megabase of physical distance"
+    D: "1% mutation rate"
+  answer: B
+  explain: "1 cM ≈ 1% recombinant gametes (in large samples)."
+- type: ShortAnswer
+  text: "BONUS: How is gene order inferred using mapping crosses?"
+  answer: "By comparing single- and double-crossover classes to deduce order and distances."
+  explain: "Double crossovers identify the middle gene."
+
+# FP10: When genes recombine less vs more
+- type: MultiSelect
+  text: "Select the conditions that DECREASE recombination between two genes."
+  choices:
+    A: "Genes very close together"
+    B: "Proximity to centromeres/heterochromatin"
+    C: "Genes far apart on the same chromosome"
+    D: "Genes on different chromosomes"
+  answer: [A, B]
+  explain: "Close spacing and certain chromosomal regions suppress crossovers."
+- type: TrueFalse
+  text: "BONUS: Genes more than ~50 cM apart behave as unlinked (max 50% recombination)."
+  answer: true
+  explain: "Recombination frequency cannot exceed ~50% and then mimics independent assortment."
+
+# FP11: Why Mendel avoided linkage issues
+- type: MultiChoice
+  text: "Why did Mendel not encounter linkage complications in his results?"
+  choices:
+    A: "Peas do not undergo meiosis"
+    B: "He chose traits on different chromosomes or far apart"
+    C: "He used too few plants to detect linkage"
+    D: "Linkage does not exist in plants"
+  answer: B
+  explain: "His trait choices behaved as independently assorting."
+- type: ShortAnswer
+  text: "BONUS: Name one experimental design feature that helped Mendel observe clear ratios."
+  answer: "Use of true-breeding lines and large sample sizes."
+  explain: "These reduce noise and reveal expected patterns."
+
+# FP12: Outcomes of meiotic errors
+- type: MultiChoice
+  text: "Which are the two broad outcomes of meiotic errors?"
+  choices:
+    A: "Point mutation and frameshift"
+    B: "Aneuploidy and polyploidy"
+    C: "Transcription errors and translation errors"
+    D: "Silent mutation and missense"
+  answer: B
+  explain: "Failed segregation can alter chromosome number at the level of single chromosomes or whole sets."
+- type: ShortAnswer
+  text: "BONUS: Define aneuploidy vs polyploidy."
+  answer: "Aneuploidy = abnormal number of specific chromosomes; Polyploidy = extra full sets of chromosomes."
+  explain: "Number changes differ in scope."
+
+# FP13: Karyotype
+- type: MultiChoice
+  text: "A karyotype is best defined as:"
+  choices:
+    A: "A list of all genes in a genome"
+    B: "An image/arrangement of condensed chromosomes by size/shape/banding"
+    C: "A map of recombination frequencies"
+    D: "A sequencing readout"
+  answer: B
+  explain: "Karyotypes visualize chromosome complements and detect aneuploidies."
+- type: ShortAnswer
+  text: "BONUS: Cells are commonly arrested at which stage to prepare a karyotype?"
+  answer: "Metaphase"
+  explain: "Chromosomes are maximally condensed and visible."
+
+# FP14: Autosomes vs sex chromosomes
+- type: MultiChoice
+  text: "Which statement is correct about autosomes and sex chromosomes in humans?"
+  choices:
+    A: "There are 23 pairs of autosomes"
+    B: "There are 22 pairs of autosomes and 1 pair of sex chromosomes"
+    C: "There are 21 pairs of autosomes and 2 pairs of sex chromosomes"
+    D: "Sex chromosomes are autosomes with extra genes"
+  answer: B
+  explain: "Humans: 46 total chromosomes = 22 autosomal pairs + 1 sex-chromosome pair."
+- type: TrueFalse
+  text: "BONUS: In humans, XX is typically female and XY typically male."
+  answer: true
+  explain: "Sex is usually determined by the presence of Y (in humans)."
+
+# FP15: Naming parts of chromosome structure
+- type: Matching
+  text: "Match each structural term to its description."
+  pairs:
+    "1": "Centromere"
+    "2": "Telomere"
+    "3": "p arm"
+    "4": "q arm"
+  options:
+    A: "Region where kinetochores form; sister chromatids attach"
+    B: "Protective chromosome end sequences"
+    C: "Short arm of a chromosome"
+    D: "Long arm of a chromosome"
+  answer: {"1":"A","2":"B","3":"C","4":"D"}
+  explain: "Standard cytogenetic nomenclature."
+- type: ShortAnswer
+  text: "BONUS: What does the cytogenetic symbol “7q31” indicate?"
+  answer: "Chromosome 7, long arm (q), region 3, band 1."
+  explain: "q denotes the long arm; numbers specify region/band."
+
+# FP16: Nondisjunction
+- type: MultiChoice
+  text: "Nondisjunction is defined as:"
+  choices:
+    A: "Crossing over between non-homologs"
+    B: "Failure of homologs or sister chromatids to separate during meiosis"
+    C: "Random fertilization of gametes"
+    D: "DNA replication without division"
+  answer: B
+  explain: "This segregation failure produces aneuploid gametes."
+- type: ShortAnswer
+  text: "BONUS: Name a human condition resulting from trisomy caused by nondisjunction."
+  answer: "Trisomy 21 (Down syndrome) (others: trisomy 18, trisomy 13)."
+  explain: "Common viable aneuploidies include 21, 18, 13 and sex-chromosome variants."
+
+# FP17: Terms for abnormal chromosome numbers
+- type: Matching
+  text: "Match term to definition."
+  pairs:
+    "1": "Monosomy"
+    "2": "Trisomy"
+    "3": "Aneuploidy"
+    "4": "Polyploidy"
+  options:
+    A: "Missing one chromosome (2n−1)"
+    B: "One extra chromosome (2n+1)"
+    C: "Any abnormal number of specific chromosomes"
+    D: "Extra complete sets of chromosomes (e.g., 3n, 4n)"
+  answer: {"1":"A","2":"B","3":"C","4":"D"}
+  explain: "These terms distinguish single-chromosome vs whole-set changes."
+- type: TrueFalse
+  text: "BONUS: Triploidy (3n) is an example of polyploidy, not aneuploidy."
+  answer: true
+  explain: "Aneuploidy affects specific chromosomes; polyploidy affects entire sets."
+
+# FP18: Polyploidy and usefulness
+- type: MultiChoice
+  text: "Polyploidy is especially common and useful in which group?"
+  choices:
+    A: "Mammals"
+    B: "Birds"
+    C: "Flowering plants"
+    D: "Insects"
+  answer: C
+  explain: "Polyploid plants may show larger cells, fruits, and rapid speciation."
+- type: ShortAnswer
+  text: "BONUS: Give one agricultural advantage of triploid crop varieties."
+  answer: "Seedlessness (e.g., seedless watermelon/bananas) or larger organ size."
+  explain: "Odd ploidy can disrupt meiosis and seed formation."
+
+# FP19: Types of chromosomal inversions
+- type: MultiChoice
+  text: "Which inversion includes the centromere?"
+  choices:
+    A: "Paracentric"
+    B: "Pericentric"
+    C: "Reciprocal"
+    D: "Robertsonian"
+  answer: B
+  explain: "Pericentric spans the centromere; paracentric does not."
+- type: TrueFalse
+  text: "BONUS: A paracentric inversion does not involve the centromere."
+  answer: true
+  explain: "Only pericentric inversions span the centromere."
+
+# FP20: Segment moving to another chromosome
+- type: MultiChoice
+  text: "Transfer of a chromosome segment to a non-homologous chromosome is called:"
+  choices:
+    A: "Inversion"
+    B: "Duplication"
+    C: "Translocation"
+    D: "Deletion"
+  answer: C
+  explain: "Segments moved between non-homologs define translocations."
+- type: ShortAnswer
+  text: "BONUS: What is the term for a mutual exchange of segments between non-homologous chromosomes?"
+  answer: "Reciprocal translocation."
+  explain: "Robertsonian translocations involve fusion at centromeres; reciprocal are exchanges."
+- type: MultiSelect
+  text: "What are the two mechanisms in meiosis that create genetic variability through new combinations of alleles?"
+  choices:
+    A: "Independent assortment of homologous chromosomes (metaphase I orientation)"
+    B: "Crossing over (homologous recombination) during prophase I"
+    C: "Random fertilization"
+    D: "DNA replication errors"
+  answer: [A, B]
+  explain: "Independent assortment shuffles chromosome sets; crossing over exchanges segments between homologs."
+
+- type: MultiChoice
+  text: "The plant alternation of generations is different from animal life cycles in that it has ____________."
+  choices:
+    A: "a multicellular haploid stage"
+    B: "haploid gametes"
+    C: "diploid gametes"
+    D: "a multicellular diploid stage"
+  answer: A
+  explain: "Plants alternate between multicellular haploid (gametophyte) and multicellular diploid (sporophyte) stages."
+
+- type: MultiChoice
+  text: "A meiotic division results in ____________."
+  choices:
+    A: "four haploid cells"
+    B: "two diploid cells"
+    C: "two haploid cells"
+    D: "four diploid cells"
+  answer: A
+  explain: "Meiosis I and II produce four genetically distinct haploid cells."
+
+- type: MultiChoice
+  text: "Different versions of the same gene are known as __________."
+  choices:
+    A: "alleles"
+    B: "karyotypes"
+    C: "kinetochores"
+    D: "allosteric"
+  answer: A
+  explain: "Alleles are alternate forms of a gene at the same locus."
+
+- type: MultiChoice
+  text: "The only cells in the human body that can go through meiosis are known as __________."
+  choices:
+    A: "somatic cells"
+    B: "autocrine cells"
+    C: "cancer cells"
+    D: "germ line cells"
+  answer: D
+  explain: "Meiosis occurs in the germ line to produce gametes."
+- type: MultiChoice
+  text: "If a plant variety is true-breeding for a dominant trait, then __________."
+  choices:
+    A: "the plant is heterozygous for the trait"
+    B: "if the plant were allowed to self-pollinate, all of the progeny would have the dominant trait"
+    C: "if the plant were allowed to self-pollinate, the dominant and recessive traits would consistently appear in a 3:1 ratio among the progeny"
+  answer: B
+  explain: "True-breeding means homozygous. All offspring inherit the same dominant allele, producing the dominant phenotype."
+
+- type: MultiChoice
+  text: "Assume there is a gene in apples for fruit color (R = red, r = yellow) and another for fruit size (A = big, a = small). One tree produces big yellow apples and another produces small red apples. Their cross yields half big red and half big yellow apples. What are the genotypes of the parents?"
+  choices:
+    A: "AaRr and AaRr"
+    B: "Aarr and aaRr"
+    C: "AArr and aaRr"
+  answer: C
+  explain: "AArr × aaRr produces AaRr (big red) and Aarr (big yellow)."
+
+- type: MultiChoice
+  text: "Assume tall (T) is completely dominant to dwarf (t). If a homozygous dominant individual is crossed with a homozygous dwarf, the offspring will __________."
+  choices:
+    A: "all be tall"
+    B: "be one-half tall and one-half dwarf"
+    C: "be three-quarters tall and one-quarter dwarf"
+  answer: A
+  explain: "TT × tt produces 100% Tt, all tall offspring."
+
+- type: MultiChoice
+  text: "The F1 generation differed from the F2 in Mendel's experiments in that __________."
+  choices:
+    A: "all of the F1 showed the dominant phenotype, but only three-quarters of the F2 did"
+    B: "none of the F1 showed the dominant phenotype, but one-half of the F2 did"
+    C: "all of the F1 showed the dominant phenotype, whereas only one-half of the F2 did"
+  answer: A
+  explain: "All F1 hybrids expressed dominance; segregation produced a 3:1 ratio in F2."
+
+- type: MultiChoice
+  text: "Physically, what are different alleles?"
+  choices:
+    A: "Different alleles are different DNA sequences for the same gene found at the same location on homologous chromosomes."
+    B: "Different alleles are different particles found in gametes."
+    C: "Different alleles are different phenotypes for a particular character."
+  answer: A
+  explain: "Alleles are variations in the DNA sequence at the same gene locus."
+
+- type: MultiChoice
+  text: "A plant with the genotype AABbcc will have the same phenotype as a plant with the genotype __________."
+  choices:
+    A: "aabbcc"
+    B: "AaBBcc"
+    C: "AABBCc"
+  answer: B
+  explain: "Dominance means one dominant allele is enough; AaBBcc produces the same phenotype as AABbcc."
+
+- type: MultiChoice
+  text: "A tall pea plant (TT or Tt) is crossed with a short plant (tt). Which outcome indicates the tall parent was heterozygous?"
+  choices:
+    A: "All of the offspring are tall."
+    B: "The ratio of tall to short offspring is 1:1."
+    C: "All of the offspring are short."
+  answer: B
+  explain: "Tt × tt yields 50% Tt (tall) and 50% tt (short)."
+
+- type: MultiChoice
+  text: "What is indicated when a single-character testcross yields offspring that all have the dominant phenotype?"
+  choices:
+    A: "The parent with the dominant phenotype was homozygous."
+    B: "Both parents are heterozygous."
+    C: "The parent with the dominant phenotype was heterozygous."
+  answer: A
+  explain: "All dominant offspring imply homozygous dominant parent."
+
+- type: MultiChoice
+  text: "In Mendel's monohybrid cross of purple and white peas, all F1 plants had the __________ phenotype because their genotype was __________."
+  choices:
+    A: "purple-flowered ... heterozygous"
+    B: "purple-flowered ... homozygous recessive"
+    C: "white-flowered ... homozygous recessive"
+  answer: A
+  explain: "Dominant purple allele expressed in heterozygous plants."
+
+- type: MultiChoice
+  text: "If Mendel’s two traits had been located near each other on the same chromosome, the F2 generation __________."
+  choices:
+    A: "would have contained four phenotypes in a 9:3:3:1 ratio"
+    B: "would have deviated from the 9:3:3:1 phenotypic ratio predicted by independent assortment"
+  answer: B
+  explain: "Linked genes violate independent assortment."
+
+- type: MultiChoice
+  text: "Homologous pairs of chromosomes often __________."
+  choices:
+    A: "carry different genes for different traits"
+    B: "contain different alleles"
+    C: "differ in length"
+  answer: B
+  explain: "Each homolog carries alleles for the same genes, which can differ."
+
+- type: MultiChoice
+  text: "If both parents can create 100 distinct gametes, what is the probability of producing one specific individual offspring?"
+  choices:
+    A: "10,000"
+    B: "1,000"
+    C: "200"
+  answer: A
+  explain: "Each gamete combination multiplies, 100 × 100 = 10,000 possible zygotes."
+
+- type: MultiChoice
+  text: "From the cross PpRr × PpRr, what proportion of offspring have white flowers and wrinkled seeds?"
+  choices:
+    A: "3/4"
+    B: "1/16"
+    C: "1/4"
+  answer: B
+  explain: "1/4 white × 1/4 wrinkled = 1/16 double recessive."
+
+- type: MultiChoice
+  text: "If a heterozygous plant is self-pollinated, what proportion of the offspring will also be heterozygous?"
+  choices:
+    A: "all of them"
+    B: "1/3"
+    C: "1/2"
+  answer: B
+  explain: "From 1:2:1 ratio, 1/3 of surviving heterozygotes (1 of 3 genotypes)."
+
+- type: MultiChoice
+  text: "In incomplete dominance, red × white snapdragons produce pink F1. Crossing two pinks yields what ratio?"
+  choices:
+    A: "25% red, 50% pink, 25% white"
+    B: "25% white and 75% red"
+    C: "50% pink and 50% red"
+  answer: A
+  explain: "Classic incomplete dominance ratio of 1:2:1."
+
+- type: MultiChoice
+  text: "Blood groups IA, IB, and i show codominance. A type A parent and a type B parent could have children with which phenotypes?"
+  choices:
+    A: "A, B, AB, or O"
+    B: "A or B only"
+    C: "AB only"
+  answer: A
+  explain: "Depending on parental genotypes, all four ABO types are possible."
+
+- type: MultiChoice
+  text: "Which mating CANNOT produce a child with type O blood?"
+  choices:
+    A: "O × O"
+    B: "O × AB"
+    C: "A × B"
+  answer: B
+  explain: "AB parent lacks the O (i) allele, so no type O offspring."
+
+- type: MultiChoice
+  text: "In squash, W (white) is dominant to colored, and Y (yellow) is dominant to green. What color is wwYy?"
+  choices:
+    A: "green"
+    B: "yellow"
+    C: "white"
+  answer: B
+  explain: "ww removes the white suppression; Yy expresses yellow pigment."
+
+- type: MultiChoice
+  text: "If alkaptonuria is autosomal recessive, what is the chance Michelle and Keith’s next child will have it?"
+  choices:
+    A: "2/3"
+    B: "1/4"
+    C: "3/4"
+  answer: B
+  explain: "Two carriers have a 25% chance of a homozygous recessive child."
+
+- type: MultiChoice
+  text: "Cystic fibrosis persists despite being lethal when homozygous because __________."
+  choices:
+    A: "The harmful allele hides in heterozygotes."
+    B: "Mosquitoes can transfer the disease."
+    C: "New mutations continually introduce it."
+  answer: A
+  explain: "Recessive alleles can persist in carriers unaffected by disease."
+
+- type: MultiChoice
+  text: "The chromosome theory of inheritance states that __________."
+  choices:
+    A: "genes occupy specific positions on chromosomes"
+    B: "chromosomes assort independently during meiosis"
+    C: "homologous chromosomes segregate during meiosis"
+    D: "All answers are correct"
+  answer: D
+  explain: "It integrates all these principles under chromosome behavior."
+
+- type: MultiChoice
+  text: "Why did Morgan use Drosophila in his genetics experiments?"
+  choices:
+    A: "They have a long generation time."
+    B: "They have a large number of chromosomes."
+    C: "A single mating can produce many offspring."
+  answer: C
+  explain: "High offspring count and short life cycle made Drosophila ideal."
+
+- type: MultiChoice
+  text: "Wild type refers to __________."
+  choices:
+    A: "a chromosomal deletion"
+    B: "the most extreme mutant phenotype"
+    C: "the most common phenotype in nature"
+  answer: C
+  explain: "‘Wild type’ is the standard or normal form in natural populations."
+
+- type: MultiChoice
+  text: "What is the probability that a human male inherits an X-linked recessive allele from his father?"
+  choices:
+    A: "100%"
+    B: "50%"
+    C: "0%"
+  answer: C
+  explain: "Males inherit their X from their mother and Y from their father."
+
+- type: MultiChoice
+  text: "For an X-linked trait, which parent determines whether a son displays the trait?"
+  choices:
+    A: "the mother"
+    B: "the father"
+    C: "the paternal grandmother"
+  answer: A
+  explain: "Sons inherit their only X chromosome from their mother."
+
+- type: MultiChoice
+  text: "In werewolves, the pointy ear allele (P) is dominant and X-linked. A female with pointy ears whose father had round ears mates with a round-eared male. What percentage of sons will have round ears?"
+  choices:
+    A: "0%"
+    B: "100%"
+    C: "50%"
+  answer: C
+  explain: "Carrier female passes recessive allele to half her sons."
+
+- type: MultiChoice
+  text: "A woman with patches lacking sweat glands has a mosaic pattern due to __________."
+  choices:
+    A: "Linkage"
+    B: "Nondisjunction"
+    C: "X chromosome inactivation"
+  answer: C
+  explain: "Random X inactivation causes patchy expression of X-linked traits."
+
+- type: MultiChoice
+  text: "X-linked genes differ from Y-linked genes in that __________."
+  choices:
+    A: "Though most X-linked genes determine sex, Y-linked genes control unrelated characters."
+    B: "Sons and daughters have equal probabilities of inheriting X-linked recessives from the mother, but only sons inherit Y-linked traits from their father."
+    C: "Only X-linked genes are sex-linked."
+  answer: B
+  explain: "Y-linked traits pass father to son; X-linked can pass to either sex."
+
+- type: MultiChoice
+  text: "If two genes are linked, __________."
+  choices:
+    A: "they are on the same chromosome"
+    B: "they assort independently"
+    C: "they are on different chromosomes"
+  answer: A
+  explain: "Linked genes are physically close on the same chromosome."
+
+- type: MultiChoice
+  text: "A BbRr × bbrr cross gives offspring in ratios of 5:5:1:1 for various phenotypes. Which explains this?"
+  choices:
+    A: "The genes are linked."
+    B: "The genes are autosomal."
+    C: "The genes are on different chromosomes."
+  answer: A
+  explain: "Deviation from 1:1:1:1 indicates linkage."
+
+- type: MultiChoice
+  text: "A gray-bodied, vestigial-winged fly is crossed with a black-bodied, normal-winged fly. In a testcross, which are parental and recombinant types?"
+  choices:
+    A: "black-bodied, normal-winged ... black-bodied, vestigial-winged"
+    B: "gray-bodied, vestigial-winged ... black-bodied, normal-winged"
+    C: "gray-bodied, normal-winged ... black-bodied, normal-winged"
+  answer: B
+  explain: "Parental phenotypes match the original parents; new combinations are recombinants."
+
+- type: MultiChoice
+  text: "Recombination frequency between two gene loci is __________."
+  choices:
+    A: "greater as the distance between the two genes decreases"
+    B: "dependent on dominance"
+    C: "greater as the distance between the two genes increases"
+  answer: C
+  explain: "The farther apart genes are, the more likely crossing over separates them."
+
+- type: MultiChoice
+  text: "A linkage map __________."
+  choices:
+    A: "predicts child gender"
+    B: "orders genes based on recombination frequencies"
+    C: "orders genes by physical band position"
+  answer: B
+  explain: "Linkage maps use recombination frequencies to estimate gene order."
+
+- type: MultiChoice
+  text: "Because crossing over frequency is not uniform, __________."
+  choices:
+    A: "map units do not necessarily correlate to physical distances"
+    B: "homologs differ in gene order"
+    C: "recombination cannot determine map units"
+  answer: A
+  explain: "Map units reflect relative frequency, not exact distance."
+
+- type: MultiChoice
+  text: "During meiosis, homologous chromosomes sometimes fail to separate. This is called __________."
+  choices:
+    A: "gametic infertility"
+    B: "sticky chiasmata"
+    C: "nondisjunction"
+  answer: C
+  explain: "Nondisjunction causes gametes with abnormal chromosome numbers."
+
+- type: MultiChoice
+  text: "Klinefelter syndrome (XXY) occurs due to __________."
+  choices:
+    A: "polyploidy"
+    B: "translocation"
+    C: "nondisjunction"
+  answer: C
+  explain: "Nondisjunction of sex chromosomes produces XXY males."
+
+- type: MultiChoice
+  text: "Cells with abnormal numbers of a particular chromosome are called __________."
+  choices:
+    A: "diploid"
+    B: "polyploid"
+    C: "aneuploid"
+  answer: C
+  explain: "Aneuploid cells gain or lose individual chromosomes."
+
+- type: MultiChoice
+  text: "Gene A is normally on chromosome 15, but is found on 17 in a fetus. The best explanation is __________."
+  choices:
+    A: "an inversion"
+    B: "translocation"
+    C: "crossing over"
+  answer: B
+  explain: "Translocation moves a gene to a different chromosome."
+
+- type: MultiChoice
+  text: "A chromosome fragment reattaches in reverse orientation. This is called __________."
+  choices:
+    A: "duplication"
+    B: "polyploidy"
+    C: "inversion"
+  answer: C
+  explain: "Inversions flip a segment end-to-end."
+
+- type: MultiChoice
+  text: "Down syndrome (trisomy 21) is a kind of __________ resulting from __________."
+  choices:
+    A: "polyploidy ... meiosis without cytokinesis"
+    B: "genomic imprint ... methylation"
+    C: "aneuploidy ... nondisjunction"
+  answer: C
+  explain: "Extra chromosome 21 arises from meiotic nondisjunction."
+
+- type: MultiChoice
+  text: "Which of the following is the only known viable human monosomy?"
+  choices:
+    A: "XY"
+    B: "XO"
+    C: "XXY"
+  answer: B
+  explain: "Turner syndrome (XO) is the only viable human monosomy."
