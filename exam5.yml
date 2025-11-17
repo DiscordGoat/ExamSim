@@ -1,1219 +1,2547 @@
 # ===============================
-# Chapter 12 — 31 focal points × 2 questions = 62 entries
-# Each second question is a "bonus" that deepens the first.
+# BIOL 201 — Chapter 14
+# DNA Structure, Function, and Replication (Lecture Slides)
+# Each focal point has 3 questions of different types.
 # ===============================
 
-# FP1: Patterns of monohybrid & dihybrid crosses
+# FP1: First isolation of DNA (Miescher) and early history
 - type: MultiChoice
-  text: "In a classic monohybrid cross (Aa × Aa) with complete dominance, what is the expected F2 phenotypic ratio?"
+  text: "What did Friedrich Miescher actually isolate in the 1860s when he worked with cell nuclei?"
   choices:
-    A: "1:1"
-    B: "3:1"
-    C: "9:3:3:1"
-    D: "1:2:1"
+    A: "Proteins that carry genetic information"
+    B: "A phosphorus-rich substance he called nuclein (DNA)"
+    C: "Pure RNA from cytoplasm"
+    D: "Lipids from cell membranes"
   answer: B
-  explain: "Monohybrid complete dominance yields 3 dominant : 1 recessive."
-- type: Matching
-  text: "BONUS: In a classic dihybrid cross (AaBb × AaBb) with independent assortment, match each class to its count in the 9:3:3:1 ratio."
-  pairs:
-    "1": "Both dominant traits"
-    "2": "Dominant A, recessive b"
-    "3": "Recessive a, dominant B"
-    "4": "Both recessive traits"
-  options:
-    A: "9"
-    B: "3 (A_ bb)"
-    C: "3 (aa B_)"
-    D: "1"
-  answer: {"1":"A","2":"B","3":"C","4":"D"}
-  explain: "9:3:3:1 arises when A/a and B/b assort independently."
-
-# FP2: Explain ratios clearly
-- type: ShortAnswer
-  text: "State in words what a 3:1 phenotypic ratio means for a monohybrid cross."
-  answer: "3 dominant : 1 recessive phenotype"
-  explain: "Ratios must be labeled by phenotype."
+  explain: "Miescher isolated a novel, phosphorus-rich material from nuclei he named 'nuclein', which we now recognize as DNA, laying the groundwork for later discoveries."
 - type: TrueFalse
-  text: "BONUS: A 3:1 phenotypic ratio in a monohybrid cross is consistent with a 1:2:1 genotypic ratio."
-  answer: true
-  explain: "Genotypes PP:Pp:pp = 1:2:1; phenotypes collapse to 3:1 under complete dominance."
-
-# FP3: Good model system characteristics
-- type: MultiChoice
-  text: "Which set best describes a good genetic model system?"
-  choices:
-    A: "Long generation time; few offspring; uncontrolled matings"
-    B: "Short generation time; many offspring; controlled matings"
-    C: "Rare traits; small populations; limited breeding"
-    D: "Complex life cycle; low fecundity; slow reproduction"
-  answer: B
-  explain: "Fast breeding, high numbers, and controlled crosses aid genetics."
-- type: MultiChoice
-  text: "BONUS: Which change most improves an organism’s suitability as a model?"
-  choices:
-    A: "Increase gestation length"
-    B: "Decrease brood size"
-    C: "Enable controlled matings"
-    D: "Reduce laboratory viability"
-  answer: C
-  explain: "Control over matings is critical to test hypotheses."
-
-# FP4: Humans as poor model system
-- type: MultiChoice
-  text: "Why are humans generally poor Mendelian model organisms?"
-  choices:
-    A: "Too many offspring"
-    B: "Short generation time"
-    C: "Ethical limits and few controlled matings"
-    D: "No genetic variation"
-  answer: C
-  explain: "Ethics, long generations, and small families limit crosses."
-- type: TrueFalse
-  text: "BONUS: Ethical constraints prevent performing test crosses in humans."
-  answer: true
-  explain: "We rely on pedigrees instead."
-
-# FP5: True-breeding line (definition)
-- type: ShortAnswer
-  text: "Define a true-breeding line."
-  answer: "A homozygous line that produces offspring identical for the trait when selfed or crossed within the line."
-  explain: "Homozygosity maintains uniform phenotype."
-- type: MultiSelect
-  text: "BONUS: Select all genotypes that are true-breeding at a single locus with complete dominance."
-  choices:
-    A: "PP"
-    B: "Pp"
-    C: "pp"
-    D: "pP"
-  answer: [A, C]
-  explain: "Only homozygotes (PP, pp) are true-breeding."
-
-# FP6: Genotype(s) of true-breeding line
-- type: MultiChoice
-  text: "A true-breeding dominant phenotype at one locus must have which genotype?"
-  choices:
-    A: "PP"
-    B: "Pp"
-    C: "pp"
-    D: "Either PP or Pp"
-  answer: A
-  explain: "Dominant true-breeding requires homozygous dominant."
-- type: TrueFalse
-  text: "BONUS: A true-breeding line can be heterozygous."
+  text: "At the time of Miescher’s work, scientists immediately recognized DNA as the genetic material."
   answer: false
-  explain: "Heterozygotes split in the next generation."
-
-# FP7: Define phenotype vs genotype
-- type: Matching
-  text: "Match the term to its definition."
-  pairs:
-    "1": "Phenotype"
-    "2": "Genotype"
-  options:
-    A: "Observable traits"
-    B: "Genetic makeup (alleles)"
-  answer: {"1":"A","2":"B"}
-  explain: "Phenotype = outward expression; genotype = allelic state."
+  explain: "DNA was known to exist, but it was not recognized as the genetic material until much later experiments (Griffith, Avery et al., Hershey–Chase) showed its role."
 - type: ShortAnswer
-  text: "BONUS: A plant is Pp and purple. Identify its phenotype and genotype."
-  answer: "Phenotype: purple; Genotype: Pp"
-  explain: "Dominant P yields purple."
+  text: "Why was Miescher’s isolation of nuclein important for modern genetics, even though he did not know its function?"
+  answer: "He identified a distinct nuclear substance (DNA), giving later researchers a specific molecule to study as a possible carrier of genetic information."
+  explain: "By discovering nuclein as a new chemical component of nuclei, Miescher provided the physical basis that later experiments linked to heredity."
 
-# FP8: Mendel’s monohybrid cross (both perspectives)
+# FP2: Griffith’s transformation and virulent vs non-virulent strains
 - type: MultiChoice
-  text: "In Mendel’s monohybrid flower-color cross, what is the F1 phenotype from PP × pp?"
+  text: "In Griffith’s experiment, what happened when live non-virulent bacteria were mixed with heat-killed virulent bacteria and injected into mice?"
   choices:
-    A: "All white"
-    B: "1/2 purple, 1/2 white"
-    C: "All purple"
-    D: "3/4 purple, 1/4 white"
-  answer: C
-  explain: "All F1 are Pp → purple."
+    A: "The mice lived and only non-virulent bacteria were recovered"
+    B: "The mice died and live virulent bacteria were recovered"
+    C: "Nothing grew in the mice at all"
+    D: "Only heat-killed bacteria were found in the mice"
+  answer: B
+  explain: "The harmless bacteria were 'transformed' by material from the dead virulent cells, becoming virulent themselves and killing the mice."
 - type: ShortAnswer
-  text: "BONUS: What is the F1 genotype from PP × pp?"
-  answer: "All Pp (heterozygous)"
-  explain: "Each offspring inherits P from PP parent and p from pp parent."
-
-# FP9: Parental (P) generation
-- type: MultiChoice
-  text: "What parental genotypes did Mendel typically use for a monohybrid cross?"
-  choices:
-    A: "PP × PP"
-    B: "pp × pp"
-    C: "PP × pp"
-    D: "Pp × Pp"
-  answer: C
-  explain: "True-breeding contrasting lines PP and pp."
+  text: "Griffith described a mysterious 'transforming principle.' What did this term refer to in his experiment?"
+  answer: "Some material released from heat-killed virulent bacteria that could convert non-virulent bacteria into virulent forms."
+  explain: "Griffith did not know the chemical identity, but he recognized that something from dead virulent cells permanently changed the traits of live non-virulent cells."
 - type: TrueFalse
-  text: "BONUS: In the classic monohybrid demonstration, P-generation lines are homozygous for alternative alleles."
+  text: "Griffith’s experiment showed that the ability to cause disease can be transferred between bacteria by a stable heritable factor."
   answer: true
-  explain: "That ensures contrasting but uniform parents."
+  explain: "Because non-virulent bacteria became virulent and passed this trait on, his work implied a heritable 'transforming principle' existed."
 
-# FP10: F1 phenotype & genotype
-- type: TrueFalse
-  text: "In the classic PP × pp cross, all F1 are heterozygous."
-  answer: true
-  explain: "They receive P from one parent and p from the other."
-- type: ShortAnswer
-  text: "BONUS: State the F1 phenotype."
-  answer: "All dominant phenotype (e.g., purple)"
-  explain: "Dominant allele masks the recessive."
-
-# FP11: F2 phenotype & genotype ratios
+# FP3: Avery, MacLeod, McCarty — identifying DNA as the transforming principle
 - type: MultiChoice
-  text: "For Aa × Aa, the F2 genotype ratio is:"
+  text: "What was the key finding of Avery, MacLeod, and McCarty’s follow-up work on Griffith’s transformation?"
   choices:
-    A: "3:1"
-    B: "1:2:1"
-    C: "9:3:3:1"
-    D: "1:1"
-  answer: B
-  explain: "Genotypes PP:Pp:pp = 1:2:1."
-- type: ShortAnswer
-  text: "BONUS: Give the F2 phenotypic ratio and label the categories."
-  answer: "3 dominant : 1 recessive"
-  explain: "Complete dominance collapses P_ to dominant."
-
-# FP12: Dominant vs recessive interactions
-- type: MultiChoice
-  text: "Which statement describes dominance in a heterozygote?"
-  choices:
-    A: "Only the recessive allele is expressed"
-    B: "Only the dominant allele is expressed phenotypically"
-    C: "Neither allele is present"
-    D: "Both alleles vanish in F1"
-  answer: B
-  explain: "Dominant allele masks recessive in phenotype."
-- type: TrueFalse
-  text: "BONUS: Recessive alleles disappear from the genome in the F1 generation."
-  answer: false
-  explain: "They are present but not expressed."
-
-# FP13: Define allele
-- type: ShortAnswer
-  text: "Define an allele."
-  answer: "Alternative form of a gene at the same locus."
-  explain: "Alleles occupy the same chromosomal position."
-- type: TrueFalse
-  text: "BONUS: Different alleles of a gene reside at the same locus on homologous chromosomes."
-  answer: true
-  explain: "Homologs carry corresponding loci."
-
-# FP14: Homozygous vs heterozygous (usage)
-- type: Matching
-  text: "Match genotype to zygosity."
-  pairs:
-    "1": "PP"
-    "2": "Pp"
-    "3": "pp"
-  options:
-    A: "Homozygous dominant"
-    B: "Heterozygous"
-    C: "Homozygous recessive"
-  answer: {"1":"A","2":"B","3":"C"}
-  explain: "Two identical vs two different alleles."
-- type: ShortAnswer
-  text: "BONUS: What is the zygosity of genotype Aa?"
-  answer: "Heterozygous"
-  explain: "Two different alleles."
-
-# FP15: Punnett square
-- type: MultiChoice
-  text: "What does a Punnett square allow you to calculate?"
-  choices:
-    A: "Mutation rates"
-    B: "Offspring genotype/phenotype probabilities"
-    C: "Chromosome numbers"
-    D: "Gamete ploidy errors"
-  answer: B
-  explain: "It enumerates gamete combinations."
-- type: ShortAnswer
-  text: "BONUS: For Aa × aa, what fraction of offspring are recessive phenotype?"
-  answer: "1/2"
-  explain: "Gametes from Aa: A or a; from aa: a; half are aa."
-
-# FP16: Test cross
-- type: MultiChoice
-  text: "Which cross is a test cross for a dominant-phenotype individual?"
-  choices:
-    A: "Unknown × AA"
-    B: "Unknown × aa"
-    C: "Unknown × Aa"
-    D: "AA × aa"
-  answer: B
-  explain: "Cross to a homozygous recessive to reveal hidden alleles."
-- type: ShortAnswer
-  text: "BONUS: A dominant-phenotype plant crossed to aa yields all dominant offspring. What is the unknown’s genotype?"
-  answer: "AA (homozygous dominant)"
-  explain: "A heterozygote would produce some recessive offspring."
-
-# FP17: Offspring ratios & meanings
-- type: Matching
-  text: "Match ratio to interpretation."
-  pairs:
-    "1": "3:1"
-    "2": "1:2:1"
-    "3": "9:3:3:1"
-    "4": "1:1"
-  options:
-    A: "Monohybrid phenotype (complete dominance)"
-    B: "Monohybrid genotype (AA:Aa:aa)"
-    C: "Dihybrid phenotype (independent assortment)"
-    D: "Test cross (heterozygote × recessive)"
-  answer: {"1":"A","2":"B","3":"C","4":"D"}
-  explain: "Canonical Mendelian ratios."
-- type: ShortAnswer
-  text: "BONUS: What parental cross typically yields a 1:1 phenotypic ratio in a monohybrid?"
-  answer: "Heterozygote (Aa) × homozygous recessive (aa)"
-  explain: "Half Aa (dominant), half aa (recessive)."
-
-# FP18: Inferring human genotypes without test crosses
-- type: MultiChoice
-  text: "What tool is used to infer human genotypes across generations?"
-  choices:
-    A: "Test cross"
-    B: "Pedigree analysis"
-    C: "Karyotyping only"
-    D: "Metaphase spreads"
-  answer: B
-  explain: "Pedigrees track trait inheritance."
-- type: ShortAnswer
-  text: "BONUS: Name one pedigree clue suggesting X-linked recessive inheritance."
-  answer: "More males affected; no father-to-son transmission; affected sons from carrier mothers."
-  explain: "These patterns indicate X-linked recessive."
-
-# FP19: Alternatives to dominance/recessiveness
-- type: MultiChoice
-  text: "Which is NOT an alternative to simple complete dominance?"
-  choices:
-    A: "Incomplete dominance"
-    B: "Codominance"
-    C: "Multiple alleles"
-    D: "Complete dominance"
+    A: "Proteins are the transforming principle"
+    B: "RNA is the transforming principle"
+    C: "Lipids are the transforming principle"
+    D: "DNA is the transforming principle"
   answer: D
-  explain: "D is the baseline model, not an alternative."
-- type: ShortAnswer
-  text: "BONUS: Give one example of a non–complete-dominance pattern."
-  answer: "Incomplete dominance (e.g., pink snapdragons) or codominance (AB blood type)."
-  explain: "Both deviate from simple masking."
-
-# FP20: Recognize incomplete dominance
-- type: MultiChoice
-  text: "Which statement best describes incomplete dominance?"
-  choices:
-    A: "Heterozygote shows the dominant phenotype"
-    B: "Heterozygote shows an intermediate phenotype"
-    C: "Homozygote shows an intermediate phenotype"
-    D: "No phenotype is expressed"
-  answer: B
-  explain: "Heterozygotes blend phenotypes."
-- type: TrueFalse
-  text: "BONUS: In incomplete dominance, the F2 phenotypes follow a 1:2:1 ratio."
-  answer: true
-  explain: "Phenotype mirrors genotype under incomplete dominance."
-
-# FP21: ABO codominance
-- type: MultiChoice
-  text: "Which genotype expresses both A and B antigens in ABO blood groups?"
-  choices:
-    A: "IA i"
-    B: "IB i"
-    C: "IA IB"
-    D: "ii"
-  answer: C
-  explain: "IA and IB are codominant."
-- type: ShortAnswer
-  text: "BONUS: If one parent is IA i and the other is IB i, list all possible child phenotypes."
-  answer: "A, B, AB, or O"
-  explain: "All four phenotypes are possible."
-
-# FP22: X-linked recessive patterns
-- type: MultiChoice
-  text: "Which pattern supports X-linked recessive inheritance?"
-  choices:
-    A: "Father-to-son transmission is common"
-    B: "More males affected; affected males from carrier mothers"
-    C: "Equal sex ratio and father-to-son transmission"
-    D: "Only females affected"
-  answer: B
-  explain: "Males are hemizygous for X-linked loci."
-- type: ShortAnswer
-  text: "BONUS: Carrier mother (X^AX^a) × normal father (X^AY): probability a son is affected?"
-  answer: "50%"
-  explain: "Sons inherit Y from father and X from mother; half of her X are X^a."
-
-# FP23: Lethal recessive alleles altering ratios
-- type: MultiChoice
-  text: "A cross yields a 2:1 phenotypic ratio. Which explanation fits best?"
-  choices:
-    A: "Incomplete dominance"
-    B: "Recessive lethal genotype"
-    C: "Independent assortment"
-    D: "X-linked dominance"
-  answer: B
-  explain: "One genotype class is missing due to lethality."
-- type: ShortAnswer
-  text: "BONUS: Why does a recessive lethal allele produce a 2:1 ratio in Aa × Aa?"
-  answer: "aa dies; only AA and Aa survive in a 1:2 ratio."
-  explain: "Lethality removes the recessive class."
-
-# FP24: Sum rule vs product rule
-- type: MultiChoice
-  text: "Use the sum rule when calculating the probability of:"
-  choices:
-    A: "Independent events occurring together"
-    B: "Mutually exclusive events (either/or)"
-    C: "Linked genes recombining"
-    D: "Meiotic nondisjunction"
-  answer: B
-  explain: "Sum = either/or (mutually exclusive)."
-- type: TrueFalse
-  text: "BONUS: The product rule applies to independent events occurring together."
-  answer: true
-  explain: "Multiply probabilities for independent events."
-
-# FP25: Mendel’s four rules of inheritance
+  explain: "When DNA was destroyed by DNase, transformation did not occur, showing that DNA carries the information needed to transform cells."
 - type: Matching
-  text: "Match Mendel’s principle to its description."
+  text: "Match each enzyme used by Avery, MacLeod, and McCarty to the macromolecule it digests."
   pairs:
-    "1": "Unit factors in pairs"
-    "2": "Dominance"
-    "3": "Segregation"
-    "4": "Independent assortment"
+    "1": "Protease"
+    "2": "RNase"
+    "3": "DNase"
   options:
-    A: "Alleles occur in pairs"
-    B: "One allele may mask another"
-    C: "Alleles separate into different gametes"
-    D: "Genes for different traits sort independently"
-  answer: {"1":"A","2":"B","3":"C","4":"D"}
-  explain: "Canonical Mendelian principles."
-- type: TrueFalse
-  text: "BONUS: Allelic segregation corresponds to homolog separation in meiosis I."
-  answer: true
-  explain: "Alleles segregate when homologs separate (anaphase I)."
-
-# FP26: Laws & Mendel’s experiments
+    A: "RNA"
+    B: "DNA"
+    C: "Protein"
+  answer: {"1":"C","2":"A","3":"B"}
+  explain: "Protease removes proteins, RNase removes RNA, and DNase removes DNA; only destroying DNA eliminated transformation, implicating DNA."
 - type: ShortAnswer
-  text: "Which Mendelian experiment supports the Law of Segregation?"
-  answer: "Monohybrid crosses showing 3:1 phenotypic ratio from Aa × Aa."
-  explain: "Segregation yields 1:2:1 genotypes."
-- type: MultiChoice
-  text: "BONUS: Which result best supported the Law of Independent Assortment?"
-  choices:
-    A: "1:1 ratio"
-    B: "3:1 ratio"
-    C: "9:3:3:1 ratio"
-    D: "2:1 ratio"
-  answer: C
-  explain: "Dihybrid crosses with unlinked genes produce 9:3:3:1."
+  text: "Why did the absence of transformation in DNase-treated samples convince scientists that DNA was the genetic material?"
+  answer: "Because only when DNA was degraded did the transforming ability disappear, indicating that DNA must carry the necessary genetic instructions."
+  explain: "If protein or RNA were responsible, destroying them would have blocked transformation, but only DNase treatment had that effect."
 
-# FP27: Mendel’s dihybrid cross (YR × gw)
+# FP4: Bacterial transformation and biotechnology (insulin & vaccines)
 - type: MultiChoice
-  text: "Crossing true-breeding yellow round (YYRR) with green wrinkled (yyrr) gives F1:"
+  text: "Which statement best describes how transformation is used to produce human insulin in bacteria?"
   choices:
-    A: "All yyrr"
-    B: "All YyRr (yellow round)"
-    C: "1/2 YyRr, 1/2 yyrr"
-    D: "All Yyrr"
+    A: "Bacteria are fed insulin protein directly so they learn to make it"
+    B: "Human insulin DNA is inserted into bacteria, which then express the insulin protein"
+    C: "Bacteria naturally make human insulin without any genetic changes"
+    D: "Insulin is produced by cows, not bacteria"
   answer: B
-  explain: "F1 are double heterozygotes with dominant phenotypes."
-- type: Matching
-  text: "BONUS: Match each F2 class in 9:3:3:1 to its trait combination."
-  pairs:
-    "1": "9"
-    "2": "3 (class 1)"
-    "3": "3 (class 2)"
-    "4": "1"
-  options:
-    A: "Yellow round"
-    B: "Yellow wrinkled"
-    C: "Green round"
-    D: "Green wrinkled"
-  answer: {"1":"A","2":"B","3":"C","4":"D"}
-  explain: "Dominant/dominant is most frequent."
-
-# FP28: Chromosomal basis of independent assortment
-- type: MultiChoice
-  text: "Independent assortment occurs because:"
-  choices:
-    A: "Sister chromatids fail to separate"
-    B: "Random orientation of homologous pairs at metaphase I"
-    C: "DNA replication in S phase"
-    D: "Crossing over never happens"
-  answer: B
-  explain: "Random alignment of homologs drives assortment."
+  explain: "The human insulin gene is transformed into bacteria; the bacteria read this human DNA and synthesize human insulin protein."
+- type: ShortAnswer
+  text: "Before recombinant DNA technology, where was insulin commonly obtained for diabetics?"
+  answer: "From pig and cow pancreases harvested at slaughterhouses."
+  explain: "Animal insulin was used but was expensive and supply-limited; transformation of bacteria made production cheaper and more scalable."
 - type: TrueFalse
-  text: "BONUS: Genes far apart on the same chromosome can assort ~independently due to recombination."
+  text: "Some components for modern vaccines and biologics are made using the same basic transformation technology used to make insulin."
   answer: true
-  explain: "High recombination can mimic independence."
+  explain: "The same principles—putting human or viral genes into microbes or cells to mass-produce proteins—underlie production of many biologic medicines and vaccine components."
 
-# FP29: Exceptions to independent assortment
+# FP5: Hershey–Chase experiment with bacteriophages
 - type: MultiChoice
-  text: "Which scenario most directly violates independent assortment?"
+  text: "What organisms did Hershey and Chase use to prove that DNA is the genetic material?"
   choices:
-    A: "Linked genes on the same chromosome"
-    B: "Random mating"
-    C: "Large sample sizes"
-    D: "Equal sex ratio"
+    A: "Mice and Streptococcus pneumoniae"
+    B: "Fruit flies and fungi"
+    C: "Bacteriophages and E. coli bacteria"
+    D: "Plants and plant viruses"
+  answer: C
+  explain: "They infected E. coli with bacteriophages (viruses that infect bacteria) and traced whether DNA or protein entered the cells."
+- type: MultiChoice
+  text: "Why did Hershey and Chase use radioactive phosphorus (³²P) to label DNA and radioactive sulfur (³⁵S) to label protein?"
+  choices:
+    A: "Phosphorus is only found in proteins, sulfur only in DNA"
+    B: "Both isotopes label both DNA and proteins equally"
+    C: "Phosphorus is abundant in DNA but not in amino acids; sulfur is abundant in certain amino acids but absent from DNA"
+    D: "It was a random choice; the isotopes have no chemical specificity"
+  answer: C
+  explain: "DNA’s backbone contains phosphate, so ³²P labels DNA; proteins often contain sulfur-containing amino acids, so ³⁵S labels proteins."
+- type: TrueFalse
+  text: "In the Hershey–Chase experiment, radioactive DNA entered the bacteria while radioactive protein mostly remained outside, indicating DNA carried the genetic information."
+  answer: true
+  explain: "New phages contained ³²P but not ³⁵S, showing that the material entering the cell and directing phage production was DNA."
+
+# FP6: Chargaff’s rule and base composition
+- type: MultiChoice
+  text: "Chargaff’s rule states that in double-stranded DNA:"
+  choices:
+    A: "%A = %G and %C = %T"
+    B: "%A = %T and %G = %C"
+    C: "All four bases occur in equal amounts"
+    D: "%A + %T = 25% of bases"
+  answer: B
+  explain: "Chargaff found consistent pairing relationships: adenine equals thymine and guanine equals cytosine in double-stranded DNA."
+- type: ShortAnswer
+  text: "If a plant species has 20% adenine in its DNA, what percentage of its bases must be cytosine?"
+  answer: "30% cytosine."
+  explain: "If A = 20%, then T = 20% (A = T), so A + T = 40%. The remaining 60% must be G + C, and since G = C, each is 30%."
+- type: TrueFalse
+  text: "Chargaff’s work showed that the overall ratio of A, T, G, and C can vary between species, but A = T and G = C always hold in double-stranded DNA."
+  answer: true
+  explain: "Species differ in GC content, but the base-pairing relationships A = T and G = C are consistent with double-helix structure."
+
+# FP7: Nucleotide structure, sugars, and bases
+- type: MultiChoice
+  text: "Which combination correctly lists the three components of a nucleotide?"
+  choices:
+    A: "Sugar, phosphate group, nitrogenous base"
+    B: "Sugar, lipid tail, nitrogenous base"
+    C: "Protein, phosphate group, sugar"
+    D: "Amino acid, sugar, phosphate group"
   answer: A
-  explain: "Linkage reduces independent assortment."
+  explain: "Every nucleotide has a pentose sugar, a phosphate group, and a nitrogenous base."
+- type: Matching
+  text: "Match each nucleic acid to its sugar type and one base unique to it."
+  pairs:
+    "1": "DNA"
+    "2": "RNA"
+  options:
+    A: "Deoxyribose sugar; uses thymine (T)"
+    B: "Ribose sugar; uses uracil (U)"
+  answer: {"1":"A","2":"B"}
+  explain: "DNA uses deoxyribose and T, whereas RNA uses ribose and U instead of T."
 - type: ShortAnswer
-  text: "BONUS: Name a cause of dihybrid ratio distortion other than linkage."
-  answer: "Epistasis (gene interaction) or recessive lethality."
-  explain: "These alter phenotypic counts."
+  text: "What is the difference between purines and pyrimidines in DNA bases? Give one example of each."
+  answer: "Purines have a two-ring structure (A and G), while pyrimidines have a single ring (C and T in DNA, plus U in RNA)."
+  explain: "Ring number distinguishes purines (double-ring) from pyrimidines (single-ring), important for correct base pairing."
 
-# FP30: Define gene linkage
-- type: ShortAnswer
-  text: "Define gene linkage."
-  answer: "The tendency of loci close together on a chromosome to be inherited together."
-  explain: "Physical proximity reduces recombination."
-- type: TrueFalse
-  text: "BONUS: Linked genes are always inherited together without exception."
-  answer: false
-  explain: "Crossing over can separate them."
-
-# FP31: Recognize epistasis
+# FP8: Burrows’ 3 Rules of DNA (complementary pairing, directionality, antiparallel strands)
 - type: MultiChoice
-  text: "Which best describes epistasis?"
+  text: "Which of the following is part of Burrows’ 3 rules for DNA?"
   choices:
-    A: "Two alleles at one locus"
-    B: "One gene’s alleles masking or modifying the effect of another gene"
-    C: "Independent assortment of unlinked genes"
-    D: "A mutation in mitochondrial DNA"
-  answer: B
-  explain: "Intergenic interaction affecting phenotype."
+    A: "DNA is built 3' → 5'"
+    B: "DNA strands are parallel and run in the same direction"
+    C: "A pairs with T, and G pairs with C"
+    D: "DNA contains equal amounts of ribose and deoxyribose"
+  answer: C
+  explain: "Complementary base pairing (A–T, G–C), 5' → 3' synthesis, and antiparallel strand orientation are central rules highlighted in lecture."
+- type: TrueFalse
+  text: "According to Burrows’ rules, DNA polymerases add new nucleotides to a strand in the 5' → 3' direction."
+  answer: true
+  explain: "DNA is described as directional and is built 5' → 3', adding new nucleotides to the 3' –OH end."
 - type: ShortAnswer
-  text: "BONUS: Give a classic example of epistasis."
-  answer: "Labrador coat color: E locus controls pigment deposition, masking B locus effects."
-  explain: "E is epistatic to B, modifying expected ratios."
+  text: "What does it mean that DNA strands are antiparallel, and why is this important for replication?"
+  answer: "Antiparallel means the two strands run in opposite directions (one 5' → 3', the other 3' → 5'); this orientation allows complementary base pairing and determines how replication enzymes move along each strand."
+  explain: "Antiparallel structure constrains replication to 5' → 3' synthesis, leading to distinct leading and lagging strands."
+
+# FP9: Hydrogen bonds vs phosphodiester bonds in DNA
+- type: MultiChoice
+  text: "Which bonds hold complementary bases together in the center of the DNA double helix?"
+  choices:
+    A: "Ionic bonds"
+    B: "Hydrogen bonds"
+    C: "Peptide bonds"
+    D: "Phosphodiester bonds"
+  answer: B
+  explain: "Hydrogen bonds form between base pairs: A–T (2 bonds) and G–C (3 bonds), allowing the strands to separate during replication."
+- type: ShortAnswer
+  text: "What type of bond links nucleotides together along the sugar-phosphate backbone, and is it strong or weak compared with hydrogen bonds?"
+  answer: "Phosphodiester bonds link nucleotides in the backbone; they are strong covalent bonds, much stronger than hydrogen bonds between bases."
+  explain: "Covalent phosphodiester bonds provide structural stability, while weaker hydrogen bonds allow the strands to separate when needed."
+- type: TrueFalse
+  text: "When DNA replicates, hydrogen bonds between bases are broken, but phosphodiester bonds in the backbone remain intact on each original strand."
+  answer: true
+  explain: "Replication unzips base pairs (hydrogen bonds), leaving each original backbone intact as a template for new strand synthesis."
+
+# FP10: Double helix and contributions of Rosalind Franklin vs Watson and Crick
+- type: MultiChoice
+  text: "What did Rosalind Franklin’s famous X-ray diffraction image reveal about DNA?"
+  choices:
+    A: "DNA is a single-stranded molecule"
+    B: "DNA is a triple helix of sugars"
+    C: "DNA has a helical, repeating structure"
+    D: "DNA is made only of proteins"
+  answer: C
+  explain: "The X-ray pattern indicated a helical, regular structure, providing key evidence for the double-helix model."
+- type: ShortAnswer
+  text: "How did Watson and Crick use Franklin’s data and Chargaff’s rule to build their DNA model?"
+  answer: "They combined helical dimensions from Franklin’s X-ray data with Chargaff’s base-ratio rules to propose a double helix with specific base pairing (A–T and G–C)."
+  explain: "Their model explained both the diffraction pattern and base ratios by arranging two antiparallel strands with complementary base pairing."
+- type: TrueFalse
+  text: "Watson and Crick worked in isolation and did not rely on any other scientists’ data to create their DNA model."
+  answer: false
+  explain: "They drew heavily on data from Franklin and others, plus Chargaff’s findings, to rapidly assemble a consistent model."
+
+# FP11: Gel electrophoresis and applications (COVID PCR, paternity testing)
+- type: MultiChoice
+  text: "What does gel electrophoresis do when used on DNA samples?"
+  choices:
+    A: "Copies DNA many times"
+    B: "Separates DNA fragments based on size"
+    C: "Sequencess DNA base by base"
+    D: "Destroys DNA so it cannot be analyzed"
+  answer: B
+  explain: "An electric field pulls DNA fragments through a gel matrix; smaller fragments travel farther than larger ones, separating them by size."
+- type: ShortAnswer
+  text: "How could gel electrophoresis be used together with PCR to test for a viral infection like COVID-19?"
+  answer: "PCR amplifies a specific viral DNA fragment (or cDNA), and gel electrophoresis reveals whether a band of the expected size appears; a band indicates that viral genetic material was present in the sample."
+  explain: "The presence or absence of a specific-size band after PCR gives a visual yes/no answer about viral sequence presence."
+- type: Matching
+  text: "In a paternity test using gel electrophoresis, how are a child’s DNA bands compared to potential parents?"
+  pairs:
+    "1": "Bands that match the child but not one tested parent"
+    "2": "Bands present in the child and both tested parents"
+  options:
+    A: "Help identify the other biological parent"
+    B: "Show shared human DNA regions but do not distinguish parentage alone"
+  answer: {"1":"A","2":"B"}
+  explain: "Each band in the child must come from one parent or the other; unmatched bands suggest which adult is (or is not) a biological parent."
+
+# FP12: Sanger sequencing basics
+- type: MultiChoice
+  text: "Which key feature makes Sanger DNA sequencing possible?"
+  choices:
+    A: "Use of heat to break all phosphodiester bonds"
+    B: "Use of chain-terminating nucleotides that stop DNA synthesis at specific bases"
+    C: "Use of only one type of nucleotide"
+    D: "Use of RNA polymerase instead of DNA polymerase"
+  answer: B
+  explain: "Sanger sequencing incorporates modified nucleotides that stop elongation; the resulting fragments can be separated and read to determine sequence."
+- type: TrueFalse
+  text: "In Sanger sequencing, a laser can be used to read differently colored labels on terminated fragments, revealing the base at each position."
+  answer: true
+  explain: "Each type of chain-terminating nucleotide is fluorescently labeled, so fragment color at each length tells which base was added last."
+- type: ShortAnswer
+  text: "Why is gel or capillary electrophoresis still important in Sanger sequencing, even when fluorescent labels are used?"
+  answer: "Electrophoresis separates DNA fragments by length so that each position in the sequence can be read in order from smallest to largest fragment."
+  explain: "Without size separation, the mixture of fragments would overlap and you could not tell which base corresponds to each position."
+
+# FP13: DNA packaging in prokaryotes vs eukaryotes, euchromatin vs heterochromatin
+- type: MultiChoice
+  text: "How is bacterial DNA primarily packaged compared with eukaryotic DNA?"
+  choices:
+    A: "Bacteria use multiple linear chromosomes; eukaryotes use a single circular chromosome"
+    B: "Bacteria supercoil a single circular chromosome; eukaryotes wrap multiple linear chromosomes around histone proteins"
+    C: "Both bacteria and eukaryotes use nucleosomes and histones"
+    D: "Bacteria and eukaryotes leave DNA fully extended without packaging"
+  answer: B
+  explain: "Bacteria compact their single circular chromosome by supercoiling, while eukaryotes organize DNA into nucleosomes and higher-order chromatin."
+- type: Matching
+  text: "Match each eukaryotic DNA state with its description."
+  pairs:
+    "1": "Euchromatin"
+    "2": "Heterochromatin"
+  options:
+    A: "Open, less condensed DNA that is generally accessible and expressed"
+    B: "Tightly wound DNA that is less accessible and usually not expressed"
+  answer: {"1":"A","2":"B"}
+  explain: "Euchromatin corresponds to active, open regions; heterochromatin is compacted and typically transcriptionally silent."
+- type: ShortAnswer
+  text: "Why is complex DNA packaging necessary in human cells, and what is one consequence for gene expression?"
+  answer: "Human cells must fit about 2 meters of DNA into a tiny nucleus, so extensive packaging is needed; tightly packed regions (heterochromatin) are generally not expressed, while more open regions (euchromatin) can be transcribed."
+  explain: "Packaging solves the space problem but also regulates which genes are accessible for transcription."
+
+# FP14: DNA replication models and Meselson–Stahl experiment
+- type: MultiChoice
+  text: "Which model of DNA replication was supported by Meselson and Stahl’s experiment using heavy and light nitrogen?"
+  choices:
+    A: "Conservative"
+    B: "Semiconservative"
+    C: "Dispersive"
+    D: "Random"
+  answer: B
+  explain: "After one and two rounds of replication, the density patterns matched predictions for semiconservative replication, where each new DNA molecule has one old and one new strand."
+- type: ShortAnswer
+  text: "What did Meselson and Stahl label with heavy nitrogen (¹⁵N) in E. coli, and how did ultracentrifugation help them interpret replication models?"
+  answer: "They labeled DNA with heavy nitrogen; ultracentrifugation separated heavy and light DNA, allowing them to see intermediate and light bands that distinguished semiconservative replication from other models."
+  explain: "By tracking density shifts over generations, they showed that old strands are split between daughter molecules, not kept together or completely mixed."
+- type: TrueFalse
+  text: "In semiconservative replication, each daughter DNA molecule contains two newly synthesized strands."
+  answer: false
+  explain: "Each daughter molecule contains one original (parent) strand and one newly synthesized strand, which is why it is called semiconservative."
+
+# FP15: DNA replication problems and 'enzyme for every problem'
+- type: MultiChoice
+  text: "Which list correctly pairs a replication problem with the enzyme that helps solve it?"
+  choices:
+    A: "Unwinding the helix — ligase; starting synthesis — DNA polymerase III"
+    B: "Unwinding the helix — helicase; starting synthesis — primase"
+    C: "Proofreading — helicase; sealing gaps — primase"
+    D: "Removing primers — DNA polymerase III; sealing gaps — primase"
+  answer: B
+  explain: "Helicase unwinds DNA; primase makes short RNA primers with free 3' –OH ends so DNA polymerase can start."
+- type: Matching
+  text: "Match each replication problem from the lecture list to the enzyme that primarily addresses it."
+  pairs:
+    "1": "Need to unzip the double helix"
+    "2": "Need a 3' OH to start DNA synthesis"
+    "3": "Need to seal gaps in the sugar-phosphate backbone"
+  options:
+    A: "Helicase"
+    B: "Primase"
+    C: "DNA ligase"
+  answer: {"1":"A","2":"B","3":"C"}
+  explain: "Helicase unwinds, primase provides primers, and ligase seals nicks where backbone gaps remain."
+- type: ShortAnswer
+  text: "Why can we say there is 'an enzyme to solve every problem' in DNA replication? Give one example."
+  answer: "DNA replication raises specific challenges (unwinding, starting synthesis, accuracy, sealing gaps), and cells have specialized enzymes—like helicase, primase, DNA polymerases, and ligase—that each tackle a different problem."
+  explain: "Replication is a coordinated team effort where different enzymes handle different steps to copy DNA accurately and efficiently."
+
+# FP16: DNA polymerase, directionality, and leading vs lagging strands
+- type: MultiChoice
+  text: "Why do cells need both a leading and a lagging strand during DNA replication?"
+  choices:
+    A: "Because DNA polymerase can only synthesize 3' → 5'"
+    B: "Because the two template strands run antiparallel but DNA polymerase can only synthesize 5' → 3'"
+    C: "Because helicase works only on one strand"
+    D: "Because one strand has more adenine than the other"
+  answer: B
+  explain: "The antiparallel nature of DNA and the 5' → 3' requirement force one strand to be made continuously (leading) and the other in fragments (lagging)."
+- type: TrueFalse
+  text: "DNA polymerase joins the 5' phosphate of a new nucleotide to the 3' OH of the growing strand, forming a phosphodiester bond."
+  answer: true
+  explain: "This chemistry defines the 5' → 3' direction of synthesis and explains why a free 3' –OH is needed."
+- type: ShortAnswer
+  text: "What are Okazaki fragments, and on which strand do they form?"
+  answer: "They are short DNA fragments synthesized discontinuously on the lagging strand."
+  explain: "Because the lagging strand runs the 'wrong' direction relative to fork movement, it must be synthesized in short pieces later joined by ligase."
+
+# FP17: Proofreading, accuracy, and DNA repair enzymes
+- type: MultiChoice
+  text: "What is one reason actual mutation rates are much lower than the raw error rate of DNA polymerase III?"
+  choices:
+    A: "Replication happens only once per lifetime"
+    B: "Cells avoid using DNA polymerase entirely"
+    C: "DNA polymerases and repair enzymes proofread and correct many errors"
+    D: "Mismatched bases are not stable in DNA"
+  answer: C
+  explain: "DNA polymerase I and other repair systems scan for mismatches and damage, removing and replacing incorrect bases."
+- type: ShortAnswer
+  text: "How does DNA polymerase I help both with primer removal and error correction on the lagging strand?"
+  answer: "It has exonuclease activity to remove RNA primers and mismatched bases, then fills the gaps with correct DNA nucleotides."
+  explain: "Pol I cuts out primers (and errors) and replaces them with DNA, linking replication and repair."
+- type: TrueFalse
+  text: "Even with proofreading and repair, DNA replication is still imperfect and some mutations slip through."
+  answer: true
+  explain: "Error correction greatly reduces but does not completely eliminate mistakes, leaving a small but important mutation rate."
+
+# FP18: Prokaryotic replication origin and fork dynamics
+- type: MultiChoice
+  text: "Where does DNA replication start on a bacterial chromosome?"
+  choices:
+    A: "At random positions each time"
+    B: "At the origin of replication (oriC)"
+    C: "At every promoter"
+    D: "Only at the chromosome ends"
+  answer: B
+  explain: "Replication begins at a specific sequence, oriC, and proceeds bidirectionally around the circular chromosome."
+- type: Matching
+  text: "Match each replication structure or term with its description in a bacterial cell."
+  pairs:
+    "1": "Origin of replication"
+    "2": "Replication fork"
+  options:
+    A: "Y-shaped region where helicase, polymerases, and other enzymes are actively copying DNA"
+    B: "Specific DNA sequence where replication begins"
+  answer: {"1":"B","2":"A"}
+  explain: "The origin is the starting point; the replication fork is the moving machine that does the copying."
+- type: ShortAnswer
+  text: "Why must bacterial cells replicate their DNA before dividing?"
+  answer: "So that each daughter cell receives a complete copy of the genome."
+  explain: "Division without prior replication would leave some daughter cells missing essential genetic information."
+
+# FP19: Eukaryotic replication challenges and multiple origins
+- type: MultiChoice
+  text: "Why do eukaryotic chromosomes have many origins of replication instead of just one like bacteria?"
+  choices:
+    A: "Eukaryotes do not use helicase"
+    B: "Their genomes are much larger, so multiple origins allow faster replication"
+    C: "Their chromosomes are circular"
+    D: "They lack DNA polymerase"
+  answer: B
+  explain: "Multiple origins let replication begin at many sites at once, shortening the time needed to copy long linear chromosomes."
+- type: TrueFalse
+  text: "Replication mechanisms in eukaryotes and prokaryotes share core principles but differ in details such as origin number and chromosome structure."
+  answer: true
+  explain: "Both follow 5' → 3' synthesis, semiconservative replication, and use similar enzymes, but eukaryotes have multiple origins and linear chromosomes."
+- type: ShortAnswer
+  text: "Name one way eukaryotic DNA replication is similar to prokaryotic replication and one key difference."
+  answer: "Similar: both use semiconservative replication with helicase, primase, and DNA polymerases; different: eukaryotes have multiple origins and linear chromosomes with telomeres, whereas bacteria usually have one circular chromosome with a single origin."
+  explain: "Core chemistry is conserved, but genome size and chromosome shape force eukaryotes to use additional strategies."
+
+# FP20: End-replication problem, telomeres, and loss of repeats
+- type: MultiChoice
+  text: "What problem arises when replicating the very ends of linear eukaryotic chromosomes?"
+  choices:
+    A: "They are over-replicated and become longer each cycle"
+    B: "The RNA primers at the ends cannot be replaced with DNA, so a little bit of sequence is lost each division"
+    C: "The ends contain no DNA at all"
+    D: "Only bacterial chromosomes have this issue"
+  answer: B
+  explain: "When primers are removed from the extreme 5' ends, polymerase cannot fill the gap, causing gradual shortening of chromosome ends."
+- type: ShortAnswer
+  text: "What are telomeres, and what type of sequence do they contain?"
+  answer: "Telomeres are repetitive DNA caps at the ends of linear chromosomes (in humans, repeated TTAGGG sequences) that protect coding DNA from being lost."
+  explain: "They act as disposable buffers so that essential genes are not truncated as chromosomes shorten with each division."
+- type: TrueFalse
+  text: "If eukaryotic chromosomes had no telomeres, important genes at the ends of chromosomes could be lost as cells divide."
+  answer: true
+  explain: "Without protective repeats, shortening would directly damage coding or regulatory sequences, threatening cell survival."
+
+# FP21: Telomerase, germ line cells, and cancer
+- type: MultiChoice
+  text: "What is the main function of telomerase in cells that express it?"
+  choices:
+    A: "To remove telomeres entirely"
+    B: "To add repetitive sequences to telomeres and counteract shortening"
+    C: "To cut chromosomes into smaller pieces"
+    D: "To repair phosphodiester bonds in the middle of genes"
+  answer: B
+  explain: "Telomerase extends telomeric repeats, helping maintain chromosome length in cells that must divide many times."
+- type: TrueFalse
+  text: "Germ line cells normally have active telomerase, and many cancer cells re-activate telomerase to help them divide indefinitely."
+  answer: true
+  explain: "Germ cells need long-term replicative capacity; cancers often hijack telomerase to avoid telomere-driven limits on division."
+- type: ShortAnswer
+  text: "Why might drugs that inhibit telomerase be considered as potential cancer treatments?"
+  answer: "Because blocking telomerase in cancer cells could allow their telomeres to shorten, eventually limiting their ability to keep dividing."
+  explain: "Targeting telomerase could selectively reduce the 'immortality' of tumor cells that depend on telomere maintenance."
+
+# FP22: Mutation and DNA repair (intro)
+- type: MultiChoice
+  text: "Which best defines a mutation as introduced in the DNA repair lecture slide?"
+  choices:
+    A: "Any temporary change in protein shape"
+    B: "A change in the DNA sequence"
+    C: "A change in RNA that is not copied"
+    D: "A reversible change in chromatin packing"
+  answer: B
+  explain: "A mutation is a change in the nucleotide sequence of DNA, which can be passed on when DNA is replicated."
+- type: ShortAnswer
+  text: "Why are DNA repair mechanisms important for cells and organisms?"
+  answer: "They detect and correct some DNA damage and mistakes, lowering mutation rates and helping prevent diseases and cell malfunction."
+  explain: "Without repair, errors would accumulate faster, increasing the risk of harmful mutations and genomic instability."
+- type: TrueFalse
+  text: "DNA repair systems can correct every mutation, so mutations never contribute to evolution."
+  answer: false
+  explain: "Repair reduces but does not eliminate mutations; remaining changes provide genetic variation on which evolution can act."
+
 # ===============================
-# Chapter 13 — 20 focal points × 2 questions = 40 entries
-# Each second question is a "bonus" that deepens the first.
+# BIOL 201 — Chapter 14
+# DNA Structure, Function, and Replication (Lecture Slides)
+# Each focal point has 3 questions of different types.
 # ===============================
 
-# FP1: Early evidence for the chromosomal theory of inheritance
+# FP1: First isolation of DNA (Miescher) and early history
 - type: MultiChoice
-  text: "Which observation most directly supported the chromosomal theory of inheritance?"
+  text: "What did Friedrich Miescher actually isolate in the 1860s when he worked with cell nuclei?"
   choices:
-    A: "Proteins localize to the cytosol"
-    B: "Chromosomes segregate during meiosis in patterns paralleling Mendel’s laws"
-    C: "Cells respire using mitochondria"
-    D: "Mutations always arise from the environment"
+    A: "Proteins that carry genetic information"
+    B: "A phosphorus-rich substance he called nuclein (DNA)"
+    C: "Pure RNA from cytoplasm"
+    D: "Lipids from cell membranes"
   answer: B
-  explain: "The behavior of chromosomes in meiosis mirrored segregation and independent assortment."
+  explain: "Miescher isolated a novel, phosphorus-rich material from nuclei he named 'nuclein', which we now recognize as DNA, laying the groundwork for later discoveries."
 - type: TrueFalse
-  text: "BONUS: Morgan’s discovery of the white-eyed mutation in Drosophila and its X-linkage provided strong support for genes residing on chromosomes."
-  answer: true
-  explain: "Sex-linked inheritance tied specific traits to specific chromosomes."
-
-# FP2: Key model animal for early linkage/mapping
-- type: MultiChoice
-  text: "Which organism was foundational for early gene linkage and mapping studies?"
-  choices:
-    A: "Arabidopsis thaliana"
-    B: "Drosophila melanogaster (fruit fly)"
-    C: "Mus musculus (mouse)"
-    D: "Saccharomyces cerevisiae (yeast)"
-  answer: B
-  explain: "Morgan’s fly room used Drosophila to establish linkage and mapping."
-- type: ShortAnswer
-  text: "BONUS: Name one feature that made Drosophila an effective genetic model."
-  answer: "Short generation time, many offspring, easy crosses, visible traits."
-  explain: "These traits made large-scale genetic analyses feasible."
-
-# FP3: Sex determination in fruit flies
-- type: MultiChoice
-  text: "How is sex determined in Drosophila?"
-  choices:
-    A: "Presence of Y determines maleness absolutely"
-    B: "XX = female, XY = male; effectively an X-to-autosome (X:A) ratio system"
-    C: "Temperature during development"
-    D: "Mitochondrial genome content"
-  answer: B
-  explain: "Females are XX, males XY; the X:A ratio underlies determination; Y affects fertility."
-- type: TrueFalse
-  text: "BONUS: In Drosophila, the Y chromosome is required to determine maleness."
+  text: "At the time of Miescher’s work, scientists immediately recognized DNA as the genetic material."
   answer: false
-  explain: "Y is needed for male fertility, not for primary sex determination."
-
-# FP4: Homologous recombination
-- type: MultiChoice
-  text: "What occurs during homologous recombination?"
-  choices:
-    A: "Exchange of DNA between sister chromatids"
-    B: "Exchange of DNA between non-homologous chromosomes exclusively"
-    C: "Reciprocal exchange between homologous chromosomes at chiasmata"
-    D: "Random loss of entire chromosomes"
-  answer: C
-  explain: "Crossing over at chiasmata during prophase I increases variation and can break linkage."
+  explain: "DNA was known to exist, but it was not recognized as the genetic material until much later experiments (Griffith, Avery et al., Hershey–Chase) showed its role."
 - type: ShortAnswer
-  text: "BONUS: In what meiotic stage do chiasmata first become visible?"
-  answer: "Prophase I (pachytene/diakinesis stages)"
-  explain: "Chiasmata reflect sites of crossover between homologs."
+  text: "Why was Miescher’s isolation of nuclein important for modern genetics, even though he did not know its function?"
+  answer: "He identified a distinct nuclear substance (DNA), giving later researchers a specific molecule to study as a possible carrier of genetic information."
+  explain: "By discovering nuclein as a new chemical component of nuclei, Miescher provided the physical basis that later experiments linked to heredity."
 
-# FP5: Parental vs non-parental types in dihybrid crosses
+# FP2: Griffith’s transformation and virulent vs non-virulent strains
 - type: MultiChoice
-  text: "In a dihybrid cross, ‘parental types’ refer to:"
+  text: "In Griffith’s experiment, what happened when live non-virulent bacteria were mixed with heat-killed virulent bacteria and injected into mice?"
   choices:
-    A: "Genotypes not seen in the parents"
-    B: "Phenotypic combinations matching the original parental combinations"
-    C: "Only dominant phenotypes"
-    D: "Only recessive phenotypes"
+    A: "The mice lived and only non-virulent bacteria were recovered"
+    B: "The mice died and live virulent bacteria were recovered"
+    C: "Nothing grew in the mice at all"
+    D: "Only heat-killed bacteria were found in the mice"
   answer: B
-  explain: "Parental types preserve the original trait combinations."
+  explain: "The harmless bacteria were 'transformed' by material from the dead virulent cells, becoming virulent themselves and killing the mice."
 - type: ShortAnswer
-  text: "BONUS: What are ‘non-parental’ (recombinant) types?"
-  answer: "Phenotypic/genotypic combinations different from parental combinations."
-  explain: "Produced by independent assortment or crossing over."
-
-# FP6: Cause of non-parental types when linkage is involved
-- type: MultiChoice
-  text: "With linked genes, which process produces non-parental types?"
-  choices:
-    A: "Independent assortment alone"
-    B: "Crossing over between homologous chromosomes"
-    C: "Mutation during S phase"
-    D: "Random fertilization"
-  answer: B
-  explain: "Recombination via crossover generates new allele combinations between linked loci."
+  text: "Griffith described a mysterious 'transforming principle.' What did this term refer to in his experiment?"
+  answer: "Some material released from heat-killed virulent bacteria that could convert non-virulent bacteria into virulent forms."
+  explain: "Griffith did not know the chemical identity, but he recognized that something from dead virulent cells permanently changed the traits of live non-virulent cells."
 - type: TrueFalse
-  text: "BONUS: The closer two genes are, the fewer recombinant types you will observe."
+  text: "Griffith’s experiment showed that the ability to cause disease can be transferred between bacteria by a stable heritable factor."
   answer: true
-  explain: "Tight linkage reduces crossover frequency between them."
+  explain: "Because non-virulent bacteria became virulent and passed this trait on, his work implied a heritable 'transforming principle' existed."
 
-# FP7: Max number of recombinant gametes in one meiosis
+# FP3: Avery, MacLeod, McCarty — identifying DNA as the transforming principle
 - type: MultiChoice
-  text: "Considering two linked genes and a single crossover, how many of the four meiotic products are recombinant?"
+  text: "What was the key finding of Avery, MacLeod, and McCarty’s follow-up work on Griffith’s transformation?"
   choices:
-    A: "0"
-    B: "1"
-    C: "2"
-    D: "4"
-  answer: C
-  explain: "A single crossover involves two chromatids, yielding two recombinant and two parental chromatids."
+    A: "Proteins are the transforming principle"
+    B: "RNA is the transforming principle"
+    C: "Lipids are the transforming principle"
+    D: "DNA is the transforming principle"
+  answer: D
+  explain: "When DNA was destroyed by DNase, transformation did not occur, showing that DNA carries the information needed to transform cells."
+- type: Matching
+  text: "Match each enzyme used by Avery, MacLeod, and McCarty to the macromolecule it digests."
+  pairs:
+    "1": "Protease"
+    "2": "RNase"
+    "3": "DNase"
+  options:
+    A: "RNA"
+    B: "DNA"
+    C: "Protein"
+  answer: {"1":"C","2":"A","3":"B"}
+  explain: "Protease removes proteins, RNase removes RNA, and DNase removes DNA; only destroying DNA eliminated transformation, implicating DNA."
+- type: ShortAnswer
+  text: "Why did the absence of transformation in DNase-treated samples convince scientists that DNA was the genetic material?"
+  answer: "Because only when DNA was degraded did the transforming ability disappear, indicating that DNA must carry the necessary genetic instructions."
+  explain: "If protein or RNA were responsible, destroying them would have blocked transformation, but only DNase treatment had that effect."
+
+# FP4: Bacterial transformation and biotechnology (insulin & vaccines)
+- type: MultiChoice
+  text: "Which statement best describes how transformation is used to produce human insulin in bacteria?"
+  choices:
+    A: "Bacteria are fed insulin protein directly so they learn to make it"
+    B: "Human insulin DNA is inserted into bacteria, which then express the insulin protein"
+    C: "Bacteria naturally make human insulin without any genetic changes"
+    D: "Insulin is produced by cows, not bacteria"
+  answer: B
+  explain: "The human insulin gene is transformed into bacteria; the bacteria read this human DNA and synthesize human insulin protein."
+- type: ShortAnswer
+  text: "Before recombinant DNA technology, where was insulin commonly obtained for diabetics?"
+  answer: "From pig and cow pancreases harvested at slaughterhouses."
+  explain: "Animal insulin was used but was expensive and supply-limited; transformation of bacteria made production cheaper and more scalable."
 - type: TrueFalse
-  text: "BONUS: A single crossover involves all four chromatids."
+  text: "Some components for modern vaccines and biologics are made using the same basic transformation technology used to make insulin."
+  answer: true
+  explain: "The same principles—putting human or viral genes into microbes or cells to mass-produce proteins—underlie production of many biologic medicines and vaccine components."
+
+# FP5: Hershey–Chase experiment with bacteriophages
+- type: MultiChoice
+  text: "What organisms did Hershey and Chase use to prove that DNA is the genetic material?"
+  choices:
+    A: "Mice and Streptococcus pneumoniae"
+    B: "Fruit flies and fungi"
+    C: "Bacteriophages and E. coli bacteria"
+    D: "Plants and plant viruses"
+  answer: C
+  explain: "They infected E. coli with bacteriophages (viruses that infect bacteria) and traced whether DNA or protein entered the cells."
+- type: MultiChoice
+  text: "Why did Hershey and Chase use radioactive phosphorus (³²P) to label DNA and radioactive sulfur (³⁵S) to label protein?"
+  choices:
+    A: "Phosphorus is only found in proteins, sulfur only in DNA"
+    B: "Both isotopes label both DNA and proteins equally"
+    C: "Phosphorus is abundant in DNA but not in amino acids; sulfur is abundant in certain amino acids but absent from DNA"
+    D: "It was a random choice; the isotopes have no chemical specificity"
+  answer: C
+  explain: "DNA’s backbone contains phosphate, so ³²P labels DNA; proteins often contain sulfur-containing amino acids, so ³⁵S labels proteins."
+- type: TrueFalse
+  text: "In the Hershey–Chase experiment, radioactive DNA entered the bacteria while radioactive protein mostly remained outside, indicating DNA carried the genetic information."
+  answer: true
+  explain: "New phages contained ³²P but not ³⁵S, showing that the material entering the cell and directing phage production was DNA."
+
+# FP6: Chargaff’s rule and base composition
+- type: MultiChoice
+  text: "Chargaff’s rule states that in double-stranded DNA:"
+  choices:
+    A: "%A = %G and %C = %T"
+    B: "%A = %T and %G = %C"
+    C: "All four bases occur in equal amounts"
+    D: "%A + %T = 25% of bases"
+  answer: B
+  explain: "Chargaff found consistent pairing relationships: adenine equals thymine and guanine equals cytosine in double-stranded DNA."
+- type: ShortAnswer
+  text: "If a plant species has 20% adenine in its DNA, what percentage of its bases must be cytosine?"
+  answer: "30% cytosine."
+  explain: "If A = 20%, then T = 20% (A = T), so A + T = 40%. The remaining 60% must be G + C, and since G = C, each is 30%."
+- type: TrueFalse
+  text: "Chargaff’s work showed that the overall ratio of A, T, G, and C can vary between species, but A = T and G = C always hold in double-stranded DNA."
+  answer: true
+  explain: "Species differ in GC content, but the base-pairing relationships A = T and G = C are consistent with double-helix structure."
+
+# FP7: Nucleotide structure, sugars, and bases
+- type: MultiChoice
+  text: "Which combination correctly lists the three components of a nucleotide?"
+  choices:
+    A: "Sugar, phosphate group, nitrogenous base"
+    B: "Sugar, lipid tail, nitrogenous base"
+    C: "Protein, phosphate group, sugar"
+    D: "Amino acid, sugar, phosphate group"
+  answer: A
+  explain: "Every nucleotide has a pentose sugar, a phosphate group, and a nitrogenous base."
+- type: Matching
+  text: "Match each nucleic acid to its sugar type and one base unique to it."
+  pairs:
+    "1": "DNA"
+    "2": "RNA"
+  options:
+    A: "Deoxyribose sugar; uses thymine (T)"
+    B: "Ribose sugar; uses uracil (U)"
+  answer: {"1":"A","2":"B"}
+  explain: "DNA uses deoxyribose and T, whereas RNA uses ribose and U instead of T."
+- type: ShortAnswer
+  text: "What is the difference between purines and pyrimidines in DNA bases? Give one example of each."
+  answer: "Purines have a two-ring structure (A and G), while pyrimidines have a single ring (C and T in DNA, plus U in RNA)."
+  explain: "Ring number distinguishes purines (double-ring) from pyrimidines (single-ring), important for correct base pairing."
+
+# FP8: Burrows’ 3 Rules of DNA (complementary pairing, directionality, antiparallel strands)
+- type: MultiChoice
+  text: "Which of the following is part of Burrows’ 3 rules for DNA?"
+  choices:
+    A: "DNA is built 3' → 5'"
+    B: "DNA strands are parallel and run in the same direction"
+    C: "A pairs with T, and G pairs with C"
+    D: "DNA contains equal amounts of ribose and deoxyribose"
+  answer: C
+  explain: "Complementary base pairing (A–T, G–C), 5' → 3' synthesis, and antiparallel strand orientation are central rules highlighted in lecture."
+- type: TrueFalse
+  text: "According to Burrows’ rules, DNA polymerases add new nucleotides to a strand in the 5' → 3' direction."
+  answer: true
+  explain: "DNA is described as directional and is built 5' → 3', adding new nucleotides to the 3' –OH end."
+- type: ShortAnswer
+  text: "What does it mean that DNA strands are antiparallel, and why is this important for replication?"
+  answer: "Antiparallel means the two strands run in opposite directions (one 5' → 3', the other 3' → 5'); this orientation allows complementary base pairing and determines how replication enzymes move along each strand."
+  explain: "Antiparallel structure constrains replication to 5' → 3' synthesis, leading to distinct leading and lagging strands."
+
+# FP9: Hydrogen bonds vs phosphodiester bonds in DNA
+- type: MultiChoice
+  text: "Which bonds hold complementary bases together in the center of the DNA double helix?"
+  choices:
+    A: "Ionic bonds"
+    B: "Hydrogen bonds"
+    C: "Peptide bonds"
+    D: "Phosphodiester bonds"
+  answer: B
+  explain: "Hydrogen bonds form between base pairs: A–T (2 bonds) and G–C (3 bonds), allowing the strands to separate during replication."
+- type: ShortAnswer
+  text: "What type of bond links nucleotides together along the sugar-phosphate backbone, and is it strong or weak compared with hydrogen bonds?"
+  answer: "Phosphodiester bonds link nucleotides in the backbone; they are strong covalent bonds, much stronger than hydrogen bonds between bases."
+  explain: "Covalent phosphodiester bonds provide structural stability, while weaker hydrogen bonds allow the strands to separate when needed."
+- type: TrueFalse
+  text: "When DNA replicates, hydrogen bonds between bases are broken, but phosphodiester bonds in the backbone remain intact on each original strand."
+  answer: true
+  explain: "Replication unzips base pairs (hydrogen bonds), leaving each original backbone intact as a template for new strand synthesis."
+
+# FP10: Double helix and contributions of Rosalind Franklin vs Watson and Crick
+- type: MultiChoice
+  text: "What did Rosalind Franklin’s famous X-ray diffraction image reveal about DNA?"
+  choices:
+    A: "DNA is a single-stranded molecule"
+    B: "DNA is a triple helix of sugars"
+    C: "DNA has a helical, repeating structure"
+    D: "DNA is made only of proteins"
+  answer: C
+  explain: "The X-ray pattern indicated a helical, regular structure, providing key evidence for the double-helix model."
+- type: ShortAnswer
+  text: "How did Watson and Crick use Franklin’s data and Chargaff’s rule to build their DNA model?"
+  answer: "They combined helical dimensions from Franklin’s X-ray data with Chargaff’s base-ratio rules to propose a double helix with specific base pairing (A–T and G–C)."
+  explain: "Their model explained both the diffraction pattern and base ratios by arranging two antiparallel strands with complementary base pairing."
+- type: TrueFalse
+  text: "Watson and Crick worked in isolation and did not rely on any other scientists’ data to create their DNA model."
   answer: false
-  explain: "Typically only two of the four chromatids participate in a single crossover."
+  explain: "They drew heavily on data from Franklin and others, plus Chargaff’s findings, to rapidly assemble a consistent model."
 
-# FP8: Linkage impact on offspring ratios
+# FP11: Gel electrophoresis and applications (COVID PCR, paternity testing)
 - type: MultiChoice
-  text: "How does linkage affect dihybrid testcross offspring ratios?"
+  text: "What does gel electrophoresis do when used on DNA samples?"
   choices:
-    A: "Increases recombinant classes relative to parentals"
-    B: "Equalizes all classes at 1:1:1:1"
-    C: "Enriches parental classes and reduces recombinants"
-    D: "Eliminates parental classes"
-  answer: C
-  explain: "Linked genes travel together more often, reducing recombinant frequency."
-- type: ShortAnswer
-  text: "BONUS: If recombination frequency is 20%, what percentage of testcross progeny are recombinants?"
-  answer: "20% total recombinants (≈10% in each recombinant class), ≈80% parentals."
-  explain: "RF equals recombinant proportion in testcross progeny."
-
-# FP9: Concept of a genetic linkage map
-- type: MultiChoice
-  text: "What does 1 map unit (1 cM) represent on a linkage map?"
-  choices:
-    A: "1% DNA sequence identity"
-    B: "1% recombination frequency between two loci"
-    C: "1 megabase of physical distance"
-    D: "1% mutation rate"
+    A: "Copies DNA many times"
+    B: "Separates DNA fragments based on size"
+    C: "Sequencess DNA base by base"
+    D: "Destroys DNA so it cannot be analyzed"
   answer: B
-  explain: "1 cM ≈ 1% recombinant gametes (in large samples)."
+  explain: "An electric field pulls DNA fragments through a gel matrix; smaller fragments travel farther than larger ones, separating them by size."
 - type: ShortAnswer
-  text: "BONUS: How is gene order inferred using mapping crosses?"
-  answer: "By comparing single- and double-crossover classes to deduce order and distances."
-  explain: "Double crossovers identify the middle gene."
-
-# FP10: When genes recombine less vs more
-- type: MultiSelect
-  text: "Select the conditions that DECREASE recombination between two genes."
-  choices:
-    A: "Genes very close together"
-    B: "Proximity to centromeres/heterochromatin"
-    C: "Genes far apart on the same chromosome"
-    D: "Genes on different chromosomes"
-  answer: [A, B]
-  explain: "Close spacing and certain chromosomal regions suppress crossovers."
-- type: TrueFalse
-  text: "BONUS: Genes more than ~50 cM apart behave as unlinked (max 50% recombination)."
-  answer: true
-  explain: "Recombination frequency cannot exceed ~50% and then mimics independent assortment."
-
-# FP11: Why Mendel avoided linkage issues
-- type: MultiChoice
-  text: "Why did Mendel not encounter linkage complications in his results?"
-  choices:
-    A: "Peas do not undergo meiosis"
-    B: "He chose traits on different chromosomes or far apart"
-    C: "He used too few plants to detect linkage"
-    D: "Linkage does not exist in plants"
-  answer: B
-  explain: "His trait choices behaved as independently assorting."
-- type: ShortAnswer
-  text: "BONUS: Name one experimental design feature that helped Mendel observe clear ratios."
-  answer: "Use of true-breeding lines and large sample sizes."
-  explain: "These reduce noise and reveal expected patterns."
-
-# FP12: Outcomes of meiotic errors
-- type: MultiChoice
-  text: "Which are the two broad outcomes of meiotic errors?"
-  choices:
-    A: "Point mutation and frameshift"
-    B: "Aneuploidy and polyploidy"
-    C: "Transcription errors and translation errors"
-    D: "Silent mutation and missense"
-  answer: B
-  explain: "Failed segregation can alter chromosome number at the level of single chromosomes or whole sets."
-- type: ShortAnswer
-  text: "BONUS: Define aneuploidy vs polyploidy."
-  answer: "Aneuploidy = abnormal number of specific chromosomes; Polyploidy = extra full sets of chromosomes."
-  explain: "Number changes differ in scope."
-
-# FP13: Karyotype
-- type: MultiChoice
-  text: "A karyotype is best defined as:"
-  choices:
-    A: "A list of all genes in a genome"
-    B: "An image/arrangement of condensed chromosomes by size/shape/banding"
-    C: "A map of recombination frequencies"
-    D: "A sequencing readout"
-  answer: B
-  explain: "Karyotypes visualize chromosome complements and detect aneuploidies."
-- type: ShortAnswer
-  text: "BONUS: Cells are commonly arrested at which stage to prepare a karyotype?"
-  answer: "Metaphase"
-  explain: "Chromosomes are maximally condensed and visible."
-
-# FP14: Autosomes vs sex chromosomes
-- type: MultiChoice
-  text: "Which statement is correct about autosomes and sex chromosomes in humans?"
-  choices:
-    A: "There are 23 pairs of autosomes"
-    B: "There are 22 pairs of autosomes and 1 pair of sex chromosomes"
-    C: "There are 21 pairs of autosomes and 2 pairs of sex chromosomes"
-    D: "Sex chromosomes are autosomes with extra genes"
-  answer: B
-  explain: "Humans: 46 total chromosomes = 22 autosomal pairs + 1 sex-chromosome pair."
-- type: TrueFalse
-  text: "BONUS: In humans, XX is typically female and XY typically male."
-  answer: true
-  explain: "Sex is usually determined by the presence of Y (in humans)."
-
-# FP15: Naming parts of chromosome structure
+  text: "How could gel electrophoresis be used together with PCR to test for a viral infection like COVID-19?"
+  answer: "PCR amplifies a specific viral DNA fragment (or cDNA), and gel electrophoresis reveals whether a band of the expected size appears; a band indicates that viral genetic material was present in the sample."
+  explain: "The presence or absence of a specific-size band after PCR gives a visual yes/no answer about viral sequence presence."
 - type: Matching
-  text: "Match each structural term to its description."
+  text: "In a paternity test using gel electrophoresis, how are a child’s DNA bands compared to potential parents?"
   pairs:
-    "1": "Centromere"
-    "2": "Telomere"
-    "3": "p arm"
-    "4": "q arm"
+    "1": "Bands that match the child but not one tested parent"
+    "2": "Bands present in the child and both tested parents"
   options:
-    A: "Region where kinetochores form; sister chromatids attach"
-    B: "Protective chromosome end sequences"
-    C: "Short arm of a chromosome"
-    D: "Long arm of a chromosome"
-  answer: {"1":"A","2":"B","3":"C","4":"D"}
-  explain: "Standard cytogenetic nomenclature."
-- type: ShortAnswer
-  text: "BONUS: What does the cytogenetic symbol “7q31” indicate?"
-  answer: "Chromosome 7, long arm (q), region 3, band 1."
-  explain: "q denotes the long arm; numbers specify region/band."
+    A: "Help identify the other biological parent"
+    B: "Show shared human DNA regions but do not distinguish parentage alone"
+  answer: {"1":"A","2":"B"}
+  explain: "Each band in the child must come from one parent or the other; unmatched bands suggest which adult is (or is not) a biological parent."
 
-# FP16: Nondisjunction
+# FP12: Sanger sequencing basics
 - type: MultiChoice
-  text: "Nondisjunction is defined as:"
+  text: "Which key feature makes Sanger DNA sequencing possible?"
   choices:
-    A: "Crossing over between non-homologs"
-    B: "Failure of homologs or sister chromatids to separate during meiosis"
-    C: "Random fertilization of gametes"
-    D: "DNA replication without division"
+    A: "Use of heat to break all phosphodiester bonds"
+    B: "Use of chain-terminating nucleotides that stop DNA synthesis at specific bases"
+    C: "Use of only one type of nucleotide"
+    D: "Use of RNA polymerase instead of DNA polymerase"
   answer: B
-  explain: "This segregation failure produces aneuploid gametes."
+  explain: "Sanger sequencing incorporates modified nucleotides that stop elongation; the resulting fragments can be separated and read to determine sequence."
+- type: TrueFalse
+  text: "In Sanger sequencing, a laser can be used to read differently colored labels on terminated fragments, revealing the base at each position."
+  answer: true
+  explain: "Each type of chain-terminating nucleotide is fluorescently labeled, so fragment color at each length tells which base was added last."
 - type: ShortAnswer
-  text: "BONUS: Name a human condition resulting from trisomy caused by nondisjunction."
-  answer: "Trisomy 21 (Down syndrome) (others: trisomy 18, trisomy 13)."
-  explain: "Common viable aneuploidies include 21, 18, 13 and sex-chromosome variants."
+  text: "Why is gel or capillary electrophoresis still important in Sanger sequencing, even when fluorescent labels are used?"
+  answer: "Electrophoresis separates DNA fragments by length so that each position in the sequence can be read in order from smallest to largest fragment."
+  explain: "Without size separation, the mixture of fragments would overlap and you could not tell which base corresponds to each position."
 
-# FP17: Terms for abnormal chromosome numbers
+# FP13: DNA packaging in prokaryotes vs eukaryotes, euchromatin vs heterochromatin
+- type: MultiChoice
+  text: "How is bacterial DNA primarily packaged compared with eukaryotic DNA?"
+  choices:
+    A: "Bacteria use multiple linear chromosomes; eukaryotes use a single circular chromosome"
+    B: "Bacteria supercoil a single circular chromosome; eukaryotes wrap multiple linear chromosomes around histone proteins"
+    C: "Both bacteria and eukaryotes use nucleosomes and histones"
+    D: "Bacteria and eukaryotes leave DNA fully extended without packaging"
+  answer: B
+  explain: "Bacteria compact their single circular chromosome by supercoiling, while eukaryotes organize DNA into nucleosomes and higher-order chromatin."
 - type: Matching
-  text: "Match term to definition."
+  text: "Match each eukaryotic DNA state with its description."
   pairs:
-    "1": "Monosomy"
-    "2": "Trisomy"
-    "3": "Aneuploidy"
-    "4": "Polyploidy"
+    "1": "Euchromatin"
+    "2": "Heterochromatin"
   options:
-    A: "Missing one chromosome (2n−1)"
-    B: "One extra chromosome (2n+1)"
-    C: "Any abnormal number of specific chromosomes"
-    D: "Extra complete sets of chromosomes (e.g., 3n, 4n)"
-  answer: {"1":"A","2":"B","3":"C","4":"D"}
-  explain: "These terms distinguish single-chromosome vs whole-set changes."
-- type: TrueFalse
-  text: "BONUS: Triploidy (3n) is an example of polyploidy, not aneuploidy."
-  answer: true
-  explain: "Aneuploidy affects specific chromosomes; polyploidy affects entire sets."
-
-# FP18: Polyploidy and usefulness
-- type: MultiChoice
-  text: "Polyploidy is especially common and useful in which group?"
-  choices:
-    A: "Mammals"
-    B: "Birds"
-    C: "Flowering plants"
-    D: "Insects"
-  answer: C
-  explain: "Polyploid plants may show larger cells, fruits, and rapid speciation."
+    A: "Open, less condensed DNA that is generally accessible and expressed"
+    B: "Tightly wound DNA that is less accessible and usually not expressed"
+  answer: {"1":"A","2":"B"}
+  explain: "Euchromatin corresponds to active, open regions; heterochromatin is compacted and typically transcriptionally silent."
 - type: ShortAnswer
-  text: "BONUS: Give one agricultural advantage of triploid crop varieties."
-  answer: "Seedlessness (e.g., seedless watermelon/bananas) or larger organ size."
-  explain: "Odd ploidy can disrupt meiosis and seed formation."
+  text: "Why is complex DNA packaging necessary in human cells, and what is one consequence for gene expression?"
+  answer: "Human cells must fit about 2 meters of DNA into a tiny nucleus, so extensive packaging is needed; tightly packed regions (heterochromatin) are generally not expressed, while more open regions (euchromatin) can be transcribed."
+  explain: "Packaging solves the space problem but also regulates which genes are accessible for transcription."
 
-# FP19: Types of chromosomal inversions
+# FP14: DNA replication models and Meselson–Stahl experiment
 - type: MultiChoice
-  text: "Which inversion includes the centromere?"
+  text: "Which model of DNA replication was supported by Meselson and Stahl’s experiment using heavy and light nitrogen?"
   choices:
-    A: "Paracentric"
-    B: "Pericentric"
-    C: "Reciprocal"
-    D: "Robertsonian"
+    A: "Conservative"
+    B: "Semiconservative"
+    C: "Dispersive"
+    D: "Random"
   answer: B
-  explain: "Pericentric spans the centromere; paracentric does not."
-- type: TrueFalse
-  text: "BONUS: A paracentric inversion does not involve the centromere."
-  answer: true
-  explain: "Only pericentric inversions span the centromere."
-
-# FP20: Segment moving to another chromosome
-- type: MultiChoice
-  text: "Transfer of a chromosome segment to a non-homologous chromosome is called:"
-  choices:
-    A: "Inversion"
-    B: "Duplication"
-    C: "Translocation"
-    D: "Deletion"
-  answer: C
-  explain: "Segments moved between non-homologs define translocations."
+  explain: "After one and two rounds of replication, the density patterns matched predictions for semiconservative replication, where each new DNA molecule has one old and one new strand."
 - type: ShortAnswer
-  text: "BONUS: What is the term for a mutual exchange of segments between non-homologous chromosomes?"
-  answer: "Reciprocal translocation."
-  explain: "Robertsonian translocations involve fusion at centromeres; reciprocal are exchanges."
-- type: MultiSelect
-  text: "What are the two mechanisms in meiosis that create genetic variability through new combinations of alleles?"
-  choices:
-    A: "Independent assortment of homologous chromosomes (metaphase I orientation)"
-    B: "Crossing over (homologous recombination) during prophase I"
-    C: "Random fertilization"
-    D: "DNA replication errors"
-  answer: [A, B]
-  explain: "Independent assortment shuffles chromosome sets; crossing over exchanges segments between homologs."
+  text: "What did Meselson and Stahl label with heavy nitrogen (¹⁵N) in E. coli, and how did ultracentrifugation help them interpret replication models?"
+  answer: "They labeled DNA with heavy nitrogen; ultracentrifugation separated heavy and light DNA, allowing them to see intermediate and light bands that distinguished semiconservative replication from other models."
+  explain: "By tracking density shifts over generations, they showed that old strands are split between daughter molecules, not kept together or completely mixed."
+- type: TrueFalse
+  text: "In semiconservative replication, each daughter DNA molecule contains two newly synthesized strands."
+  answer: false
+  explain: "Each daughter molecule contains one original (parent) strand and one newly synthesized strand, which is why it is called semiconservative."
 
+# FP15: DNA replication problems and 'enzyme for every problem'
 - type: MultiChoice
-  text: "The plant alternation of generations is different from animal life cycles in that it has ____________."
+  text: "Which list correctly pairs a replication problem with the enzyme that helps solve it?"
   choices:
-    A: "a multicellular haploid stage"
-    B: "haploid gametes"
-    C: "diploid gametes"
-    D: "a multicellular diploid stage"
+    A: "Unwinding the helix — ligase; starting synthesis — DNA polymerase III"
+    B: "Unwinding the helix — helicase; starting synthesis — primase"
+    C: "Proofreading — helicase; sealing gaps — primase"
+    D: "Removing primers — DNA polymerase III; sealing gaps — primase"
+  answer: B
+  explain: "Helicase unwinds DNA; primase makes short RNA primers with free 3' –OH ends so DNA polymerase can start."
+- type: Matching
+  text: "Match each replication problem from the lecture list to the enzyme that primarily addresses it."
+  pairs:
+    "1": "Need to unzip the double helix"
+    "2": "Need a 3' OH to start DNA synthesis"
+    "3": "Need to seal gaps in the sugar-phosphate backbone"
+  options:
+    A: "Helicase"
+    B: "Primase"
+    C: "DNA ligase"
+  answer: {"1":"A","2":"B","3":"C"}
+  explain: "Helicase unwinds, primase provides primers, and ligase seals nicks where backbone gaps remain."
+- type: ShortAnswer
+  text: "Why can we say there is 'an enzyme to solve every problem' in DNA replication? Give one example."
+  answer: "DNA replication raises specific challenges (unwinding, starting synthesis, accuracy, sealing gaps), and cells have specialized enzymes—like helicase, primase, DNA polymerases, and ligase—that each tackle a different problem."
+  explain: "Replication is a coordinated team effort where different enzymes handle different steps to copy DNA accurately and efficiently."
+
+# FP16: DNA polymerase, directionality, and leading vs lagging strands
+- type: MultiChoice
+  text: "Why do cells need both a leading and a lagging strand during DNA replication?"
+  choices:
+    A: "Because DNA polymerase can only synthesize 3' → 5'"
+    B: "Because the two template strands run antiparallel but DNA polymerase can only synthesize 5' → 3'"
+    C: "Because helicase works only on one strand"
+    D: "Because one strand has more adenine than the other"
+  answer: B
+  explain: "The antiparallel nature of DNA and the 5' → 3' requirement force one strand to be made continuously (leading) and the other in fragments (lagging)."
+- type: TrueFalse
+  text: "DNA polymerase joins the 5' phosphate of a new nucleotide to the 3' OH of the growing strand, forming a phosphodiester bond."
+  answer: true
+  explain: "This chemistry defines the 5' → 3' direction of synthesis and explains why a free 3' –OH is needed."
+- type: ShortAnswer
+  text: "What are Okazaki fragments, and on which strand do they form?"
+  answer: "They are short DNA fragments synthesized discontinuously on the lagging strand."
+  explain: "Because the lagging strand runs the 'wrong' direction relative to fork movement, it must be synthesized in short pieces later joined by ligase."
+
+# FP17: Proofreading, accuracy, and DNA repair enzymes
+- type: MultiChoice
+  text: "What is one reason actual mutation rates are much lower than the raw error rate of DNA polymerase III?"
+  choices:
+    A: "Replication happens only once per lifetime"
+    B: "Cells avoid using DNA polymerase entirely"
+    C: "DNA polymerases and repair enzymes proofread and correct many errors"
+    D: "Mismatched bases are not stable in DNA"
+  answer: C
+  explain: "DNA polymerase I and other repair systems scan for mismatches and damage, removing and replacing incorrect bases."
+- type: ShortAnswer
+  text: "How does DNA polymerase I help both with primer removal and error correction on the lagging strand?"
+  answer: "It has exonuclease activity to remove RNA primers and mismatched bases, then fills the gaps with correct DNA nucleotides."
+  explain: "Pol I cuts out primers (and errors) and replaces them with DNA, linking replication and repair."
+- type: TrueFalse
+  text: "Even with proofreading and repair, DNA replication is still imperfect and some mutations slip through."
+  answer: true
+  explain: "Error correction greatly reduces but does not completely eliminate mistakes, leaving a small but important mutation rate."
+
+# FP18: Prokaryotic replication origin and fork dynamics
+- type: MultiChoice
+  text: "Where does DNA replication start on a bacterial chromosome?"
+  choices:
+    A: "At random positions each time"
+    B: "At the origin of replication (oriC)"
+    C: "At every promoter"
+    D: "Only at the chromosome ends"
+  answer: B
+  explain: "Replication begins at a specific sequence, oriC, and proceeds bidirectionally around the circular chromosome."
+- type: Matching
+  text: "Match each replication structure or term with its description in a bacterial cell."
+  pairs:
+    "1": "Origin of replication"
+    "2": "Replication fork"
+  options:
+    A: "Y-shaped region where helicase, polymerases, and other enzymes are actively copying DNA"
+    B: "Specific DNA sequence where replication begins"
+  answer: {"1":"B","2":"A"}
+  explain: "The origin is the starting point; the replication fork is the moving machine that does the copying."
+- type: ShortAnswer
+  text: "Why must bacterial cells replicate their DNA before dividing?"
+  answer: "So that each daughter cell receives a complete copy of the genome."
+  explain: "Division without prior replication would leave some daughter cells missing essential genetic information."
+
+# FP19: Eukaryotic replication challenges and multiple origins
+- type: MultiChoice
+  text: "Why do eukaryotic chromosomes have many origins of replication instead of just one like bacteria?"
+  choices:
+    A: "Eukaryotes do not use helicase"
+    B: "Their genomes are much larger, so multiple origins allow faster replication"
+    C: "Their chromosomes are circular"
+    D: "They lack DNA polymerase"
+  answer: B
+  explain: "Multiple origins let replication begin at many sites at once, shortening the time needed to copy long linear chromosomes."
+- type: TrueFalse
+  text: "Replication mechanisms in eukaryotes and prokaryotes share core principles but differ in details such as origin number and chromosome structure."
+  answer: true
+  explain: "Both follow 5' → 3' synthesis, semiconservative replication, and use similar enzymes, but eukaryotes have multiple origins and linear chromosomes."
+- type: ShortAnswer
+  text: "Name one way eukaryotic DNA replication is similar to prokaryotic replication and one key difference."
+  answer: "Similar: both use semiconservative replication with helicase, primase, and DNA polymerases; different: eukaryotes have multiple origins and linear chromosomes with telomeres, whereas bacteria usually have one circular chromosome with a single origin."
+  explain: "Core chemistry is conserved, but genome size and chromosome shape force eukaryotes to use additional strategies."
+
+# FP20: End-replication problem, telomeres, and loss of repeats
+- type: MultiChoice
+  text: "What problem arises when replicating the very ends of linear eukaryotic chromosomes?"
+  choices:
+    A: "They are over-replicated and become longer each cycle"
+    B: "The RNA primers at the ends cannot be replaced with DNA, so a little bit of sequence is lost each division"
+    C: "The ends contain no DNA at all"
+    D: "Only bacterial chromosomes have this issue"
+  answer: B
+  explain: "When primers are removed from the extreme 5' ends, polymerase cannot fill the gap, causing gradual shortening of chromosome ends."
+- type: ShortAnswer
+  text: "What are telomeres, and what type of sequence do they contain?"
+  answer: "Telomeres are repetitive DNA caps at the ends of linear chromosomes (in humans, repeated TTAGGG sequences) that protect coding DNA from being lost."
+  explain: "They act as disposable buffers so that essential genes are not truncated as chromosomes shorten with each division."
+- type: TrueFalse
+  text: "If eukaryotic chromosomes had no telomeres, important genes at the ends of chromosomes could be lost as cells divide."
+  answer: true
+  explain: "Without protective repeats, shortening would directly damage coding or regulatory sequences, threatening cell survival."
+
+# FP21: Telomerase, germ line cells, and cancer
+- type: MultiChoice
+  text: "What is the main function of telomerase in cells that express it?"
+  choices:
+    A: "To remove telomeres entirely"
+    B: "To add repetitive sequences to telomeres and counteract shortening"
+    C: "To cut chromosomes into smaller pieces"
+    D: "To repair phosphodiester bonds in the middle of genes"
+  answer: B
+  explain: "Telomerase extends telomeric repeats, helping maintain chromosome length in cells that must divide many times."
+- type: TrueFalse
+  text: "Germ line cells normally have active telomerase, and many cancer cells re-activate telomerase to help them divide indefinitely."
+  answer: true
+  explain: "Germ cells need long-term replicative capacity; cancers often hijack telomerase to avoid telomere-driven limits on division."
+- type: ShortAnswer
+  text: "Why might drugs that inhibit telomerase be considered as potential cancer treatments?"
+  answer: "Because blocking telomerase in cancer cells could allow their telomeres to shorten, eventually limiting their ability to keep dividing."
+  explain: "Targeting telomerase could selectively reduce the 'immortality' of tumor cells that depend on telomere maintenance."
+
+# FP22: Mutation and DNA repair (intro)
+- type: MultiChoice
+  text: "Which best defines a mutation as introduced in the DNA repair lecture slide?"
+  choices:
+    A: "Any temporary change in protein shape"
+    B: "A change in the DNA sequence"
+    C: "A change in RNA that is not copied"
+    D: "A reversible change in chromatin packing"
+  answer: B
+  explain: "A mutation is a change in the nucleotide sequence of DNA, which can be passed on when DNA is replicated."
+- type: ShortAnswer
+  text: "Why are DNA repair mechanisms important for cells and organisms?"
+  answer: "They detect and correct some DNA damage and mistakes, lowering mutation rates and helping prevent diseases and cell malfunction."
+  explain: "Without repair, errors would accumulate faster, increasing the risk of harmful mutations and genomic instability."
+- type: TrueFalse
+  text: "DNA repair systems can correct every mutation, so mutations never contribute to evolution."
+  answer: false
+  explain: "Repair reduces but does not eliminate mutations; remaining changes provide genetic variation on which evolution can act."
+# ===============================
+# BIOL 201 — Chapter 15 & 14.6 (Lecture Slides)
+# Genes, Proteins, and DNA Repair
+# Each focal point has 3 ExamSim questions of different types.
+# ===============================
+
+# FP1: Central dogma and gene expression overview
+- type: MultiChoice
+  text: "What does the central dogma of molecular biology describe?"
+  choices:
+    A: "How proteins are converted back into DNA"
+    B: "The flow of genetic information from DNA to RNA to protein"
+    C: "The movement of proteins between organelles"
+    D: "The inheritance of traits across generations"
+  answer: B
+  explain: "The central dogma states that information flows from DNA → RNA → Protein through transcription and translation, explaining how genes are expressed."
+- type: ShortAnswer
+  text: "Define gene expression in simple terms."
+  answer: "Gene expression is the process of using the information in a gene to make a specific functional product, usually a protein."
+  explain: "In this chapter, gene expression means going from a DNA sequence to an RNA transcript and then to a protein with a specific amino acid sequence."
+- type: TrueFalse
+  text: "In eukaryotes, transcription occurs in the nucleus and translation occurs in the cytoplasm."
+  answer: true
+  explain: "The slides emphasize that eukaryotic transcription happens in the nucleus, while translation occurs in the cytoplasm, separating the two processes in space and time."
+
+# FP2: Differences between eukaryotic and prokaryotic gene expression
+- type: MultiChoice
+  text: "Which statement best describes a key difference between eukaryotic and prokaryotic gene expression?"
+  choices:
+    A: "Only prokaryotes use RNA polymerase for transcription."
+    B: "In prokaryotes, transcription and translation can occur at the same time; in eukaryotes, they are separated."
+    C: "Only eukaryotes have ribosomes."
+    D: "Prokaryotes process their mRNA with introns and exons."
+  answer: B
+  explain: "In bacteria, ribosomes can translate mRNA while it is still being transcribed. Eukaryotes separate transcription in the nucleus from translation in the cytoplasm and also process their mRNA."
+- type: TrueFalse
+  text: "Eukaryotic gene expression is generally more complex than prokaryotic gene expression because of additional processing and regulation steps."
+  answer: true
+  explain: "The slides highlight extra eukaryotic steps like RNA processing, multiple RNA polymerases, and transcription factors that make gene expression more complex."
+- type: ShortAnswer
+  text: "Name one extra step that eukaryotes perform on mRNA that prokaryotes usually do not."
+  answer: "Eukaryotes add a 5' cap and a 3' poly-A tail and splice out introns during RNA processing."
+  explain: "Prokaryotic mRNAs often lack these extensive processing steps, while eukaryotic pre-mRNAs are capped, polyadenylated, and spliced before translation."
+
+# FP3: Prokaryotic transcription basics and RNA vs DNA
+- type: MultiChoice
+  text: "Which enzyme is directly responsible for making an RNA copy from a DNA template in bacteria?"
+  choices:
+    A: "DNA polymerase"
+    B: "RNA polymerase"
+    C: "Ribosome"
+    D: "Ligase"
+  answer: B
+  explain: "RNA polymerase transcribes DNA into RNA in both prokaryotes and eukaryotes."
+- type: ShortAnswer
+  text: "List two differences between RNA and DNA mentioned in the lecture."
+  answer: "RNA uses the sugar ribose and the base uracil (U); DNA uses deoxyribose and thymine (T). RNA is also single-stranded whereas DNA is double-stranded."
+  explain: "The slides emphasize that RNA replaces T with U, has ribose, and is usually single-stranded, whereas DNA has deoxyribose and T and forms a double helix."
+- type: TrueFalse
+  text: "In prokaryotic transcription, RNA polymerase copies information from the coding strand of DNA."
+  answer: false
+  explain: "RNA polymerase reads the template strand to build RNA; the coding strand has the same sequence as the RNA (except T for U) but is not directly used in transcription."
+
+# FP4: Template vs coding strand and transcription rules
+- type: MultiChoice
+  text: "Which statement correctly describes the template and coding strands during transcription?"
+  choices:
+    A: "The coding strand is read to build RNA; the template strand does nothing."
+    B: "Both strands are transcribed at the same time into one RNA."
+    C: "The template strand is read by RNA polymerase; the coding strand matches the RNA sequence but is not used."
+    D: "Neither strand is used directly; RNA is random."
+  answer: C
+  explain: "The lecture notes that the template strand is used to build RNA, while the coding strand has the same sequence as the mRNA (with T instead of U) but does not actively participate."
+- type: TrueFalse
+  text: "RNA is synthesized in the 5' → 3' direction using complementary base pairing (A–U and C–G)."
+  answer: true
+  explain: "The 'Base Pairings and Rules are the Same' slide emphasizes 5' → 3' synthesis and complementary pairing: A with U and C with G."
+- type: ShortAnswer
+  text: "During transcription, which DNA strand provides the information for the RNA sequence, and what is the main base-pairing difference compared with DNA replication?"
+  answer: "The template strand provides the information. In transcription A pairs with U in RNA instead of T, while C still pairs with G."
+  explain: "Transcription uses one DNA strand as the template and uses U instead of T in the RNA product."
+
+# FP5: Bacterial operons and polycistronic mRNA
+- type: MultiChoice
+  text: "What is a bacterial operon as described in the lecture?"
+  choices:
+    A: "A single gene that makes only one protein"
+    B: "A cluster of genes transcribed together into one mRNA that encodes several proteins"
+    C: "A DNA repair sequence that fixes mutations"
+    D: "An enzyme that cuts mRNA"
+  answer: B
+  explain: "The 'Bacterial Operons' slide explains that some bacterial mRNAs are polycistronic, containing information for several proteins from one transcript."
+- type: ShortAnswer
+  text: "Why is the operon arrangement efficient for bacteria?"
+  answer: "It allows several proteins in the same pathway to be transcribed together under a single promoter, so they can all be turned on or off at once."
+  explain: "Grouping related genes in an operon lets bacteria coordinate expression and save energy by making proteins only when they are needed together."
+- type: TrueFalse
+  text: "In a polycistronic operon, multiple bacterial proteins can be produced from a single mRNA molecule."
+  answer: true
+  explain: "The lecture notes that a single bacterial mRNA can encode several proteins when genes are arranged in an operon."
+
+# FP6: Sigma factor, promoters, and prokaryotic gene regulation
+- type: MultiChoice
+  text: "What is the function of the sigma factor in bacterial transcription?"
+  choices:
+    A: "It catalyzes peptide bond formation."
+    B: "It adds a poly-A tail to mRNA."
+    C: "It helps RNA polymerase recognize and bind specific promoter sequences."
+    D: "It splices introns out of RNA."
+  answer: C
+  explain: "The slides describe sigma as a transcription factor that guides RNA polymerase to -35 and -10 promoter elements, helping initiate transcription."
+- type: ShortAnswer
+  text: "How do different sigma factors contribute to gene regulation in bacteria?"
+  answer: "Different sigma factors recognize different promoter sequences and are produced under different conditions, so they turn different sets of genes on when needed."
+  explain: "By switching sigma factors, bacteria can change which promoters are efficiently recognized, controlling when specific genes are transcribed."
+- type: TrueFalse
+  text: "Sigma factor remains bound to RNA polymerase for the entire length of transcription until the gene is finished."
+  answer: false
+  explain: "Sigma helps RNA polymerase bind the promoter and start transcription, but it falls off after initiation as elongation continues."
+
+# FP7: Prokaryotic transcription steps (initiation, elongation, termination)
+- type: MultiChoice
+  text: "During which step of transcription does RNA polymerase first bind tightly to the promoter and begin unwinding the DNA?"
+  choices:
+    A: "Initiation"
+    B: "Elongation"
+    C: "Termination"
+    D: "Translation"
   answer: A
-  explain: "Plants alternate between multicellular haploid (gametophyte) and multicellular diploid (sporophyte) stages."
+  explain: "The 'Transcription Steps' slide defines initiation as sigma plus RNA polymerase finding the promoter, binding, and opening the transcription bubble."
+- type: ShortAnswer
+  text: "Briefly describe what happens during elongation in prokaryotic transcription."
+  answer: "RNA polymerase moves along the template strand, adding ribonucleotides that base pair with the DNA (A–U and C–G), extending the RNA transcript."
+  explain: "Once initiation is complete and sigma has fallen off, RNA polymerase continues synthesizing RNA in the elongation phase."
+- type: TrueFalse
+  text: "Transcription termination occurs when RNA polymerase reaches a pause or stop site and falls off the DNA, releasing the RNA transcript."
+  answer: true
+  explain: "The slides state that termination happens at a pause site, causing RNA polymerase to dissociate and end transcription."
 
+# FP8: Multiple RNA polymerases in eukaryotes
 - type: MultiChoice
-  text: "A meiotic division results in ____________."
+  text: "Which RNA polymerase transcribes most protein-coding genes in eukaryotic cells?"
   choices:
-    A: "four haploid cells"
-    B: "two diploid cells"
-    C: "two haploid cells"
-    D: "four diploid cells"
-  answer: A
-  explain: "Meiosis I and II produce four genetically distinct haploid cells."
+    A: "RNA polymerase I"
+    B: "RNA polymerase II"
+    C: "RNA polymerase III"
+    D: "DNA polymerase III"
+  answer: B
+  explain: "The 'Multiple RNA Polymerases' slide explains that RNA polymerase II transcribes protein-coding genes in eukaryotes."
+- type: Matching
+  text: "Match each eukaryotic RNA polymerase with the main type of gene it transcribes."
+  pairs:
+    "1": "RNA polymerase I"
+    "2": "RNA polymerase II"
+    "3": "RNA polymerase III"
+  options:
+    A: "rRNA genes"
+    B: "Protein-coding genes"
+    C: "rRNA, tRNA, and small nuclear RNA genes"
+  answer: {"1":"A","2":"B","3":"C"}
+  explain: "Pol I makes rRNA, Pol II makes mRNA from protein-coding genes, and Pol III makes tRNA, some rRNAs, and small nuclear RNAs."
+- type: TrueFalse
+  text: "Eukaryotic cells use only one type of RNA polymerase for all transcription events."
+  answer: false
+  explain: "Unlike bacteria, eukaryotes have three major RNA polymerases with distinct roles."
 
+# FP9: Eukaryotic promoters and transcription factors
 - type: MultiChoice
-  text: "Different versions of the same gene are known as __________."
+  text: "In eukaryotes, what are transcription factors?"
   choices:
-    A: "alleles"
-    B: "karyotypes"
-    C: "kinetochores"
-    D: "allosteric"
+    A: "Enzymes that splice introns out of RNA"
+    B: "DNA-binding proteins that help regulate when and where RNA polymerase transcribes genes"
+    C: "Small RNAs that destroy mRNA"
+    D: "Proteins that shorten telomeres"
+  answer: B
+  explain: "The slides emphasize that transcription factors are DNA-binding proteins that guide or block RNA polymerase, acting as on/off switches for gene expression."
+- type: ShortAnswer
+  text: "Why are eukaryotic promoters described as 'more complex' than prokaryotic promoters?"
+  answer: "They contain multiple regulatory sequences and require many different transcription factors rather than a single sigma factor."
+  explain: "Eukaryotic promoters integrate signals from many transcription factors, making regulation more intricate than in bacteria."
+- type: TrueFalse
+  text: "Mutations in transcription factor genes can affect many downstream target genes at once."
+  answer: true
+  explain: "The slides mention Hox and MADS-box transcription factors, where changes in a single transcription factor can alter expression of many genes."
+
+# FP10: Introns, exons, and pre-mRNA
+- type: MultiChoice
+  text: "What are introns in eukaryotic pre-mRNA?"
+  choices:
+    A: "Coding regions that remain in mature mRNA"
+    B: "Noncoding regions that are removed during RNA processing"
+    C: "Signal peptides added to proteins"
+    D: "Ribosomal RNA segments"
+  answer: B
+  explain: "The 'Pre-mRNA Contains Introns' slide defines introns as noncoding segments that must be removed before translation."
+- type: ShortAnswer
+  text: "How do exons differ from introns in pre-mRNA?"
+  answer: "Exons are coding regions that remain in the mature mRNA and are expressed, while introns are noncoding segments that are spliced out."
+  explain: "Exons carry the actual coding information for the protein, whereas introns are intervening sequences that are removed."
+- type: TrueFalse
+  text: "Introns may still play roles in gene expression regulation even though they are removed before translation."
+  answer: true
+  explain: "The slides note that introns are noncoding but may be involved in regulating how genes are expressed."
+
+# FP11: 5' cap, poly-A tail, and mRNA stability
+- type: MultiChoice
+  text: "What is the main function of the 5' methylguanosine cap on eukaryotic mRNA?"
+  choices:
+    A: "It removes exons."
+    B: "It protects mRNA from degradation and helps with ribosome binding."
+    C: "It converts mRNA back into DNA."
+    D: "It adds introns to the transcript."
+  answer: B
+  explain: "The 'Cap and Tail' slide explains that the 5' cap protects mRNA and assists in translation initiation."
+- type: ShortAnswer
+  text: "What is the poly-A tail, and how does it affect mRNA lifespan?"
+  answer: "The poly-A tail is a long chain of adenines added to the 3' end of mRNA; it helps protect the mRNA from degradation and lets it last much longer than prokaryotic mRNA."
+  explain: "Eukaryotic mRNAs with caps and tails can last hours, while bacterial mRNAs often last only seconds, highlighting the protective role of these modifications."
+- type: TrueFalse
+  text: "Prokaryotic mRNAs generally last much longer than eukaryotic mRNAs because they have caps and tails."
+  answer: false
+  explain: "The slides state the opposite: prokaryotic mRNAs last ~5 seconds, whereas eukaryotic mRNAs can persist for hours due to capping and polyadenylation."
+
+# FP12: Splicing, spliceosome, and snRNPs
+- type: MultiChoice
+  text: "Which complex is responsible for removing introns and joining exons in eukaryotic pre-mRNA?"
+  choices:
+    A: "Ribosome"
+    B: "Spliceosome"
+    C: "Replication fork"
+    D: "Sigma factor"
+  answer: B
+  explain: "The 'Pre-mRNA Splicing' slide identifies the spliceosome as the RNA-protein complex that carries out splicing."
+- type: ShortAnswer
+  text: "What role do snRNPs play in splicing?"
+  answer: "snRNPs are small nuclear ribonucleoproteins that recognize specific sequences at intron-exon boundaries and help the spliceosome cut out introns and join exons."
+  explain: "The slides note that snRNPs recognize specific two-base sequences and are key components of the spliceosome."
+- type: TrueFalse
+  text: "Splicing is optional and does not occur in most eukaryotic genes."
+  answer: false
+  explain: "Many eukaryotic genes contain introns that must be removed by splicing to produce a functional mRNA."
+
+# FP13: Alternative splicing and protein diversity
+- type: MultiChoice
+  text: "What is alternative splicing?"
+  choices:
+    A: "Changing DNA sequence to make new genes"
+    B: "Using different combinations of exons to produce slightly different proteins from one gene"
+    C: "Adding extra introns to mRNA"
+    D: "Translating mRNA backward"
+  answer: B
+  explain: "The 'Alternative Splicing' slide explains that exons can be combined in different ways to create related but distinct proteins."
+- type: ShortAnswer
+  text: "How can alternative splicing increase protein diversity without increasing the number of genes?"
+  answer: "By selecting different sets of exons from the same pre-mRNA, cells can create multiple protein isoforms from a single gene."
+  explain: "Each exon often encodes a functional domain; mixing and matching them via alternative splicing generates diverse proteins."
+- type: TrueFalse
+  text: "In alternative splicing, exons are always used in the same combination for every mRNA made from a gene."
+  answer: false
+  explain: "By definition, alternative splicing changes which exons are included, so mRNAs from the same gene can differ in exon content."
+
+# FP14: Types of RNA and their roles in translation
+- type: MultiChoice
+  text: "Which type of RNA carries the information that will be translated into a protein?"
+  choices:
+    A: "mRNA"
+    B: "tRNA"
+    C: "rRNA"
+    D: "snRNA"
   answer: A
-  explain: "Alleles are alternate forms of a gene at the same locus."
+  explain: "The 'Types of RNA' slide states that mRNA (messenger RNA) contains the information that will be translated into protein."
+- type: Matching
+  text: "Match each RNA type to its primary role."
+  pairs:
+    "1": "tRNA"
+    "2": "rRNA"
+    "3": "Other non-coding RNAs"
+  options:
+    A: "Brings amino acids and base pairs with codons via anticodons"
+    B: "Forms part of the ribosome and helps catalyze peptide bonds"
+    C: "Involved in gene regulation and other functions"
+  answer: {"1":"A","2":"B","3":"C"}
+  explain: "tRNA carries amino acids and decodes codons, rRNA is structural/catalytic in ribosomes, and other ncRNAs have regulatory roles."
+- type: TrueFalse
+  text: "During translation, tRNA molecules base pair with mRNA codons using their anticodons."
+  answer: true
+  explain: "The lecture emphasizes that tRNAs recognize specific codons and carry amino acids to the ribosome via anticodon-codon pairing."
+
+# FP15: Genetic code, codons, start and stop signals
+- type: MultiChoice
+  text: "What is a codon?"
+  choices:
+    A: "A single base in DNA or RNA"
+    B: "A three-base sequence in mRNA that specifies an amino acid or stop signal"
+    C: "A protein that helps transcription"
+    D: "A short peptide signal sequence"
+  answer: B
+  explain: "The slides define codons as 3-base units in mRNA that encode amino acids or stop signals."
+- type: MultiChoice
+  text: "Which codon is usually the start codon for translation in eukaryotes and codes for methionine (Met)?"
+  choices:
+    A: "UAA"
+    B: "AUG"
+    C: "UGA"
+    D: "UAG"
+  answer: B
+  explain: "The lecture notes that AUG encodes methionine and typically serves as the start site, so all proteins begin with Met."
+- type: ShortAnswer
+  text: "Name one of the three stop codons that do not code for an amino acid."
+  answer: "Any one of UAA, UAG, or UGA."
+  explain: "The slides list UGA, UAA, and UAG as stop codons that cause translation termination rather than adding an amino acid."
+
+# FP16: Degeneracy of the genetic code and wobble
+- type: MultiChoice
+  text: "What does it mean that the genetic code is 'degenerate'?"
+  choices:
+    A: "Some codons do not code for any amino acid"
+    B: "More than one codon can specify the same amino acid"
+    C: "The code changes every generation"
+    D: "The code is different in every organism"
+  answer: B
+  explain: "The slides explain that multiple codons can code for the same amino acid, which is described as degeneracy of the genetic code."
+- type: ShortAnswer
+  text: "What is the 'wobble' position of a codon, and why is it important?"
+  answer: "The wobble position is the third base of a codon; it often tolerates variation without changing the amino acid, helping explain degeneracy."
+  explain: "Because the third base is less strict, several codons with different third bases can code for the same amino acid."
+- type: TrueFalse
+  text: "Because of degeneracy, every amino acid has exactly one codon that encodes it."
+  answer: false
+  explain: "Some amino acids have multiple codons, while a few have only one, so degeneracy means many-to-one mapping of codons to amino acids."
+
+# FP17: tRNA structure and function
+- type: MultiChoice
+  text: "What two key features does each tRNA molecule have?"
+  choices:
+    A: "An anticodon that pairs with an mRNA codon and an attached amino acid"
+    B: "A promoter and a terminator"
+    C: "A poly-A tail and a 5' cap"
+    D: "A sigma factor and a release factor"
+  answer: A
+  explain: "The 'Special tRNA Brings Amino Acids and Decodes Codons' slide shows each tRNA with an anticodon loop and an amino acid attached at the other end."
+- type: ShortAnswer
+  text: "How does a tRNA ensure that the correct amino acid is added in response to a particular codon?"
+  answer: "Its anticodon base pairs with the codon, and it is charged by a specific aminoacyl-tRNA synthetase that matches the correct amino acid to that tRNA."
+  explain: "tRNAs act as adaptors that translate codon information into amino acids by specific pairing and charging."
+- type: TrueFalse
+  text: "Each tRNA can recognize all 64 possible codons because of the wobble position."
+  answer: false
+  explain: "Individual tRNAs recognize only certain codons; wobble allows some flexibility, but multiple tRNAs are still needed."
+
+# FP18: Ribosome structure, subunits, and roles
+- type: MultiChoice
+  text: "What are ribosomes made of?"
+  choices:
+    A: "Only proteins"
+    B: "Only DNA"
+    C: "rRNA and proteins"
+    D: "mRNA and lipids"
+  answer: C
+  explain: "The 'Ribosomes' slide states that ribosomes are a mix of rRNA and protein and have two subunits."
+- type: ShortAnswer
+  text: "How do prokaryotic and eukaryotic ribosomal subunits differ according to the lecture?"
+  answer: "Prokaryotic ribosomes have 30S and 50S subunits, while eukaryotic ribosomes have 40S and 60S subunits."
+  explain: "These size differences (in Svedberg units) are shown on the ribosome slide."
+- type: TrueFalse
+  text: "The small ribosomal subunit binds mRNA, and the large subunit binds tRNAs and catalyzes peptide bond formation."
+  answer: true
+  explain: "The lecture describes the small subunit as binding mRNA and the large subunit as interacting with tRNAs and forming peptide bonds."
+
+# FP19: A, P, and E sites and translation steps
+- type: MultiChoice
+  text: "During translation elongation, which ribosomal site is the entry point where new charged tRNAs test for a codon match?"
+  choices:
+    A: "A site (Acceptor)"
+    B: "P site (Peptide)"
+    C: "E site (Exit)"
+    D: "R site (Release)"
+  answer: A
+  explain: "The A site is where new tRNAs enter and check if their anticodon matches the codon; the P site holds the growing chain, and the E site is for exit."
+- type: Matching
+  text: "Match each ribosomal site with its primary function."
+  pairs:
+    "1": "A site"
+    "2": "P site"
+    "3": "E site"
+  options:
+    A: "Holds tRNA with the growing peptide chain"
+    B: "Entry site where new charged tRNAs bind and test codons"
+    C: "Exit site where empty tRNAs leave the ribosome"
+  answer: {"1":"B","2":"A","3":"C"}
+  explain: "This matches the A (Acceptor), P (Peptide), and E (Exit) roles described in the elongation slide."
+- type: TrueFalse
+  text: "Translation initiation typically begins at the first AUG codon, which sets the reading frame for the rest of the protein."
+  answer: true
+  explain: "The lecture stresses scanning for the first AUG to establish the reading frame before elongation proceeds."
+
+# FP20: Reading frame and translation examples
+- type: MultiChoice
+  text: "In the example mRNA 5' ACAAUAUGAAAGCACUCUAAAUAUCA 3', where does translation start according to the lecture?"
+  choices:
+    A: "At the very first base, A"
+    B: "At the first AUG codon"
+    C: "At the last three bases"
+    D: "At any GCU codon"
+  answer: B
+  explain: "The slide shows that translation begins when the ribosome finds the first AUG, which codes for methionine."
+- type: ShortAnswer
+  text: "Using the lecture’s example, what short peptide is produced from 5' ACAAUAUGAAAGCACUCUAAAUAUCA 3' once the frame is set at AUG?"
+  answer: "Met – Lys – Ala – Leu – Stop."
+  explain: "The slide translates the sequence to Met (AUG), Lys (AAA), Ala (GCA), Leu (CUC), and then a stop codon."
+- type: TrueFalse
+  text: "The coding DNA strand is often used to read the genetic code because it matches the mRNA sequence (except T instead of U), even though the mRNA is actually made from the template strand."
+  answer: true
+  explain: "The lecture points out that the coding strand can be read like mRNA, but the mRNA is synthesized from the opposite template strand."
+
+# FP21: Translation termination and release factors
+- type: MultiChoice
+  text: "What happens when a ribosome reaches a stop codon (UAA, UAG, or UGA) during translation?"
+  choices:
+    A: "A tRNA carrying a special stop amino acid binds"
+    B: "A release factor enters the A site and triggers release of the peptide"
+    C: "The ribosome keeps going and adds random amino acids"
+    D: "The ribosome immediately disassembles without releasing the peptide"
+  answer: B
+  explain: "The 'Translation Termination' slides state that no tRNA matches stop codons; instead, a release factor binds and hydrolyzes the chain to end translation."
+- type: ShortAnswer
+  text: "After translation termination, what happens to the ribosomal subunits?"
+  answer: "They fall off the mRNA and can reassemble on another mRNA to start a new round of translation."
+  explain: "The slides note that ribosomal subunits dissociate and then reassemble to translate additional mRNAs."
+- type: TrueFalse
+  text: "There are tRNAs whose anticodons specifically recognize stop codons and add a final amino acid."
+  answer: false
+  explain: "The lecture explicitly says there is no tRNA for stop codons; instead, release factors handle termination."
+
+# FP22: Protein folding, modification, and targeting
+- type: MultiChoice
+  text: "What is the role of a signal sequence at the N-terminus of some proteins?"
+  choices:
+    A: "It stops translation prematurely."
+    B: "It causes the protein to fold incorrectly."
+    C: "It helps target the protein to the correct cellular location."
+    D: "It marks the protein for immediate degradation."
+  answer: C
+  explain: "The slides state that short signal sequences added to the front of proteins help send them to the right location in the cell."
+- type: ShortAnswer
+  text: "Why might some proteins need the help of chaperone proteins after translation?"
+  answer: "Chaperones provide a favorable environment so proteins can fold correctly and avoid misfolding or aggregation."
+  explain: "The lecture mentions chaperone proteins that assist with proper folding, which is crucial for protein function."
+- type: TrueFalse
+  text: "After translation, proteins are already fully functional and never need further modification or targeting."
+  answer: false
+  explain: "Proteins often need to fold, be chemically modified, and be sent to specific locations before becoming fully functional."
+
+# FP23: Mutation basics, genotype, and phenotype
+- type: MultiChoice
+  text: "How is a mutation defined in the DNA repair section of the lecture?"
+  choices:
+    A: "Any temporary change in protein shape"
+    B: "A change in the DNA sequence"
+    C: "A change in RNA that is not copied"
+    D: "A reversible change in chromatin packing only"
+  answer: B
+  explain: "The slides define mutation as a change in the DNA sequence, which may or may not affect phenotype."
+- type: ShortAnswer
+  text: "Explain the difference between genotype and phenotype in the context of mutations."
+  answer: "Genotype is the actual DNA sequence; phenotype is the observable traits. A mutation always changes the genotype, but it may or may not change the phenotype."
+  explain: "The lecture emphasizes that phenotype might not change, but the underlying genetic sequence (genotype) does whenever a mutation occurs."
+- type: TrueFalse
+  text: "According to the lecture, a mutation will always affect the genotype of an organism."
+  answer: true
+  explain: "The review question notes that mutations always affect genotype, even if phenotype remains unchanged."
+
+# FP24: Classes of point mutations and frameshifts
+- type: MultiChoice
+  text: "Which mutation changes a codon to a stop codon, prematurely ending translation?"
+  choices:
+    A: "Silent mutation"
+    B: "Missense mutation"
+    C: "Nonsense mutation"
+    D: "Frameshift mutation"
+  answer: C
+  explain: "The slides list nonsense mutations as those that introduce a stop codon and truncate the protein."
+- type: Matching
+  text: "Match each mutation type with its description."
+  pairs:
+    "1": "Silent mutation"
+    "2": "Missense mutation"
+    "3": "Frameshift mutation"
+  options:
+    A: "Changes one amino acid to another"
+    B: "Changes the reading frame due to insertion or deletion not in multiples of 3"
+    C: "Changes a codon but specifies the same amino acid"
+  answer: {"1":"C","2":"A","3":"B"}
+  explain: "The lecture’s mutation summary defines silent as same amino acid, missense as different amino acid, and frameshift as altered reading frame."
+- type: TrueFalse
+  text: "In a frameshift mutation, adding or removing a number of bases that is not a multiple of three will usually change every downstream codon."
+  answer: true
+  explain: "The 'Classes of Mutations: Frame Shifts' slide shows that non-multiple-of-three insertions or deletions shift the reading frame and alter many codons."
+
+# FP25: Mutation effects, fitness, and natural selection
+- type: MultiChoice
+  text: "How do mutations contribute to natural selection according to the lecture?"
+  choices:
+    A: "They always make organisms weaker and less fit."
+    B: "They create variation that may increase, decrease, or not affect fitness; selection favors variants with higher reproductive success."
+    C: "They instantly create new species in one generation."
+    D: "They only occur in response to environmental stress."
+  answer: B
+  explain: "The slides explain that mutations can be good, bad, or neutral; those that improve fitness are selected for and can shape populations over generations."
+- type: ShortAnswer
+  text: "Define fitness as used in the natural selection section."
+  answer: "Fitness is an organism’s ability to survive and reproduce in its environment."
+  explain: "The lecture links mutations, fitness, and selection, where better survival and reproduction lead to certain traits becoming more common."
+- type: TrueFalse
+  text: "Over many generations, natural selection acting on mutations can either adapt a population to its environment or lead to extinction."
+  answer: true
+  explain: "The slides note that evolution will lead to descendants with traits best suited to their environment or the lineage may go extinct."
+
+# FP26: Causes of mutations and UV-induced damage
+- type: MultiChoice
+  text: "Which of the following is NOT listed as a common cause of mutations in the lecture?"
+  choices:
+    A: "Errors in DNA replication"
+    B: "High-energy radiation such as UV, X-rays, or gamma rays"
+    C: "Chemical agents that damage DNA"
+    D: "Listening to loud music"
+  answer: D
+  explain: "The slides list replication errors, physical agents, and chemical agents as causes of mutations; loud music is not mentioned."
+- type: ShortAnswer
+  text: "How does UV light damage DNA according to the pyrimidine dimer slide?"
+  answer: "UV light causes adjacent pyrimidines (like two thymines) to form dimers, creating lesions that can lead to errors when DNA polymerase replicates the DNA."
+  explain: "These T–T dimers distort the helix and, if unrepaired, can cause incorrect base insertion, increasing mutation risk."
+- type: TrueFalse
+  text: "Reactive oxygen species, such as hydrogen peroxide (H₂O₂), are examples of chemical agents that can damage DNA."
+  answer: true
+  explain: "The mutation causes slide mentions reactive oxygen species as DNA-damaging chemical agents."
+
+# FP27: Cancer, mutation accumulation, and risk factors
+- type: MultiChoice
+  text: "How does the lecture describe the origin of most cancers?"
+  choices:
+    A: "Cancer is caused by a single mutation in one gene."
+    B: "Cancer results from the accumulation of many mutations in genes controlling the cell cycle and growth."
+    C: "Cancer is caused only by viral infection."
+    D: "Cancer is caused by too much exercise."
+  answer: B
+  explain: "The cancer slides emphasize that there is not just one mutation that causes cancer; instead, many mutations accumulate over time."
+- type: ShortAnswer
+  text: "Name two lifestyle or environmental factors mentioned that can increase the risk of cancer."
+  answer: "Examples include smoking, excessive alcohol consumption, and high or constant UV exposure."
+  explain: "The lecture lists these as activities that increase risk, even though they do not instantly cause cancer."
+- type: TrueFalse
+  text: "Age is a risk factor for cancer because the more times cells replicate and the longer they are exposed to the environment, the more mutations can accumulate."
+  answer: true
+  explain: "The slides explicitly note age as a factor: more replication and longer exposure increase the chance of accumulating cancer-related mutations."
+
+# FP28: DNA repair mechanisms and methyl mismatch repair
+- type: MultiChoice
+  text: "Which DNA repair mechanism removes a damaged base and replaces it with the correct one?"
+  choices:
+    A: "Base excision repair"
+    B: "Methyl mismatch repair"
+    C: "Translation"
+    D: "Frameshift repair"
+  answer: A
+  explain: "Base excision repair cuts out a damaged base and fills the gap with the proper nucleotide, as shown in the repair slide."
+- type: MultiChoice
+  text: "In methyl mismatch repair, how does the cell know which strand to correct in newly replicated DNA?"
+  choices:
+    A: "The newer strand is methylated and marked as correct."
+    B: "Both strands are ignored."
+    C: "The original (older) strand is methylated; the unmethylated new strand is corrected."
+    D: "The strand with more mutations is kept."
+  answer: C
+  explain: "The 'Methyl Mismatch Repair' slide explains that old strands carry methyl marks, so repair enzymes fix mismatches on the unmethylated new strand."
+- type: TrueFalse
+  text: "If DNA damage is too extensive, cells may undergo programmed cell death (apoptosis) to prevent uncontrolled growth."
+  answer: true
+  explain: "The lecture lists programmed cell death as a way for cells to eliminate themselves when DNA damage is too risky, helping prevent cancer."
+
+# ===============================
+# BIOL 201 — DNA Chapter Practice Problems
+# Orientation, Template vs Coding, and Translation
+# Based on Burrows DNA Practice Problems sheet + key
+# ===============================
+
+# FP1: Relating double-stranded DNA and mRNA orientation
+- type: MultiChoice
+  text: |
+    You are given a double-stranded DNA and the mRNA transcribed from it:
+
+      Top DNA strand:    CTGGATCCATGACGGGATTGTTCATGGACTGATCAGGAAT
+                         ||||||||||||||||||||||||||||||||||||||||
+      Bottom DNA strand: TACCTAGGTACTGCCCTAACAAGTACCTGACTAGTCCTTA
+
+      mRNA: 5' CUGGAUCCAUGACGGGAUUGUUCAUGGACUGAUCAGGAAU 3'
+
+    Which assignment of 5' and 3' ends to the DNA strands is correct?
+  choices:
+    A: "Top strand is 5' → 3' (as written left to right); bottom strand is 3' → 5' (as written)."
+    B: "Top strand is 3' → 5' (as written); bottom strand is 5' → 3' (as written)."
+    C: "Both strands run 5' → 3' from left to right."
+    D: "Both strands run 3' → 5' from left to right."
+  answer: A
+  explain: |
+    The mRNA is written 5' → 3'. The coding strand must match the mRNA sequence (except T ↔ U) and also run 5' → 3' in the same direction.
+    Here the top DNA strand CTGGATCC… matches the mRNA CUGGAUCC… (T in DNA where U is in RNA), so the top strand must be the coding strand
+    running 5' → 3' left to right. Because the strands are antiparallel, the bottom strand must run 3' → 5' left to right.
+- type: ShortAnswer
+  text: |
+    Using the sequences from the previous question, explicitly label the 5' and 3' ends on the DNA:
+
+      ___ CTGGATCCATGACGGGATTGTTCATGGACTGATCAGGAAT ___
+      ___ TACCTAGGTACTGCCCTAACAAGTACCTGACTAGTCCTTA ___
+
+    Fill in the blanks with 5' or 3' for each end.
+  answer: |
+    5' CTGGATCCATGACGGGATTGTTCATGGACTGATCAGGAAT 3'
+    3' TACCTAGGTACTGCCCTAACAAGTACCTGACTAGTCCTTA 5'
+  explain: |
+    The strand whose sequence matches the mRNA (top strand) must be 5' → 3' in the same direction as the mRNA. The complementary strand is
+    therefore 3' → 5' in that direction. Remember: in a standard drawing, if one strand is 5' → 3' left to right, the other must be 3' → 5' left to right.
+- type: TrueFalse
+  text: "In this example, the coding strand and the mRNA both run 5' → 3' in the same direction along the gene."
+  answer: true
+  explain: |
+    The coding strand has the same base order as the mRNA (with T instead of U), and both are written 5' → 3' in the same direction. The template strand
+    runs antiparallel (3' → 5') and is complementary to the mRNA.
+
+# FP2: Identifying template vs coding strands from DNA and mRNA
+- type: MultiChoice
+  text: |
+    You again have the same sequences:
+
+      Top DNA strand:    5' CTGGATCCATGACGGGATTGTTCATGGACTGATCAGGAAT 3'
+      Bottom DNA strand: 3' TACCTAGGTACTGCCCTAACAAGTACCTGACTAGTCCTTA 5'
+      mRNA:              5' CUGGAUCCAUGACGGGAUUGUUCAUGGACUGAUCAGGAAU 3'
+
+    Which statement about template and coding strands is correct?
+  choices:
+    A: "Top strand is coding; bottom strand is template."
+    B: "Top strand is template; bottom strand is coding."
+    C: "Both strands are coding strands."
+    D: "Neither strand can be used as a template here."
+  answer: A
+  explain: |
+    The coding strand matches the mRNA sequence, except that DNA uses T instead of U. The top strand CTGGATCC… matches CUGGAUCC… (T ↔ U), so
+    it is the coding strand. The bottom strand is complementary and antiparallel, so it is the template strand used directly by RNA polymerase.
+- type: ShortAnswer
+  text: |
+    Explain, in words, how you can decide which DNA strand is the template and which is the coding strand if you are given the mRNA sequence.
+  answer: |
+    Compare each DNA strand (written 5' → 3') to the mRNA (also written 5' → 3'). The strand whose 5' → 3' sequence matches the mRNA (except T in DNA
+    where the mRNA has U) is the coding strand. The other strand, which is complementary and antiparallel to the mRNA, is the template strand that RNA
+    polymerase actually reads.
+  explain: |
+    The template strand is the one RNA polymerase copies. The coding strand is not copied but shares the same sequence as the mRNA (T instead of U).
+    This simple comparison is a reliable way to identify template vs coding in practice problems.
+- type: TrueFalse
+  text: "The template strand has the same 5' → 3' base sequence as the mRNA, except that it uses T instead of U."
+  answer: false
+  explain: |
+    That statement describes the coding strand, not the template. The template strand is complementary to the mRNA and runs 3' → 5' relative to the
+    direction of synthesis; the coding strand matches the mRNA sequence (T ↔ U) in the 5' → 3' direction.
+
+# FP3: Translating an mRNA using the codon table
+- type: MultiChoice
+  text: |
+    Using the same mRNA as in the practice problem:
+
+      5' CUGGAUCCAUGACGGGAUUGUUCAUGGACUGAUCAGGAAU 3'
+
+    Translation begins at the first AUG codon. Which amino acid sequence is produced (stop codon not included)?
+  choices:
+    A: "Leu – Asp – Pro – Trp – Thr – Gly – Leu – Phe – Met – Asp"
+    B: "Met – Thr – Gly – Leu – Phe – Met – Asp"
+    C: "Met – Thr – Gly – Leu – Leu – Val – Asp"
+    D: "Met – Ala – Gly – Ile – Val – Met – Asp"
+  answer: B
+  explain: |
+    1. Find the first AUG (start) codon in the mRNA: CUGGAUCC[AUG]ACGGGAUUGUUCAUGGACUGAUCAGGAAU.
+    2. Starting at that AUG, group into codons:
+         AUG ACG GGA UUG UUC AUG GAC UGA...
+    3. Use the codon table:
+         AUG → Met, ACG → Thr, GGA → Gly, UUG → Leu,
+         UUC → Phe, AUG → Met, GAC → Asp, UGA → Stop.
+    4. Stop translation at the stop codon UGA. Final peptide: Met – Thr – Gly – Leu – Phe – Met – Asp.
+- type: ShortAnswer
+  text: |
+    Outline a step‑by‑step method a student should follow to translate any mRNA into an amino acid sequence using a codon table.
+  answer: |
+    1. Make sure the mRNA is written 5' → 3'.
+    2. Scan from the 5' end to find the first AUG start codon.
+    3. Starting at that AUG, divide the sequence into non‑overlapping groups of three bases (codons).
+    4. Look up each codon in the codon table to find its amino acid.
+    5. Continue until you reach a stop codon (UAA, UAG, or UGA), which does not code for an amino acid.
+    6. Write the amino acid sequence from the start codon to the last amino acid before the stop.
+  explain: |
+    These steps mirror how ribosomes translate mRNA in the cell. Practicing this algorithm on multiple sequences will make codon‑table problems routine.
+- type: TrueFalse
+  text: "Any bases before the first AUG in a eukaryotic mRNA are part of the 5' UTR and are not translated into amino acids."
+  answer: true
+  explain: |
+    The ribosome scans from the 5' end until it finds the first AUG. Bases before that are untranslated (5' UTR), even though they are part of the mRNA.
+
+# FP4: Identifying template vs coding from a transcription diagram
+- type: MultiChoice
+  text: |
+    In a textbook diagram, an mRNA strand is shown base‑paired to the TOP DNA strand. The bottom DNA strand is parallel but not paired to the mRNA.
+    Which strand is the template strand in that diagram?
+  choices:
+    A: "The top DNA strand is the template strand."
+    B: "The bottom DNA strand is the template strand."
+    C: "Both strands are template strands."
+    D: "Neither strand can be a template if mRNA is shown."
+  answer: A
+  explain: |
+    The template strand is the one that the mRNA is complementary to and base‑paired with. If the mRNA is drawn paired with the top strand, that top
+    strand must be the template. The coding strand will be unpaired and will match the mRNA sequence (T ↔ U) in the 5' → 3' direction.
+- type: ShortAnswer
+  text: |
+    A diagram shows an RNA transcript being built directly from the top DNA strand. Describe how you can use that information alone to label the top
+    and bottom strands as template and coding.
+  answer: |
+    If the RNA is being synthesized from the top strand, that top strand must be the template strand, because RNA polymerase always uses the template
+    as the base‑pairing guide. The bottom strand, which is not used and instead has the same 5' → 3' sequence as the RNA (with T instead of U),
+    is the coding strand.
+  explain: |
+    In diagrams, focus on which strand the RNA touches and base‑pairs with—that is always the template strand. The opposite strand is coding.
+- type: TrueFalse
+  text: "In any transcription diagram, the DNA strand whose 5' → 3' sequence matches the RNA (except T vs U) is the template strand."
+  answer: false
+  explain: |
+    That describes the coding strand, not the template. The template is complementary to the RNA and is the one the polymerase actually reads.
+
+# FP5: Labeling 5' and 3' ends from replication arrows
+- type: MultiChoice
+  text: |
+    In a replication diagram, short DNA fragments are shown with arrows at one end indicating the direction of synthesis (the direction in which
+    DNA polymerase is moving). According to the key on your practice sheet, what does the arrowed end of each fragment represent?
+  choices:
+    A: "The 5' end of the fragment."
+    B: "The 3' end of the fragment."
+    C: "The origin of replication."
+    D: "The template strand."
+  answer: B
+  explain: |
+    DNA polymerase can only add nucleotides to a free 3' OH, so the direction of synthesis is always toward the 3' end of the growing strand.
+    The key notes that “all of the ends with arrows will be the 3' ends,” so the other end of each fragment must be the 5' end.
+- type: ShortAnswer
+  text: |
+    Explain why the arrowheads on newly synthesized DNA fragments correspond to 3' ends rather than 5' ends.
+  answer: |
+    DNA polymerases add new nucleotides only to a free 3' OH group, extending the strand in the 5' → 3' direction. The arrow shows the direction
+    of strand growth, so it must point at the 3' end, where new nucleotides are being added.
+  explain: |
+    Remember the rule: DNA is synthesized 5' → 3'. Wherever synthesis is moving toward, that end of the new strand is the 3' end. The opposite end
+    is therefore the 5' end.
+- type: TrueFalse
+  text: "If you know which direction a new DNA strand is being extended in a replication diagram, you can always label its 5' and 3' ends correctly."
+  answer: true
+  explain: |
+    Because synthesis always proceeds 5' → 3', the direction of extension tells you which end is 3' (in the direction of growth) and which is 5'
+    (the end from which the strand started). This rule lets you label 5'/3' ends even when they are not explicitly marked.
+
+# ===============================
+# BIOL 201 — Weekly Quizzes 11 & 12
+# Extracted questions and answers in ExamSim YAML format
+# ===============================
+
+# Weekly Quiz 11
+- type: MultiChoice
+  text: "When combining heat killed virulent bacteria with living non-virulent bacteria, Griffith discovered they had been ______________ into virulent bacteria."
+  choices:
+    A: "Transformed"
+    B: "Transported"
+    C: "Transposed"
+    D: "Translated"
+  answer: A
+  explain: "Griffith observed that harmless living bacteria became disease-causing after exposure to heat-killed virulent cells; he called this process transformation, so 'Transformed' correctly fills the blank."
+
+- type: ShortAnswer
+  text: "What are the 3 rules of DNA we learned in class?"
+  answer: "1) DNA strands are antiparallel (one 5'→3', the other 3'→5'); 2) DNA is synthesized in the 5'→3' direction; 3) Bases pair specifically: A with T, and G with C."
+  explain: "These are Burrows' 3 rules of DNA: antiparallel orientation, 5'→3' synthesis, and complementary base pairing (A–T, G–C)."
 
 - type: MultiChoice
-  text: "The only cells in the human body that can go through meiosis are known as __________."
+  text: "DNA is replicated _________"
+  choices:
+    A: "Conservatively"
+    B: "Semi-conservatively"
+    C: "Dispersed"
+  answer: B
+  explain: "Meselson and Stahl showed that each new DNA molecule contains one original and one new strand, which is called semi-conservative replication."
+
+- type: MultiChoice
+  text: "The lagging strand of DNA is replicated discontinuously forming ______________"
+  choices:
+    A: "Primers"
+    B: "Ligase"
+    C: "Partitions"
+    D: "Okazaki Fragments"
+  answer: D
+  explain: "Because DNA polymerase can only synthesize 5'→3', the lagging strand is made in short pieces called Okazaki fragments that are later joined together."
+
+- type: MultiChoice
+  text: "Small portions of the ends of linear chromosomes are lost with each replication. To protect genes repetitive _________ are added to the ends."
+  choices:
+    A: "Telomeres"
+    B: "Telophase"
+    C: "Teloplates"
+    D: "Transcriptomes"
+  answer: A
+  explain: "Telomeres are repetitive, noncoding sequences at chromosome ends that act as protective caps, so the correct completion is 'Telomeres'."
+
+# Weekly Quiz 12
+- type: ShortAnswer
+  text: "What is the central dogma of molecular biology? Name each of the molecules involved and what process converts them."
+  answer: "DNA --(transcription)--> RNA --(translation)--> Protein."
+  explain: "The central dogma states that genetic information flows from DNA to RNA via transcription and from RNA to protein via translation."
+
+- type: MultiChoice
+  text: "What part of the bacterial RNA polymerase binds to the promoter region?"
+  choices:
+    A: "Sigma Factor"
+    B: "Alpha Factor"
+    C: "Translation Factor"
+    D: "R Factor"
+  answer: A
+  explain: "In bacteria, the sigma factor is the subunit that recognizes specific promoter sequences and helps RNA polymerase bind and start transcription."
+
+- type: MultiChoice
+  text: "A mature mRNA DOES NOT contain what?"
+  choices:
+    A: "5’ Cap"
+    B: "Poly-A Tail"
+    C: "Exons"
+    D: "Introns"
+  answer: D
+  explain: "During RNA processing, introns are removed and exons are spliced together; a mature mRNA has a 5' cap, a poly-A tail, and exons, but no introns."
+
+- type: ShortAnswer
+  text: "Translate this mRNA. 5’ ACAAAUGAACCACAAGUAAAUAAA 3’"
+  answer: "Met – Asn – His – Lys"
+  explain: "Starting at the first AUG (start codon), the sequence is divided into codons: AUG (Met), AAC (Asn), CAC (His), AAG (Lys), then UAA (Stop). Translation yields Met–Asn–His–Lys before the stop codon."
+
+# ===============================
+# BIOL 201 — Chapter 14 & 15 Homework + Unit 6 Extra Credit
+# Canvas quiz questions converted to ExamSim YAML
+# ===============================
+
+# -------------
+# Chapter 14 Homework (20 questions)
+# -------------
+
+- type: MultiChoice
+  text: "If DNA of a particular species was analyzed and it was found that it contains 27 percent A, what would be the percentage of C?"
+  choices:
+    A: "27 percent"
+    B: "23 percent"
+    C: "54 percent"
+    D: "30 percent"
+  answer: B
+  explain: "If A = 27%, then T = 27% (A pairs with T). Together A+T = 54%, so G+C = 46%. Because G = C, C = 23%."
+
+- type: MultiChoice
+  text: "The experiments by Hershey and Chase helped confirm that DNA was the hereditary material on the basis of the finding that:"
+  choices:
+    A: "radioactive sulfur was found in the cell"
+    B: "radioactive cells were found in the supernatant"
+    C: "radioactive phosphorus was found in the cell"
+    D: "radioactive phage were found in the pellet"
+  answer: C
+  explain: "They labeled DNA with radioactive phosphorus and protein with radioactive sulfur. Only the radioactive phosphorus entered cells, showing that DNA, not protein, carried hereditary information."
+
+- type: MultiChoice
+  text: "Bacterial transformation is a major concern in many medical settings. Why might health care providers be concerned?"
+  choices:
+    A: 'Antibiotic resistance genes could be introduced to new bacteria to create "superbugs"'
+    B: "Pathogenic bacteria could introduce disease-causing genes into non-pathogenic bacteria."
+    C: "All of these reasons."
+    D: "Bacteriophages could spread DNA encoding toxins to new bacteria."
+  answer: C
+  explain: "Transformation and horizontal gene transfer can spread resistance, virulence, and toxin genes between bacteria, so all listed reasons are valid concerns."
+
+- type: MultiChoice
+  text: "The DNA double helix does not have which of the following?"
+  choices:
+    A: "5' --> 3' direction"
+    B: "complementary base pairing"
+    C: "uracil"
+    D: "antiparallel configuration"
+  answer: C
+  explain: "DNA uses thymine, not uracil. Uracil is found in RNA."
+
+- type: MultiChoice
+  text: "In eukaryotes, what is DNA wrapped around to package it in the nucleus?"
+  choices:
+    A: "RNA polymerase"
+    B: "single-strand binding proteins"
+    C: "histones"
+    D: "DNA polymerase"
+  answer: C
+  explain: "DNA winds around histone protein cores to form nucleosomes and higher-order chromatin structure."
+
+- type: MultiChoice
+  text: "Meselson and Stahl's experiments provided evidence that DNA replicates by which mode?"
+  choices:
+    A: "dispersive"
+    B: "semi-conservative"
+    C: "concentric"
+    D: "conservative"
+  answer: B
+  explain: "Each new DNA molecule contained one old strand and one new strand, demonstrating semiconservative replication."
+
+- type: MultiChoice
+  text: "If the sequence of the 5' -> 3' strand is AATGCTAC, then the complementary sequence has the following sequence:"
+  choices:
+    A: "3'-AATGCTAC-5'"
+    B: "3'-GTAGCATT-5'"
+    C: "3'-CATCGTAA-5'"
+    D: "3'-TTACGATG-5'"
+  answer: D
+  explain: "Complementary bases pair A–T and G–C. The complement to 5'-AATGCTAC-3' is 3'-TTACGATG-5'."
+
+- type: MultiChoice
+  text: "What does the enzyme primase synthesize?"
+  choices:
+    A: "phosphodiester bonds"
+    B: "primers"
+    C: "hydrogen bonds"
+    D: "Okazaki fragments"
+  answer: B
+  explain: "Primase makes short RNA primers that provide a free 3' OH group for DNA polymerase to begin DNA synthesis."
+
+- type: MultiChoice
+  text: "In which direction does DNA replication take place?"
+  choices:
+    A: "3' --> 5'"
+    B: "5' --> 3'"
+  answer: B
+  explain: "DNA polymerases can only add nucleotides to the 3' end, so the new strand is synthesized in the 5' to 3' direction."
+
+- type: MultiChoice
+  text: "What structure caps the end of eukaryotic linear chromosomes?"
+  choices:
+    A: "telomeres"
+    B: "helicase"
+    C: "Okazaki fragments"
+    D: "primers"
+  answer: A
+  explain: "Telomeres are repetitive, noncoding sequences at chromosome ends that protect genes from being lost during replication."
+
+- type: MultiChoice
+  text: "Which enzyme participates in DNA proofreading?"
+  choices:
+    A: "DNA polymerase I"
+    B: "helicase"
+    C: "DNA polymerase III"
+    D: "DNA ligase"
+  answer: C
+  explain: "The main replicative enzyme DNA polymerase III has 3'→5' exonuclease activity that proofreads and corrects misincorporated bases."
+
+- type: MultiChoice
+  text: "If you wanted to attach two DNA strands to one another which enzyme would you use?"
+  choices:
+    A: "DNA polymerase"
+    B: "DNA ligase"
+    C: "Helicase"
+    D: "Primase"
+  answer: B
+  explain: "DNA ligase seals nicks in the sugar-phosphate backbone, covalently joining DNA fragments."
+
+- type: ShortAnswer
+  text: "Gel electrophoresis separates DNA based on __________________."
+  answer: "size (how long the DNA is)"
+  explain: "DNA fragments move through a gel at different speeds based on length; shorter fragments migrate farther than longer ones."
+
+- type: MultiChoice
+  text: "Which enzyme unzips the DNA double helix?"
+  choices:
+    A: "DNA ligase"
+    B: "Helicase"
+    C: "DNA polymerase"
+    D: "Primase"
+  answer: B
+  explain: "Helicase breaks hydrogen bonds between base pairs, separating the two strands at the replication fork."
+
+- type: MultiChoice
+  text: "The strand of DNA that is synthesized discontinuously forming Okazaki fragments is known as the _____________________"
+  choices:
+    A: "leading strand"
+    B: "lagging strand"
+  answer: B
+  explain: "The lagging strand is synthesized in short Okazaki fragments because it runs in the opposite direction to fork movement."
+
+- type: ShortAnswer
+  text: "Define a mutation (using our in class definition)."
+  answer: "A change in the DNA sequence."
+  explain: "Any alteration of the DNA base sequence is called a mutation, whether or not it changes the phenotype."
+
+- type: MultiChoice
+  text: "What type of cells normally express the enzyme telomerase?"
   choices:
     A: "somatic cells"
-    B: "autocrine cells"
-    C: "cancer cells"
-    D: "germ line cells"
+    B: "germ line cells"
+  answer: B
+  explain: "Germ line cells (and some stem and cancer cells) express telomerase to maintain telomere length across many divisions."
+
+- type: ShortAnswer
+  text: "What are the complimentary base pairings? (Give me what pairs with what)"
+  answer: "A–T and C–G"
+  explain: "In DNA, adenine pairs with thymine and cytosine pairs with guanine via hydrogen bonds."
+
+- type: ShortAnswer
+  text: "How is the DNA replication fork able to move in one direction but synthesize two DNA strands in opposite directions? What is the result of this process?"
+  answer: "DNA polymerases can only synthesize DNA 5'→3', so the template for the lagging strand is looped, allowing both polymerases to move with the fork. This produces one continuous leading strand and one lagging strand made of Okazaki fragments."
+  explain: "Looping lets both polymerases travel with the fork while still synthesizing 5'→3'. The tradeoff is that the lagging strand is discontinuous (Okazaki fragments)."
+
+- type: ShortAnswer
+  text: "What is the role of a primer in DNA replication?"
+  answer: "It provides a short nucleic acid with a free 3' OH so DNA polymerase can begin adding DNA nucleotides."
+  explain: "DNA polymerases cannot start a strand from scratch; they extend from an existing 3' end provided by the RNA primer."
+
+# -------------
+# Chapter 15 Homework (25 questions)
+# -------------
+
+- type: MultiChoice
+  text: "Which process converts the information in DNA into RNA?"
+  choices:
+    A: "Translation"
+    B: "DNA replication"
+    C: "Transcription"
+    D: "Transposition"
+  answer: C
+  explain: "Transcription uses DNA as a template to synthesize an RNA copy."
+
+- type: MultiChoice
+  text: "Sigma factors bind to a region upstream of the gene known as a ________________________"
+  choices:
+    A: "protein"
+    B: "promoter"
+    C: "transcription factor"
+    D: "terminator"
+  answer: B
+  explain: "Sigma factors recognize promoter sequences and help bacterial RNA polymerase bind to start transcription."
+
+- type: MultiChoice
+  text: "DNA binding proteins that regulate RNA polymerase binding are known as ______________."
+  choices:
+    A: "topoisomerases"
+    B: "translation factors"
+    C: "transposition factors"
+    D: "transcription factors"
   answer: D
-  explain: "Meiosis occurs in the germ line to produce gametes."
-- type: MultiChoice
-  text: "If a plant variety is true-breeding for a dominant trait, then __________."
-  choices:
-    A: "the plant is heterozygous for the trait"
-    B: "if the plant were allowed to self-pollinate, all of the progeny would have the dominant trait"
-    C: "if the plant were allowed to self-pollinate, the dominant and recessive traits would consistently appear in a 3:1 ratio among the progeny"
-  answer: B
-  explain: "True-breeding means homozygous. All offspring inherit the same dominant allele, producing the dominant phenotype."
+  explain: "Transcription factors are DNA-binding regulatory proteins that control when and where genes are transcribed."
 
 - type: MultiChoice
-  text: "Assume there is a gene in apples for fruit color (R = red, r = yellow) and another for fruit size (A = big, a = small). One tree produces big yellow apples and another produces small red apples. Their cross yields half big red and half big yellow apples. What are the genotypes of the parents?"
+  text: "Which portion of the pre-mRNA is kept in the mature mRNA?"
   choices:
-    A: "AaRr and AaRr"
-    B: "Aarr and aaRr"
-    C: "AArr and aaRr"
+    A: "exons"
+    B: "introns"
+  answer: A
+  explain: "Introns are removed during splicing; exons remain and are joined to form the coding sequence of mature mRNA."
+
+- type: MultiChoice
+  text: "Every protein will start with what amino acid?"
+  choices:
+    A: "Leu"
+    B: "Met"
+    C: "Gly"
+    D: "Stop"
+  answer: B
+  explain: "The start codon AUG codes for methionine, so newly made proteins begin with Met."
+
+- type: MultiChoice
+  text: "A mutation will always affect the _____________ of an organism"
+  choices:
+    A: "phenotype"
+    B: "genotype"
+    C: "fitness"
+    D: "size"
+  answer: B
+  explain: "A mutation is a change in DNA sequence, so genotype always changes; phenotype may or may not be affected."
+
+- type: ShortAnswer
+  text: "Even if there are no chemicals, or physical agents like UV radiation around, living organisms will still have mutations. What causes these mutations?"
+  answer: "Spontaneous errors made by DNA polymerase during DNA replication."
+  explain: "Replication is not perfect; rare polymerase errors introduce mutations even without external mutagens."
+
+- type: ShortAnswer
+  text: "What is the central dogma of molecular biology? Name each of the molecules involved and what process converts them."
+  answer: "DNA --(transcription)--> RNA --(translation)--> Protein."
+  explain: "Information flows from DNA to RNA via transcription and from RNA to protein via translation."
+
+- type: MultiChoice
+  text: "What enzyme converts makes an RNA copy from a DNA template?"
+  choices:
+    A: "DNA polymerase"
+    B: "RNA polymerase"
+    C: "Helicase"
+    D: "Telomerase"
+  answer: B
+  explain: "RNA polymerase synthesizes RNA from a DNA template during transcription."
+
+- type: MultiChoice
+  text: "A group of bacteria genes that get transcribed as one mRNA are known as ____________"
+  choices:
+    A: "a tetrad"
+    B: "a helicase"
+    C: "an operon"
+    D: "a polyclone"
   answer: C
-  explain: "AArr × aaRr produces AaRr (big red) and Aarr (big yellow)."
+  explain: "In bacteria, an operon is a cluster of genes transcribed together into a single polycistronic mRNA."
 
 - type: MultiChoice
-  text: "Assume tall (T) is completely dominant to dwarf (t). If a homozygous dominant individual is crossed with a homozygous dwarf, the offspring will __________."
+  text: "Codons are groups of how many mRNA bases?"
   choices:
-    A: "all be tall"
-    B: "be one-half tall and one-half dwarf"
-    C: "be three-quarters tall and one-quarter dwarf"
-  answer: A
-  explain: "TT × tt produces 100% Tt, all tall offspring."
-
-- type: MultiChoice
-  text: "The F1 generation differed from the F2 in Mendel's experiments in that __________."
-  choices:
-    A: "all of the F1 showed the dominant phenotype, but only three-quarters of the F2 did"
-    B: "none of the F1 showed the dominant phenotype, but one-half of the F2 did"
-    C: "all of the F1 showed the dominant phenotype, whereas only one-half of the F2 did"
-  answer: A
-  explain: "All F1 hybrids expressed dominance; segregation produced a 3:1 ratio in F2."
-
-- type: MultiChoice
-  text: "Physically, what are different alleles?"
-  choices:
-    A: "Different alleles are different DNA sequences for the same gene found at the same location on homologous chromosomes."
-    B: "Different alleles are different particles found in gametes."
-    C: "Different alleles are different phenotypes for a particular character."
-  answer: A
-  explain: "Alleles are variations in the DNA sequence at the same gene locus."
-
-- type: MultiChoice
-  text: "A plant with the genotype AABbcc will have the same phenotype as a plant with the genotype __________."
-  choices:
-    A: "aabbcc"
-    B: "AaBBcc"
-    C: "AABBCc"
+    A: "4"
+    B: "3"
+    C: "2"
+    D: "1"
   answer: B
-  explain: "Dominance means one dominant allele is enough; AaBBcc produces the same phenotype as AABbcc."
+  explain: "Each codon is a triplet of three bases that specifies an amino acid or a stop signal."
+
+- type: ShortAnswer
+  text: "Coding Strand 5' ACTCCGATGA 3' ; Template Strand 3' TGAGGCTACT 5'. Transcribe this DNA sequence into RNA. (Be sure to label 5' and 3'.)"
+  answer: "5' ACUCCGAUGA 3'"
+  explain: "The mRNA matches the coding strand except T is replaced with U: 5'-ACTCCGATGA-3' becomes 5'-ACUCCGAUGA-3'."
+
+- type: ShortAnswer
+  text: "Define a mutation."
+  answer: "A heritable change in DNA sequence."
+  explain: "Mutations are DNA sequence changes that can be passed on when cells divide or organisms reproduce."
+
+- type: ShortAnswer
+  text: "What are two differences in transcription between prokaryotes and eukaryotes?"
+  answer: "Prokaryotes use sigma factors and usually do not process their mRNA; eukaryotes use many transcription factors and extensively process pre-mRNA (capping, splicing, poly-A tail)."
+  explain: "Key differences include the use of sigma vs many transcription factors and the presence of RNA processing in eukaryotes but not in most prokaryotes."
+
+- type: ShortAnswer
+  text: "What are the four types of RNA we talked about? In one sentence describe each type's function."
+  answer: |
+    mRNA: contains the information that will be translated into protein.
+    tRNA: brings amino acids to the ribosome and base pairs with codons via its anticodon.
+    rRNA: forms part of the ribosome and helps catalyze peptide bond formation.
+    Other non-coding RNAs (such as snRNA and miRNA): are involved in processing and regulating gene expression.
+  explain: "mRNA is the message, tRNA is the adaptor, rRNA is structural/catalytic, and other ncRNAs play regulatory and processing roles."
 
 - type: MultiChoice
-  text: "A tall pea plant (TT or Tt) is crossed with a short plant (tt). Which outcome indicates the tall parent was heterozygous?"
+  text: "Scientists found over 100,000 proteins in the human body, but when they sequenced the genome they only found ~30,000 genes. What can explain this difference?"
   choices:
-    A: "All of the offspring are tall."
-    B: "The ratio of tall to short offspring is 1:1."
-    C: "All of the offspring are short."
-  answer: B
-  explain: "Tt × tt yields 50% Tt (tall) and 50% tt (short)."
-
-- type: MultiChoice
-  text: "What is indicated when a single-character testcross yields offspring that all have the dominant phenotype?"
-  choices:
-    A: "The parent with the dominant phenotype was homozygous."
-    B: "Both parents are heterozygous."
-    C: "The parent with the dominant phenotype was heterozygous."
-  answer: A
-  explain: "All dominant offspring imply homozygous dominant parent."
-
-- type: MultiChoice
-  text: "In Mendel's monohybrid cross of purple and white peas, all F1 plants had the __________ phenotype because their genotype was __________."
-  choices:
-    A: "purple-flowered ... heterozygous"
-    B: "purple-flowered ... homozygous recessive"
-    C: "white-flowered ... homozygous recessive"
-  answer: A
-  explain: "Dominant purple allele expressed in heterozygous plants."
-
-- type: MultiChoice
-  text: "If Mendel’s two traits had been located near each other on the same chromosome, the F2 generation __________."
-  choices:
-    A: "would have contained four phenotypes in a 9:3:3:1 ratio"
-    B: "would have deviated from the 9:3:3:1 phenotypic ratio predicted by independent assortment"
-  answer: B
-  explain: "Linked genes violate independent assortment."
-
-- type: MultiChoice
-  text: "Homologous pairs of chromosomes often __________."
-  choices:
-    A: "carry different genes for different traits"
-    B: "contain different alleles"
-    C: "differ in length"
-  answer: B
-  explain: "Each homolog carries alleles for the same genes, which can differ."
-
-- type: MultiChoice
-  text: "If both parents can create 100 distinct gametes, what is the probability of producing one specific individual offspring?"
-  choices:
-    A: "10,000"
-    B: "1,000"
-    C: "200"
-  answer: A
-  explain: "Each gamete combination multiplies, 100 × 100 = 10,000 possible zygotes."
-
-- type: MultiChoice
-  text: "From the cross PpRr × PpRr, what proportion of offspring have white flowers and wrinkled seeds?"
-  choices:
-    A: "3/4"
-    B: "1/16"
-    C: "1/4"
-  answer: B
-  explain: "1/4 white × 1/4 wrinkled = 1/16 double recessive."
-
-- type: MultiChoice
-  text: "If a heterozygous plant is self-pollinated, what proportion of the offspring will also be heterozygous?"
-  choices:
-    A: "all of them"
-    B: "1/3"
-    C: "1/2"
-  answer: B
-  explain: "From 1:2:1 ratio, 1/3 of surviving heterozygotes (1 of 3 genotypes)."
-
-- type: MultiChoice
-  text: "In incomplete dominance, red × white snapdragons produce pink F1. Crossing two pinks yields what ratio?"
-  choices:
-    A: "25% red, 50% pink, 25% white"
-    B: "25% white and 75% red"
-    C: "50% pink and 50% red"
-  answer: A
-  explain: "Classic incomplete dominance ratio of 1:2:1."
-
-- type: MultiChoice
-  text: "Blood groups IA, IB, and i show codominance. A type A parent and a type B parent could have children with which phenotypes?"
-  choices:
-    A: "A, B, AB, or O"
-    B: "A or B only"
-    C: "AB only"
-  answer: A
-  explain: "Depending on parental genotypes, all four ABO types are possible."
-
-- type: MultiChoice
-  text: "Which mating CANNOT produce a child with type O blood?"
-  choices:
-    A: "O × O"
-    B: "O × AB"
-    C: "A × B"
-  answer: B
-  explain: "AB parent lacks the O (i) allele, so no type O offspring."
-
-- type: MultiChoice
-  text: "In squash, W (white) is dominant to colored, and Y (yellow) is dominant to green. What color is wwYy?"
-  choices:
-    A: "green"
-    B: "yellow"
-    C: "white"
-  answer: B
-  explain: "ww removes the white suppression; Yy expresses yellow pigment."
-
-- type: MultiChoice
-  text: "If alkaptonuria is autosomal recessive, what is the chance Michelle and Keith’s next child will have it?"
-  choices:
-    A: "2/3"
-    B: "1/4"
-    C: "3/4"
-  answer: B
-  explain: "Two carriers have a 25% chance of a homozygous recessive child."
-
-- type: MultiChoice
-  text: "Cystic fibrosis persists despite being lethal when homozygous because __________."
-  choices:
-    A: "The harmful allele hides in heterozygotes."
-    B: "Mosquitoes can transfer the disease."
-    C: "New mutations continually introduce it."
-  answer: A
-  explain: "Recessive alleles can persist in carriers unaffected by disease."
-
-- type: MultiChoice
-  text: "The chromosome theory of inheritance states that __________."
-  choices:
-    A: "genes occupy specific positions on chromosomes"
-    B: "chromosomes assort independently during meiosis"
-    C: "homologous chromosomes segregate during meiosis"
-    D: "All answers are correct"
-  answer: D
-  explain: "It integrates all these principles under chromosome behavior."
-
-- type: MultiChoice
-  text: "Why did Morgan use Drosophila in his genetics experiments?"
-  choices:
-    A: "They have a long generation time."
-    B: "They have a large number of chromosomes."
-    C: "A single mating can produce many offspring."
+    A: "Telomeres"
+    B: "Translation"
+    C: "Alternative splicing"
+    D: "Mutation"
   answer: C
-  explain: "High offspring count and short life cycle made Drosophila ideal."
+  explain: "Alternative splicing allows a single gene to produce multiple, related mRNAs and therefore multiple proteins."
+
+- type: ShortAnswer
+  text: "Why would a mutation that adds two bases to a gene sequence likely be highly destructive to the gene's function?"
+  answer: "Adding two bases shifts the reading frame, changing every codon downstream (a frameshift), which usually ruins the protein."
+  explain: "Because codons are read in groups of three, insertions or deletions not in multiples of three alter the frame and scramble the amino acid sequence."
 
 - type: MultiChoice
-  text: "Wild type refers to __________."
+  text: "Translate the mRNA sequence below. 5' CUAACAUGGCACCCUGAUUUCA 3'"
   choices:
-    A: "a chromosomal deletion"
-    B: "the most extreme mutant phenotype"
-    C: "the most common phenotype in nature"
-  answer: C
-  explain: "‘Wild type’ is the standard or normal form in natural populations."
+    A: "Leu – Thr – Trp – His – Pro – Asp – Phe"
+    B: "Met – Ala – Pro – Stop"
+    C: "Met – Ala – Pro – Phe – Leu"
+  answer: B
+  explain: "Starting at the first AUG (Met), the codons are AUG (Met), GCA (Ala), CCC (Pro), UGA (Stop). Translation gives Met–Ala–Pro before the stop codon."
 
 - type: MultiChoice
-  text: "What is the probability that a human male inherits an X-linked recessive allele from his father?"
+  text: "Ribosomes are made up of ______________ and _________________"
   choices:
-    A: "100%"
-    B: "50%"
-    C: "0%"
-  answer: C
-  explain: "Males inherit their X from their mother and Y from their father."
+    A: "DNA and protein"
+    B: "rRNA and protein"
+    C: "rRNA and carbohydrates"
+    D: "rRNA and DNA"
+  answer: B
+  explain: "Ribosomes are ribonucleoprotein complexes composed of rRNA and many proteins."
 
 - type: MultiChoice
-  text: "For an X-linked trait, which parent determines whether a son displays the trait?"
+  text: "Which of the ribosome sites allows entry of tRNAs to see if they match the codon?"
   choices:
-    A: "the mother"
-    B: "the father"
-    C: "the paternal grandmother"
+    A: "E"
+    B: "A"
+    C: "P"
+  answer: B
+  explain: "The A (aminoacyl) site is where new charged tRNAs first bind and test for correct codon-anticodon pairing."
+
+- type: MultiChoice
+  text: "What is added to a newly created protein to send it to its correct cellular location?"
+  choices:
+    A: "Signal sequence"
+    B: "Phosphates"
+    C: "Chaperone"
+    D: "RNA"
   answer: A
-  explain: "Sons inherit their only X chromosome from their mother."
+  explain: "Short amino-terminal signal sequences target proteins to specific cellular compartments or secretion pathways."
 
 - type: MultiChoice
-  text: "In werewolves, the pointy ear allele (P) is dominant and X-linked. A female with pointy ears whose father had round ears mates with a round-eared male. What percentage of sons will have round ears?"
+  text: "A mutation that does not change the amino acid sequence is known as ______________________"
   choices:
-    A: "0%"
-    B: "100%"
-    C: "50%"
-  answer: C
-  explain: "Carrier female passes recessive allele to half her sons."
-
-- type: MultiChoice
-  text: "A woman with patches lacking sweat glands has a mosaic pattern due to __________."
-  choices:
-    A: "Linkage"
-    B: "Nondisjunction"
-    C: "X chromosome inactivation"
-  answer: C
-  explain: "Random X inactivation causes patchy expression of X-linked traits."
-
-- type: MultiChoice
-  text: "X-linked genes differ from Y-linked genes in that __________."
-  choices:
-    A: "Though most X-linked genes determine sex, Y-linked genes control unrelated characters."
-    B: "Sons and daughters have equal probabilities of inheriting X-linked recessives from the mother, but only sons inherit Y-linked traits from their father."
-    C: "Only X-linked genes are sex-linked."
+    A: "missense"
+    B: "silent"
+    C: "nonsense"
+    D: "negative"
   answer: B
-  explain: "Y-linked traits pass father to son; X-linked can pass to either sex."
+  explain: "Silent mutations alter a codon but still specify the same amino acid, leaving the protein sequence unchanged."
 
 - type: MultiChoice
-  text: "If two genes are linked, __________."
+  text: "The term fitness refers to _______________"
   choices:
-    A: "they are on the same chromosome"
-    B: "they assort independently"
-    C: "they are on different chromosomes"
+    A: "reproductive success of an organism"
+    B: "how long an organism survives"
+    C: "an organisms gainz"
   answer: A
-  explain: "Linked genes are physically close on the same chromosome."
+  explain: "In evolutionary biology, fitness is measured by reproductive success—how many viable offspring an organism leaves."
 
 - type: MultiChoice
-  text: "A BbRr × bbrr cross gives offspring in ratios of 5:5:1:1 for various phenotypes. Which explains this?"
+  text: "When cells are too damaged to be repaired they will often undergo which process?"
   choices:
-    A: "The genes are linked."
-    B: "The genes are autosomal."
-    C: "The genes are on different chromosomes."
+    A: "transcription"
+    B: "mitosis"
+    C: "apoptosis"
+    D: "division"
+  answer: C
+  explain: "Apoptosis is programmed cell death, used to eliminate dangerously damaged cells."
+
+- type: ShortAnswer
+  text: "What are two factors that may increase the risk of cancer?"
+  answer: "Examples include smoking and radiation (such as UV or X-rays) exposure."
+  explain: "Both tobacco smoke and ionizing/UV radiation introduce DNA damage that can lead to cancer if not properly repaired."
+
+# -------------
+# Unit 6 Extra Credit (41 questions)
+# -------------
+
+- type: MultiChoice
+  text: "During Griffith's experiments with Streptococcus pneumoniae in mice, material from __________ bacteria transformed __________ bacteria."
+  choices:
+    A: "heat-killed pathogenic ... living nonpathogenic"
+    B: "heat-killed nonpathogenic ... living pathogenic"
+    C: "living nonpathogenic ... living pathogenic"
+    D: "living pathogenic ... heat-killed nonpathogenic"
   answer: A
-  explain: "Deviation from 1:1:1:1 indicates linkage."
+  explain: "Heat-killed pathogenic (S) cells transferred something that transformed living nonpathogenic (R) cells into virulent S cells."
 
 - type: MultiChoice
-  text: "A gray-bodied, vestigial-winged fly is crossed with a black-bodied, normal-winged fly. In a testcross, which are parental and recombinant types?"
+  text: "A scientist assembles a bacteriophage with the protein coat of phage T2 and the DNA genetic material of phage T4. If this composite phage were allowed to infect a bacterium, the phages produced in the host cell would have __________."
   choices:
-    A: "black-bodied, normal-winged ... black-bodied, vestigial-winged"
-    B: "gray-bodied, vestigial-winged ... black-bodied, normal-winged"
-    C: "gray-bodied, normal-winged ... black-bodied, normal-winged"
-  answer: B
-  explain: "Parental phenotypes match the original parents; new combinations are recombinants."
-
-- type: MultiChoice
-  text: "Recombination frequency between two gene loci is __________."
-  choices:
-    A: "greater as the distance between the two genes decreases"
-    B: "dependent on dominance"
-    C: "greater as the distance between the two genes increases"
+    A: "a mixture of the DNA and proteins of both phages"
+    B: "the protein and DNA of T2"
+    C: "the protein and DNA of T4"
   answer: C
-  explain: "The farther apart genes are, the more likely crossing over separates them."
+  explain: "The genetic material (DNA) determines phage type, so progeny will be T4 in both DNA and protein."
 
 - type: MultiChoice
-  text: "A linkage map __________."
+  text: "In an important experiment, a radioactively labeled bacteriophage was allowed to infect bacteria. In a first trial, the phage contained radioactive DNA, and radioactivity was detected inside the bacteria. Next, phage-containing radioactive protein was used, and the radioactivity was not detected inside the bacteria. These experiments led to the conclusion that __________."
   choices:
-    A: "predicts child gender"
-    B: "orders genes based on recombination frequencies"
-    C: "orders genes by physical band position"
-  answer: B
-  explain: "Linkage maps use recombination frequencies to estimate gene order."
-
-- type: MultiChoice
-  text: "Because crossing over frequency is not uniform, __________."
-  choices:
-    A: "map units do not necessarily correlate to physical distances"
-    B: "homologs differ in gene order"
-    C: "recombination cannot determine map units"
+    A: "the genetic material of the phage is DNA"
+    B: "the genetic material of the phage is protein"
+    C: "genes are on chromosomes"
   answer: A
-  explain: "Map units reflect relative frequency, not exact distance."
+  explain: "Only labeled DNA entered the cells, so DNA must be the hereditary material of the phage."
 
 - type: MultiChoice
-  text: "During meiosis, homologous chromosomes sometimes fail to separate. This is called __________."
+  text: "Until Hershey and Chase showed that DNA was the genetic molecule of the phages they studied, what class of molecules was considered the best candidate for carrying genetic information and why?"
   choices:
-    A: "gametic infertility"
-    B: "sticky chiasmata"
-    C: "nondisjunction"
+    A: "proteins because they were thought to be the only molecule with both the variety and specificity of function to account for the array of heritable traits observed"
+    B: "nucleoside triphosphates because of the ability to add and remove phosphate groups"
+    C: "carbohydrates because they are found in abundance in all organisms"
+  answer: A
+  explain: "Proteins, with 20 amino acids and diverse structures, seemed better candidates than repetitive DNA until experiments showed otherwise."
+
+- type: MultiChoice
+  text: "Monomers for the synthesis of DNA are called __________."
+  choices:
+    A: "nucleotides"
+    B: "fatty acids"
+    C: "amino acids"
+  answer: A
+  explain: "DNA is a polymer of nucleotide monomers (sugar, phosphate, and base)."
+
+- type: MultiChoice
+  text: "Chargaff found that for DNA __________."
+  choices:
+    A: "the ratio of A to C is close to 1:1 and the ratio of G to T is close to 1:1"
+    B: "the ratio of A to G is close to 1:1 and the ratio of T to C is close to 1:1"
+    C: "the ratio of A to T is close to 1:1 and the ratio of G to C is close to 1:1"
   answer: C
-  explain: "Nondisjunction causes gametes with abnormal chromosome numbers."
+  explain: "Chargaff's rules showed that A ≈ T and G ≈ C in double-stranded DNA, reflecting base pairing."
 
 - type: MultiChoice
-  text: "Klinefelter syndrome (XXY) occurs due to __________."
+  text: "Which one of the following statements is correct?"
   choices:
-    A: "polyploidy"
-    B: "translocation"
-    C: "nondisjunction"
-  answer: C
-  explain: "Nondisjunction of sex chromosomes produces XXY males."
-
-- type: MultiChoice
-  text: "Cells with abnormal numbers of a particular chromosome are called __________."
-  choices:
-    A: "diploid"
-    B: "polyploid"
-    C: "aneuploid"
-  answer: C
-  explain: "Aneuploid cells gain or lose individual chromosomes."
-
-- type: MultiChoice
-  text: "Gene A is normally on chromosome 15, but is found on 17 in a fetus. The best explanation is __________."
-  choices:
-    A: "an inversion"
-    B: "translocation"
-    C: "crossing over"
+    A: "Adenine forms three hydrogen bonds with thymine; guanine forms two hydrogen bonds with cytosine."
+    B: "Adenine forms two hydrogen bonds with thymine; guanine forms three hydrogen bonds with cytosine."
+    C: "Adenine forms two hydrogen bonds with guanine; thymine forms three hydrogen bonds with cytosine."
   answer: B
-  explain: "Translocation moves a gene to a different chromosome."
+  explain: "A–T pairs form two hydrogen bonds; G–C pairs form three hydrogen bonds."
 
 - type: MultiChoice
-  text: "A chromosome fragment reattaches in reverse orientation. This is called __________."
+  text: "The two antiparallel strands of nucleotides that form the DNA double helix are held together by __________."
   choices:
-    A: "duplication"
-    B: "polyploidy"
-    C: "inversion"
+    A: "covalent bonds between nitrogen atoms in adenine and in thymine"
+    B: "covalent bonds between carbon atoms in deoxyribose molecules"
+    C: "hydrogen bonds between nucleotide bases"
   answer: C
-  explain: "Inversions flip a segment end-to-end."
+  explain: "Hydrogen bonds between complementary bases hold the two DNA strands together."
 
 - type: MultiChoice
-  text: "Down syndrome (trisomy 21) is a kind of __________ resulting from __________."
+  text: "The information in DNA is contained in __________."
   choices:
-    A: "polyploidy ... meiosis without cytokinesis"
-    B: "genomic imprint ... methylation"
-    C: "aneuploidy ... nondisjunction"
-  answer: C
-  explain: "Extra chromosome 21 arises from meiotic nondisjunction."
-
-- type: MultiChoice
-  text: "Which of the following is the only known viable human monosomy?"
-  choices:
-    A: "XY"
-    B: "XO"
-    C: "XXY"
+    A: "the types of sugars used in making the DNA molecule"
+    B: "the sequence of nucleotides along the length of the two strands of the DNA molecule"
+    C: "the sequence of amino acids that makes up the DNA molecule"
   answer: B
-  explain: "Turner syndrome (XO) is the only viable human monosomy."
+  explain: "Genetic information is encoded in the order of bases along the DNA strands."
+
+- type: MultiChoice
+  text: "During the replication of DNA, __________."
+  choices:
+    A: "errors never occur"
+    B: "the reaction is catalyzed by RNA polymerase"
+    C: "both strands of a molecule act as templates"
+  answer: C
+  explain: "Each original strand serves as a template for a new complementary strand."
+
+- type: MultiChoice
+  text: "The experiments of Meselson and Stahl showed that DNA __________."
+  choices:
+    A: "replicates in a semiconservative fashion"
+    B: "codes for the amino acid sequences of proteins"
+    C: "is the genetic material"
+  answer: A
+  explain: "They observed hybrid and light bands consistent with semiconservative replication."
+
+- type: MultiChoice
+  text: "The role of DNA polymerases in DNA replication is to __________."
+  choices:
+    A: "attach free nucleotides to the new DNA strand"
+    B: "separate the two strands of DNA"
+    C: "synthesize an RNA primer to initiate DNA strand synthesis"
+  answer: A
+  explain: "DNA polymerases catalyze phosphodiester bond formation, adding nucleotides to the growing strand."
+
+- type: MultiChoice
+  text: "The two strands of a DNA double helix are antiparallel. This means that __________."
+  choices:
+    A: "one strand runs in the 5' to 3' direction, and the other runs in the 3' to 5' direction"
+    B: "only one of the two strands can be used as a template for replication, because DNA polymerase only works in one direction"
+    C: "they both run in the 3' to 5' direction"
+  answer: A
+  explain: "The backbones run in opposite orientations (5'→3' vs 3'→5')."
+
+- type: MultiChoice
+  text: "One strand of a DNA molecule has the base sequence 5′-ATAGGT-3′. The complementary base sequence on the other strand of DNA will be 3′- __________-5′"
+  choices:
+    A: "TGGAUA"
+    B: "TATCCA"
+    C: "UAUCCA"
+  answer: B
+  explain: "Complementary base pairing gives 3'-TATCCA-5' opposite 5'-ATAGGT-3'."
+
+- type: MultiChoice
+  text: "DNA polymerase adds nucleotides to the __________ of the leading strands, and to the __________ of the lagging strands (Okazaki fragments)."
+  choices:
+    A: "5′ end ... 5′ end"
+    B: "5′ end ... 3′ end"
+    C: "3′ end ... 3′ end"
+  answer: C
+  explain: "DNA polymerases always add nucleotides to the 3' end of both leading and lagging strands."
+
+- type: MultiChoice
+  text: "What enzyme joins Okazaki fragments?"
+  choices:
+    A: "primase"
+    B: "DNA ligase"
+    C: "DNA polymerase"
+  answer: B
+  explain: "DNA ligase seals nicks between Okazaki fragments to form a continuous strand."
+
+- type: MultiChoice
+  text: "Which of the following components is required for DNA replication?"
+  choices:
+    A: "ribosomes"
+    B: "messenger RNA"
+    C: "RNA primer"
+  answer: C
+  explain: "RNA primers provide starting 3' OH groups for DNA polymerases."
+
+- type: MultiChoice
+  text: "The removal of the RNA primer and addition of DNA nucleotides to the 3' end of Okazaki fragments in its place is carried out by __________."
+  choices:
+    A: "primase"
+    B: "ligase"
+    C: "DNA polymerase I"
+  answer: C
+  explain: "DNA polymerase I removes RNA primers and fills in with DNA."
+
+- type: MultiChoice
+  text: "Which one of the following statements regarding DNA replication is correct?"
+  choices:
+    A: "Helicases separate the two strands of the double helix, and DNA polymerases then construct two new strands using each of the original strands as templates."
+    B: "The two strands separate, and each one receives a complementary strand of RNA. Then this RNA serves as a template for the assembly of many new strands of DNA."
+    C: "Ligase assembles nucleotides into Okazaki fragments. Then polymerase joins these fragments together into a DNA strand."
+  answer: A
+  explain: "Helicase unwinds the helix and DNA polymerases synthesize new complementary strands."
+
+- type: MultiChoice
+  text: "Telomeres __________."
+  choices:
+    A: "get shorter with each round of DNA replication"
+    B: "remain the same regardless of the frequency of DNA replication"
+    C: "are found in both prokaryotic and eukaryotic cells"
+  answer: A
+  explain: "In most somatic cells, telomeres shorten each time DNA is replicated."
+
+- type: MultiChoice
+  text: "Telomerase __________."
+  choices:
+    A: "is an enzyme that lengthens telomeres"
+    B: "slows the rate of cancer cell growth"
+    C: "speeds cell aging"
+  answer: A
+  explain: "Telomerase extends telomeric repeats at chromosome ends."
+
+- type: MultiChoice
+  text: "Genetic information of eukaryotic cells is transferred from the nucleus to the cytoplasm in the form of __________."
+  choices:
+    A: "RNA"
+    B: "DNA"
+    C: "Proteins"
+  answer: A
+  explain: "mRNA carries genetic instructions from the nucleus to ribosomes in the cytoplasm."
+
+- type: MultiChoice
+  text: "Which statement is true?"
+  choices:
+    A: "It takes three genes to code for one protein."
+    B: "Each amino acid in a protein is coded for by three bases in the DNA."
+    C: "Each DNA base codes for three amino acids."
+  answer: B
+  explain: "A triplet of three bases (a codon) specifies one amino acid."
+
+- type: MultiChoice
+  text: "When RNA is being made, the RNA base __________ always pairs with the base __________ in DNA."
+  choices:
+    A: "U ... A"
+    B: "U ... T"
+    C: "T ... G"
+  answer: A
+  explain: "In RNA, uracil (U) replaces thymine and pairs with adenine."
+
+- type: MultiChoice
+  text: 'The number of nucleotide bases "read" together on the mRNA to designate each amino acid is __________; this unit is called a(n) __________.'
+  choices:
+    A: "two ... dipeptide"
+    B: "three ... codon"
+    C: "three ... triose"
+  answer: B
+  explain: "Three bases make up a codon that specifies an amino acid."
+
+- type: MultiChoice
+  text: "Bacteria can transcribe and translate human genes to produce functional human proteins because __________."
+  choices:
+    A: "the genetic code is nearly universal"
+    B: "bacterial and eukaryotic RNA polymerases are identical"
+    C: "bacterial ribosomes and eukaryotic ribosomes are identical"
+  answer: A
+  explain: "Because the genetic code is almost universal, codons specify the same amino acids in bacteria and humans."
+
+- type: MultiChoice
+  text: "In a eukaryotic cell, transcription takes place __________."
+  choices:
+    A: "in the nucleus"
+    B: "in the rough endoplasmic reticulum"
+    C: "in the cytoplasm"
+  answer: A
+  explain: "DNA is in the nucleus, so eukaryotic transcription occurs there."
+
+- type: MultiChoice
+  text: "What catalyzes the linkage between ribonucleotides to form RNA during gene expression?"
+  choices:
+    A: "RNA polymerase"
+    B: "aminoacyl-tRNA synthetase"
+    C: "DNA polymerase"
+  answer: A
+  explain: "RNA polymerase links ribonucleotides together to form RNA."
+
+- type: MultiChoice
+  text: "One strand of a DNA molecule has the following sequence: 3′-AGTACAAACTATCCACCGTC-5′. In order for that strand to be transcribed, there would have to be a specific recognition sequence, called a(n) __________, to the left of the DNA sequence indicated."
+  choices:
+    A: "intron"
+    B: "AUG codon"
+    C: "Promoter"
+  answer: C
+  explain: "RNA polymerase binds at a promoter sequence upstream (to the left) of the gene."
+
+- type: MultiChoice
+  text: "In eukaryotes, which mechanism operates after transcription, but before translation of mRNA into protein?"
+  choices:
+    A: "RNA splicing"
+    B: "construction of a transcription initiation complex"
+    C: "DNA packaging into nucleosomes"
+  answer: A
+  explain: "After transcription, pre-mRNA is processed, including splicing out introns, before translation occurs."
+
+- type: MultiChoice
+  text: "Which statement correctly describes mRNA processing?"
+  choices:
+    A: "Introns are cut out of the primary transcript and spliced together at the end of the transcript."
+    B: "Exons are cut out of the primary transcript, and the introns are spliced together."
+    C: "Introns are cut out of the primary transcript, and the resulting exons are spliced together."
+  answer: C
+  explain: "Noncoding introns are removed and coding exons are joined to form mature mRNA."
+
+- type: MultiChoice
+  text: "Two different proteins with mostly different structures are translated from two different mRNAs. These mRNAs, however, were transcribed from the same gene. Which mechanism could best account for this?"
+  choices:
+    A: "Exons from the same gene could be spliced in different ways to make different mRNAs."
+    B: "Different systems of DNA unpacking could result in two different mRNAs."
+    C: "A point mutation might have altered the gene."
+  answer: A
+  explain: "Alternative splicing can produce distinct mRNAs and proteins from one gene."
+
+- type: MultiChoice
+  text: "The function of tRNA during protein synthesis is to __________."
+  choices:
+    A: "attach mRNA to the small subunit of the ribosome"
+    B: "deliver amino acids to their proper site during protein synthesis"
+    C: "process mRNA"
+  answer: B
+  explain: "Each tRNA carries a specific amino acid and base pairs with codons to add it at the right position."
+
+- type: MultiChoice
+  text: "Which summary of protein synthesis is correct?"
+  choices:
+    A: "Replicated DNA leaves the nucleus, is transported to a ribosome, and catalyzes the polymerization of amino acids in a protein."
+    B: "Messenger RNA is made on a DNA template, and then amino-acid-bearing transfer RNAs bind to the mRNA through codon-anticodon pairing."
+    C: "DNA exchanges its thymine units with uracil in polymerase. This activates polymerase, and it starts joining amino acids together."
+  answer: B
+  explain: "This option correctly summarizes transcription (mRNA from DNA) and translation (tRNAs bringing amino acids to mRNA on ribosomes)."
+
+- type: MultiChoice
+  text: "The P site of a ribosome does which of the following?"
+  choices:
+    A: "It holds the tRNA carrying the growing polypeptide chain."
+    B: "It generates the mRNA sequence"
+    C: 'It helps "unzip" DNA during transcription.'
+  answer: A
+  explain: "The P (peptidyl) site holds the tRNA attached to the growing peptide chain."
+
+- type: MultiChoice
+  text: "The first amino acid inserted into a new polypeptide chain in eukaryotic cells is usually __________."
+  choices:
+    A: "alanine"
+    B: "glycine"
+    C: "methionine"
+  answer: C
+  explain: "The start codon AUG specifies methionine, which is usually the first amino acid."
+
+- type: MultiChoice
+  text: "During translation, amino acid chain elongation occurs until __________."
+  choices:
+    A: "no further amino acids are needed by the cell"
+    B: "all tRNAs are empty"
+    C: 'the ribosome encounters a "stop" codon'
+  answer: C
+  explain: "Stop codons (UAA, UAG, UGA) recruit release factors and terminate translation."
+
+- type: MultiChoice
+  text: "Cells are able to distinguish proteins destined for secretion or for segregation to specific intracellular compartments from those that will remain in the cytoplasm because __________."
+  choices:
+    A: "each compartment in the cell (the nucleus, lysosome, and so forth) has its own set of ribosomes that synthesize proteins unique to that compartment"
+    B: "some proteins, contain a signal sequence that causes the ribosome with its growing polypeptide to attach to the ER and translocate the polypeptide into the lumen (space) of the ER"
+    C: "proteins destined for secretion or for a specific compartment are all synthesized in the nucleus, whereas cytoplasmic proteins are all synthesized in the cytoplasm"
+  answer: B
+  explain: "Signal sequences on nascent proteins target ribosomes to the ER for secretion or membrane/organellar localization."
+
+- type: MultiChoice
+  text: "What is their proper sequence for these steps? 1. translation 2. RNA processing 3. transcription 4. modification of protein"
+  choices:
+    A: "3, 2, 1, 4"
+    B: "4, 2, 3, 1"
+    C: "1, 2, 3, 4"
+  answer: A
+  explain: "Gene expression occurs as transcription (3) → RNA processing (2) → translation (1) → protein modification (4)."
+
+- type: MultiChoice
+  text: "A point mutation in which a single base pair is inserted or deleted from DNA is called a(n) __________."
+  choices:
+    A: "nonsense mutation"
+    B: "frame-shift mutation"
+    C: "silent mutation"
+  answer: B
+  explain: "Insertion or deletion of a single base shifts the reading frame, so it is a frameshift mutation."
+
+- type: MultiChoice
+  text: "Ultraviolet (UV) radiation is damaging to cells because it __________."
+  choices:
+    A: "blocks all translation"
+    B: "causes mutations in the DNA"
+    C: "pokes holes in the nuclear envelope"
+  answer: B
+  explain: "UV can create thymine dimers and other lesions that, if unrepaired, lead to mutations."
