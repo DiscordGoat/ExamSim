@@ -42,7 +42,7 @@
   .mark{color:#94a3b8;font-size:13px}
   .q.correct .qtitle{color:var(--green)}
   .q.wrong .qtitle{color:var(--red)}
-  .hint{background:#0b1220;border:1px dashed #1f2a44;border-radius:10px;padding:8px 10px;margin-top:8px;color:#a5b4fc}
+  .hint{background:#0b1220;border:1px dashed #1f2a44;border-radius:10px;padding:8px 10px;margin-top:4px;color:#a5b4fc}
   .controls{display:flex;gap:10px;flex-wrap:wrap}
   input[type="file"]{display:none}
   .filebtn{background:#1f2937;color:#e5e7eb;border:1px solid #374151;padding:8px 12px;border-radius:8px;cursor:pointer}
@@ -58,6 +58,29 @@
   .acc .txt{font-size:12px;color:var(--sub);min-width:70px;text-align:right}
   .acc.hide{display:none}
   .pill{padding:2px 8px;border-radius:999px;background:#0b1220;border:1px solid #243145;color:#a5b4fc;font-size:12px}
+
+  /* per-choice help */
+  .ansHelpBtn{
+    margin-left:auto;
+    padding:2px 7px;
+    border-radius:999px;
+    border:1px solid #374151;
+    background:#020617;
+    color:#e5e7eb;
+    font-size:11px;
+    cursor:pointer;
+  }
+  .ansHelpBtn:hover{background:#111827}
+  .ansHelp{
+    display:none;
+    font-size:12px;
+    color:#9ca3af;
+    margin:2px 0 6px 26px;
+    padding:6px 8px;
+    border-radius:8px;
+    background:#020617;
+    border:1px dashed #1f2937;
+  }
 </style>
 </head>
 <body>
@@ -176,22 +199,32 @@ function normalizeQuestion(q){
   const t = q.type;
   const base = { type:t, text: String(q.text||"").trim(), explain: (q.explain ?? "").toString() };
   if (t === "TrueFalse") return { ...base, answer: toBool(q.answer) };
+
   if (t === "MultiChoice"){
-    const ch = q.choices||{};
-    return { ...base, choices: ch, answer: String(q.answer||"").toUpperCase() };
+    const ch   = q.choices || {};
+    const defs = q.choiceExplain || {};
+    return {
+      ...base,
+      choices: ch,
+      choiceExplain: defs,
+      answer: String(q.answer||"").toUpperCase()
+    };
   }
+
   if (t === "MultiSelect"){
-    const ch = q.choices||{};
+    const ch   = q.choices || {};
+    const defs = q.choiceExplain || {};
     let ans = q.answer ?? [];
     if (typeof ans === "string") ans = [ans];
     ans = ans.map(s => String(s).toUpperCase()).sort();
-    return { ...base, choices: ch, answer: ans };
+    return {
+      ...base,
+      choices: ch,
+      choiceExplain: defs,
+      answer: ans
+    };
   }
-  if (t === "Matching"){ return { ...base, pairs: q.pairs, options: q.options, answer: q.answer }; }
-  if (t === "ShortAnswer" || t === "ProblemScen"){ return { ...base, answer: "" }; }
-  throw new Error("Unsupported type: " + t);
 }
-
 function loadYAML(text, name="Exam"){
   let data;
   try{
@@ -259,7 +292,15 @@ function renderExam(){
 
     const area  = el("div","area"); qDiv.appendChild(area);
 
-    const meta = { type:q.type, node:qDiv, titleNode:title, explain:q.explain, baseId:q.baseId, counted:false, instanceId: `${q.baseId}_${idx}_${Date.now()%1e6}` };
+    const meta = {
+      type:q.type,
+      node:qDiv,
+      titleNode:title,
+      explain:q.explain,
+      baseId:q.baseId,
+      counted:false,
+      instanceId: `${q.baseId}_${idx}_${Date.now()%1e6}`
+    };
 
     if (q.type === "TrueFalse") {
       const choices = el("div","choices");
@@ -290,7 +331,25 @@ function renderExam(){
         const r = el("input"); r.type="radio"; r.name=`q${idx}`; r.value=letter; r.id=id;
         const L = el("label"); L.setAttribute("for", id);
         L.textContent = `${letter}. ${q.choices?.[letter] ?? ""}`;
-        row.appendChild(r); row.appendChild(L); choices.appendChild(row);
+        row.appendChild(r); row.appendChild(L);
+
+        let helpRow = null;
+        if (q.choiceExplain && q.choiceExplain[letter]) {
+          const helpBtn = el("button","ansHelpBtn");
+          helpBtn.type = "button";
+          helpBtn.textContent = "?";
+          helpBtn.title = "Explain this answer choice";
+          row.appendChild(helpBtn);
+
+          helpRow = el("div","ansHelp");
+          helpRow.textContent = q.choiceExplain[letter];
+          helpBtn.addEventListener("click", ()=>{
+            helpRow.style.display = helpRow.style.display === "block" ? "none" : "block";
+          });
+        }
+
+        choices.appendChild(row);
+        if (helpRow) choices.appendChild(helpRow);
       });
       area.appendChild(choices);
       meta.getUser = () => {
@@ -312,7 +371,25 @@ function renderExam(){
         const c = el("input"); c.type="checkbox"; c.value=letter; c.id=id;
         const L = el("label"); L.setAttribute("for", id);
         L.textContent = `${letter}. ${q.choices?.[letter] ?? ""}`;
-        row.appendChild(c); row.appendChild(L); choices.appendChild(row);
+        row.appendChild(c); row.appendChild(L);
+
+        let helpRow = null;
+        if (q.choiceExplain && q.choiceExplain[letter]) {
+          const helpBtn = el("button","ansHelpBtn");
+          helpBtn.type = "button";
+          helpBtn.textContent = "?";
+          helpBtn.title = "Explain this answer choice";
+          row.appendChild(helpBtn);
+
+          helpRow = el("div","ansHelp");
+          helpRow.textContent = q.choiceExplain[letter];
+          helpBtn.addEventListener("click", ()=>{
+            helpRow.style.display = helpRow.style.display === "block" ? "none" : "block";
+          });
+        }
+
+        choices.appendChild(row);
+        if (helpRow) choices.appendChild(helpRow);
       });
       area.appendChild(choices);
       meta.getUser = () => ([...choices.querySelectorAll("input[type=checkbox]:checked")].map(i=>i.value).sort());
@@ -354,16 +431,30 @@ function renderExam(){
       meta.grade = () => { const u = meta.getUser(); const ok = !!u.marked; colorize(qDiv, ok); return ok ? 1 : 0; };
     }
 
-    // explanation + peek
+    // explanation + answer summary
     const expl = el("div","explain");
+    const ansSummary = el("div","small");
+    ansSummary.style.marginBottom = "4px";
+    expl.appendChild(ansSummary);
     const hint = el("div","hint"); hint.textContent = q.explain || "(no explanation)";
     expl.appendChild(hint); area.appendChild(expl);
+    meta.ansBox = ansSummary;
 
-    const ctrl = el("div"); ctrl.style.display="flex"; ctrl.style.gap="10px"; ctrl.style.marginTop="8px";
-    const peekBtn = el("button","btn secondary"); peekBtn.textContent = " ?"; peekBtn.title = "Grade this question and show the explanation (does not submit)";
+    const ctrl = el("div");
+    ctrl.style.display="flex";
+    ctrl.style.gap="10px";
+    ctrl.style.marginTop="8px";
+    const peekBtn = el("button","btn secondary");
+    peekBtn.textContent = " ?";
+    peekBtn.title = "Grade this question and show the explanation (does not submit)";
     peekBtn.addEventListener("click", ()=>{
       const res = meta.grade();
       if (!meta.counted){ recordAttempt(meta.baseId, res >= 1); meta.counted = true; }
+      const userStr = userAsString(meta, q);
+      const expectStr = keyAsString(q);
+      if (meta.ansBox){
+        meta.ansBox.textContent = `Your: ${userStr || "(blank)"}   • Key: ${expectStr}`;
+      }
       expl.style.display = "block";
     });
     ctrl.appendChild(peekBtn); area.appendChild(ctrl);
@@ -425,6 +516,12 @@ function submitAll(){
     const expectStr = keyAsString(q);
     const status = (q.type==="Matching" ? `${Math.round(score*4)}/4` : (score>=1 ? "CORRECT" : "WRONG"));
     lines.push(`Q${i+1} [${q.type}] -> ${status}\n  Your: ${userStr}\n  Key:  ${expectStr}`);
+
+    if (m.ansBox){
+      m.ansBox.textContent = `Your: ${userStr || "(blank)"}   • Key: ${expectStr}`;
+      const exNode = m.node.querySelector(".explain");
+      if (exNode) exNode.style.display = "block";
+    }
   });
   const pct = (got / RENDER.length) * 100;
   $("#scoreBox").textContent = `Score: ${got.toFixed(2)}/${RENDER.length}  (${pct.toFixed(1)}%)`;
@@ -490,6 +587,11 @@ $("#demoBtn").addEventListener("click", ()=>{
   const sample = `- type: MultiChoice
   text: "Which drug is a direct renin inhibitor?"
   choices: {A: "Lisinopril", B: "Aliskiren", C: "Losartan", D: "Amlodipine"}
+  choiceExplain:
+    A: "An ACE inhibitor; works later in RAAS."
+    B: "Direct renin inhibitor; blocks RAAS at the start."
+    C: "An ARB; blocks angiotensin II receptor."
+    D: "A calcium-channel blocker, not RAAS."
   answer: B
   explain: "Aliskiren blocks renin at the start of the RAAS."
 - type: TrueFalse
@@ -499,6 +601,11 @@ $("#demoBtn").addEventListener("click", ()=>{
 - type: MultiSelect
   text: "Which ACE inhibitors are active (not prodrugs)?"
   choices: {A: "Captopril", B: "Lisinopril", C: "Enalapril", D: "Ramipril"}
+  choiceExplain:
+    A: "Active ACE inhibitor (not a prodrug)."
+    B: "Active ACE inhibitor; also not a prodrug."
+    C: "Prodrug ACE inhibitor; converted in liver."
+    D: "Prodrug ACE inhibitor; converted in liver."
   answer: [A, B]
   explain: "Captopril and lisinopril are active; many others are ester prodrugs."
 - type: Matching
@@ -517,7 +624,7 @@ $("#demoBtn").addEventListener("click", ()=>{
   loadYAML(sample, "Demo Exam");
 });
 
-  $("#exam5Btn").addEventListener("click", async ()=>{
+$("#exam5Btn").addEventListener("click", async ()=>{
   try {
     const response = await fetch("exam5.yml");
     if (!response.ok) throw new Error("Could not fetch exam5.yml");
@@ -530,7 +637,6 @@ $("#demoBtn").addEventListener("click", ()=>{
     alert("Failed to load Exam5:\n" + err.message);
   }
 });
-
 
 /* ---------- settings ---------- */
 $("#applyBtn").addEventListener("click", ()=>{
@@ -548,4 +654,3 @@ $("#accToggle").addEventListener("change", ()=>{
 </script>
 </body>
 </html>
-
