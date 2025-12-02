@@ -1,0 +1,1991 @@
+- answer: C
+  choices:
+    A: detergent
+    B: lysis buffer
+    C: alcohol
+    D: enzymes
+  explain: "The correct answer is 'alcohol' because cold alcohol (often ethanol or\
+    \ isopropanol) decreases DNA\u2019s solubility and causes the long, negatively\
+    \ charged DNA strands to aggregate and fall out of solution as a visible solid.\
+    \ This explanation elaborates the biological principles involved, describing underlying\
+    \ mechanisms and reasoning step by step."
+  text: What causes DNA to become solid and precipitate in a DNA extraction?
+  type: MultiChoice
+- answer: C
+  choices:
+    A: polymerase enzymes
+    B: helicase enzymes
+    C: restriction enzymes
+    D: ligase enzymes
+  explain: The correct answer is 'restriction enzymes' because these are DNA-cutting
+    enzymes that recognize specific palindromic sequences and cleave the phosphodiester
+    backbone at or near those sites, generating defined DNA fragments. This explanation
+    elaborates the biological principles involved, describing underlying mechanisms
+    and reasoning step by step.
+  text: Enzymes that cut DNA at a specific palindromic sequence are known as ___________.
+  type: MultiChoice
+- answer: C
+  choices:
+    A: CRISPR
+    B: Fluorescence
+    C: Recombination
+    D: Mitosis
+  explain: The correct answer is 'Recombination' because genetic maps are built by
+    measuring how frequently alleles are separated by crossing over during meiosis;
+    higher recombination frequency indicates greater distance between loci. This explanation
+    elaborates the biological principles involved, describing underlying mechanisms
+    and reasoning step by step.
+  text: Genetic mapping relies on what process?
+  type: MultiChoice
+- answer: A DNA molecule that has been artificially formed by joining DNA from two
+    or more different sources, often from different organisms.
+  explain: Recombinant DNA is created in the lab when fragments from different genomes
+    (for example, a human gene inserted into a bacterial plasmid) are ligated together
+    into a single DNA molecule that can be replicated and expressed. This explanation
+    elaborates the biological principles involved, describing underlying mechanisms
+    and reasoning step by step.
+  text: What is recombinant DNA?
+  type: ShortAnswer
+- answer: C
+  choices:
+    A: sequence
+    B: source
+    C: size
+    D: color
+  explain: The correct answer is 'size' because in an agarose gel, smaller DNA fragments
+    move more quickly through the pores toward the positive electrode, while larger
+    fragments move more slowly, creating a size-dependent band pattern. This explanation
+    elaborates the biological principles involved, describing underlying mechanisms
+    and reasoning step by step.
+  text: Gel electrophoresis separates DNA based on _______________.
+  type: MultiChoice
+- answer: "The E. coli DNA polymerase would denature at 95\xB0C and lose activity,\
+    \ causing PCR amplification to fail."
+  explain: "Standard E. coli DNA polymerase is not thermostable and unfolds at high\
+    \ temperatures, so after the first denaturation step it would be inactivated.\
+    \ Taq polymerase from Thermus aquaticus is heat-stable and survives repeated 95\xB0\
+    C cycles, which is why it is used in PCR. This explanation elaborates the biological\
+    \ principles involved, describing underlying mechanisms and reasoning step by\
+    \ step."
+  text: "PCR heats the DNA sample up to 95\xB0C, which is very close to boiling. What\
+    \ would happen if we used DNA polymerase from E. coli instead of from Thermus\
+    \ aquaticus bacteria?"
+  type: ShortAnswer
+- answer: A
+  choices:
+    A: Primers
+    B: Probes
+    C: ddNTPs
+    D: Ligase
+  explain: The correct answer is 'Primers' because short, synthetic DNA primers define
+    the start and end points of the target region. They anneal to complementary sequences
+    on the template and provide free 3' OH groups for DNA polymerase to extend. This
+    explanation elaborates the biological principles involved, describing underlying
+    mechanisms and reasoning step by step.
+  text: What is added to PCR to amplify a specific region of DNA sequence?
+  type: MultiChoice
+- answer: By incorporating fluorescently labeled chain-terminating ddNTPs, each nucleotide
+    type tagged with a different color, so the terminal ddNTP in each fragment reveals
+    which base is at that position.
+  explain: In Sanger sequencing, DNA synthesis occasionally incorporates a dideoxynucleotide
+    (ddATP, ddTTP, ddCTP, or ddGTP) that prevents further extension. Each ddNTP has
+    a unique fluorescent dye, so when fragments are separated by size in a capillary,
+    the color of the fluorescence at each length identifies whether the base is A,
+    T, C, or G. This explanation elaborates the biological principles involved, describing
+    underlying mechanisms and reasoning step by step.
+  text: How does Sanger sequencing identify different nucleotides?
+  type: ShortAnswer
+- answer: To treat or prevent disease by introducing, replacing, or correcting genes
+    so that cells produce a functional version of a needed gene product.
+  explain: "Gene therapy aims to fix the underlying genetic cause of a disorder\u2014\
+    often by delivering a working copy of a defective gene (or editing the existing\
+    \ copy) so that cells can make the correct protein and restore normal function.\
+    \ This explanation elaborates the biological principles involved, describing underlying\
+    \ mechanisms and reasoning step by step."
+  text: What is the goal of gene therapy?
+  type: ShortAnswer
+- answer: A genetic map orders genes based on recombination frequencies (how often
+    they are inherited together), while a physical map shows the actual physical positions
+    and distances between DNA sequences measured in base pairs.
+  explain: Genetic maps are built from linkage data and give relative distances in
+    map units or centimorgans, which reflect crossing-over frequency. Physical maps
+    come from sequencing or direct DNA analysis and place genes at precise locations
+    along chromosomes in terms of base-pair coordinates. This explanation elaborates
+    the biological principles involved, describing underlying mechanisms and reasoning
+    step by step.
+  text: What is the difference between a genetic map and a physical map?
+  type: ShortAnswer
+- answer: A
+  choices:
+    A: probes
+    B: DNA polymerase
+    C: CRISPR
+    D: primers
+  explain: The correct answer is 'probes' because FISH uses fluorescently labeled
+    DNA (or RNA) probes that are complementary to a target sequence; these probes
+    hybridize directly to chromosomes or nuclei, making the position of the gene visible
+    under a fluorescence microscope. This explanation elaborates the biological principles
+    involved, describing underlying mechanisms and reasoning step by step.
+  text: Fluorescent In Situ Hybridization locates specific genes using ______________.
+  type: MultiChoice
+- answer: C
+  choices:
+    A: a genetic map
+    B: an adenovirus
+    C: a contig
+    D: a primer
+  explain: The correct answer is 'a contig' because contigs are contiguous stretches
+    of DNA sequence assembled by aligning and merging multiple overlapping sequence
+    reads into a single, longer consensus sequence. This explanation elaborates the
+    biological principles involved, describing underlying mechanisms and reasoning
+    step by step.
+  text: By stitching together overlapping sequencing we can build ______________.
+  type: MultiChoice
+- answer: Reproductive cloning produces a whole new organism genetically identical
+    (or nearly identical) to the donor, whereas molecular cloning copies specific
+    DNA fragments or genes, usually by inserting them into vectors for amplification
+    in cells.
+  explain: "In reproductive cloning (such as somatic cell nuclear transfer in animals),\
+    \ the goal is a cloned individual. In molecular cloning, the goal is to isolate\
+    \ and amplify DNA segments\u2014for example, putting a gene into a plasmid and\
+    \ propagating it in bacteria for study or protein production. This explanation\
+    \ elaborates the biological principles involved, describing underlying mechanisms\
+    \ and reasoning step by step."
+  text: How are reproductive cloning and molecular cloning different?
+  type: ShortAnswer
+- answer: A
+  choices:
+    A: stem cells
+    B: gametes
+    C: meiosis
+    D: germ line cells
+  explain: The correct answer is 'stem cells' because stem cells are undifferentiated
+    cells that retain the capacity to divide and to specialize into various cell types,
+    unlike gametes or already differentiated somatic cells. This explanation elaborates
+    the biological principles involved, describing underlying mechanisms and reasoning
+    step by step.
+  text: In animals undifferentiated cells are known as ___________.
+  type: MultiChoice
+- answer: "Because the genome is essentially the same in both cell types, but the\
+    \ proteome\u2014the set of proteins expressed and their levels\u2014differs dramatically,\
+    \ so proteomics reveals functional differences between brain and liver cells."
+  explain: Genomics would show the same DNA sequence in both tissues, offering little
+    insight into why they behave differently. Proteomics analyzes which proteins are
+    present, in what amounts, and with what modifications, directly reflecting cell-specific
+    functions and states. This explanation elaborates the biological principles involved,
+    describing underlying mechanisms and reasoning step by step.
+  text: "When studying the differences between a person\u2019s brain cells and liver\
+    \ cells, why might we want to use proteomics rather than genomics?"
+  type: ShortAnswer
+- answer: Next generation sequencing runs millions of sequencing reactions in parallel
+    on many fragmented templates, generating huge amounts of data at once, whereas
+    Sanger sequencing reads one DNA fragment (or a small number) at a time using capillary
+    electrophoresis.
+  explain: NGS platforms immobilize many DNA fragments on a surface or in wells and
+    sequence them simultaneously, greatly increasing throughput and lowering cost
+    per base. Sanger sequencing relies on individual chain-termination reactions and
+    capillary separation for each template, making it slower and lower throughput.
+    This explanation elaborates the biological principles involved, describing underlying
+    mechanisms and reasoning step by step.
+  text: How is next generation sequencing different from Sanger sequencing?
+  type: ShortAnswer
+- answer: D
+  choices:
+    A: protein sequences
+    B: primer sequences
+    C: gene sequences
+    D: repetitive sequences
+  explain: The correct answer is 'repetitive sequences' because when the genome contains
+    many identical or nearly identical repeats, short random reads from shotgun sequencing
+    cannot be placed unambiguously, leading to gaps or misassemblies in those regions.
+    This explanation elaborates the biological principles involved, describing underlying
+    mechanisms and reasoning step by step.
+  text: Shotgun sequencing has problems assembling __________________.
+  type: MultiChoice
+- answer: "By analyzing the specific genetic and molecular changes in an individual\u2019\
+    s tumor and tailoring drugs or treatment strategies to target those alterations,\
+    \ improving effectiveness and reducing unnecessary side effects."
+  explain: "Different tumors, even of the same type, can carry distinct mutations\
+    \ that affect which signaling pathways are active. Personalized medicine uses\
+    \ genomic and molecular profiling to select therapies (such as targeted inhibitors\
+    \ or immunotherapies) that are most likely to work against that patient\u2019\
+    s particular cancer. This explanation elaborates the biological principles involved,\
+    \ describing underlying mechanisms and reasoning step by step."
+  text: How could personalized medicine be important in cancer treatment?
+  type: ShortAnswer
+- answer: D
+  choices:
+    A: Sanger sequencing
+    B: Polymerase Chain Reaction
+    C: Gel electrophoresis
+    D: Mass spectrometry
+  explain: The correct answer is 'Mass spectrometry' because proteomics commonly uses
+    mass spectrometry to separate peptide fragments by mass-to-charge ratio and identify
+    proteins and their abundances from complex mixtures. This explanation elaborates
+    the biological principles involved, describing underlying mechanisms and reasoning
+    step by step.
+  text: What technique is used to study proteomics?
+  type: MultiChoice
+- answer: The complete set of proteins expressed by a cell, tissue, or organism under
+    defined conditions, including their quantities and, in many cases, their modifications.
+  explain: "Where the genome is all of an organism\u2019s DNA, the proteome is all\
+    \ of the proteins actually produced at a given time. It changes depending on cell\
+    \ type, developmental stage, and environmental conditions, making it a dynamic\
+    \ snapshot of cellular function. This explanation elaborates the biological principles\
+    \ involved, describing underlying mechanisms and reasoning step by step."
+  text: Define a proteome.
+  type: ShortAnswer
+- answer: B
+  choices:
+    A: Any use of computers to analyze DNA sequences
+    B: Using living organisms or their parts to make products or solve problems
+    C: Any medical treatment that involves drugs
+    D: Studying evolution using fossils
+  explain: In this course, biotechnology is defined as the use of living organisms,
+    cells, or biological molecules (like DNA or enzymes) to make useful products or
+    solve practical problems, such as medicines, crops, or diagnostics. This explanation
+    elaborates the biological principles involved, describing underlying mechanisms
+    and reasoning step by step.
+  text: Which option best matches the definition of biotechnology used in BIOL 201?
+  type: MultiChoice
+- answer: Biotechnology is the use of living organisms, cells, or biological molecules
+    to produce useful products or solve practical problems.
+  explain: 'This answer captures both key ideas: we are harnessing biological systems
+    (organisms, cells, molecules) and applying them to real-world uses such as medicine,
+    agriculture, or industry. This explanation elaborates the biological principles
+    involved, describing underlying mechanisms and reasoning step by step.'
+  text: State the BIOL 201 definition of biotechnology in one clear sentence.
+  type: ShortAnswer
+- answer: B
+  choices:
+    A: Using sand and gravel to filter dirty water
+    B: Engineering bacteria to produce human insulin for diabetics
+    C: Boiling water on a stove to sterilize it
+    D: Melting metal to build a bridge
+  explain: 'Engineering bacteria to produce human insulin is classic biotechnology:
+    human DNA is inserted into a living cell, which then makes a useful medical product.
+    This explanation elaborates the biological principles involved, describing underlying
+    mechanisms and reasoning step by step.'
+  text: Which of the following is the best example of biotechnology?
+  type: MultiChoice
+- answer: 'Example: Genetically modifying corn so it produces a protein that kills
+    insect pests. It fits the definition because a living organism (corn) has been
+    altered at the DNA level to solve an agricultural problem (insect damage) and
+    increase crop yield.'
+  explain: Any answer that clearly describes a living system being altered or used
+    to make a product or solve a problem (e.g., insulin-producing bacteria, vaccine-producing
+    cells, GMO crops, yeast making recombinant proteins) is acceptable. This explanation
+    elaborates the biological principles involved, describing underlying mechanisms
+    and reasoning step by step.
+  text: Give one specific example of a biotechnology application and briefly explain
+    why it fits the definition of biotechnology.
+  type: ShortAnswer
+- answer: B
+  choices:
+    A: It inserts viral DNA into our genome so we slowly become immune.
+    B: It delivers mRNA that our ribosomes translate into a viral protein, which the
+      immune system learns to recognize.
+    C: It directly injects viral proteins into the nucleus to kill infected cells.
+    D: It blocks transcription of all host genes so viruses cannot replicate.
+  explain: "The mRNA vaccine provides an mRNA sequence encoding a viral protein (such\
+    \ as the spike protein). Our ribosomes translate this mRNA into protein (information\
+    \ flow: mRNA \u2192 protein), and our immune system creates memory cells against\
+    \ that protein. This explanation elaborates the biological principles involved,\
+    \ describing underlying mechanisms and reasoning step by step."
+  text: How does an mRNA vaccine use the central dogma of molecular biology to protect
+    the body?
+  type: MultiChoice
+- answer: Injected mRNA enters host cells, ribosomes translate the mRNA into viral
+    protein, the protein is displayed to the immune system, and immune cells make
+    antibodies and memory cells that will respond quickly if the real virus appears.
+  explain: 'This answer correctly follows the central dogma step used in mRNA vaccines:
+    mRNA is translated into protein, and that protein trains the immune system to
+    recognize and fight the actual pathogen. This explanation elaborates the biological
+    principles involved, describing underlying mechanisms and reasoning step by step.'
+  text: Briefly describe the path information takes in an mRNA vaccine, starting from
+    the injected mRNA and ending with immune protection.
+  type: ShortAnswer
+- answer: C
+  choices:
+    A: Detergent disrupting cell membranes
+    B: Enzymes digesting proteins
+    C: Cold alcohol added to the lysate
+    D: Lysis buffer adjusting the pH
+  explain: Cold alcohol (such as ethanol or isopropanol) lowers the solubility of
+    DNA and neutralizes its charge, causing long DNA strands to clump together and
+    become visible as a precipitate. This explanation elaborates the biological principles
+    involved, describing underlying mechanisms and reasoning step by step.
+  text: In a DNA extraction from cells, what causes dissolved DNA to become solid
+    and precipitate out of solution?
+  type: MultiChoice
+- answer: "DNA is highly charged and normally dissolves well in water, but when cold\
+    \ alcohol is added, the environment becomes less polar and salts help neutralize\
+    \ the DNA\u2019s charge, so the long DNA molecules clump together and come out\
+    \ of solution."
+  explain: This explanation correctly describes that alcohol changes the solvent conditions
+    and, together with salts, reduces DNA solubility, leading to visible DNA strands.
+    This explanation elaborates the biological principles involved, describing underlying
+    mechanisms and reasoning step by step.
+  text: Explain why adding cold alcohol to a DNA extraction causes the DNA to precipitate.
+  type: ShortAnswer
+- answer: C
+  choices:
+    A: Helicase
+    B: DNA ligase
+    C: Restriction endonuclease (restriction enzyme)
+    D: DNA polymerase
+  explain: Restriction enzymes (restriction endonucleases) recognize specific palindromic
+    DNA sequences and cut the DNA backbone at or near those sites, producing defined
+    fragments used in cloning and analysis. This explanation elaborates the biological
+    principles involved, describing underlying mechanisms and reasoning step by step.
+  text: What type of enzyme is commonly used to cut DNA at specific short sequences
+    in biotechnology?
+  type: MultiChoice
+- answer: A restriction enzyme is a bacterial enzyme that cuts DNA at a specific recognition
+    sequence. Its sequence specificity lets scientists cut DNA in predictable places
+    so they can isolate or insert particular genes with precise ends.
+  explain: Being able to cut DNA at the same sequence every time is what allows reproducible
+    cloning and construction of recombinant DNA molecules. This explanation elaborates
+    the biological principles involved, describing underlying mechanisms and reasoning
+    step by step.
+  text: What is a restriction enzyme, and why is its sequence specificity important
+    in genetic engineering?
+  type: ShortAnswer
+- answer: A
+  choices:
+    A: DNA ligase
+    B: Topoisomerase
+    C: Restriction endonuclease
+    D: RNA polymerase
+  explain: "DNA ligase forms phosphodiester bonds between adjacent nucleotides in\
+    \ the sugar\u2013phosphate backbone, sealing nicks and joining DNA fragments with\
+    \ compatible ends. This explanation elaborates the biological principles involved,\
+    \ describing underlying mechanisms and reasoning step by step."
+  text: After cutting two DNA fragments with compatible ends, which enzyme is used
+    to join or 'paste' them together?
+  type: MultiChoice
+- answer: "DNA ligase covalently joins the sugar\u2013phosphate backbones of DNA fragments\
+    \ that have matching ends, sealing them into a single continuous DNA molecule\
+    \ that contains DNA from different sources."
+  explain: In cloning, restriction enzymes provide compatible ends and ligase provides
+    the final covalent bond, making a stable recombinant DNA construct. This explanation
+    elaborates the biological principles involved, describing underlying mechanisms
+    and reasoning step by step.
+  text: Explain the role of DNA ligase in creating recombinant DNA molecules.
+  type: ShortAnswer
+- answer: B
+  choices:
+    A: DNA that has been damaged and repaired by the cell
+    B: DNA composed of sequences from two or more different sources combined into
+      one molecule
+    C: Any DNA isolated from an organism
+    D: Mitochondrial DNA inherited from the mother
+  explain: "Recombinant DNA is a single DNA molecule created in the lab that contains\
+    \ sequences from different organisms or sources\u2014for example, a human gene\
+    \ inserted into a bacterial plasmid. This explanation elaborates the biological\
+    \ principles involved, describing underlying mechanisms and reasoning step by\
+    \ step."
+  text: Which statement best defines recombinant DNA?
+  type: MultiChoice
+- answer: 'Recombinant DNA is DNA assembled from at least two different sources into
+    one molecule. Example: A circular plasmid that contains the bacterial plasmid
+    backbone plus the human insulin gene inserted into it.'
+  explain: This answer correctly includes both the definition (mixed-source DNA in
+    one molecule) and a realistic example used in biotechnology. This explanation
+    elaborates the biological principles involved, describing underlying mechanisms
+    and reasoning step by step.
+  text: Describe what recombinant DNA is and give one concrete example.
+  type: ShortAnswer
+- answer: B
+  choices:
+    A: Differences in DNA color
+    B: Differences in DNA mass and charge causing smaller fragments to move faster
+      through the gel
+    C: Differences in base composition (A/T vs G/C content) only
+    D: Random movement with no size dependence
+  explain: In an electric field, all DNA fragments have similar charge-to-mass ratios,
+    but smaller fragments move more easily through the gel matrix, so they migrate
+    farther than larger fragments during a fixed time. This explanation elaborates
+    the biological principles involved, describing underlying mechanisms and reasoning
+    step by step.
+  text: On what physical principle does gel electrophoresis separate fragments of
+    DNA?
+  type: MultiChoice
+- answer: Small DNA fragments move more quickly and travel farther through the pores
+    of the gel than large fragments because they experience less resistance from the
+    gel matrix.
+  explain: "This answer correctly links fragment size to distance migrated and ties\
+    \ it to movement through the gel\u2019s pores. This explanation elaborates the\
+    \ biological principles involved, describing underlying mechanisms and reasoning\
+    \ step by step."
+  text: When you run a DNA sample on an agarose gel and apply an electric field, what
+    happens to small fragments compared with large fragments, and why?
+  type: ShortAnswer
+- answer: B
+  choices:
+    A: Molecular cloning copies whole organisms; reproductive cloning copies single
+      genes.
+    B: Molecular cloning copies DNA fragments or genes; reproductive cloning produces
+      an entire genetically identical organism.
+    C: Both molecular and reproductive cloning always produce whole organisms.
+    D: Neither involves DNA; both copy proteins only.
+  explain: Molecular cloning deals with copying pieces of DNA (like genes) into vectors,
+    whereas reproductive cloning (e.g., cloning a sheep) aims to create a new organism
+    genetically identical to the donor. This explanation elaborates the biological
+    principles involved, describing underlying mechanisms and reasoning step by step.
+  text: Which comparison correctly distinguishes molecular cloning from reproductive
+    cloning?
+  type: MultiChoice
+- answer: 'Molecular cloning example: inserting a GFP gene into a bacterial plasmid
+    and propagating it in E. coli. Reproductive cloning example: creating a cloned
+    sheep, like Dolly, by transferring a nucleus from a donor cell into an enucleated
+    egg and developing a new animal.'
+  explain: The examples clearly show cloning at the DNA level (molecular) versus cloning
+    at the whole-organism level (reproductive). This explanation elaborates the biological
+    principles involved, describing underlying mechanisms and reasoning step by step.
+  text: Give one example of molecular cloning and one example of reproductive cloning.
+  type: ShortAnswer
+- answer: B
+  choices:
+    A: A fully specialized cell that cannot divide
+    B: A cell that can divide and differentiate into one or more types of specialized
+      cell
+    C: Any cell undergoing apoptosis
+    D: A bacterial cell used in cloning
+  explain: Stem cells have the ability to self-renew (divide) and to differentiate
+    into specific cell types, making them valuable for development, repair, and potential
+    therapies. This explanation elaborates the biological principles involved, describing
+    underlying mechanisms and reasoning step by step.
+  text: What is a stem cell?
+  type: MultiChoice
+- answer: A stem cell is an undifferentiated cell that can both self-renew and give
+    rise to specialized cell types. They are important for regenerative medicine because
+    they can be directed to replace or repair damaged tissues such as blood, nerve,
+    or muscle cells.
+  explain: This answer captures the key properties of stem cells and links them directly
+    to their medical applications. This explanation elaborates the biological principles
+    involved, describing underlying mechanisms and reasoning step by step.
+  text: Briefly define a stem cell and explain why stem cells are important for regenerative
+    medicine.
+  type: ShortAnswer
+- answer: B
+  choices:
+    A: "Annealing \u2192 Denaturation \u2192 Extension"
+    B: "Denaturation \u2192 Annealing \u2192 Extension"
+    C: "Extension \u2192 Denaturation \u2192 Annealing"
+    D: "Denaturation \u2192 Extension \u2192 Annealing"
+  explain: In PCR, DNA is first denatured (separated into single strands), then primers
+    anneal to their complementary sequences, and finally DNA polymerase extends from
+    the primers to synthesize new DNA. This explanation elaborates the biological
+    principles involved, describing underlying mechanisms and reasoning step by step.
+  text: Which sequence correctly lists the three main steps of a standard PCR cycle
+    in order?
+  type: MultiChoice
+- answer: 'Denaturation: Heat separates the double-stranded DNA into single strands.
+    Annealing: The temperature is lowered so primers bind to their complementary target
+    sequences. Extension: DNA polymerase extends from the primers, synthesizing new
+    DNA strands.'
+  explain: This answer correctly names each step and explains the essential event
+    that occurs during that step. This explanation elaborates the biological principles
+    involved, describing underlying mechanisms and reasoning step by step.
+  text: Name and briefly describe what happens in each of the three main steps of
+    a PCR cycle.
+  type: ShortAnswer
+- answer: C
+  choices:
+    A: They cut DNA into small pieces.
+    B: They provide free 5' ends for ligase to join.
+    C: They define the region to be amplified by providing 3' ends for DNA synthesis
+      to start.
+    D: They act as fluorescent labels for detection only.
+  explain: Primers are short DNA oligonucleotides that bind to specific sequences
+    on the template and provide free 3' hydroxyl groups where DNA polymerase begins
+    adding nucleotides, defining the boundaries of the amplified fragment. This explanation
+    elaborates the biological principles involved, describing underlying mechanisms
+    and reasoning step by step.
+  text: What is the main function of primers in a PCR reaction?
+  type: MultiChoice
+- answer: Each primer is designed to be complementary to one end of the target region
+    on opposite strands. DNA polymerase extends from each primer inward, so only the
+    DNA between the two primer-binding sites is efficiently copied over many cycles.
+  explain: Because DNA synthesis can only start from primers, their binding sites
+    set the start and end points of the amplified fragment. This explanation elaborates
+    the biological principles involved, describing underlying mechanisms and reasoning
+    step by step.
+  text: Explain how primer sequences determine which segment of DNA is amplified in
+    PCR.
+  type: ShortAnswer
+- answer: C
+  choices:
+    A: Thermophilic polymerase only works at room temperature.
+    B: E. coli polymerase cannot use dNTPs.
+    C: Thermophilic polymerase is stable and active at the high temperatures used
+      during repeated denaturation steps.
+    D: E. coli polymerase cannot copy human DNA.
+  explain: "PCR repeatedly heats samples to around 95\xB0C to denature DNA. A thermophilic\
+    \ polymerase from heat-loving bacteria stays folded and functional at these temperatures,\
+    \ so it does not have to be replaced after each cycle. This explanation elaborates\
+    \ the biological principles involved, describing underlying mechanisms and reasoning\
+    \ step by step."
+  text: Why is a DNA polymerase from a thermophilic bacterium (such as Taq polymerase)
+    used in PCR instead of normal E. coli DNA polymerase?
+  type: MultiChoice
+- answer: The E. coli polymerase would denature and lose activity during the high-temperature
+    denaturation steps, so it would stop working and would need to be added fresh
+    after each cycle.
+  explain: This highlights that PCR relies on a thermostable polymerase to survive
+    repeated heating without being destroyed. This explanation elaborates the biological
+    principles involved, describing underlying mechanisms and reasoning step by step.
+  text: What would happen if you used a typical E. coli DNA polymerase in standard
+    PCR conditions?
+  type: ShortAnswer
+- answer: B
+  choices:
+    A: Restriction enzymes that cut after every base
+    B: Chain-terminating dideoxynucleotides (ddNTPs), often fluorescently labeled
+    C: Extra magnesium ions
+    D: Histone proteins
+  explain: Sanger sequencing includes small amounts of ddNTPs that lack a 3' OH group.
+    When incorporated, they stop elongation, producing a mixture of fragments that
+    end at every possible position; their labels allow the base at each position to
+    be identified. This explanation elaborates the biological principles involved,
+    describing underlying mechanisms and reasoning step by step.
+  text: What special component is added in Sanger sequencing that allows the DNA sequence
+    to be read?
+  type: MultiChoice
+- answer: Each time a ddNTP is incorporated instead of a normal nucleotide, DNA synthesis
+    stops at that base. Across many molecules this produces a set of fragments that
+    end at different positions, and by separating these fragments by size and detecting
+    which ddNTP is at the end, the sequence of the template can be determined.
+  explain: This explanation correctly mentions chain termination, the mixture of fragment
+    lengths, and how reading the terminal base at each length reveals the sequence.
+    This explanation elaborates the biological principles involved, describing underlying
+    mechanisms and reasoning step by step.
+  text: Explain how ddNTPs in Sanger sequencing generate a pattern that can be used
+    to read a DNA sequence.
+  type: ShortAnswer
+- answer: B
+  choices:
+    A: To randomly mutate genes to see what happens
+    B: "To replace, add, or correct a gene in a patient\u2019s cells to treat or prevent\
+      \ disease"
+    C: To permanently remove all genes from a cell
+    D: To improve DNA extraction efficiency in the lab
+  explain: "Gene therapy is designed to treat disease by changing the genetic information\
+    \ in a patient\u2019s cells, such as by delivering a functional copy of a defective\
+    \ gene or editing a harmful mutation. This explanation elaborates the biological\
+    \ principles involved, describing underlying mechanisms and reasoning step by\
+    \ step."
+  text: What is the main goal of gene therapy?
+  type: MultiChoice
+- answer: "For a disease caused by a missing or nonfunctional enzyme, gene therapy\
+    \ can deliver a working copy of the gene into the patient\u2019s cells (for example\
+    \ using a viral vector), allowing those cells to produce the missing enzyme and\
+    \ reduce disease symptoms."
+  explain: Any answer that describes delivering or correcting a gene in patient cells
+    to restore a missing or defective function meets the goal of gene therapy. This
+    explanation elaborates the biological principles involved, describing underlying
+    mechanisms and reasoning step by step.
+  text: Give one example of how gene therapy might be used to treat a genetic disease.
+  type: ShortAnswer
+- answer: B
+  choices:
+    A: "CRISPR\u2013Cas9 cuts DNA randomly, while restriction enzymes are programmable."
+    B: "CRISPR\u2013Cas9 is guided to a target sequence by an RNA, while restriction\
+      \ enzymes recognize fixed short DNA sequences built into the protein."
+    C: Both recognize only palindromic sequences.
+    D: "Restriction enzymes use RNA guides, while CRISPR\u2013Cas9 does not."
+  explain: "Restriction enzymes have hard-wired recognition sites encoded in their\
+    \ amino acid sequence. CRISPR\u2013Cas9 uses a guide RNA that base-pairs with\
+    \ the target, making it programmable by changing the guide RNA sequence. This\
+    \ explanation elaborates the biological principles involved, describing underlying\
+    \ mechanisms and reasoning step by step."
+  text: "How is CRISPR\u2013Cas9 different from traditional restriction enzymes in\
+    \ how it finds and cuts DNA?"
+  type: MultiChoice
+- answer: "CRISPR\u2013Cas9 can be programmed to cut almost any DNA sequence simply\
+    \ by changing the sequence of the guide RNA, so it can target unique sites in\
+    \ a genome, whereas each restriction enzyme is limited to a small set of natural\
+    \ recognition sites."
+  explain: This answer highlights the flexibility and programmability of CRISPR, which
+    is a key reason it revolutionized gene editing. This explanation elaborates the
+    biological principles involved, describing underlying mechanisms and reasoning
+    step by step.
+  text: "Briefly describe one major advantage of CRISPR\u2013Cas9 over traditional\
+    \ restriction enzymes for gene editing."
+  type: ShortAnswer
+- answer: B
+  choices:
+    A: A genetic map shows actual DNA sequence; a physical map shows recombination
+      frequencies.
+    B: A genetic map is based on recombination frequencies between genes; a physical
+      map shows actual physical positions or base-pair distances along DNA.
+    C: There is no difference; the terms are interchangeable.
+    D: A genetic map only exists for humans; a physical map only exists for bacteria.
+  explain: Genetic maps are built from how often genes are inherited together (recombination
+    data), whereas physical maps use molecular techniques to determine actual distances
+    in base pairs and order along the chromosome. This explanation elaborates the
+    biological principles involved, describing underlying mechanisms and reasoning
+    step by step.
+  text: How does a genetic map differ from a physical map of a chromosome?
+  type: MultiChoice
+- answer: A genetic map estimates the relative positions of genes based on recombination
+    frequencies during meiosis. A physical map shows the actual order and physical
+    distance between DNA regions, typically measured in base pairs.
+  explain: 'This answer clearly contrasts the basis for each map: recombination vs
+    measurable physical distance. This explanation elaborates the biological principles
+    involved, describing underlying mechanisms and reasoning step by step.'
+  text: In one or two sentences, distinguish a genetic map from a physical map of
+    the genome.
+  type: ShortAnswer
+- answer: B
+  choices:
+    A: By sequencing every chromosome in the cell
+    B: "By using a fluorescently labeled DNA probe that base-pairs with the gene\u2019\
+      s complementary sequence on the chromosome"
+    C: By staining chromosomes with a non-specific dye that binds all DNA
+    D: By measuring the mass of each chromosome
+  explain: FISH uses a single-stranded DNA probe with a fluorescent tag. The probe
+    hybridizes (base-pairs) to its complementary sequence on chromosomes fixed on
+    a slide, and the location of the gene is seen as a fluorescent spot under the
+    microscope. This explanation elaborates the biological principles involved, describing
+    underlying mechanisms and reasoning step by step.
+  text: How does Fluorescent In Situ Hybridization (FISH) locate a specific gene on
+    a chromosome?
+  type: MultiChoice
+- answer: "The DNA probe is a short, labeled single-stranded DNA molecule that is\
+    \ complementary to the target gene; it hybridizes to that gene on the chromosome\
+    \ so the gene\u2019s location can be visualized as a fluorescent signal."
+  explain: This answer correctly identifies the probe as complementary and labeled,
+    and explains that it marks where the target sequence is located. This explanation
+    elaborates the biological principles involved, describing underlying mechanisms
+    and reasoning step by step.
+  text: Describe the role of the DNA probe in a FISH experiment.
+  type: ShortAnswer
+- answer: B
+  choices:
+    A: Sequencing chromosomes from one end straight through to the other without breaks
+    B: Randomly breaking the genome into many small fragments, sequencing them, and
+      then using computers to assemble the overlapping sequences
+    C: Sequencing only RNA molecules instead of DNA
+    D: Sequencing only repetitive DNA regions
+  explain: Shotgun sequencing randomly shears the genome, sequences large numbers
+    of small pieces, and uses overlapping regions between fragments to computationally
+    reconstruct the original genome sequence. This explanation elaborates the biological
+    principles involved, describing underlying mechanisms and reasoning step by step.
+  text: What is the basic idea of shotgun genome sequencing?
+  type: MultiChoice
+- answer: Because it generates huge numbers of short, overlapping sequence reads that
+    must be compared and assembled like a jigsaw puzzle to reconstruct the original
+    long genome sequence.
+  explain: This highlights that the random-fragment approach relies heavily on computers
+    to align overlaps and build contigs. This explanation elaborates the biological
+    principles involved, describing underlying mechanisms and reasoning step by step.
+  text: Why is extensive computational analysis required for shotgun genome sequencing?
+  type: ShortAnswer
+- answer: B
+  choices:
+    A: Unique single-copy genes
+    B: Highly repetitive DNA sequences
+    C: Mitochondrial DNA
+    D: Short exons in protein-coding genes
+  explain: Highly repetitive DNA (such as long tandem repeats or transposable element
+    repeats) produces many nearly identical reads, making it difficult for assembly
+    software to tell exactly how many repeats are present and how they are ordered.
+    This explanation elaborates the biological principles involved, describing underlying
+    mechanisms and reasoning step by step.
+  text: Which type of DNA is especially problematic for shotgun sequencing and assembly?
+  type: MultiChoice
+- answer: Many reads from repetitive regions look almost identical, so the assembler
+    cannot easily determine how many times the repeat occurs or where each repeat
+    copy belongs, leading to gaps or misassembled regions.
+  explain: This answer correctly points out that the lack of unique sequence in repeats
+    makes it hard to place reads in the correct genomic position. This explanation
+    elaborates the biological principles involved, describing underlying mechanisms
+    and reasoning step by step.
+  text: Explain why long repetitive sequences in a genome make assembly from shotgun
+    reads more difficult.
+  type: ShortAnswer
+- answer: C
+  choices:
+    A: 3 thousand base pairs
+    B: 3 million base pairs
+    C: 3 billion base pairs
+    D: 3 trillion base pairs
+  explain: "The human haploid genome is on the order of 3 \xD7 10^9 base pairs (about\
+    \ three billion bases of DNA). This explanation elaborates the biological principles\
+    \ involved, describing underlying mechanisms and reasoning step by step."
+  text: Approximately how large is the human haploid genome?
+  type: MultiChoice
+- answer: The human haploid genome is roughly 3 billion base pairs long, so a diploid
+    human cell has about 6 billion base pairs of DNA total.
+  explain: This answer gives a correct order-of-magnitude estimate and distinguishes
+    between haploid and diploid amounts. This explanation elaborates the biological
+    principles involved, describing underlying mechanisms and reasoning step by step.
+  text: Give an approximate value for the size of the human genome in base pairs,
+    and state whether this refers to the haploid or diploid genome.
+  type: ShortAnswer
+- answer: B
+  choices:
+    A: NGS sequences only one DNA fragment at a time, while Sanger sequences millions
+      in parallel.
+    B: NGS sequences millions of fragments in parallel on a chip, while Sanger typically
+      sequences one fragment per reaction.
+    C: NGS does not use DNA polymerase.
+    D: There is no major difference; the methods are identical.
+  explain: Sanger sequencing is usually used for one or a small number of DNA templates
+    at a time, while NGS platforms carry out massively parallel sequencing of millions
+    of fragments simultaneously, greatly increasing speed and lowering cost per base.
+    This explanation elaborates the biological principles involved, describing underlying
+    mechanisms and reasoning step by step.
+  text: How are next-generation sequencing (NGS) technologies different from traditional
+    Sanger sequencing?
+  type: MultiChoice
+- answer: NGS can sequence millions of fragments in parallel, making it much faster
+    and cheaper per base than Sanger sequencing for large genomes.
+  explain: Any answer that clearly states increased throughput and reduced cost or
+    time for large-scale sequencing earns full credit. This explanation elaborates
+    the biological principles involved, describing underlying mechanisms and reasoning
+    step by step.
+  text: Name one key advantage of NGS over Sanger sequencing for whole-genome projects.
+  type: ShortAnswer
+- answer: C
+  choices:
+    A: 'Genome: all proteins in a cell; proteome: all DNA in a cell.'
+    B: 'Genome: all RNA molecules in an organism; proteome: all lipids in an organism.'
+    C: 'Genome: the complete set of DNA (genes) in an organism; proteome: the complete
+      set of proteins expressed by a cell or organism.'
+    D: Genome and proteome are both terms for all carbohydrates in a cell.
+  explain: The genome refers to the entire DNA content, including all genes and noncoding
+    regions; the proteome refers to all the proteins that are actually expressed under
+    certain conditions. This explanation elaborates the biological principles involved,
+    describing underlying mechanisms and reasoning step by step.
+  text: Which pair correctly defines a genome and a proteome?
+  type: MultiChoice
+- answer: The genome is the full set of DNA sequences in an organism. The proteome
+    is the full set of proteins that an organism or cell actually makes, which can
+    change with cell type and conditions.
+  explain: This answer correctly distinguishes stable DNA content (genome) from the
+    dynamic set of expressed proteins (proteome). This explanation elaborates the
+    biological principles involved, describing underlying mechanisms and reasoning
+    step by step.
+  text: Define the terms genome and proteome in your own words.
+  type: ShortAnswer
+- answer: B
+  choices:
+    A: Because genes never change but proteins do not matter.
+    B: Because proteins are the functional molecules, and their amounts and modifications
+      can change with cell type, environment, and disease.
+    C: Because the proteome is identical in every cell type and condition.
+    D: Because protein sequences are easier to read than DNA sequences.
+  explain: "Studying the proteome reveals which proteins are actually present, how\
+    \ abundant they are, and how they are modified in different conditions\u2014information\
+    \ that cannot be fully predicted from DNA sequence alone. This explanation elaborates\
+    \ the biological principles involved, describing underlying mechanisms and reasoning\
+    \ step by step."
+  text: Why might scientists choose to study the proteome instead of just the genome?
+  type: MultiChoice
+- answer: Mass spectrometry is the core technique; it ionizes peptides derived from
+    proteins, measures their mass-to-charge ratios, and uses that information to identify
+    which proteins are present and how abundant they are.
+  explain: "This answer correctly names mass spectrometry and describes its basic\
+    \ role in proteomics\u2014identifying proteins and estimating their amounts based\
+    \ on peptide mass patterns. This explanation elaborates the biological principles\
+    \ involved, describing underlying mechanisms and reasoning step by step."
+  text: Name the main analytical technique used to identify and measure large numbers
+    of proteins in a proteomics experiment, and briefly say what it does.
+  type: ShortAnswer
+- answer: B
+  choices:
+    A: They have different genomes because mutations erase genes they do not need.
+    B: They express different subsets of genes, producing different RNAs and proteins.
+    C: They permanently delete mRNA for unnecessary genes from their nuclei.
+    D: They obtain extra genes from their environment as they differentiate.
+  explain: All somatic cells in an individual share essentially the same genome, but
+    each cell type turns on (expresses) only a subset of its genes. Differential gene
+    expression produces different sets of RNAs and proteins in each cell type, which
+    leads to distinct structures and functions. This explanation elaborates the biological
+    principles involved, describing underlying mechanisms and reasoning step by step.
+  text: Which of the following best explains why a liver cell and a neuron in the
+    same person can look and function very differently, even though they contain the
+    same DNA sequence?
+  type: MultiChoice
+- answer: To conserve energy and resources by only making proteins when they are needed,
+    and to respond to changing conditions or developmental cues so the cell can specialize
+    (differentiate) into a particular cell type.
+  explain: Gene regulation prevents the wasteful production of RNAs and proteins that
+    are not needed at a given time, saving ATP and raw materials. It also allows cells
+    to adjust their gene expression in response to environmental signals and developmental
+    programs, enabling specialized cell types and proper responses to stress or pathogens.
+    This explanation elaborates the biological principles involved, describing underlying
+    mechanisms and reasoning step by step.
+  text: List two major reasons a cell would actively regulate (turn up or turn down)
+    expression of its genes instead of expressing everything all the time.
+  type: ShortAnswer
+- answer: B
+  choices:
+    A: The trp repressor falls off the operator, and the operon is highly transcribed.
+    B: Tryptophan binds to the trp repressor, helping it bind the operator and block
+      transcription.
+    C: RNA polymerase binds the operator instead of the promoter and skips transcription.
+    D: The trp operon is activated by CAP and cAMP to increase tryptophan production.
+  explain: The trp operon is repressible. When tryptophan is abundant, it acts as
+    a corepressor by binding the trp repressor protein. This complex binds the operator
+    sequence and physically blocks RNA polymerase from transcribing the operon, preventing
+    unnecessary synthesis of tryptophan. This explanation elaborates the biological
+    principles involved, describing underlying mechanisms and reasoning step by step.
+  text: In the trp operon of bacteria, what happens when tryptophan levels in the
+    cell are high?
+  type: MultiChoice
+- answer: "The trp operon is normally on and is turned off when tryptophan is plentiful,\
+    \ because tryptophan activates the trp repressor to block transcription. The lac\
+    \ operon is normally off and is turned on only when lactose is present (to inactivate\
+    \ the lac repressor) and glucose is low (so cAMP\u2013CAP can recruit RNA polymerase),\
+    \ ensuring lactose-use genes are expressed only when lactose is available and\
+    \ no better sugar is present."
+  explain: "The trp operon is a repressible operon for a biosynthetic pathway: its\
+    \ default is to make tryptophan, but high tryptophan feeds back to repress the\
+    \ operon. The lac operon is an inducible operon for a catabolic pathway: its default\
+    \ is off, and it is induced only when lactose is present as a substrate and glucose\
+    \ is scarce, integrating negative regulation by the lac repressor with positive\
+    \ regulation by CAP\u2013cAMP. This explanation elaborates the biological principles\
+    \ involved, describing underlying mechanisms and reasoning step by step."
+  text: Compare the lac operon with the trp operon in terms of when each is turned
+    on. In your answer, mention lactose and glucose for the lac operon and tryptophan
+    for the trp operon.
+  type: ShortAnswer
+- answer: B
+  choices:
+    A: Histone acetylation and an open, loosely packed chromatin structure
+    B: Histone methylation forming heterochromatin and DNA methylation in the promoter
+    C: Removal of methyl groups from histones and unmethylated promoter DNA
+    D: "Addition of a 5' cap and poly-A tail to the gene\u2019s DNA sequence"
+  explain: Tightly packed heterochromatin forms when histones are methylated, preventing
+    transcription machinery from accessing DNA. Methylation of DNA in promoter regions
+    also directly represses transcription. Together, histone methylation and DNA methylation
+    are classic epigenetic marks that maintain genes in a silent state. This explanation
+    elaborates the biological principles involved, describing underlying mechanisms
+    and reasoning step by step.
+  text: Which combination of chromatin modifications is most likely to keep a gene
+    silent in eukaryotic cells?
+  type: MultiChoice
+- answer: Euchromatin is loosely packed chromatin in which DNA is more exposed, allowing
+    transcription factors and RNA polymerase to bind promoters and transcribe genes.
+    Heterochromatin is tightly packed chromatin where DNA is wrapped and condensed
+    around histones, so the transcription machinery cannot access promoters and genes
+    in that region are effectively silenced.
+  explain: Chromatin structure is a key epigenetic control point. Acetylated histones
+    favor an open, euchromatic state with active transcription, while histone methylation
+    and other marks create densely packed heterochromatin. In heterochromatin, RNA
+    polymerase and general transcription factors physically cannot fit onto the DNA,
+    so transcription is strongly reduced or absent. This explanation elaborates the
+    biological principles involved, describing underlying mechanisms and reasoning
+    step by step.
+  text: Explain the difference between euchromatin and heterochromatin and how each
+    state affects the ability of RNA polymerase to transcribe nearby genes.
+  type: ShortAnswer
+- answer: B
+  choices:
+    A: General transcription factors bind enhancers far from the promoter; specific
+      transcription factors bind only the core promoter.
+    B: General transcription factors are used by almost all genes to help RNA polymerase
+      bind the core promoter; specific transcription factors bind regulatory sequences
+      such as enhancers to raise or lower transcription of particular sets of genes.
+    C: General transcription factors regulate only one gene each; specific transcription
+      factors regulate all genes in the genome equally.
+    D: General transcription factors and specific transcription factors are identical
+      proteins used in different cell types.
+  explain: General transcription factors assemble at the core promoter of most genes
+    and are required for RNA polymerase to initiate transcription at all. Specific
+    transcription factors bind to regulatory DNA elements such as enhancers or silencers
+    outside the core promoter and interact with the general machinery to selectively
+    increase or decrease transcription of particular target genes. This explanation
+    elaborates the biological principles involved, describing underlying mechanisms
+    and reasoning step by step.
+  text: Which statement correctly distinguishes general transcription factors from
+    specific transcription factors in eukaryotic gene regulation?
+  type: MultiChoice
+- answer: A single specific transcription factor can bind the enhancer regions of
+    many different target genes that share its recognition sequence. When that transcription
+    factor is present in a particular region or time in development, it simultaneously
+    alters the transcription of all those genes, coordinating large gene expression
+    programs that specify structures like legs versus antennae or different body segments.
+  explain: Specific transcription factors recognize particular DNA motifs in enhancers.
+    Many developmental genes share these motifs, so when a Hox transcription factor
+    is expressed in a segment, it binds multiple enhancers and modulates the activity
+    of entire gene networks. This coordinated shift in gene expression patterns drives
+    major developmental decisions and patterning. This explanation elaborates the
+    biological principles involved, describing underlying mechanisms and reasoning
+    step by step.
+  text: How can a single specific transcription factor, such as a Hox protein, influence
+    the development of many different structures in an organism?
+  type: ShortAnswer
+- answer: B
+  choices:
+    A: Only one mature mRNA can be produced, but it is translated faster.
+    B: Different patterns of exon inclusion create multiple related proteins with
+      different functions from one gene.
+    C: Introns are permanently retained in the mRNA, preventing translation.
+    D: "The gene\u2019s DNA sequence is changed whenever splicing occurs."
+  explain: Alternative splicing chooses different combinations of exons to keep in
+    the mature mRNA. This means a single gene can give rise to several protein isoforms
+    that share some domains but differ in others, allowing functional diversity without
+    changing the underlying DNA sequence. This explanation elaborates the biological
+    principles involved, describing underlying mechanisms and reasoning step by step.
+  text: What is a direct consequence of alternative splicing of a single pre-mRNA
+    in eukaryotes?
+  type: MultiChoice
+- answer: C
+  choices:
+    A: "They bind to the gene\u2019s promoter and recruit RNA polymerase."
+    B: They bind ribosomal RNA and speed up translation of all mRNAs.
+    C: They base pair with complementary sequences in the target mRNA, leading to
+      its degradation or blocking its translation by ribosomes.
+    D: They remove the 5' cap and poly-A tail from DNA before transcription.
+  explain: "MicroRNAs are short RNAs that are partially complementary to specific\
+    \ target mRNAs. When they base pair with those mRNAs, the RNA\u2013protein complex\
+    \ can either trigger mRNA degradation or physically prevent ribosomes from translating\
+    \ it, thereby reducing or eliminating protein production from that transcript.\
+    \ This explanation elaborates the biological principles involved, describing underlying\
+    \ mechanisms and reasoning step by step."
+  text: How can microRNAs decrease the amount of protein produced from a particular
+    mRNA?
+  type: MultiChoice
+- answer: B
+  choices:
+    A: To help RNA polymerase recognize promoters during transcription
+    B: To mark specific proteins for degradation by the proteasome
+    C: To splice introns out of pre-mRNA molecules
+    D: To phosphorylate cyclin proteins and activate the cell cycle
+  explain: Ubiquitin is a small protein that can be covalently attached to other proteins
+    as a tag. Chains of ubiquitin on a protein signal proteasomes to bind and degrade
+    that protein into amino acids, decreasing its cellular level and thus regulating
+    its functional impact. This explanation elaborates the biological principles involved,
+    describing underlying mechanisms and reasoning step by step.
+  text: What is the primary role of ubiquitin tagging in post-translational gene regulation?
+  type: MultiChoice
+- answer: "Kinase enzymes can add phosphate groups to specific amino acids on a protein,\
+    \ changing its shape or interaction surfaces so that it either becomes active\
+    \ or inactive. Phosphatases can later remove those phosphates to reverse the effect.\
+    \ By cycling between phosphorylated and dephosphorylated forms, a protein\u2019\
+    s activity can be rapidly turned on or off in response to signals."
+  explain: Many signaling and cell cycle proteins are regulated post-translationally
+    by phosphorylation. Adding negatively charged phosphate groups can cause conformational
+    changes or alter binding to partners, thereby switching enzymatic activity, localization,
+    or interaction networks. Because phosphorylation is reversible, it provides a
+    fast, tunable way to control protein function beyond transcription. This explanation
+    elaborates the biological principles involved, describing underlying mechanisms
+    and reasoning step by step.
+  text: Explain how phosphorylation can act like an on or off switch for certain proteins
+    after translation.
+  type: ShortAnswer
+- answer: B
+  choices:
+    A: p53 is an enzyme that directly repairs all DNA mutations in the cell.
+    B: p53 is a transcription factor that normally activates or represses many genes
+      controlling the cell cycle and DNA damage responses, so losing p53 disrupts
+      multiple safety checkpoints at once.
+    C: p53 is a microRNA that degrades oncogene mRNAs after translation.
+    D: p53 is only involved in embryonic development and is not expressed in adult
+      cells.
+  explain: The lecture notes highlight p53 as a transcription factor whose loss is
+    seen in about half of all cancers. Because p53 regulates the expression of many
+    genes that halt the cell cycle, promote DNA repair, or trigger cell death after
+    damage, inactivating p53 removes several layers of control on cell proliferation,
+    greatly increasing the chance that damaged cells grow into tumors. This explanation
+    elaborates the biological principles involved, describing underlying mechanisms
+    and reasoning step by step.
+  text: Why are mutations in the p53 tumor suppressor gene found in such a high fraction
+    of human cancers?
+  type: MultiChoice
+- answer: "Cyclin B normally becomes phosphorylated and dephosphorylated in a controlled\
+    \ cycle, allowing cells to progress through and then exit specific stages of the\
+    \ cell cycle. If phosphorylation of cyclin B is not properly shut off, cyclin\
+    \ B\u2013CDK activity can remain constantly high, pushing cells to keep dividing\
+    \ instead of pausing or exiting the cycle, which promotes uncontrolled growth\
+    \ characteristic of cancer cells."
+  explain: "The slides note that phosphorylation of cyclin B drives progression through\
+    \ the cell cycle and that cancer cells often fail to switch this modification\
+    \ off. When post-translational controls like phosphorylation become stuck in the\
+    \ \u201Con\u201D state, cell cycle regulators continuously stimulate division,\
+    \ contributing to tumor formation even if upstream transcriptional signals are\
+    \ normal. This explanation elaborates the biological principles involved, describing\
+    \ underlying mechanisms and reasoning step by step."
+  text: Describe one way in which post-translational regulation of cell cycle proteins
+    can contribute to cancer, using cyclin B phosphorylation as an example.
+  type: ShortAnswer
+- answer: C
+  choices:
+    A: Tryptophan induces the lac operon.
+    B: It is an important enzyme in the glycolysis pathway.
+    C: It is one of the 20 amino acids used by all organisms to synthesize proteins.
+    D: It is important in inducing sleep.
+  explain: Tryptophan is one of the standard 20 amino acids that ribosomes incorporate
+    into proteins in every organism. It is not an enzyme in glycolysis and does not
+    directly induce the lac operon. Its association with sleep is indirect, via serotonin
+    and melatonin, not its primary biological role. This explanation elaborates the
+    biological principles involved, describing underlying mechanisms and reasoning
+    step by step.
+  text: Why do both bacteria and humans need tryptophan?
+  type: MultiChoice
+- answer: C
+  choices:
+    A: a transcription factor
+    B: an enhancer
+    C: an operon
+    D: a repressor
+  explain: An operon is a cluster of functionally related genes plus a single promoter
+    and operator that are transcribed together as one mRNA in prokaryotes. Transcription
+    factors and repressors are proteins, and enhancers are eukaryotic regulatory DNA
+    elements, not clusters of structural genes. This explanation elaborates the biological
+    principles involved, describing underlying mechanisms and reasoning step by step.
+  text: In prokaryotic genomes, groups of functionally related genes along with their
+    promoters and operators are found together in __________.
+  type: MultiChoice
+- answer: C
+  choices:
+    A: breakdown of glycine
+    B: inhibition of bacterial cell division
+    C: stoppage of the synthesis of glycine
+    D: production of the repressor protein
+  explain: This describes a repressible operon for glycine biosynthesis. When glycine
+    is plentiful, it acts as a corepressor, activating the repressor so it binds the
+    operator and stops transcription of enzymes that make more glycine. It does not
+    directly trigger glycine breakdown or stop cell division. This explanation elaborates
+    the biological principles involved, describing underlying mechanisms and reasoning
+    step by step.
+  text: A bacterium can make the amino acid glycine or absorb it from its surroundings.
+    Glycine binds to a repressor protein and causes the repressor to bind to the chromosome,
+    turning off an operon. If it is like other similar operons, the presence of glycine
+    will result in the __________.
+  type: MultiChoice
+- answer: B
+  choices:
+    A: permanently off ... permanently on
+    B: repressible ... inducible
+    C: inducible ... repressible
+    D: easily mutated ... resistant to mutations
+  explain: 'Biosynthetic operons like trp are repressible: they are usually on but
+    can be turned off when the end product is abundant. Catabolic operons like lac
+    are inducible: they are usually off and switch on when the substrate (lactose)
+    is present. They are not permanently on or off. This explanation elaborates the
+    biological principles involved, describing underlying mechanisms and reasoning
+    step by step.'
+  text: In general, operons that encode the enzymes of a biosynthetic (anabolic) pathway
+    (such as the trp operon) are __________, and those encoding the enzymes of a catabolic
+    pathway (such as the lac operon) are __________.
+  type: MultiChoice
+- answer: B
+  choices:
+    A: human growth factor
+    B: lactose
+    C: repressor protein
+    D: operator protein
+  explain: In the lac operon, lactose (or an analog like IPTG) binds to the lac repressor
+    and inactivates it, allowing RNA polymerase to transcribe the operon. If the structural
+    genes have been replaced with the human growth factor gene, adding lactose will
+    induce expression of that gene. This explanation elaborates the biological principles
+    involved, describing underlying mechanisms and reasoning step by step.
+  text: You have inserted the gene for human growth factor into the E. coli lactose
+    operon, replacing the structural genes with the gene for human growth factor.
+    What substance must you add to your culture of bacteria to cause them to produce
+    human growth factor?
+  type: MultiChoice
+- answer: C
+  choices:
+    A: DNA packing
+    B: translation
+    C: transcription
+    D: post-transcriptional processing
+  explain: Operons regulate whether RNA polymerase can initiate transcription of the
+    genes. DNA packing is a major eukaryotic mechanism, while translation and post-transcriptional
+    processing occur after an mRNA has already been made. This explanation elaborates
+    the biological principles involved, describing underlying mechanisms and reasoning
+    step by step.
+  text: Both repressible and inducible operons control gene expression at the level
+    of __________.
+  type: MultiChoice
+- answer: A
+  choices:
+    A: controlling the transcription of genes into mRNA
+    B: controlling gene packing and unpacking
+    C: controlling the translation of mRNA to produce polypeptides
+    D: selectively breaking down the proteins encoded by the genes
+  explain: Because bacteria lack complex chromatin structure and need rapid responses,
+    they mainly regulate which genes are transcribed into mRNA. Translational control
+    and protein degradation exist but are less dominant than transcriptional control.
+    This explanation elaborates the biological principles involved, describing underlying
+    mechanisms and reasoning step by step.
+  text: Gene expression in bacteria is regulated primarily by __________.
+  type: MultiChoice
+- answer: A
+  choices:
+    A: in a multicellular eukaryote, different cells are specialized for different
+      functions
+    B: many genes of eukaryotes provide information for making polypeptides
+    C: prokaryotes are restricted to stable environments
+    D: eukaryotic cells are much smaller
+  explain: Multicellular eukaryotes must generate many distinct cell types from the
+    same genome, so they require intricate, layered control of gene expression. Cell
+    specialization, not cell size or environmental stability, drives the need for
+    additional regulatory mechanisms. This explanation elaborates the biological principles
+    involved, describing underlying mechanisms and reasoning step by step.
+  text: The control of gene expression is more complex in multicellular eukaryotes
+    than in prokaryotes because __________.
+  type: MultiChoice
+- answer: C
+  choices:
+    A: turn certain genes on
+    B: form an enhancer
+    C: turn off certain genes
+    D: form a transcription factor
+  explain: DNA methylation and histone deacetylation both promote chromatin condensation,
+    making DNA less accessible to transcription machinery. Together they generally
+    silence, not activate, genes. Enhancers and transcription factors are distinct
+    regulatory elements and proteins. This explanation elaborates the biological principles
+    involved, describing underlying mechanisms and reasoning step by step.
+  text: In some cases, DNA methylation and removal of acetyl groups from histones
+    (deacetylation) combine to __________.
+  type: MultiChoice
+- answer: C
+  choices:
+    A: allowing unpacked genes to be eliminated from the genome
+    B: protecting DNA from mutations
+    C: controlling access to DNA
+    D: enhancing the recombination of genes
+  explain: Tightly packed chromatin (heterochromatin) is transcriptionally silent
+    because transcription factors and RNA polymerase cannot access the DNA. Loosely
+    packed chromatin (euchromatin) is more accessible and active. Packing does not
+    normally eliminate genes or increase recombination. This explanation elaborates
+    the biological principles involved, describing underlying mechanisms and reasoning
+    step by step.
+  text: In eukaryotes, DNA packing seems to affect gene expression primarily by __________.
+  type: MultiChoice
+- answer: B
+  choices:
+    A: may involve changes to the rate at which an mRNA is translated
+    B: are all of the listed responses
+    C: may involve regulation of mRNA splicing
+    D: can include changes to mRNA stability
+  explain: Post-transcriptional control includes alternative splicing of pre-mRNA,
+    regulation of mRNA stability (how long it persists), and modulation of translation
+    efficiency. All of the listed mechanisms act after transcription and therefore
+    are forms of post-transcriptional regulation. This explanation elaborates the
+    biological principles involved, describing underlying mechanisms and reasoning
+    step by step.
+  text: Post-transcriptional controls of gene expression __________.
+  type: MultiChoice
+- answer: B
+  choices:
+    A: They are segments of noncoding DNA that help regulate transcription by binding
+      certain proteins.
+    B: They are giant protein complexes that recognize ubiquitin and degrade the tagged
+      proteins.
+    C: They encode for products that help prevent uncontrolled cell growth.
+    D: They inject double-stranded RNA into a cell, turning off a gene with the same
+      sequence.
+  explain: Proteasomes are large protein-degrading machines that recognize proteins
+    tagged with ubiquitin and break them into peptides. They are not DNA segments,
+    genes, or RNA-injecting structures. This explanation elaborates the biological
+    principles involved, describing underlying mechanisms and reasoning step by step.
+  text: What is the role of proteasomes?
+  type: MultiChoice
+- answer: C
+  choices:
+    A: removal of acetyl groups from histones
+    B: DNA methylation
+    C: chemical mutation
+    D: histone methylation
+  explain: Epigenetic changes alter gene expression without changing the underlying
+    DNA sequence, commonly through DNA methylation and histone modifications. A chemical
+    mutation alters the nucleotide sequence itself, so it is genetic, not epigenetic.
+    This explanation elaborates the biological principles involved, describing underlying
+    mechanisms and reasoning step by step.
+  text: Which of the following statements is NOT associated with epigenetic inheritance?
+  type: MultiChoice
+- answer: D
+  choices:
+    A: coordinate control of genes on different chromosomes
+    B: each gene being activated by a unique combination of control elements and activator
+      molecules
+    C: the congregation in specific sites in the nucleus of genes involved in related
+      metabolic processes, but on different chromosomes
+    D: alternate arrangements of exons from a primary transcript
+  explain: Alternative RNA splicing allows different combinations of exons to be joined
+    from the same primary transcript, producing multiple protein isoforms from one
+    gene. The other options describe regulatory phenomena but do not directly increase
+    the number of distinct polypeptides. This explanation elaborates the biological
+    principles involved, describing underlying mechanisms and reasoning step by step.
+  text: Although the number of genes in the human genome is surprisingly low compared
+    to less complex organisms, the number of possible products from those genes is
+    greatly amplified by __________.
+  type: MultiChoice
+- answer: A
+  choices:
+    A: promote the degradation of mRNA and bind to complementary mRNA sequences to
+      prevent translation
+    B: inhibit RNA splicing and bind to complementary DNA sequences to prevent transcription
+    C: promote the degradation of mRNA and inhibit RNA splicing
+  explain: microRNAs (miRNAs) base-pair with complementary sequences in target mRNAs,
+    leading either to mRNA degradation or to blocking of translation. They do not
+    typically act at the DNA level or directly inhibit splicing. This explanation
+    elaborates the biological principles involved, describing underlying mechanisms
+    and reasoning step by step.
+  text: MicroRNAs function in 'silencing' genes. What are two ways in which they may
+    act?
+  type: MultiChoice
+- answer: A
+  choices:
+    A: does not respond to the chemical signals that control cell division
+    B: usually does not contain a nucleus
+    C: requires less nutrients than a normal cell
+  explain: Cancer cells disregard normal cell-cycle checkpoints and external growth-inhibitory
+    signals, so they divide uncontrollably. They still have nuclei and typically consume
+    more, not fewer, nutrients than normal cells because of their rapid proliferation.
+    This explanation elaborates the biological principles involved, describing underlying
+    mechanisms and reasoning step by step.
+  text: A cancer cell __________.
+  type: MultiChoice
+- answer: C
+  choices:
+    A: DNA ligase
+    B: human DNA polymerase
+    C: Thermus aquaticus DNA polymerase
+  explain: PCR requires repeated heating to denature DNA, which would inactivate most
+    enzymes. Taq DNA polymerase from Thermus aquaticus is thermostable and can withstand
+    these cycles, allowing automated PCR. Human DNA polymerase would denature, and
+    ligase is used for sealing nicks, not chain extension. This explanation elaborates
+    the biological principles involved, describing underlying mechanisms and reasoning
+    step by step.
+  text: Which of the following enzymes is key to the automation of PCR (polymerase
+    chain reactions)?
+  type: MultiChoice
+- answer: B
+  choices:
+    A: synthesize RNA
+    B: destroy virus DNA
+    C: synthesize protein
+  explain: Restriction enzymes recognize specific DNA sequences and cut foreign DNA,
+    such as bacteriophage genomes, thereby protecting the bacterium from infection.
+    They do not synthesize RNA or protein. This explanation elaborates the biological
+    principles involved, describing underlying mechanisms and reasoning step by step.
+  text: Bacteria use restriction enzymes to __________.
+  type: MultiChoice
+- answer: B
+  choices:
+    A: reverse transcriptase
+    B: a restriction enzyme
+    C: ligase
+  explain: Restriction endonucleases recognize short palindromic (symmetrical) DNA
+    sequences and cut both strands. Reverse transcriptase copies RNA into DNA, and
+    ligase joins DNA fragments rather than cutting them. This explanation elaborates
+    the biological principles involved, describing underlying mechanisms and reasoning
+    step by step.
+  text: An enzyme that cuts DNA at a symmetrical sequence of bases is called __________.
+  type: MultiChoice
+- answer: C
+  choices:
+    A: terminator enzyme
+    B: restriction enzyme
+    C: DNA ligase
+  explain: DNA ligase catalyzes the formation of phosphodiester bonds between adjacent
+    nucleotides, sealing nicks in the sugar-phosphate backbone. Restriction enzymes
+    cut DNA, and 'terminator enzyme' is not a standard term for this function. This
+    explanation elaborates the biological principles involved, describing underlying
+    mechanisms and reasoning step by step.
+  text: Which of the following enzymes could seal a nick in one strand of a double-stranded
+    DNA molecule by creating a sugar-phosphate bond between the adjacent, unjoined
+    nucleotides?
+  type: MultiChoice
+- answer: A
+  choices:
+    A: a restriction enzyme and a ligase
+    B: a restriction enzyme and a polymerase
+    C: a polymerase and a topoisomerase
+  explain: To make recombinant DNA, a restriction enzyme first cuts the DNA from different
+    sources at specific sites. DNA ligase then covalently joins the compatible ends,
+    forming stable recombinant molecules. Polymerases and topoisomerases serve different
+    roles. This explanation elaborates the biological principles involved, describing
+    underlying mechanisms and reasoning step by step.
+  text: What two enzymes are needed to produce recombinant DNA?
+  type: MultiChoice
+- answer: A
+  choices:
+    A: a plasmid or other agent used to transfer DNA into a living cell
+    B: a DNA probe used to locate a particular gene
+    C: a heat-resistant DNA polymerase
+  explain: "A vector is a DNA carrier\u2014such as a plasmid or modified virus\u2014\
+    that can enter cells and replicate, delivering foreign DNA. DNA probes are labeled\
+    \ fragments used for detection, and heat-resistant polymerase is used in PCR,\
+    \ not as a vector. This explanation elaborates the biological principles involved,\
+    \ describing underlying mechanisms and reasoning step by step."
+  text: In recombinant DNA technology, the term vector refers to __________.
+  type: MultiChoice
+- answer: C
+  choices:
+    A: does not involve electrophoresis
+    B: can be used to sequence entire eukaryotic chromosomes in a single reaction
+    C: produces a ladder of DNA fragments, with each individual band labeled with
+      one of four different fluorescent tags
+  explain: Sanger sequencing uses dideoxynucleotides that terminate DNA synthesis
+    at specific bases, creating fragments of varying lengths. After electrophoresis,
+    each fragment ends with a fluorescently labeled base, generating a ladder that
+    reveals the sequence. Electrophoresis is essential; entire chromosomes are sequenced
+    by assembling many shorter reads. This explanation elaborates the biological principles
+    involved, describing underlying mechanisms and reasoning step by step.
+  text: The dideoxyribonucleotide chain-termination method __________.
+  type: MultiChoice
+- answer: A
+  choices:
+    A: identify specific DNA sequences
+    B: make exact copies of DNA sequences
+    C: make DNA from RNA
+  explain: A nucleic acid probe is a short, labeled strand of DNA or RNA that base-pairs
+    with a complementary sequence in a sample, allowing detection of that specific
+    sequence. PCR makes copies of DNA, and reverse transcriptase makes DNA from RNA.
+    This explanation elaborates the biological principles involved, describing underlying
+    mechanisms and reasoning step by step.
+  text: A nucleic acid probe is used to __________.
+  type: MultiChoice
+- answer: B
+  choices:
+    A: always matches a stop codon
+    B: determines which segment of the genome will be amplified
+    C: determines how many cycles of the reaction are needed to obtain a sufficient
+      amount of amplified DNA
+  explain: PCR primers are short DNA sequences complementary to the ends of the region
+    to be amplified. Their base sequences determine where they anneal on the template
+    and therefore which segment of the genome will be copied. They are not related
+    to stop codons and do not directly set the number of cycles. This explanation
+    elaborates the biological principles involved, describing underlying mechanisms
+    and reasoning step by step.
+  text: In the polymerase chain reaction (PCR), the sequence of bases in the primers
+    is important because it __________.
+  type: MultiChoice
+- answer: C
+  choices:
+    A: transfer RNA, matching amino acids, and messenger RNA
+    B: ribosomes, matching amino acids, and primers
+    C: nucleotides, primers, and polymerase
+  explain: After denaturation, PCR requires deoxyribonucleotides, DNA primers complementary
+    to the target ends, and a thermostable DNA polymerase. tRNA, amino acids, ribosomes,
+    and mRNA are components of translation, not DNA replication. This explanation
+    elaborates the biological principles involved, describing underlying mechanisms
+    and reasoning step by step.
+  text: A molecular biologist has isolated a short segment of DNA that she wants to
+    replicate by PCR. First she heats the DNA to separate the two strands, and then
+    she adds __________.
+  type: MultiChoice
+- answer: C
+  choices:
+    A: placing the nucleus from an egg cell into an enucleated somatic cell
+    B: the use of microarray analysis and RNA interference
+    C: removing the nucleus of an egg cell and replacing it with the nucleus of a
+      somatic cell
+  explain: In reproductive cloning, the nucleus is removed from an unfertilized egg
+    and replaced with the nucleus from a differentiated somatic cell. The reconstructed
+    egg is then stimulated to divide, producing a clone of the donor. Microarrays
+    and RNA interference are analytical and regulatory tools, not the core cloning
+    step. This explanation elaborates the biological principles involved, describing
+    underlying mechanisms and reasoning step by step.
+  text: Nuclear transplantation for reproductive cloning involves __________.
+  type: MultiChoice
+- answer: C
+  choices:
+    A: gain and lose genes, depending on what type of cell they will become
+    B: exchange DNA with other cells via the process of horizontal gene transfer
+    C: express different genes in response to developmental signals
+  explain: Most animal cells retain essentially the same genome; differentiation occurs
+    because different sets of genes are turned on or off in response to signals. Cells
+    generally do not lose large sets of genes or horizontally exchange DNA during
+    normal development. This explanation elaborates the biological principles involved,
+    describing underlying mechanisms and reasoning step by step.
+  text: During the process of differentiation, cells __________.
+  type: MultiChoice
+- answer: A
+  choices:
+    A: a particular nucleotide sequence at a particular gene whose inheritance can
+      be followed
+    B: a chart that traces the family history of a genetic trait
+    C: a radioactive probe used to find a gene
+  explain: A genetic marker is a known DNA sequence (such as a SNP or short repeat)
+    at a locus that can be tracked through pedigrees or populations. A pedigree chart
+    is a diagram of inheritance patterns, and a probe is a labeled nucleic acid used
+    for detection, not the marker itself. This explanation elaborates the biological
+    principles involved, describing underlying mechanisms and reasoning step by step.
+  text: A genetic marker is __________.
+  type: MultiChoice
+- answer: B
+  choices:
+    A: allowing individuals to follow the natural progression of a genetic disorder,
+      accompanied by counseling, then drug treatment when the condition becomes life-threatening
+    B: adding a functioning version of a defective gene to the cells of an individual
+    C: replacing organs affected with genetic disorders by transplants
+  explain: Gene therapy attempts to treat disease by introducing a normal, functional
+    copy of a gene into a patient's cells, typically using a viral or other vector.
+    It is distinct from symptomatic management or organ transplantation. This explanation
+    elaborates the biological principles involved, describing underlying mechanisms
+    and reasoning step by step.
+  text: Gene therapy involves __________.
+  type: MultiChoice
+- answer: B
+  choices:
+    A: a bacterium that has been treated with a compound that affects the expression
+      of many of its genes
+    B: a rat with rabbit hemoglobin genes
+    C: a fern grown in cell culture from a single fern root cell
+  explain: "A transgenic organism carries foreign DNA\u2014such as a rat engineered\
+    \ to contain and express rabbit hemoglobin genes. Treating a bacterium with a\
+    \ compound that changes gene expression does not alter its genome, and a fern\
+    \ grown from its own cells is genetically identical to the parent. This explanation\
+    \ elaborates the biological principles involved, describing underlying mechanisms\
+    \ and reasoning step by step."
+  text: Which of the following would be considered a transgenic or genetically modified
+    organism?
+  type: MultiChoice
+- answer: A
+  choices:
+    A: heterochromatin
+    B: euchromatin
+  explain: Inactivated X chromosomes in female mammals become highly condensed and
+    transcriptionally silent. This tightly packed state is called heterochromatin,
+    whereas euchromatin is less condensed and actively transcribed. This explanation
+    elaborates the biological principles involved, describing underlying mechanisms
+    and reasoning step by step.
+  text: In females one of the X chromosomes is inactivated and doesn't express genes.
+    This inactivated chromosome is _______________.
+  type: MultiChoice
+- answer: The trp operon is normally on because tryptophan is an essential amino acid
+    that the cell must synthesize unless it is abundant; when tryptophan levels are
+    high, tryptophan activates the repressor to shut the operon off. The lac operon
+    is normally off because lactose is not always present, so it is wasteful to make
+    lactose-digesting enzymes; it is only turned on when lactose is available and
+    is the preferred sugar.
+  explain: 'The trp operon is a repressible operon: its default state is active so
+    the cell can continuously produce enzymes for tryptophan synthesis, and excess
+    tryptophan acts as a corepressor to shut the system down. The lac operon is an
+    inducible operon: its default state is off to conserve energy, and the presence
+    of lactose (via allolactose) induces expression only when the sugar is available.
+    This explanation elaborates the biological principles involved, describing underlying
+    mechanisms and reasoning step by step.'
+  text: In E. coli the trp operon is on by default, while the lac operon is off. Why
+    is this the case?
+  type: ShortAnswer
+- answer: To conserve energy/resources and to respond appropriately to changes in
+    internal or external environmental conditions.
+  explain: Making proteins is energetically expensive, so cells regulate gene expression
+    to avoid producing proteins they do not currently need. Regulation also lets cells
+    adjust gene expression in response to environmental signals (nutrient availability,
+    stress, signals from other cells) so they can adapt and survive. This explanation
+    elaborates the biological principles involved, describing underlying mechanisms
+    and reasoning step by step.
+  text: What are two major reasons organisms regulate gene expression?
+  type: ShortAnswer
+- answer: B
+  choices:
+    A: mRNA processing
+    B: Transcription
+    C: Chromatin structure
+    D: Translation
+  explain: Bacteria lack a nucleus and have little or no mRNA processing and chromatin
+    remodeling, so controlling whether transcription starts at promoters is the primary
+    way they regulate which genes are expressed. This explanation elaborates the biological
+    principles involved, describing underlying mechanisms and reasoning step by step.
+  text: At what level does most bacterial gene regulation occur?
+  type: MultiChoice
+- answer: A
+  choices:
+    A: Transcription will start
+    B: Transcription will stop
+  explain: A repressor bound to the operator blocks RNA polymerase from transcribing
+    the structural genes. Removing the repressor frees the operator so RNA polymerase
+    can move through the operon and initiate transcription. This explanation elaborates
+    the biological principles involved, describing underlying mechanisms and reasoning
+    step by step.
+  text: What will happen when you remove a transcriptional repressor from an operon
+    it normally controls?
+  type: MultiChoice
+- answer: A
+  choices:
+    A: Operator
+    B: Structural gene
+    C: Promoter
+    D: Transcription factor binding sites
+  explain: The operator is the regulatory DNA sequence within or near the promoter
+    where the repressor binds. Binding of the repressor to the operator physically
+    blocks RNA polymerase; promoters and structural genes have different functions.
+    This explanation elaborates the biological principles involved, describing underlying
+    mechanisms and reasoning step by step.
+  text: Repressor proteins in bacterial operons bind to which specific DNA sequence?
+  type: MultiChoice
+- answer: B
+  choices:
+    A: RNA polymerase
+    B: tryptophan
+    C: glucose
+    D: lactose
+  explain: When tryptophan levels are high, tryptophan binds to the inactive trp repressor,
+    changing its shape so it can bind the operator and shut down transcription. Glucose
+    and lactose regulate other systems (e.g., lac operon) rather than the trp operon.
+    This explanation elaborates the biological principles involved, describing underlying
+    mechanisms and reasoning step by step.
+  text: What molecule acts as the corepressor that causes the repressor to bind to
+    the trp operon?
+  type: MultiChoice
+- answer: The lac operon uses allolactose, a derivative of lactose, as an inducer.
+    When lactose is absent, no allolactose is made, so the lac repressor remains bound
+    to the operator and blocks transcription. When lactose is present, some is converted
+    to allolactose, which binds the repressor and causes it to release the operator,
+    allowing RNA polymerase to transcribe the lac genes.
+  explain: Allolactose is produced only when lactose is available in the cell. It
+    binds to the lac repressor and changes its conformation so it can no longer bind
+    the operator. Without allolactose (no lactose present), the repressor stays on
+    the operator and keeps the operon off; with allolactose, the repressor falls off
+    and the operon is induced. This explanation elaborates the biological principles
+    involved, describing underlying mechanisms and reasoning step by step.
+  text: How does the lac operon sense the presence or absence of lactose? Explain
+    what happens when lactose is absent and when it is present.
+  type: ShortAnswer
+- answer: "The lac operon uses cAMP and the catabolite activator protein (CAP) to\
+    \ monitor glucose. When glucose is low or absent, cAMP levels rise; cAMP binds\
+    \ CAP, and the cAMP\u2013CAP complex binds near the lac promoter to increase RNA\
+    \ polymerase binding and strongly activate transcription (if lactose is also present).\
+    \ When glucose is abundant, cAMP levels are low, so CAP does not bind DNA and\
+    \ transcription of the lac operon is greatly reduced."
+  explain: "Glucose availability inversely controls cAMP concentration. High cAMP\
+    \ under low-glucose conditions allows the cAMP\u2013CAP complex to bind the promoter\
+    \ and recruit RNA polymerase, maximizing expression of lactose-utilization genes\
+    \ when glucose is scarce. When glucose is present, cAMP drops, CAP cannot bind,\
+    \ and even if lactose is present the operon is only weakly expressed. This explanation\
+    \ elaborates the biological principles involved, describing underlying mechanisms\
+    \ and reasoning step by step."
+  text: How does the lac operon sense the presence or absence of glucose? Explain
+    what happens when glucose is absent and when it is present.
+  type: ShortAnswer
+- answer: Epigenetics is the study of heritable changes in gene expression or phenotype
+    that occur without changes to the underlying DNA sequence.
+  explain: Epigenetic mechanisms such as DNA methylation, histone modifications, and
+    chromatin remodeling can be passed through cell division and alter how genes are
+    expressed, but they do not alter the nucleotide sequence itself. This explanation
+    elaborates the biological principles involved, describing underlying mechanisms
+    and reasoning step by step.
+  text: Define epigenetics, using the definition from class.
+  type: ShortAnswer
+- answer: D
+  choices:
+    A: Acetyl
+    B: Phosphate
+    C: Ubiquitin
+    D: Methyl
+  explain: Histone methylation, especially at particular lysine residues, is associated
+    with tightly packed heterochromatin and reduced gene expression. Histone acetylation
+    usually correlates with open chromatin and active transcription. This explanation
+    elaborates the biological principles involved, describing underlying mechanisms
+    and reasoning step by step.
+  text: Adding which type of chemical group to histones is most strongly associated
+    with forming heterochromatin and gene silencing?
+  type: MultiChoice
+- answer: D
+  choices:
+    A: General transcription factors
+    B: Promoters
+    C: Terminators
+    D: Specific transcription factors (activators or repressors)
+  explain: Enhancers are regulatory DNA elements bound by specific transcription factors
+    that either activate or repress transcription of target genes. General transcription
+    factors bind the core promoter and are required for transcription of many genes,
+    not just specific ones. This explanation elaborates the biological principles
+    involved, describing underlying mechanisms and reasoning step by step.
+  text: Which molecules bind to enhancer sequences to control expression of specific
+    genes in eukaryotes?
+  type: MultiChoice
+- answer: A
+  choices:
+    A: Repressed
+    B: Mutated
+    C: Activated, but only partially
+    D: Fully activated
+  explain: Without lactose, the lac repressor remains bound to the operator, keeping
+    the operon off, even though low glucose would raise cAMP and activate CAP. Because
+    the repressor is still blocking transcription, the operon is repressed. This explanation
+    elaborates the biological principles involved, describing underlying mechanisms
+    and reasoning step by step.
+  text: If glucose is absent and lactose is also absent, what is the state of the
+    lac operon?
+  type: MultiChoice
+- answer: D
+  choices:
+    A: promoter
+    B: operator
+    C: repressor
+    D: activator
+  explain: When bound to arabinose, AraC stimulates transcription of the ara operon
+    by helping RNA polymerase bind; in this context it functions as an activator rather
+    than a repressor or a DNA sequence like a promoter or operator. This explanation
+    elaborates the biological principles involved, describing underlying mechanisms
+    and reasoning step by step.
+  text: The ara operon is an inducible operon that controls the breakdown of arabinose.
+    When arabinose is present, it binds to the protein AraC, and the complex binds
+    to the initiator site to promote transcription. In this scenario, AraC is acting
+    as a(n) ________.
+  type: MultiChoice
+- answer: miRNAs can base-pair with target mRNAs to trigger their degradation and/or
+    to block their translation by ribosomes.
+  explain: "miRNA\u2013RISC complexes recognize complementary mRNA sequences. Depending\
+    \ on the degree of complementarity, the complex either cleaves the mRNA (leading\
+    \ to degradation) or prevents ribosomes from efficiently translating it, thereby\
+    \ lowering protein production. This explanation elaborates the biological principles\
+    \ involved, describing underlying mechanisms and reasoning step by step."
+  text: What are two ways microRNAs (miRNAs) can regulate gene expression?
+  type: ShortAnswer
+- answer: B
+  choices:
+    A: Protein activation
+    B: Protein degradation
+    C: Protein translation
+    D: Activation of transcription
+  explain: Ubiquitin tags proteins for destruction by the proteasome. Polyubiquitinated
+    proteins are recognized, unfolded, and degraded into peptides, effectively reducing
+    their levels in the cell. This explanation elaborates the biological principles
+    involved, describing underlying mechanisms and reasoning step by step.
+  text: Adding ubiquitin molecules to a protein typically targets it for which outcome?
+  type: MultiChoice
+- answer: Cancer often involves abnormal gene expression, such as overexpression or
+    activation of oncogenes and loss or reduced expression of tumor suppressor genes.
+  explain: Mutations, epigenetic changes, or regulatory defects can activate growth-promoting
+    genes (oncogenes) or silence growth-inhibiting genes (tumor suppressors). This
+    imbalance in gene expression drives uncontrolled cell division and other hallmarks
+    of cancer. This explanation elaborates the biological principles involved, describing
+    underlying mechanisms and reasoning step by step.
+  text: How is cancer related to changes in gene expression?
+  type: ShortAnswer
+- answer: D
+  choices:
+    A: operator
+    B: nucleosome
+    C: splicing component
+    D: transcription factor
+  explain: p53 is a transcription factor that binds specific DNA sequences and regulates
+    many genes involved in cell-cycle arrest, DNA repair, and apoptosis. Its loss
+    or mutation disrupts these protective gene-expression programs. This explanation
+    elaborates the biological principles involved, describing underlying mechanisms
+    and reasoning step by step.
+  text: p53 is an important tumor suppressor. It strongly influences gene expression
+    because it functions as a ________.
+  type: MultiChoice
+- answer: D
+  choices:
+    A: chromatids
+    B: ribosomes
+    C: capsids
+    D: histones
+  explain: Histones are positively charged proteins that form nucleosomes, the core
+    units of chromatin. DNA wraps around histone octamers, helping compact the DNA
+    within the nucleus. This explanation elaborates the biological principles involved,
+    describing underlying mechanisms and reasoning step by step.
+  text: DNA in eukaryotic chromosomes is wound around proteins called ____________.
+  type: MultiChoice
+- answer: Eukaryotic transcription requires many specialized transcription factors
+    and occurs in the nucleus with extensive RNA processing (including intron splicing),
+    whereas prokaryotic transcription uses fewer factors, occurs in the cytoplasm,
+    and mRNAs are typically not spliced.
+  explain: In eukaryotes, RNA polymerase II needs a large set of general and specific
+    transcription factors, and the primary transcript is heavily processed (5' cap,
+    splicing, 3' poly-A tail). In bacteria, a single RNA polymerase with sigma factors
+    initiates transcription, and the resulting mRNA can be translated immediately,
+    with no introns to remove. This explanation elaborates the biological principles
+    involved, describing underlying mechanisms and reasoning step by step.
+  text: What are two key differences in transcription between prokaryotes and eukaryotes?
+  type: ShortAnswer
+- answer: The longer an mRNA persists without being degraded, the more protein can
+    be translated from it; short-lived mRNAs produce less protein, so mRNA stability
+    directly influences the level of gene expression.
+  explain: mRNA degradation is a key post-transcriptional control point. Stable mRNAs
+    can be translated many times, amplifying gene expression, whereas unstable mRNAs
+    are rapidly degraded, limiting how much protein is made even if transcription
+    occurred. This explanation elaborates the biological principles involved, describing
+    underlying mechanisms and reasoning step by step.
+  text: How is the lifespan (stability) of an mRNA molecule related to overall gene
+    expression?
+  type: ShortAnswer
+- answer: C
+  choices:
+    A: Adding a lysis buffer containing detergent to break open cell membranes
+    B: Treating the sample with proteases and RNases to remove proteins and RNA
+    C: Adding cold alcohol on top of the aqueous cell lysate
+    D: "Heating the sample to 95\xB0C to denature the DNA"
+  explain: "Lysis buffer with detergent breaks membranes and releases DNA, but the\
+    \ DNA stays dissolved in water. When cold alcohol is added, DNA\u2014which is\
+    \ insoluble in alcohol\u2014precipitates out as a solid, forming the visible strands\
+    \ at the interface. This explanation elaborates the biological principles involved,\
+    \ describing underlying mechanisms and reasoning step by step."
+  text: In the DNA extraction procedure shown in lecture, what step actually makes
+    the dissolved DNA come out of solution as visible, stringy material?
+  type: MultiChoice
+- answer: The lysis buffer with detergent dissolves and disrupts cell and nuclear
+    membranes, releasing DNA into solution so it can later be precipitated.
+  explain: Cell and nuclear membranes are lipid bilayers. Detergents in the lysis
+    buffer solubilize these lipids, breaking open cells and freeing DNA into the aqueous
+    phase. Without first lysing the cells, most DNA would remain trapped inside intact
+    cells and would not be available to precipitate when alcohol is added. This explanation
+    elaborates the biological principles involved, describing underlying mechanisms
+    and reasoning step by step.
+  text: During DNA extraction, what is the main role of the lysis buffer that contains
+    detergent, and why is this step necessary before adding alcohol?
+  type: ShortAnswer
+- answer: B
+  choices:
+    A: Any random sequence as long as it is at least 20 base pairs long
+    B: "Short palindromic sequences that read the same 5'\u21923' on both strands"
+    C: Only promoter regions upstream of genes
+    D: "Only intron\u2013exon boundaries in eukaryotic genes"
+  explain: As shown in the restriction enzyme figure, enzymes like EcoRI recognize
+    short, specific palindromic sequences (e.g., GAATTC/CTTAAG). They cut at or near
+    these recognition sites to generate reproducible fragments for cloning or analysis.
+    This explanation elaborates the biological principles involved, describing underlying
+    mechanisms and reasoning step by step.
+  text: Restriction endonucleases used in biotechnology typically recognize what kind
+    of DNA sequence?
+  type: MultiChoice
+- answer: Recombinant DNA is a DNA molecule that contains sequences from two or more
+    different sources; a plasmid vector is the circular DNA molecule into which the
+    foreign DNA fragment is inserted so it can be carried and replicated in a host
+    cell.
+  explain: "In lecture, recombinant DNA was described as a DNA molecule built from\
+    \ sequences originating in different organisms. Plasmids serve as vectors\u2014\
+    small circular DNA molecules that naturally replicate in bacteria. By cutting\
+    \ both the plasmid and the DNA of interest with compatible restriction enzymes\
+    \ and sealing them with DNA ligase, the foreign insert is carried and copied each\
+    \ time the plasmid replicates. This explanation elaborates the biological principles\
+    \ involved, describing underlying mechanisms and reasoning step by step."
+  text: Define recombinant DNA and explain the role of a plasmid vector in creating
+    recombinant DNA molecules.
+  type: ShortAnswer
+- answer: false
+  explain: Sticky ends are created when restriction endonucleases cut DNA at specific
+    palindromic sites. DNA ligase does not cut; instead, it catalyzes the formation
+    of phosphodiester bonds that seal nicks between compatible ends, permanently joining
+    plasmid and insert DNA into a recombinant molecule. This explanation elaborates
+    the biological principles involved, describing underlying mechanisms and reasoning
+    step by step.
+  text: DNA ligase is used in cloning to generate sticky ends on DNA fragments so
+    that they can insert into plasmid vectors.
+  type: TrueFalse
+- answer: B
+  choices:
+    A: The largest DNA fragments, because they have the most negative charge
+    B: The smallest DNA fragments, because they move more easily through the gel matrix
+    C: All fragments move the same distance because they have the same charge-to-mass
+      ratio
+    D: Only circular plasmid DNA, because linear fragments cannot move in the gel
+  explain: An agarose gel acts like a molecular sieve. All DNA fragments are negatively
+    charged, but smaller fragments experience less resistance moving through the pores
+    and therefore migrate farther from the wells toward the positive electrode in
+    a given amount of time. This explanation elaborates the biological principles
+    involved, describing underlying mechanisms and reasoning step by step.
+  text: In the gel electrophoresis diagrams from lecture, which DNA fragments travel
+    farthest from the wells toward the positive electrode?
+  type: MultiChoice
+- answer: DNA from each potential parent and the child is cut with the same restriction
+    enzyme and run on a gel; the true biological parent will share a characteristic
+    pattern of fragment bands with the child that the unrelated adult will not.
+  explain: "In the paternity example, restriction enzymes generated fragment patterns\
+    \ that reflected the underlying DNA sequence. When run side-by-side on a gel,\
+    \ bands from the child matched bands from one parent for each chromosome set.\
+    \ The alleged parent whose banding pattern best matches the child\u2019s at multiple\
+    \ fragments is inferred to be the biological parent. This explanation elaborates\
+    \ the biological principles involved, describing underlying mechanisms and reasoning\
+    \ step by step."
+  text: How can gel electrophoresis combined with restriction enzyme digestion be
+    used to support a paternity test, as illustrated in lecture?
+  type: ShortAnswer
+- answer: false
+  explain: Lecture distinguished molecular cloning from reproductive cloning. Molecular
+    cloning means making many identical copies of a specific DNA sequence (often in
+    bacteria using plasmids). Reproductive cloning uses nuclear transfer to generate
+    a whole new organism genetically identical to the donor, as in Dolly the sheep.
+    This explanation elaborates the biological principles involved, describing underlying
+    mechanisms and reasoning step by step.
+  text: Molecular cloning refers to making a genetically identical copy of an entire
+    organism, such as Dolly the sheep.
+  type: TrueFalse
+- answer: B
+  choices:
+    A: Molecular cloning copies entire chromosomes, whereas reproductive cloning copies
+      only plasmids.
+    B: Molecular cloning copies DNA sequences in microbes; reproductive cloning uses
+      a donor nucleus to make a whole multicellular organism.
+    C: Molecular cloning requires a surrogate mother, while reproductive cloning does
+      not.
+    D: They are the same process, just in different species.
+  explain: Molecular cloning focuses on inserting a DNA fragment into a vector and
+    amplifying it in bacteria, creating cloned DNA molecules. Reproductive cloning
+    transfers a nucleus from a somatic cell into an enucleated egg and implants the
+    embryo into a surrogate so that an entire organism genetically matching the donor
+    develops. This explanation elaborates the biological principles involved, describing
+    underlying mechanisms and reasoning step by step.
+  text: Which statement best contrasts molecular cloning with reproductive cloning?
+  type: MultiChoice
+- answer: B
+  choices:
+    A: They already function as specialized heart or liver cells.
+    B: They can become any cell type in the human body (are pluripotent).
+    C: They only divide a few times and then stop, reducing cancer risk.
+    D: They lack DNA and therefore cannot mutate.
+  explain: The slides emphasized that human embryonic stem cells are undifferentiated
+    and can become any type of cell in the human body. This pluripotency makes them
+    powerful for studying disease mechanisms and, in principle, for growing replacement
+    tissues or organs. This explanation elaborates the biological principles involved,
+    describing underlying mechanisms and reasoning step by step.
+  text: In the context of cellular cloning, what is a key property of human embryonic
+    stem cells that makes them so valuable for research and potential therapies?
+  type: MultiChoice
+- answer:
+    '1': C
+    '2': B
+    '3': A
+  explain: "In PCR, heating to about 95\xB0C denatures the double helix into single\
+    \ strands. Cooling to around 55\xB0C allows short primers to anneal to their complementary\
+    \ sites. Heating to about 72\xB0C, the optimum for Taq polymerase, lets the enzyme\
+    \ extend from the primers and synthesize new DNA strands. This explanation elaborates\
+    \ the biological principles involved, describing underlying mechanisms and reasoning\
+    \ step by step."
+  options:
+    A: "DNA polymerase synthesizes new DNA from the primers\u2019 3\u2032 ends."
+    B: Primers base-pair with their complementary target sequences.
+    C: Double-stranded DNA is melted into single strands.
+  pairs:
+    '1': "Denature (~95\xB0C)"
+    '2': "Anneal (~55\xB0C)"
+    '3': "Extend (~72\xB0C)"
+  text: Match each step of the PCR cycle with its primary purpose.
+  type: Matching
+- answer: C
+  choices:
+    A: It can recognize any DNA sequence without primers.
+    B: It requires no nucleotides (dNTPs) to synthesize DNA.
+    C: It is stable and active at the high temperatures used to repeatedly denature
+      DNA.
+    D: It only copies RNA, which is necessary for PCR.
+  explain: "Thermus aquaticus is a thermophilic bacterium from hot springs such as\
+    \ those in Yellowstone. Its DNA polymerase (Taq) evolved to function at high temperatures,\
+    \ so it remains stable through repeated heating to ~95\xB0C in PCR, avoiding the\
+    \ need to add fresh enzyme after every cycle. This explanation elaborates the\
+    \ biological principles involved, describing underlying mechanisms and reasoning\
+    \ step by step."
+  text: Why is Taq polymerase from Thermus aquaticus specifically used in PCR instead
+    of ordinary DNA polymerases?
+  type: MultiChoice
+- answer: false
+  explain: "The principle of PCR diagnostics is that primers only amplify their matching\
+    \ target. If a band appears after PCR with SARS-CoV-2\u2013specific primers, it\
+    \ means viral genetic material was present and served as a template. Lack of amplification\
+    \ suggests no detectable virus in the sample. This explanation elaborates the\
+    \ biological principles involved, describing underlying mechanisms and reasoning\
+    \ step by step."
+  text: In the SARS-CoV-2 PCR test described in lecture, amplification (a visible
+    band) with virus-specific primers indicates that the sample does NOT contain viral
+    genetic material.
+  type: TrueFalse
+- answer:
+    '1': B
+    '2': C
+    '3': A
+  explain: Lecture distinguished genetic mapping, which uses recombination frequencies
+    and markers to place genes in order, from physical mapping, which pinpoints the
+    actual chromosomal positions. Genetic markers are the short DNA sequences whose
+    inheritance is tracked to infer linkage to genes. This explanation elaborates
+    the biological principles involved, describing underlying mechanisms and reasoning
+    step by step.
+  options:
+    A: A known DNA sequence used to track linkage with a gene of interest
+    B: A map based on recombination frequencies that shows the order of genes on a
+      chromosome
+    C: A map that shows the actual physical locations of genes on chromosomes
+  pairs:
+    '1': Genetic map
+    '2': Physical map
+    '3': Genetic marker
+  text: Match each genome mapping term from Chapter 17.2 to its description.
+  type: Matching
+- answer: A
+  choices:
+    A: A fluorescently labeled DNA probe complementary to the gene of interest
+    B: A radioactive amino acid that labels proteins translated from the gene
+    C: A restriction enzyme that cuts the gene out of the chromosome
+    D: A fluorescent lipid that inserts into the nuclear membrane
+  explain: "FISH employs single-stranded DNA probes that are complementary to the\
+    \ target gene and tagged with a fluorescent dye. These probes hybridize to their\
+    \ matching sequence on chromosomes, which then glow under a fluorescence microscope,\
+    \ revealing the gene\u2019s physical location. This explanation elaborates the\
+    \ biological principles involved, describing underlying mechanisms and reasoning\
+    \ step by step."
+  text: Fluorescent in situ hybridization (FISH) uses what key reagent to visualize
+    the location of a gene on a chromosome?
+  type: MultiChoice
+- answer: A contig is a longer, continuous DNA sequence assembled by overlapping many
+    short individual sequencing reads that share matching sequence at their ends.
+  explain: "Classic Sanger sequencing reads about 1000 bases at a time. For large\
+    \ genomes, fragments are sequenced separately and then computationally aligned\
+    \ wherever their sequences overlap. These overlaps allow the short reads to be\
+    \ stitched into contiguous sequences\u2014contigs\u2014that represent larger stretches\
+    \ of the genome. This explanation elaborates the biological principles involved,\
+    \ describing underlying mechanisms and reasoning step by step."
+  text: In whole-genome sequencing projects, what is a "contig" and how is it produced
+    from many short Sanger sequencing reads?
+  type: ShortAnswer
+- answer: C
+  choices:
+    A: It cannot sequence more than a single gene at a time.
+    B: It always misses coding regions and only sequences introns.
+    C: Short reads from highly repetitive DNA make it hard to place fragments uniquely
+      in the genome.
+    D: It requires cloning every fragment into bacteria before sequencing.
+  explain: Shotgun sequencing randomly breaks the genome into many small pieces and
+    sequences them. When large portions of the genome consist of repeated sequences,
+    many reads look nearly identical and can fit in multiple places, creating ambiguous
+    branches during assembly and making it difficult to reconstruct a unique genome
+    sequence. This explanation elaborates the biological principles involved, describing
+    underlying mechanisms and reasoning step by step.
+  text: According to the lecture, what major challenge does shotgun sequencing encounter
+    when assembling large genomes like the human genome?
+  type: MultiChoice
+- answer: true
+  explain: The slides noted that older Sanger-based approaches made the Human Genome
+    Project extremely expensive, but modern high-throughput NGS technologies can generate
+    billions of ~100-base reads in a single run, dropping the cost of a full human
+    genome to roughly $1000. This explanation elaborates the biological principles
+    involved, describing underlying mechanisms and reasoning step by step.
+  text: Next Generation Sequencing (NGS) platforms have reduced the cost of sequencing
+    a human genome from billions of dollars to around a thousand dollars by producing
+    massive numbers of short reads in parallel.
+  type: TrueFalse
+- answer: B
+  choices:
+    A: The genome is all the RNA in a cell; the proteome is all the DNA.
+    B: The genome is all of the DNA in a cell; the proteome is all of the proteins
+      present in that cell.
+    C: The genome changes dramatically from cell type to cell type; the proteome is
+      identical in every tissue.
+    D: Only the proteome can be used to study cancer.
+  explain: Chapter 17.5 defined the genome as the complete set of DNA in a cell and
+    the proteome as the complete set of proteins. While virtually all cells in an
+    individual share the same genome, different cell types express different subsets
+    of genes and protein modifications, giving each a distinct proteome. This explanation
+    elaborates the biological principles involved, describing underlying mechanisms
+    and reasoning step by step.
+  text: Which statement correctly contrasts a genome with a proteome?
+  type: MultiChoice
+- answer: Mass spectrometry directly identifies and quantifies the proteins present
+    (and often their modifications), revealing which proteins cancer cells actually
+    make, which cannot be fully predicted from mRNA levels alone.
+  explain: "The lecture emphasized that not all RNAs become protein and many proteins\
+    \ are chemically modified after translation. Mass spectrometry\u2013based proteomics\
+    \ allows researchers to catalogue the actual protein composition and modifications\
+    \ in cancer versus normal cells, helping to identify protein signatures that might\
+    \ be targeted by drugs or vaccines. This explanation elaborates the biological\
+    \ principles involved, describing underlying mechanisms and reasoning step by\
+    \ step."
+  text: Why do scientists use mass spectrometry in proteomics studies of cancer cells,
+    rather than relying only on mRNA expression data?
+  type: ShortAnswer
