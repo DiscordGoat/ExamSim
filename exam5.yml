@@ -1,1265 +1,1535 @@
 - type: MultiChoice
-  text: In a mature ovarian follicle, which cell type converts androgens to estradiol
-    in response to follicle-stimulating hormone (FSH)?
+  text: 'Which statement best defines allele frequency in a population?'
   choices:
-    A: Theca cells
-    B: Granulosa cells
-    C: Luteal cells of the corpus luteum
-    D: Stromal connective-tissue cells
+    A: 'The number of individuals with a particular genotype divided by the total population size'
+    B: 'The proportion of a specific allele out of the total number of alleles in the gene pool'
+    C: 'The number of different alleles observed at a locus'
+    D: 'The probability that an allele will mutate in the next generation'
   answer: B
-  explain: The correct answer is 'Granulosa cells' because in the ovarian follicle
-    theca cells first synthesize androgen precursors (androstenedione and testosterone)
-    under luteinizing hormone stimulation, and then granulosa cells use aromatase,
-    activated by FSH, to convert those androgens into estradiol. Option A is incorrect
-    because theca cells primarily make androgens rather than converting them to estrogen.
-    Option C is incorrect because luteal cells mainly produce progesterone after ovulation.
-    Option D is incorrect because stromal connective tissue provides structural support
-    and is not the main site of estradiol synthesis. This explanation elaborates the
-    biological principles involved, describing underlying mechanisms and reasoning
-    step by step.
+  explain: 'Allele frequency is the proportion of a specific allele out of the total number of alleles in the gene pool. Genotype frequency is about genotypes, not alleles, and mutation rate is a different concept.'
 - type: MultiChoice
-  text: Which hormone secreted by the corpus luteum is primarily responsible for
-    maintaining and supporting the endometrium during the luteal phase and early
-    pregnancy?
+  text: 'Which statement best defines genotype frequency in a population?'
   choices:
-    A: Follicle-stimulating hormone (FSH)
-    B: Estradiol
-    C: Progesterone
-    D: Luteinizing hormone (LH)
+    A: 'The proportion of a specific allele out of the total number of alleles in the gene pool'
+    B: 'The number of individuals with a particular genotype divided by the total population size'
+    C: 'The fraction of alleles that are heterozygous'
+    D: 'The number of alleles at a locus divided by the population size'
+  answer: B
+  explain: 'Genotype frequency is the number of individuals with a particular genotype divided by the total population size. Allele frequency is different and refers to alleles in the gene pool.'
+- type: MultiChoice
+  text: 'An individual is homozygous when they have:'
+  choices:
+    A: 'Two different alleles for a gene (for example, Bb)'
+    B: 'Two identical alleles for a given gene (for example, BB)'
+    C: 'More than two alleles for a gene'
+    D: 'Only recessive alleles in the population'
+  answer: B
+  explain: 'Homozygous means the individual has two identical alleles for the gene, such as BB or bb. Two different alleles (Bb) is heterozygous.'
+- type: MultiChoice
+  text: 'An individual is heterozygous when they have:'
+  choices:
+    A: 'Two identical alleles for a given gene (for example, BB)'
+    B: 'Two different alleles for the gene (for example, Bb)'
+    C: 'Only the dominant allele for the gene'
+    D: 'Only the recessive allele for the gene'
+  answer: B
+  explain: 'Heterozygous means two different alleles at a locus, commonly one dominant and one recessive in complete dominance examples.'
+- type: MultiChoice
+  text: 'An individual with genotype Bb is best described as:'
+  choices:
+    A: 'Homozygous dominant'
+    B: 'Homozygous recessive'
+    C: 'Heterozygous'
+    D: 'Fixed'
   answer: C
-  explain: The correct answer is 'Progesterone' because after ovulation the corpus
-    luteum secretes high levels of progesterone, which stabilizes and thickens the
-    endometrial lining, inhibits uterine contractions, and prepares the uterus to
-    support implantation and early pregnancy. Option A is incorrect because FSH primarily
-    promotes follicle growth in the ovary rather than directly maintaining the endometrium.
-    Option B is incorrect because estradiol mainly stimulates endometrial proliferation
-    earlier in the cycle but is not the key hormone sustaining it during the luteal
-    phase. Option D is incorrect because LH triggers ovulation and corpus luteum formation
-    but is not the main hormone maintaining the endometrium. This explanation elaborates
-    the biological principles involved, describing underlying mechanisms and reasoning
-    step by step.
+  explain: 'Bb contains two different alleles, so the individual is heterozygous. Homozygous genotypes are BB and bb. Fixed describes an allele in a population, not a genotype of one individual.'
 - type: MultiChoice
-  text: Fertilization of the ovulated oocyte most commonly occurs in which specific
-    region of the fallopian tube?
+  text: 'In evolutionary biology, the smallest unit of evolutionary change is:'
   choices:
-    A: Isthmus, closest to the uterus
-    B: Fornix of the cervix
-    C: Ampulla, the curved mid-portion of the tube
-    D: Fundus of the uterus
+    A: 'An individual organism'
+    B: 'A population'
+    C: 'A single cell'
+    D: 'A chromosome'
+  answer: B
+  explain: 'Individuals do not evolve genetically across generations; populations evolve, which is measured as changes in allele frequencies over generations.'
+- type: MultiChoice
+  text: 'A population gene pool is best described as:'
+  choices:
+    A: 'All genes found in a single individual'
+    B: 'All copies of every allele at the loci of interest in all members of the population'
+    C: 'Only the dominant alleles present in a population'
+    D: 'Only alleles found in heterozygotes'
+  answer: B
+  explain: 'A gene pool includes all copies of every allele at the loci of interest across all individuals in the population.'
+- type: MultiChoice
+  text: 'A population is polymorphic at a locus when:'
+  choices:
+    A: 'It has only one allele at that locus (the allele is fixed)'
+    B: 'It has more than one allele at that locus'
+    C: 'Every individual is homozygous at that locus'
+    D: 'p equals q at that locus'
+  answer: B
+  explain: 'Polymorphic means more than one allele is present in the population gene pool at that locus. Monomorphic means only one allele is present (fixed).'
+- type: MultiChoice
+  text: 'A population is monomorphic at a locus when:'
+  choices:
+    A: 'It has more than one allele at that locus'
+    B: 'It has exactly one allele at that locus (the allele is fixed)'
+    C: 'Every individual is heterozygous at that locus'
+    D: 'The dominant allele frequency is less than 0.5'
+  answer: B
+  explain: 'Monomorphic means only one allele is present in the population at that locus, and that allele is fixed (frequency 1.0).'
+- type: MultiChoice
+  text: 'In a two-allele model, p and q represent:'
+  choices:
+    A: 'Genotype frequencies and must add up to 2'
+    B: 'Allele frequencies of the two alleles and p plus q equals 1'
+    C: 'Mutation and selection rates'
+    D: 'Population size and number of alleles'
+  answer: B
+  explain: 'By convention, p and q represent allele frequencies at a locus with two alleles, and they must sum to 1.'
+- type: MultiChoice
+  text: 'If the dominant allele has frequency p = 0.75, what is the recessive allele frequency q?'
+  choices:
+    A: '0.25'
+    B: '0.75'
+    C: '1.50'
+    D: 'Not enough information'
+  answer: A
+  explain: 'In a two-allele model, allele frequencies sum to 1. Therefore q = 1 - p = 1 - 0.75 = 0.25.'
+- type: MultiChoice
+  text: 'Which list contains the four major processes that change allele frequencies in populations?'
+  choices:
+    A: 'Mutation, genetic drift, migration, selection'
+    B: 'Meiosis, mitosis, fertilization, cytokinesis'
+    C: 'Dominance, recessiveness, codominance, incomplete dominance'
+    D: 'Transcription, translation, replication, repair'
+  answer: A
+  explain: 'Mutation, genetic drift, migration (gene flow), and natural selection are the four processes that change allele frequencies in populations.'
+- type: MultiChoice
+  text: 'Genetic drift is best described as:'
+  choices:
+    A: 'A nonrandom process where certain genotypes survive and reproduce more'
+    B: 'A change in allele frequencies due to random chance events'
+    C: 'A permanent DNA change that always increases fitness'
+    D: 'The movement of individuals between populations'
+  answer: B
+  explain: 'Genetic drift refers to random changes in allele frequencies caused by chance. Nonrandom differences in survival and reproduction describes natural selection.'
+- type: MultiChoice
+  text: 'Mutation is best described as:'
+  choices:
+    A: 'A random permanent change in the sequence of nucleotides in DNA'
+    B: 'A change in allele frequencies due to random sampling error only'
+    C: 'The movement of alleles between populations'
+    D: 'A process that always produces beneficial alleles'
+  answer: A
+  explain: 'Mutation is a change in DNA sequence. It can be beneficial, neutral, or harmful; it does not always increase fitness.'
+- type: MultiChoice
+  text: 'Migration (gene flow) is best described as:'
+  choices:
+    A: 'A random permanent change in DNA sequence'
+    B: 'A random change in allele frequencies due to chance events'
+    C: 'The movement of individuals (and their alleles) between populations'
+    D: 'A nonrandom process where some genotypes have higher reproductive success'
   answer: C
-  explain: The correct answer is 'Ampulla, the curved mid-portion of the tube' because
-    the ampulla of the fallopian tube is the usual site where sperm encounter and
-    fertilize the oocyte before the early embryo travels toward the uterus. Option
-    A is incorrect because the isthmus is the narrow segment closer to the uterus
-    and is not the usual fertilization site. Option B is incorrect because the cervical
-    fornix is part of the lower uterus rather than the fallopian tube. Option D is
-    incorrect because the fundus is the top of the uterus where implantation may occur,
-    not where fertilization normally happens. This explanation elaborates the biological
-    principles involved, describing underlying mechanisms and reasoning step by step.
-- type: ShortAnswer
-  text: Briefly describe how estrogen and progesterone each contribute to breast
-    development at puberty.
-  answer: Estrogen stimulates growth of the ductal and branching duct system of the
-    breast, whereas progesterone promotes budding and development of the lobules and
-    alveoli where milk will later be produced.
+  explain: 'Migration, also called gene flow, is movement of individuals (and alleles) between populations, which can change allele frequencies.'
 - type: MultiChoice
-  text: During which phase of the menstrual cycle is the corpus luteum present and
-    secreting high levels of progesterone?
+  text: 'Natural selection is best described as:'
   choices:
-    A: Early follicular phase (days 0–7)
-    B: Late follicular phase just before ovulation (days 8–13)
-    C: Ovulation (around day 14)
-    D: Luteal phase (approximately days 14–28)
-  answer: D
-  explain: The correct answer is 'Luteal phase (approximately days 14–28)' because
-    the corpus luteum forms immediately after ovulation and secretes large amounts
-    of progesterone throughout the luteal phase to support endometrial growth. Option
-    A is incorrect because the corpus luteum has not yet formed in the early follicular
-    phase, when follicles are just beginning to grow. Option B is incorrect because
-    the late follicular phase is dominated by rising estradiol from the maturing follicle,
-    not progesterone from the corpus luteum. Option C is incorrect because ovulation
-    itself is a brief event triggered by the LH surge, and high sustained progesterone
-    levels appear afterward. This explanation elaborates the biological principles
-    involved, describing underlying mechanisms and reasoning step by step.
+    A: 'A random change in allele frequencies due to chance events'
+    B: 'A nonrandom process where certain genotypes survive and reproduce more than others'
+    C: 'The movement of alleles between populations'
+    D: 'A random permanent change in DNA sequence'
+  answer: B
+  explain: 'Natural selection is nonrandom: individuals with certain heritable traits tend to survive and reproduce more, changing allele frequencies over time.'
 - type: MultiChoice
-  text: How do combination estrogen–progesterone oral contraceptive pills primarily
-    prevent pregnancy?
+  text: 'In a diploid population of N individuals, the total number of alleles at a single locus is:'
   choices:
-    A: They stimulate a larger mid-cycle LH surge to cause premature ovulation.
-    B: They directly kill sperm within the uterine cavity.
-    C: They provide a steady low dose of estrogen and progesterone that suppresses
-      the LH surge and prevents ovulation.
-    D: They permanently destroy ovarian follicles, leading to early menopause.
+    A: 'N'
+    B: '2N'
+    C: 'N/2'
+    D: '4N'
+  answer: B
+  explain: 'Diploid organisms carry two alleles per locus, so total alleles at a locus equals 2 times the number of individuals.'
+- type: MultiChoice
+  text: 'A population has genotype counts WW = 6, Ww = 1, ww = 2 (total 9). What is the genotype frequency of WW?'
+  choices:
+    A: '6/9 = 0.67'
+    B: '6/18 = 0.33'
+    C: '12/18 = 0.67'
+    D: '1/9 = 0.11'
+  answer: A
+  explain: 'Genotype frequency is the number of individuals with the genotype divided by total individuals. WW frequency is 6 divided by 9, which equals 0.67.'
+- type: MultiChoice
+  text: 'Using WW = 6, Ww = 1, ww = 2 (total 9), what is the allele frequency of W?'
+  choices:
+    A: '6/9 = 0.67'
+    B: '7/18 ~ 0.39'
+    C: '13/18 ~ 0.72'
+    D: '14/18 ~ 0.78'
   answer: C
-  explain: The correct answer is 'They provide a steady low dose of estrogen and progesterone
-    that suppresses the LH surge and prevents ovulation' because constant levels
-    of these hormones exert negative feedback on the hypothalamus and pituitary, preventing
-    the sharp rise in LH required to trigger ovulation and also reducing endometrial
-    proliferation. Option A is incorrect because the pills blunt, rather than enhance,
-    the LH surge. Option B is incorrect because their main effect is hormonal, not
-    direct spermicidal action. Option D is incorrect because combination pills do
-    not destroy follicles or induce menopause; fertility usually returns after discontinuation.
-    This explanation elaborates the biological principles involved, describing underlying
-    mechanisms and reasoning step by step.
+  explain: 'Total alleles = 2*9 = 18. Count W alleles: WW contributes 2 each (6*2 = 12) and Ww contributes 1 (1), giving 13 W alleles. Frequency is 13/18 ~ 0.72.'
+- type: MultiChoice
+  text: 'A population has genotype counts WW = 5, Ww = 15, ww = 30 (total 50). What is the W allele frequency p?'
+  choices:
+    A: '0.10'
+    B: '0.25'
+    C: '0.50'
+    D: '0.75'
+  answer: B
+  explain: 'Total alleles = 2*50 = 100. W alleles = 2*WW + 1*Ww = 2*5 + 15 = 25. Therefore p = 25/100 = 0.25.'
+- type: MultiChoice
+  text: 'In a population of 320 red flowers, 20 white flowers, and 160 pink flowers, what is the C^W allele frequency?'
+  choices:
+    A: '0.2'
+    B: '0.4'
+    C: '0.04'
+    D: 'Not enough information to say'
+  answer: A
+  explain: 'Total individuals = 500, so total alleles = 1000. White (C^W C^W) contribute 2 C^W alleles each (20*2 = 40) and pink heterozygotes contribute 1 C^W allele each (160*1 = 160). Total C^W alleles = 200, so frequency is 200/1000 = 0.2.'
+- type: MultiChoice
+  text: 'Random mating in a population means:'
+  choices:
+    A: 'Individuals only mate with close relatives'
+    B: 'Every individual has an equal and independent chance of mating with every other individual'
+    C: 'Only dominant phenotypes reproduce'
+    D: 'Individuals only mate with members of other populations'
+  answer: B
+  explain: 'Random mating means every individual has an equal and independent chance of mating with every other individual in the population.'
+- type: MultiChoice
+  text: 'Mathematically, random mating is equivalent to:'
+  choices:
+    A: 'Randomly combining gametes drawn from the parental gene pool'
+    B: 'Cloning the most fit individuals each generation'
+    C: 'Forcing all heterozygotes to mate with each other'
+    D: 'Ensuring p equals q at all loci'
+  answer: A
+  explain: 'Under random mating, you can model reproduction as randomly combining gametes sampled from the gene pool.'
 - type: TrueFalse
-  text: In menopause, estrogen levels are high and FSH/LH levels are low because the
-    remaining follicles provide strong negative feedback to the pituitary.
+  text: 'Individuals are the smallest unit of evolutionary change.'
   answer: false
-  explain: This statement is false because menopause occurs when the supply of functional
-    ovarian follicles is exhausted, so estrogen production falls and negative feedback
-    on the hypothalamus and pituitary is lost. As a result, FSH and LH levels become
-    elevated rather than low. The statement reverses the true hormone pattern seen
-    after menopause. This explanation elaborates the biological principles involved,
-    describing underlying mechanisms and reasoning step by step.
-- type: ShortAnswer
-  text: What is perimenopause, and name one common symptom associated with it.
-  answer: Perimenopause is the transition period before menopause when ovarian estrogen
-    production begins to decline, FSH starts to rise, and menstrual cycles become
-    irregular; a common symptom is vasomotor instability such as hot flashes, often
-    accompanied by vulvovaginal atrophy or gradual loss of bone density.
-- type: MultiChoice
-  text: Which definition correctly distinguishes primary from secondary amenorrhea?
-  choices:
-    A: Primary amenorrhea is absence of menses for 6 months in a woman who previously
-      menstruated; secondary amenorrhea is no menses by age 16.
-    B: Primary amenorrhea is absence of menarche by about age 16; secondary amenorrhea
-      is absence of menses for 6 months in someone who previously had periods.
-    C: Primary amenorrhea is light but regular bleeding; secondary amenorrhea is very
-      heavy bleeding.
-    D: Primary amenorrhea only occurs in pregnancy; secondary amenorrhea only occurs
-      in menopause.
-  answer: B
-  explain: The correct answer is 'Primary amenorrhea is absence of menarche by about
-    age 16; secondary amenorrhea is absence of menses for 6 months in someone who
-    previously had periods' because these time-based definitions match the standard
-    clinical criteria used in the slide. Option A reverses the definitions. Option
-    C incorrectly describes patterns of bleeding rather than complete absence of menses.
-    Option D is incorrect because pregnancy and menopause are natural causes of amenorrhea
-    but do not define the primary versus secondary categories. This explanation elaborates
-    the biological principles involved, describing underlying mechanisms and reasoning
-    step by step.
-- type: MultiChoice
-  text: In polycystic ovary syndrome (PCOS), which pathophysiologic process most
-    directly drives excess androgen production by ovarian theca cells?
-  choices:
-    A: Severe hypothyroidism leading to TSH-mediated ovarian stimulation
-    B: Insulin resistance with compensatory hyperinsulinemia that stimulates theca
-      cells
-    C: Autoimmune destruction of granulosa cells causing unregulated LH release
-    D: Chronic deficiency of prolactin, removing inhibition of GnRH
-  answer: B
-  explain: The correct answer is 'Insulin resistance with compensatory hyperinsulinemia
-    that stimulates theca cells' because in PCOS peripheral insulin resistance leads
-    to elevated circulating insulin, and the ovaries remain sensitive to insulin,
-    so insulin acts with LH to drive excessive androgen (testosterone and DHT) production
-    in theca cells. Option A is incorrect because hypothyroidism is a separate endocrine
-    disorder and is not the primary driver of androgen excess in PCOS. Option C is
-    incorrect because PCOS is not caused by autoimmune granulosa-cell destruction;
-    granulosa cells are present but follicles often arrest in development. Option
-    D is incorrect because prolactin excess, not deficiency, is more commonly associated
-    with amenorrhea via suppression of GnRH. This explanation elaborates the biological
-    principles involved, describing underlying mechanisms and reasoning step by step.
-- type: MultiChoice
-  text: Why does chronic anovulation in PCOS increase the risk of endometrial cancer?
-  choices:
-    A: Because frequent corpus luteum formation leads to excessive progesterone exposure
-      to the endometrium.
-    B: Because lack of ovulation causes a persistent deficit of estrogen, thinning
-      the endometrium.
-    C: Because absence of ovulation means no corpus luteum forms, so there is little
-      progesterone, leaving unopposed estrogen stimulation of the endometrium.
-    D: Because ovulation generates inflammatory prostaglandins that directly mutate
-      endometrial DNA.
-  answer: C
-  explain: The correct answer is 'Because absence of ovulation means no corpus luteum
-    forms, so there is little progesterone, leaving unopposed estrogen stimulation
-    of the endometrium' because without ovulation there is no luteal phase and thus
-    no progesterone to counterbalance estrogen-driven endometrial proliferation, leading
-    over time to hyperplasia and an increased cancer risk. Option A is incorrect because
-    progesterone from the corpus luteum actually stabilizes and differentiates the
-    endometrium rather than promoting hyperplasia. Option B is incorrect because estrogen
-    is often present or even relatively unopposed in PCOS, not deficient. Option D
-    is incorrect because prostaglandins are primarily involved in uterine contractions
-    and pain, not direct mutagenesis of endometrial cells. This explanation elaborates
-    the biological principles involved, describing underlying mechanisms and reasoning
-    step by step.
-- type: ShortAnswer
-  text: List two common clinical manifestations of polycystic ovary syndrome (PCOS).
-  answer: Typical manifestations include signs of androgen excess such as hirsutism
-    and acne, menstrual disturbances like amenorrhea or irregular menses from anovulation,
-    male-pattern hair loss, and infertility due to chronic anovulation; any two of
-    these features earn full credit.
-- type: MultiChoice
-  text: Primary dysmenorrhea is thought to result mainly from overproduction of which
-    mediator and what effect does it have on the uterus?
-  choices:
-    A: Prostaglandin E (PGE), which relaxes myometrial smooth muscle and decreases
-      contractions
-    B: Prostaglandin F2α (PGF2α), which increases myometrial contractions and uterine
-      ischemic pain
-    C: Histamine, which causes uterine vasodilation and painless bleeding
-    D: Serotonin, which directly stimulates ovulation and follicle rupture
-  answer: B
-  explain: The correct answer is 'Prostaglandin F2α (PGF2α), which increases myometrial
-    contractions and uterine ischemic pain' because primary dysmenorrhea is linked
-    to excessive PGF2α production by the endometrium, leading to strong uterine contractions
-    and cramping. Option A is incorrect because PGEs tend to counteract contractions
-    and can lessen pain. Option C is incorrect because histamine is not the primary
-    mediator in menstrual cramps. Option D is incorrect because serotonin is a neurotransmitter
-    involved in mood and vascular tone, not the main driver of uterine contractions
-    or ovulation-related pain in dysmenorrhea. This explanation elaborates the biological
-    principles involved, describing underlying mechanisms and reasoning step by step.
-- type: MultiChoice
-  text: Which statement best describes endometriosis as presented in the slide?
-  choices:
-    A: Endometrial or endometrium-like tissue grows outside the uterus and still
-      responds to estrogen and progesterone, causing adhesions, inflammation, pain,
-      and infertility risk.
-    B: Endometrial tissue overgrows only within the uterine cavity but does not respond
-      to hormones.
-    C: Endometriosis is defined solely by heavy menstrual bleeding with no structural
-      or inflammatory changes.
-    D: Endometriosis is a benign ovarian cyst that never affects fertility.
-  answer: A
-  explain: The correct answer is 'Endometrial or endometrium-like tissue grows outside
-    the uterus and still responds to estrogen and progesterone, causing adhesions,
-    inflammation, pain, and infertility risk' because the condition is characterized
-    by ectopic hormone-responsive endometrial tissue on structures such as the ovaries
-    or peritoneum. Option B is incorrect because it describes a process confined to
-    the uterine cavity and claims there is no hormonal responsiveness, which contradicts
-    the pathophysiology. Option C is incorrect because abnormal bleeding alone does
-    not define endometriosis and pain and structural lesions are key features. Option
-    D is incorrect because endometriosis can impair fertility and is not limited to
-    simple benign cysts. This explanation elaborates the biological principles involved,
-    describing underlying mechanisms and reasoning step by step.
-- type: MultiChoice
-  text: A patient on unopposed estrogen therapy for menopausal symptoms presents with
-    prolonged heavy uterine bleeding. According to the slide, what is the main concern
-    about the long-term effect of this hormone exposure on the endometrium?
-  choices:
-    A: Rapid endometrial atrophy leading to infertility but no malignancy risk
-    B: Endometrial hyperplasia that may progress to endometrial malignancy
-    C: Loss of myometrial smooth muscle causing uterine rupture
-    D: Formation of cervical polyps without changes in the uterine lining
-  answer: B
-  explain: The correct answer is 'Endometrial hyperplasia that may progress to endometrial
-    malignancy' because the slide notes that excess estrogen exposure, such as from
-    PCOS or unopposed estrogen hormone replacement, can drive uncontrolled proliferation
-    of the endometrium, increasing the risk of endometrial cancer. Option A is incorrect
-    because unopposed estrogen causes overgrowth rather than atrophy. Option C is
-    incorrect because the primary effect is on the endometrial tissue, not destruction
-    of the myometrium. Option D is incorrect because estrogen-driven hyperplasia involves
-    the endometrium, not isolated cervical polyps. This explanation elaborates the
-    biological principles involved, describing underlying mechanisms and reasoning
-    step by step.
-- type: ShortAnswer
-  text: According to the infertility slide, give one example of an ovulatory cause
-    and one example of a tubal cause of female infertility.
-  answer: An ovulatory cause includes diminished ovarian reserve or anovulation due
-    to PCOS, while a tubal cause includes damage or scarring of the fallopian tubes
-    from pelvic inflammatory disease (PID) or endometriosis.
-- type: MultiChoice
-  text: Gestational diabetes develops during pregnancy primarily because which of
-    the following occurs?
-  choices:
-    A: Pregnancy hormones such as human placental lactogen (hCS), progesterone, cortisol,
-      and prolactin increase maternal insulin resistance.
-    B: The placenta stops producing any hormones, leading to complete absence of insulin.
-    C: Maternal pancreatic beta cells are permanently destroyed by autoimmunity early
-      in pregnancy.
-    D: The fetus directly secretes excess insulin into the maternal bloodstream.
-  answer: A
-  explain: The correct answer is 'Pregnancy hormones such as human placental lactogen
-    (hCS), progesterone, cortisol, and prolactin increase maternal insulin resistance'
-    because the slide explains that these hormones antagonize insulin action, raising
-    maternal blood glucose and sometimes causing gestational diabetes. Option B is
-    incorrect because the placenta becomes more hormonally active in pregnancy rather
-    than silent. Option C is incorrect because autoimmune beta cell destruction describes
-    type 1 diabetes, not typical gestational diabetes. Option D is incorrect because
-    maternal hyperglycemia comes from maternal metabolism, although it can lead to
-    fetal hyperinsulinemia and macrosomia, not direct fetal insulin secretion into
-    the mother. This explanation elaborates the biological principles involved, describing
-    underlying mechanisms and reasoning step by step.
-- type: MultiChoice
-  text: Which scenario from the slide most strongly suggests an ectopic pregnancy
-    rather than a normal intrauterine pregnancy?
-  choices:
-    A: A pregnant patient with a very large fetus (macrosomia)
-    B: A patient with missed menses and positive hCG who has an intrauterine gestational
-      sac on ultrasound
-    C: A patient with pregnancy symptoms and a history of damaged fallopian tubes
-      who has no detectable hCG because the placenta has not formed in the uterus
-    D: A patient with high blood pressure and proteinuria after 20 weeks of gestation
-  answer: C
-  explain: The correct answer is 'A patient with pregnancy symptoms and a history
-    of damaged fallopian tubes who has no detectable hCG because the placenta has
-    not formed in the uterus' because the slide emphasizes that ectopic implantation
-    in the fallopian tube can be suspected when a patient appears pregnant but lacks
-    the typical hCG signal that comes from a uterine placenta. Option A is more typical
-    of gestational diabetes–related macrosomia. Option B is consistent with a normal
-    intrauterine pregnancy, not an ectopic one. Option D describes gestational hypertension
-    or preeclampsia rather than ectopic pregnancy. This explanation elaborates the
-    biological principles involved, describing underlying mechanisms and reasoning
-    step by step.
-- type: MultiChoice
-  text: Placenta previa, as defined on the slide, is best described as which of the
-    following?
-  choices:
-    A: Premature detachment of the placenta from the endometrium before delivery
-    B: Placental tissue that grows over and blocks the cervical opening, often requiring
-      cesarean delivery
-    C: Inadequate placental invasion that causes endothelial activation and maternal
-      hypertension
-    D: A small accessory lobe of placenta attached to the membranes
-  answer: B
-  explain: The correct answer is 'Placental tissue that grows over and blocks the
-    cervical opening, often requiring cesarean delivery' because placenta previa occurs
-    when the placenta covers the vaginal opening (internal cervical os), which can
-    obstruct vaginal delivery and cause bleeding. Option A instead describes placental
-    abruption, in which the placenta prematurely separates from the uterine wall.
-    Option C relates more to the pathophysiology of preeclampsia from poor placental
-    vascularization. Option D is incorrect because an accessory placental lobe is
-    not the defining feature of placenta previa. This explanation elaborates the biological
-    principles involved, describing underlying mechanisms and reasoning step by step.
-- type: MultiChoice
-  text: Which combination best matches the definition and basic mechanism of preeclampsia
-    given in the slide?
-  choices:
-    A: Chronic hypertension present before pregnancy due to essential vascular disease
-    B: New-onset hypertension plus proteinuria or other signs of end-organ damage
-      after 20 weeks, caused by poor placental vascularization and endothelial activation
-    C: Transient elevation in blood pressure during labor without proteinuria, caused
-      by pain and anxiety
-    D: Seizures in a pregnant patient with normal blood pressure and no proteinuria
-  answer: B
-  explain: The correct answer is 'New-onset hypertension plus proteinuria or other
-    signs of end-organ damage after 20 weeks, caused by poor placental vascularization
-    and endothelial activation' because the slide defines preeclampsia by hypertension
-    with proteinuria or severe features, and explains that inadequate placental vascularization
-    leads to endothelial cell activation, clotting, and hypertension. Option A describes
-    chronic hypertension that predates pregnancy rather than preeclampsia. Option
-    C refers to temporary blood pressure changes during labor rather than the specific
-    syndrome. Option D describes seizures without hypertension or proteinuria; true
-    eclampsia arises when preeclampsia progresses to seizures in the setting of hypertensive
-    disease. This explanation elaborates the biological principles involved, describing
-    underlying mechanisms and reasoning step by step.
-- type: MultiChoice
-  text: Which ovarian hormone provides selective negative feedback on follicle-stimulating
-    hormone (FSH) but not on luteinizing hormone (LH)?
-  choices:
-    A: Estradiol
-    B: Progesterone
-    C: Inhibin
-    D: Human chorionic gonadotropin (hCG)
-  answer: C
-  explain: The correct answer is 'Inhibin' because the hormone review slide states
-    that inhibin produced by the ovaries specifically feeds back to suppress FSH secretion,
-    whereas estradiol and progesterone participate in broader feedback on both FSH
-    and LH. Option A is incorrect because estradiol modulates both FSH and LH and
-    even increases GnRH receptor expression to help trigger the LH surge at mid-cycle.
-    Option B is incorrect because progesterone from the corpus luteum provides negative
-    feedback on both FSH and LH during the luteal phase. Option D is incorrect because
-    hCG is produced by the placenta during pregnancy and acts mainly to support the
-    corpus luteum, not to selectively inhibit FSH. This explanation elaborates the
-    biological principles involved, describing underlying mechanisms and reasoning
-    step by step.
-- type: MultiChoice
-  text: How does estradiol contribute to the mid-cycle luteinizing hormone (LH) surge
-    that triggers ovulation?
-  choices:
-    A: Estradiol directly destroys GnRH receptors on the pituitary, removing negative
-      feedback.
-    B: Estradiol increases the number of GnRH receptors on pituitary gonadotrophs,
-      making them more sensitive to GnRH and promoting a large LH surge.
-    C: Estradiol permanently shuts down GnRH release from the hypothalamus, preventing
-      LH secretion.
-    D: Estradiol only acts on the uterus and has no feedback effects on the hypothalamus–pituitary
-      axis.
-  answer: B
-  explain: The correct answer is 'Estradiol increases the number of GnRH receptors
-    on pituitary gonadotrophs, making them more sensitive to GnRH and promoting a
-    large LH surge' because the slide notes that estrogen upregulates GnRH receptors
-    on the pituitary, allowing pulsatile GnRH to evoke a mid-cycle LH surge that induces
-    ovulation. Option A is incorrect because estradiol does not destroy GnRH receptors;
-    it temporarily enhances responsiveness. Option C is incorrect because estradiol
-    does not permanently stop GnRH release; at mid-cycle it actually participates
-    in a positive-feedback loop. Option D is incorrect because estradiol has important
-    feedback effects on the hypothalamus and pituitary, not just uterine targets.
-    This explanation elaborates the biological principles involved, describing underlying
-    mechanisms and reasoning step by step.
+  explain: 'This is false because individuals do not evolve genetically across generations. Populations are the smallest unit of evolutionary change, measured by allele frequency changes.'
 - type: TrueFalse
-  text: During the luteal phase, high progesterone production by the corpus luteum
-    exerts negative feedback on both FSH and LH secretion from the pituitary.
+  text: 'In a two-allele model, allele frequencies always satisfy p + q = 1.'
   answer: true
-  explain: This statement is true because the hormone review slide explains that the
-    corpus luteum produces high levels of progesterone after ovulation, and this progesterone
-    feeds back to inhibit secretion of both FSH and LH for the remainder of the luteal
-    phase, helping to prevent additional follicle recruitment during that cycle. This
-    explanation elaborates the biological principles involved, describing underlying
-    mechanisms and reasoning step by step.
-
-
-- type: MultiChoice
-  text: At approximately what gestational age do male and female fetuses first begin
-    to show phenotypic differences in their external genitalia?
-  choices:
-    A: 4 weeks of gestation
-    B: 8 weeks of gestation
-    C: 20 weeks of gestation
-    D: At birth
-  answer: B
-  explain: The correct answer is '8 weeks of gestation' because before this point,
-    the external genitalia of XX and XY fetuses are phenotypically indistinguishable,
-    and only after about week 8 do hormonal signals from the testes (particularly
-    testosterone and its metabolite DHT) drive differentiation of the Wolffian and
-    Müllerian duct derivatives into recognizable male or female structures. This explanation
-    elaborates the biological principles involved, describing underlying mechanisms
-    and reasoning step by step.
-- type: MultiChoice
-  text: In a developing XY fetus, which cell type–hormone pair is primarily responsible
-    for regression of the Müllerian ducts and promotion of male internal genital
-    development?
-  choices:
-    A: Leydig cells – estradiol
-    B: Sertoli cells – anti-Müllerian hormone (AMH)
-    C: Theca cells – progesterone
-    D: Granulosa cells – inhibin
-  answer: B
-  explain: The correct answer is 'Sertoli cells – anti-Müllerian hormone (AMH)' because
-    Sertoli cells in the fetal testes secrete AMH, which causes regression of the
-    Müllerian ducts, while Leydig cell testosterone supports Wolffian duct development
-    into the male internal reproductive tract. This explanation elaborates the biological
-    principles involved, describing underlying mechanisms and reasoning step by step.
-- type: MultiChoice
-  text: Classic congenital adrenal hyperplasia (CAH) due to 21-hydroxylase deficiency
-    typically causes which pattern of steroid hormone changes?
-  choices:
-    A: Increased aldosterone and cortisol; decreased androgens
-    B: Decreased aldosterone and cortisol; increased androgens
-    C: Isolated decrease in estradiol; normal aldosterone and cortisol
-    D: Increased estradiol and aldosterone; decreased cortisol and androgens
-  answer: B
-  explain: The correct answer is 'Decreased aldosterone and cortisol; increased androgens'
-    because loss of 21-hydroxylase blocks synthesis of mineralocorticoids and glucocorticoids,
-    shunting precursors like pregnenolone toward excessive adrenal androgen (testosterone/estradiol)
-    production, which can virilize external genitalia and cause salt-wasting. This
-    explanation elaborates the biological principles involved, describing underlying
-    mechanisms and reasoning step by step.
-- type: MultiChoice
-  text: Which of the following best describes the main function of the blood–testes
-    barrier formed by tight junctions between Sertoli cells?
-  choices:
-    A: Maintains low intratesticular testosterone levels by blocking Leydig cell hormones
-    B: Allows immune cells to enter the seminiferous tubules to clear defective sperm
-    C: Prevents immune recognition and destruction of post-pubertal germ cells
-    D: Regulates fructose secretion from seminal vesicles into the ejaculatory duct
-  answer: C
-  explain: The correct answer is 'Prevents immune recognition and destruction of post-pubertal
-    germ cells' because the blood–testes barrier physically separates developing sperm
-    from the systemic circulation, so that neo-antigenic sperm antigens do not trigger
-    autoimmune attack; disruption (for example by toxins) can lead to sperm damage
-    and infertility. This explanation elaborates the biological principles involved,
-    describing underlying mechanisms and reasoning step by step.
-- type: MultiChoice
-  text: Sex-hormone binding globulin (SHBG) tightly binds about half of circulating
-    testosterone. In the short term, which of the following conditions is most likely
-    to DECREASE SHBG and thereby increase the fraction of free, bioavailable testosterone?
-  choices:
-    A: Untreated hyperthyroidism
-    B: Exogenous estrogen therapy
-    C: Advanced age
-    D: Obesity with insulin resistance
-  answer: D
-  explain: The correct answer is 'Obesity with insulin resistance' because excess
-    adiposity, insulin resistance, and androgen exposure tend to suppress hepatic
-    SHBG production, leaving a greater proportion of testosterone unbound and biologically
-    active, whereas aging, estrogens, and hyperthyroidism generally increase SHBG
-    and lower free testosterone. This explanation elaborates the biological principles
-    involved, describing underlying mechanisms and reasoning step by step.
-- type: MultiChoice
-  text: Which of the following is NOT a typical physiologic action of androgens (testosterone
-    and DHT) in males?
-  choices:
-    A: Promotion of spermatogenesis
-    B: Closure of the epiphyseal growth plates in long bones
-    C: Increase in muscle mass and bone density
-    D: Chronic suppression of erythropoiesis and hematocrit
-  answer: D
-  explain: The correct answer is 'Chronic suppression of erythropoiesis and hematocrit'
-    because androgens actually stimulate erythropoiesis, often raising hematocrit;
-    they also drive spermatogenesis, sexual maturation, secondary sexual characteristics,
-    and epiphyseal plate closure. This explanation elaborates the biological principles
-    involved, describing underlying mechanisms and reasoning step by step.
-- type: MultiChoice
-  text: During spermatogenesis, which anterior pituitary hormone acts directly on
-    Sertoli cells to support sperm maturation within the seminiferous tubules?
-  choices:
-    A: ACTH
-    B: FSH
-    C: LH
-    D: Prolactin
-  answer: B
-  explain: The correct answer is 'FSH' because follicle-stimulating hormone binds
-    receptors on Sertoli cells, stimulating them to nurture developing germ cells
-    and promote spermatogenesis, while LH primarily targets Leydig cells in the interstitium
-    to increase testosterone production. This explanation elaborates the biological
-    principles involved, describing underlying mechanisms and reasoning step by step.
-- type: MultiChoice
-  text: Why are many men with cystic fibrosis infertile despite having normal testicular
-    testosterone production?
-  choices:
-    A: Primary Leydig cell failure prevents adequate testosterone synthesis
-    B: Thick secretions obstruct the vas deferens and impair sperm transport
-    C: SHBG levels are extremely elevated, eliminating free testosterone
-    D: Excess DHT causes premature closure of the ejaculatory ducts
-  answer: B
-  explain: The correct answer is 'Thick secretions obstruct the vas deferens and impair
-    sperm transport' because cystic fibrosis produces abnormally viscous secretions
-    that can block or obliterate the vas deferens and epididymal ducts, leading to
-    obstructive azoospermia even though spermatogenesis and androgen production in
-    the testes may be normal. This explanation elaborates the biological principles
-    involved, describing underlying mechanisms and reasoning step by step.
+  explain: 'This is true because p and q represent the frequencies of the two alleles, and together they account for all alleles at that locus.'
+- type: TrueFalse
+  text: 'Genetic drift refers to changes in allele frequencies that occur due to random chance events.'
+  answer: true
+  explain: 'This is true. Drift is random and is especially noticeable in smaller populations.'
+- type: TrueFalse
+  text: 'Random mating is equivalent to randomly combining gametes from the parental generation.'
+  answer: true
+  explain: 'This is true. The random mating model treats mating as random sampling of gametes from the gene pool.'
+- type: TrueFalse
+  text: 'A population is in Hardy-Weinberg equilibrium at a locus when it is not evolving at that locus and is randomly mating.'
+  answer: true
+  explain: 'This is true. Hardy-Weinberg equilibrium is the null model where allele and genotype frequencies remain constant from generation to generation under the model assumptions.'
 - type: ShortAnswer
-  text: Which hormone released from Sertoli cells in the testes provides the main
-    negative feedback on FSH secretion from the anterior pituitary in the male hypothalamic–pituitary–gonadal
-    axis?
-  answer: Inhibin
-  explain: Inhibin is secreted by Sertoli cells in response to FSH and acts primarily
-    on the anterior pituitary to suppress further FSH release, thereby fine-tuning
-    spermatogenesis without strongly altering LH or GnRH secretion. This explanation
-    elaborates the biological principles involved, describing underlying mechanisms
-    and reasoning step by step.
+  text: 'Define gene pool.'
+  answer: 'All copies of every allele at the loci of interest in all members of the population.'
+- type: ShortAnswer
+  text: 'What does it mean for an allele to be fixed in a population?'
+  answer: 'The allele is the only allele present at that locus in the population, so its frequency is 1.0.'
+- type: ShortAnswer
+  text: 'List the four major processes that can change allele frequencies in populations.'
+  answer: 'Mutation, genetic drift, migration (gene flow), and natural selection.'
+
 - type: MultiChoice
-  text: How does obesity commonly disrupt the male hypothalamic–pituitary–gonadal
-    (HPG) axis and contribute to hypogonadism and infertility?
+  text: 'Which statement best captures genetic drift?'
   choices:
-    A: Adipose tissue aromatizes testosterone to estradiol, increasing negative feedback
-      on FSH/LH
-    B: Adipose tissue converts estradiol to testosterone, decreasing negative feedback
-      on FSH/LH
-    C: Obesity directly destroys Leydig cells, preventing any testosterone production
-    D: Obesity blocks GnRH receptors in the anterior pituitary, causing excess LH
-      release
-  answer: A
-  explain: The correct answer is 'Adipose tissue aromatizes testosterone to estradiol,
-    increasing negative feedback on FSH/LH' because excess adipose mass converts more
-    androgens into estradiol, and higher estradiol levels strengthen negative feedback
-    at the hypothalamus and pituitary, lowering gonadotropins and reducing intratesticular
-    testosterone needed for spermatogenesis. This explanation elaborates the biological
-    principles involved, describing underlying mechanisms and reasoning step by step.
-- type: TrueFalse
-  text: In benign prostatic hyperplasia (BPH), dihydrotestosterone (DHT) is the key
-    androgen driving prostatic growth, and estrogens can worsen the condition by
-    upregulating androgen receptors in prostate tissue.
-  answer: true
-  explain: This statement is true because testosterone is converted to the more potent
-    androgen DHT by 5-α-reductase within stromal and epithelial cells of the prostate,
-    and DHT promotes hyperplasia; estrogens, which rise with age, can increase androgen
-    receptor expression, making prostatic cells more responsive to DHT and thereby
-    exacerbating BPH. This explanation elaborates the biological principles involved,
-    describing underlying mechanisms and reasoning step by step.
+    A: 'A nonrandom process where certain genotypes leave more offspring because they are better adapted'
+    B: 'A random change in allele frequencies from one generation to the next due to sampling error'
+    C: 'A directed change in allele frequencies caused by mutation pressure'
+    D: 'A change in genotype frequencies caused only by recombination'
+  answer: B
+  explain: 'Genetic drift is stochastic allele-frequency change caused by finite sampling (including the meiosis/fertilization lottery). Unlike selection, drift has no consistent direction with respect to fitness.'
 - type: MultiChoice
-  text: Which pairing correctly matches a BPH medication with its primary therapeutic
-    mechanism?
+  text: 'Which everyday mechanism is the best analogy for drift in sexual populations?'
   choices:
-    A: Tamsulosin – inhibits 5-α-reductase to shrink prostate epithelial tissue
-    B: Finasteride – blocks α1-adrenergic receptors to relax prostatic smooth muscle
-    C: Tamsulosin – blocks α1-adrenergic receptors to relax stromal smooth muscle
-    D: Finasteride – acts as a GnRH agonist to suppress LH and testosterone
+    A: 'Only the fittest individuals reproduce each generation'
+    B: 'Gametes combine like a lottery where allele transmission is random'
+    C: 'Alleles always segregate to maximize heterozygosity'
+    D: 'Recombination forces allele frequencies to remain constant'
+  answer: B
+  explain: 'Even with equal fitness, meiosis and fertilization create random sampling of alleles into the next generation. That sampling variance is the core engine of drift.'
+- type: MultiChoice
+  text: 'In the marbles-in-a-jar analogy, each marble represents:'
+  choices:
+    A: 'A diploid individual carrying two alleles'
+    B: 'A haploid individual carrying one allele copy'
+    C: 'A genotype frequency value (p^2, 2pq, q^2)'
+    D: 'A mutation event'
+  answer: B
+  explain: 'The slides model each marble as a haploid individual (one allele copy). This makes allele counting direct: allele frequency is just the proportion of marble colors.'
+- type: MultiChoice
+  text: 'If a haploid population has 20 individuals and 10 carry allele A, what is p (the frequency of A)?'
+  choices:
+    A: '0.25'
+    B: '0.50'
+    C: '0.65'
+    D: '0.75'
+  answer: B
+  explain: 'Allele frequency in a haploid model is count(A)/total = 10/20 = 0.50.'
+- type: MultiChoice
+  text: 'A drift trajectory starts at p = 0.5 and later reaches p = 0.90. Which statement is most accurate?'
+  choices:
+    A: 'Selection must have favored allele A'
+    B: 'Mutation must have created many new A alleles'
+    C: 'Drift alone can produce this change, especially in small populations'
+    D: 'Hardy-Weinberg equilibrium prevents p from changing'
   answer: C
-  explain: The correct answer is 'Tamsulosin – blocks α1-adrenergic receptors to relax
-    stromal smooth muscle' because α1-blockers such as tamsulosin relieve lower urinary
-    tract symptoms by relaxing smooth muscle in the prostatic stroma and bladder
-    neck, while 5-α-reductase inhibitors such as finasteride reduce DHT production
-    and gradually shrink prostate volume. This explanation elaborates the biological
-    principles involved, describing underlying mechanisms and reasoning step by step.
+  explain: 'Drift is a random walk: large jumps and extreme values (near 0 or 1) are more likely when population size is small. A change in p does not automatically imply selection.'
 - type: MultiChoice
-  text: A man presents with low serum testosterone and very low FSH and LH levels.
-    Which category of male infertility best fits this hormonal pattern?
+  text: 'What does fixation mean in the context of drift?'
   choices:
-    A: Pre-testicular (secondary hypogonadism)
-    B: Testicular (primary hypogonadism)
-    C: Post-testicular (transport defect)
-    D: Immunologic infertility due to blood–testes barrier disruption
-  answer: A
-  explain: The correct answer is 'Pre-testicular (secondary hypogonadism)' because
-    decreased or absent GnRH and/or reduced pituitary FSH/LH output lead to low testosterone
-    and impaired spermatogenesis despite structurally normal testes, distinguishing
-    pre-testicular causes from primary testicular damage where FSH/LH are typically
-    high. This explanation elaborates the biological principles involved, describing
-    underlying mechanisms and reasoning step by step.
+    A: 'Genotype frequencies match Hardy-Weinberg expectations'
+    B: 'Allele frequency of one allele reaches 1.0 and the other allele is lost'
+    C: 'A population becomes polymorphic'
+    D: 'Recombination stops'
+  answer: B
+  explain: 'Fixation occurs when an allele reaches frequency 1.0 (100%). At that point the alternative allele is absent, so genetic variation at that locus is lost.'
 - type: MultiChoice
-  text: Which of the following is the most common identifiable cause of testicular
-    (primary) male infertility?
+  text: 'Why are the effects of genetic drift stronger in smaller populations?'
   choices:
-    A: Varicocele
-    B: Cryptorchidism
-    C: Hyperprolactinemia
-    D: Ejaculatory dysfunction from diabetic neuropathy
+    A: 'Small populations have higher mutation rates'
+    B: 'Sampling error is larger when the sample size is small'
+    C: 'Selection is always stronger in small populations'
+    D: 'Migration is impossible in small populations'
+  answer: B
+  explain: 'With fewer allele copies sampled into the next generation, binomial sampling variance is larger. In population genetics terms, drift strength increases as effective population size (Ne) decreases.'
+- type: MultiChoice
+  text: 'Two replicate populations start at p = 0.5 but after 100 generations one fixes A and the other loses A. What does this demonstrate?'
+  choices:
+    A: 'Replicates must have had different mutation rates'
+    B: 'Random sampling can produce very different evolutionary outcomes'
+    C: 'Hardy-Weinberg equilibrium forces divergence'
+    D: 'Selection always makes outcomes identical'
+  answer: B
+  explain: 'A hallmark of drift is variance among replicate populations: identical starting frequencies can yield diverging trajectories, including opposite fixation outcomes, purely by chance.'
+- type: MultiChoice
+  text: 'Which outcome is expected to occur more rapidly under strong drift (small Ne)?'
+  choices:
+    A: 'Maintenance of polymorphism at intermediate frequencies'
+    B: 'Fixation or loss of alleles'
+    C: 'Perfect Hardy-Weinberg equilibrium every generation'
+    D: 'Guaranteed increase in heterozygosity'
+  answer: B
+  explain: 'Smaller populations experience larger per-generation frequency changes, so absorption at the boundaries (p = 0 or p = 1) tends to occur faster, reducing standing variation.'
+- type: MultiChoice
+  text: 'A lecture slide states there is a 50% chance (2/4 outcomes) to fix one allele for a sample of two. What concept is being illustrated?'
+  choices:
+    A: 'Selection coefficient'
+    B: 'How sampling variance increases when sample size is tiny'
+    C: 'Recombination rate estimation'
+    D: 'Mutation-selection balance'
+  answer: B
+  explain: 'With extremely small samples, the set of possible allele-count outcomes is limited and extreme outcomes are common. This illustrates how quickly drift can drive fixation or loss in small populations.'
+- type: MultiChoice
+  text: 'In the same example, increasing the sample size to four reduces the chance of losing an allele to 12.5% (2/16 outcomes). What is the key takeaway?'
+  choices:
+    A: 'Mutation becomes less likely as population size increases'
+    B: 'Larger samples reduce the probability of extreme sampling outcomes in a single generation'
+    C: 'Selection disappears in large populations'
+    D: 'Allele frequencies cannot change in large populations'
+  answer: B
+  explain: 'As sample size increases, the distribution of sampling outcomes concentrates around the current frequency, making extreme changes less likely in any one generation.'
+- type: MultiChoice
+  text: 'Which statement best distinguishes drift from natural selection?'
+  choices:
+    A: 'Drift changes allele frequencies only in haploids; selection acts only in diploids'
+    B: 'Drift is random with respect to fitness; selection is nonrandom with respect to fitness'
+    C: 'Drift always increases adaptation; selection never does'
+    D: 'Drift requires mutation; selection does not'
+  answer: B
+  explain: 'Selection produces systematic, fitness-correlated changes; drift produces stochastic changes regardless of whether an allele is beneficial, neutral, or deleterious (though selection can still act simultaneously).'
+- type: MultiChoice
+  text: 'Which statement is most consistent with the claim that drift is a major driver of genetic-level evolution?'
+  choices:
+    A: 'Most molecular variation is neutral or nearly neutral, so sampling can dominate frequency change'
+    B: 'All alleles are beneficial, so they always rise in frequency'
+    C: 'Drift only matters when migration is present'
+    D: 'Drift requires recombination to occur'
   answer: A
-  explain: The correct answer is 'Varicocele' because abnormally dilated scrotal veins
-    impair countercurrent heat exchange and raise testicular temperature, which interferes
-    with spermatogenesis and is cited as the number one cause of primary testicular
-    infertility in men. This explanation elaborates the biological principles involved,
-    describing underlying mechanisms and reasoning step by step.
+  explain: 'At many loci, alleles have little to no effect on fitness, so frequency change can be dominated by stochastic sampling rather than deterministic selection.'
+- type: MultiChoice
+  text: 'Expected heterozygosity is best interpreted as:'
+  choices:
+    A: 'The probability two randomly sampled allele copies are different'
+    B: 'The probability two randomly sampled allele copies are identical'
+    C: 'The fraction of individuals that are homozygous recessive'
+    D: 'The mutation rate at a locus'
+  answer: A
+  explain: 'Expected heterozygosity (a common genetic diversity metric) can be interpreted as the probability that two alleles sampled at random from the population are different.'
+- type: MultiChoice
+  text: 'Island populations often show lower expected heterozygosity than mainland populations in a founder-effect scenario because:'
+  choices:
+    A: 'Islands have higher mutation rates that erase variation'
+    B: 'Founders are a small random subset, so allele sampling reduces diversity'
+    C: 'Selection is always weaker on islands'
+    D: 'Recombination stops on islands'
+  answer: B
+  explain: 'Founder events sample only a fraction of the original gene pool. That reduced starting diversity plus subsequent drift in a small population lowers expected heterozygosity relative to the source population.'
+- type: MultiChoice
+  text: 'Which scenario best matches the founder effect?'
+  choices:
+    A: 'A large population splits into two equally sized populations'
+    B: 'A few individuals colonize a new area and become isolated from the source population'
+    C: 'A population declines in size due to a temporary catastrophe but remains in the same area'
+    D: 'Allele frequencies change because a genotype has higher fitness'
+  answer: B
+  explain: 'Founder effect occurs when a new population is established by a small number of individuals, making allele frequencies a random subset of the source population.'
+- type: MultiChoice
+  text: 'Which scenario best matches the bottleneck effect?'
+  choices:
+    A: 'A few individuals found a new population in a new location'
+    B: 'Migration introduces new alleles into a population'
+    C: 'A population experiences a sharp reduction in size within the same population, then later rebounds'
+    D: 'Heterozygotes have higher fitness than either homozygote'
+  answer: C
+  explain: 'A bottleneck is a severe, temporary reduction in population size within a population. The survivors carry only a fraction of the original genetic diversity.'
+- type: MultiChoice
+  text: 'Which statement correctly contrasts founder effect and bottleneck effect?'
+  choices:
+    A: 'Founder effect occurs within one population; bottleneck creates a new population'
+    B: 'Founder effect involves a new isolated population formed by a small subset; bottleneck is a within-population size crash'
+    C: 'Founder effect requires mutation; bottleneck requires migration'
+    D: 'They are the same process with different names'
+  answer: B
+  explain: 'Founder effect: colonization by a small subset forming a new isolated population. Bottleneck: population size crash within an existing population. Both magnify drift and reduce diversity.'
+- type: MultiChoice
+  text: 'Why does fixation tend to occur more quickly in small populations?'
+  choices:
+    A: 'Because selection always favors fixation in small populations'
+    B: 'Because drift steps are larger on average, so the random walk reaches boundaries faster'
+    C: 'Because recombination is absent in small populations'
+    D: 'Because mutation eliminates polymorphism immediately'
+  answer: B
+  explain: 'In a random-walk view of drift, smaller Ne increases per-generation variance in allele frequency, accelerating absorption at p = 0 or p = 1 and reducing standing variation.'
+- type: MultiChoice
+  text: 'A population starts with 25 alleles at a locus but after a bottleneck only 3 alleles remain. This primarily reflects:'
+  choices:
+    A: 'An increase in mutation rate'
+    B: 'A loss of allelic diversity due to drift during the size reduction'
+    C: 'A guaranteed increase in heterozygosity'
+    D: 'Recombination creating new allele types'
+  answer: B
+  explain: 'Bottlenecks reduce the number of allele copies and increase drift, often eliminating rare alleles. After the event, the population can rebound in size but not automatically regain the lost alleles.'
+- type: MultiChoice
+  text: 'All else equal, which population size is expected to show the most jagged allele-frequency trajectories over time (most variance among generations)?'
+  choices:
+    A: 'n = 10,000'
+    B: 'n = 1,000'
+    C: 'n = 100'
+    D: 'n = 100,000'
+  answer: C
+  explain: 'Smaller populations show larger sampling variance, producing more variable and extreme frequency changes from generation to generation.'
+- type: MultiChoice
+  text: 'Which is the best population-genetic summary of drift strength?'
+  choices:
+    A: 'Drift strength increases with effective population size (Ne)'
+    B: 'Drift strength is independent of population size'
+    C: 'Drift strength increases as Ne decreases'
+    D: 'Drift strength depends only on recombination rate'
+  answer: C
+  explain: 'Drift strength scales inversely with effective population size: smaller Ne means stronger drift (larger sampling variance), so allele frequencies wander more and fixation/loss is faster.'
+- type: MultiChoice
+  text: 'A neutral allele (no fitness effect) is at frequency p = 0.5. In a very small population, what is the most accurate expectation?'
+  choices:
+    A: 'It will deterministically stay at 0.5 forever'
+    B: 'It will deterministically fix because p is high'
+    C: 'It will undergo a random walk and eventually fix or be lost'
+    D: 'It will immediately mutate into a different allele'
+  answer: C
+  explain: 'Under drift, a neutral allele performs a random walk in frequency and will eventually be absorbed at fixation or loss. Small populations reach absorption faster.'
 - type: TrueFalse
-  text: Disruption of the blood–testes barrier can lead to post-testicular male infertility
-    by provoking an autoimmune response against sperm, even when spermatogenesis
-    itself remains intact.
+  text: 'Genetic drift is a random change in allele frequencies caused by random sampling from one generation to the next.'
   answer: true
-  explain: This statement is true because loss of the blood–testes barrier exposes
-    sperm antigens to the immune system, permitting formation of antisperm antibodies
-    that impair sperm function or block their passage through the reproductive tract,
-    thereby causing immunologic, post-testicular infertility despite normal hormone
-    levels and sperm production. This explanation elaborates the biological principles
-    involved, describing underlying mechanisms and reasoning step by step.
-
-- answer: C
+  explain: 'This is true. Drift reflects sampling error in which allele copies are passed on by chance, including the stochasticity of meiosis and fertilization.'
+- type: TrueFalse
+  text: 'Genetic drift is always acting at some level in finite populations.'
+  answer: true
+  explain: 'This is true. Any finite population experiences sampling variance, so drift is always present even if selection, migration, or mutation are also occurring.'
+- type: TrueFalse
+  text: 'The probability of fixation for a neutral allele is independent of its current frequency.'
+  answer: false
+  explain: 'This is false. For a neutral allele, the probability of eventual fixation equals its current frequency p. That is why rare alleles are much more likely to be lost by drift.'
+- type: TrueFalse
+  text: 'Founder effects and bottlenecks both tend to reduce genetic diversity because they magnify drift.'
+  answer: true
+  explain: 'This is true. Both processes involve small numbers of allele copies being sampled, which increases drift and commonly eliminates rare alleles, reducing expected heterozygosity.'
+- type: TrueFalse
+  text: 'If allele frequency changes between generations, natural selection must be occurring.'
+  answer: false
+  explain: 'This is false. Allele frequency can change due to drift, migration, or mutation as well. Drift alone can generate substantial changes, especially in small populations.'
+- type: ShortAnswer
+  text: 'Define genetic drift in one sentence.'
+  answer: 'Genetic drift is stochastic change in allele frequencies across generations caused by finite sampling of allele copies into the next generation.'
+- type: ShortAnswer
+  text: 'Explain why drift tends to reduce heterozygosity over time in small populations.'
+  answer: 'Drift randomly fixes or eliminates alleles, and once an allele is lost it cannot contribute to heterozygosity; strong drift in small Ne accelerates fixation/loss, so genetic variation declines faster.'
+- type: ShortAnswer
+  text: 'Differentiate founder effect and bottleneck effect.'
+  answer: 'Founder effect: a new isolated population established by a small subset of individuals from a source population. Bottleneck: a sharp within-population reduction in size where survivors carry only a fraction of the original diversity; both magnify drift.'
+- type: MultiChoice
+  text: 'Gene flow is best defined as:'
   choices:
-    A: Protect against microorganisms and mechanical damage
-    B: Protect against cold and heat
-    C: Secrete digestive enzymes for nutrient absorption
-    D: Prevent excessive dehydration
-  explain: The correct answer is 'Secrete digestive enzymes for nutrient absorption' because the skin barrier’s normal roles are physical and chemical protection, resorption of some substances, prevention of water loss, and synthesis of hydrolipids. Digestive enzyme secretion and nutrient absorption are functions of the gastrointestinal tract, not of the skin. This explanation elaborates the biological principles involved, describing underlying mechanisms and reasoning step by step.
-  text: Which of the following is NOT a normal function of the skin barrier?
-  type: MultiChoice
-
-- answer: B
+    A: 'Random change in allele frequencies due to finite sampling'
+    B: 'Movement of alleles between populations caused by migration and reproduction'
+    C: 'Permanent change in DNA sequence caused by replication errors'
+    D: 'Nonrandom increase of beneficial alleles due to differential fitness'
+  answer: B
+  explain: 'Gene flow is allele movement among populations via migrants that successfully reproduce. It changes allele frequencies by importing or exporting allele copies between gene pools.'
+- type: MultiChoice
+  text: 'In population genetics, migration refers to:'
   choices:
-    A: Keratin in corneocytes
-    B: Ceramide-rich lipids between corneocytes
-    C: Collagen fibers in the dermis
-    D: Melanin granules in melanocytes
-  explain: The correct answer is 'Ceramide-rich lipids between corneocytes' because in the brick-and-mortar model, the corneocytes are the “bricks” and the intercellular lipid matrix rich in ceramides forms the “mortar” that fills the spaces between them. Collagen and melanin are important skin components but are not the mortar of the stratum corneum. This explanation elaborates the biological principles involved, describing underlying mechanisms and reasoning step by step.
-  text: In the “brick and mortar” model of the skin barrier, which structure serves as the “mortar” that seals gaps between corneocytes?
-  type: MultiChoice
-
-- answer: B
+    A: 'Movement of alleles between populations, regardless of individuals'
+    B: 'Movement of an individual from one population to another'
+    C: 'Movement of gametes within an individual'
+    D: 'Movement of species between ecosystems'
+  answer: B
+  explain: 'Migration is the movement of individuals between populations. Gene flow is the genetic consequence of that movement when migrants contribute alleles to the next generation.'
+- type: MultiChoice
+  text: 'Which statement is the most accurate relationship between migration and gene flow?'
   choices:
-    A: Decreased transepidermal water loss and reduced allergen entry
-    B: Increased transepidermal water loss and increased penetration of irritants
-    C: Increased melanin production and tanning
-    D: Increased collagen deposition and wrinkle smoothing
-  explain: The correct answer is 'Increased transepidermal water loss and increased penetration of irritants' because disruption of the ceramide-rich lipid matrix weakens the barrier, allowing water to escape and external chemicals, allergens, and toxins to diffuse into the skin more easily. Melanin and collagen changes are not the primary immediate consequences of barrier disruption. This explanation elaborates the biological principles involved, describing underlying mechanisms and reasoning step by step.
-  text: What is the most likely consequence of a disrupted skin barrier?
-  type: MultiChoice
-
-- answer: B
+    A: 'Migration always produces gene flow'
+    B: 'Gene flow can occur without migration'
+    C: 'Migration produces gene flow only if migrants reproduce in the new population'
+    D: 'Gene flow and migration are identical terms'
+  answer: C
+  explain: 'Migrants must contribute genetically (produce offspring or gametes that join the gene pool) for gene flow to occur. Pure movement without reproduction does not change allele frequencies.'
+- type: MultiChoice
+  text: 'A common long-term effect of gene flow between two populations is that they become:'
   choices:
-    A: Chronological aging
-    B: Photoaging
-    C: Hormonal aging
-    D: Infectious aging
-  explain: The correct answer is 'Photoaging' because this term refers specifically to changes in the skin caused by chronic exposure to UV light and environmental factors such as pollution, which damage extracellular matrix components. Chronological aging is the time-dependent intrinsic process that occurs even without excessive UV exposure. This explanation elaborates the biological principles involved, describing underlying mechanisms and reasoning step by step.
-  text: Which type of skin aging is primarily driven by UV exposure and environmental factors rather than by time alone?
-  type: MultiChoice
-
-- answer: B
+    A: 'More genetically similar (allele frequencies converge)'
+    B: 'More genetically different (allele frequencies diverge)'
+    C: 'Fixed for different alleles in every generation'
+    D: 'Unaffected because selection cancels migration'
+  answer: A
+  explain: 'Gene flow tends to homogenize populations: repeated exchange of alleles reduces differences in allele frequencies over time, opposing divergence.'
+- type: MultiChoice
+  text: 'Two populations have allele frequencies p1(A) = 0.8 and p2(A) = 0.2. The absolute difference in p(A) is:'
   choices:
-    A: Stimulating collagen synthesis in the dermis
-    B: Blocking acetylcholine release at neuromuscular junctions
-    C: Increasing melanin production in the epidermis
-    D: Promoting keratinocyte proliferation in the stratum basale
-  explain: The correct answer is 'Blocking acetylcholine release at neuromuscular junctions' because botulinum toxin inhibits presynaptic acetylcholine release, producing local skeletal muscle paralysis that reduces dynamic facial wrinkles. It does not directly stimulate collagen, melanin, or keratinocyte proliferation. This explanation elaborates the biological principles involved, describing underlying mechanisms and reasoning step by step.
-  text: How does botulinum toxin (Botox) reduce the appearance of facial wrinkles?
-  type: MultiChoice
-
-- answer: C
+    A: '0.2'
+    B: '0.4'
+    C: '0.6'
+    D: '1.0'
+  answer: C
+  explain: 'The absolute difference is |0.8 - 0.2| = 0.6, matching the slide example where populations initially differ strongly.'
+- type: MultiChoice
+  text: 'After gene flow, the slide example shows p1(A) = 0.6 and p2(A) = 0.4. The new absolute difference is:'
   choices:
-    A: Keratinocytes
-    B: Fibroblasts
-    C: Melanocytes
-    D: Langerhans cells
-  explain: The correct answer is 'Melanocytes' because these specialized cells in the epidermis synthesize the pigment melanin and transfer it to neighboring keratinocytes. Fibroblasts mainly produce collagen in the dermis, keratinocytes make keratin, and Langerhans cells are antigen-presenting immune cells. This explanation elaborates the biological principles involved, describing underlying mechanisms and reasoning step by step.
-  text: Which epidermal cell type produces the pigment that helps protect the skin from UV damage?
-  type: MultiChoice
-
-- answer: B
+    A: '0.2'
+    B: '0.4'
+    C: '0.6'
+    D: '0.8'
+  answer: A
+  explain: 'The new difference is |0.6 - 0.4| = 0.2, illustrating how gene flow reduces between-population allele-frequency differences.'
+- type: MultiChoice
+  text: 'Which description best matches the visual “marbles” model in the slides?'
   choices:
-    A: Epidermis
-    B: Dermis
-    C: Subcutis
-    D: Stratum corneum
-  explain: The correct answer is 'Dermis' because this layer contains fibroblasts that synthesize collagen and elastin, as well as blood vessels, hair follicles, and sweat glands. The epidermis and its stratum corneum are epithelial layers, while the subcutis primarily consists of adipose tissue. This explanation elaborates the biological principles involved, describing underlying mechanisms and reasoning step by step.
-  text: In which skin layer are fibroblasts that produce collagen, along with hair follicles and sweat glands, primarily located?
-  type: MultiChoice
-
-- answer: B
+    A: 'Each marble is a diploid genotype (AA, Aa, aa)'
+    B: 'Each marble is a haploid allele copy sampled from the population'
+    C: 'Each marble is a mutation event'
+    D: 'Each marble is a phenotype under selection'
+  answer: B
+  explain: 'In the slides, each symbol represents a haploid individual/allele copy (an A or a). This makes allele-frequency changes easy to visualize as proportions.'
+- type: MultiChoice
+  text: 'If two populations exchange migrants every generation, what pattern is most consistent with the time-series plots labeled “gene flow”?'
   choices:
-    A: 2.0–3.0
-    B: 5.4–5.9
-    C: 7.0 (neutral)
-    D: 9.0–10.0
-  explain: The correct answer is '5.4–5.9' because the skin’s acid mantle normally maintains a mildly acidic surface pH in this range, which supports barrier function and inhibits many pathogenic microbes. Strongly acidic or alkaline values would damage the barrier and favor irritation or infection. This explanation elaborates the biological principles involved, describing underlying mechanisms and reasoning step by step.
-  text: What is the normal pH range of the skin’s acid mantle?
-  type: MultiChoice
-
-- answer: B
+    A: 'Allele frequencies fluctuate independently in each population'
+    B: 'Allele frequencies become correlated and move together'
+    C: 'Allele frequencies are constant and never change'
+    D: 'Allele frequencies instantly fix in one generation'
+  answer: B
+  explain: 'Gene flow couples populations genetically, so their allele-frequency trajectories become more similar and often covary over time rather than drifting independently.'
+- type: MultiChoice
+  text: 'Adaptation (as defined in the slides) refers to:'
   choices:
-    A: Produce collagen in the dermis
-    B: Sense invading microorganisms and activate innate immunity
-    C: Generate vitamin D3 in response to UV light
-    D: Synthesize melanin in keratinocytes
-  explain: The correct answer is 'Sense invading microorganisms and activate innate immunity' because toll-like receptors (TLRs) are pattern-recognition receptors that detect microbial components and trigger innate immune responses, including antimicrobial peptide production. Collagen, vitamin D, and melanin synthesis are controlled by other cells and pathways. This explanation elaborates the biological principles involved, describing underlying mechanisms and reasoning step by step.
-  text: What is the primary function of toll-like receptors (TLRs) in the skin?
-  type: MultiChoice
-
-- answer: C
+    A: 'Any trait change caused by the environment during an individual’s lifetime'
+    B: 'A genetically determined characteristic that increases fitness in a particular environment'
+    C: 'Random allele-frequency change due to drift'
+    D: 'Gene flow that always increases genetic diversity'
+  answer: B
+  explain: 'Adaptations are genetically based traits favored by natural selection that improve performance (fitness) in an environment. Environmental acclimation is not the same as adaptation.'
+- type: MultiChoice
+  text: 'Why can gene flow interfere with local adaptation when environments differ between populations?'
   choices:
-    A: Increase receptor binding in the brain
-    B: Speed up renal excretion of drugs
-    C: Bypass hepatic first-pass metabolism
-    D: Prevent distribution into adipose tissue
-  explain: The correct answer is 'Bypass hepatic first-pass metabolism' because drugs absorbed through the skin enter the systemic circulation without first passing through the portal vein and liver, avoiding early metabolic inactivation. Transdermal patches do not mainly alter brain receptor binding, kidney excretion, or fat distribution. This explanation elaborates the biological principles involved, describing underlying mechanisms and reasoning step by step.
-  text: Which pharmacokinetic effect is circumvented when a drug is delivered via a transdermal patch?
-  type: MultiChoice
-
-- answer: B
+    A: 'Because gene flow increases mutation rate'
+    B: 'Because immigrants can introduce alleles that are maladaptive in the local environment'
+    C: 'Because gene flow makes selection stronger'
+    D: 'Because gene flow eliminates recombination'
+  answer: B
+  explain: 'When populations face different selective pressures, alleles favored elsewhere may reduce fitness locally. Continued influx can oppose selection and slow or prevent local adaptation.'
+- type: MultiChoice
+  text: 'The term “genetic swamping” (in the slides) is best described as:'
   choices:
-    A: Amoxicillin for bacterial infections
-    B: Nicotine for smoking cessation
-    C: Regular insulin for type 1 diabetes
-    D: Omeprazole for gastric acid suppression
-  explain: The correct answer is 'Nicotine for smoking cessation' because nicotine patches provide steady systemic delivery of a potent drug and are a classic example of transdermal therapy. Amoxicillin, insulin, and omeprazole are not typically administered via patches due to their pharmacokinetic properties and absorption requirements. This explanation elaborates the biological principles involved, describing underlying mechanisms and reasoning step by step.
-  text: Which of the following medications is commonly administered using a transdermal patch?
-  type: MultiChoice
-
-- answer: A
+    A: 'Selection eliminating all variation in a population'
+    B: 'High gene flow preventing local adaptation by overwhelming local selection'
+    C: 'Mutation creating too many new alleles'
+    D: 'Drift fixing alleles in small populations'
+  answer: B
+  explain: 'Genetic swamping occurs when migration (gene flow) is strong enough that locally favored alleles cannot rise because incoming alleles continually shift frequencies back toward the source population.'
+- type: MultiChoice
+  text: 'Which statement captures the migration-selection balance idea behind genetic swamping?'
   choices:
-    A: Mast cells release histamine after repeated allergen exposure
-    B: Keratinocytes secrete lactic acid to neutralize the allergen
-    C: Melanocytes increase melanin production to block the allergen
-    D: Fibroblasts deposit excess collagen at the exposure site
-  explain: The correct answer is 'Mast cells release histamine after repeated allergen exposure' because in exposure-induced allergic reactions, sensitized mast cells degranulate and release histamine, leading to pruritus, erythema, and edema. Keratinocytes, melanocytes, and fibroblasts have other primary roles and are not the main source of histamine in these reactions. This explanation elaborates the biological principles involved, describing underlying mechanisms and reasoning step by step.
-  text: What is the key cellular event that leads to symptoms in repeated exposure–induced allergic skin reactions?
-  type: MultiChoice
-
-- answer: C
+    A: 'If selection is stronger than migration, gene flow always increases adaptation'
+    B: 'If migration is strong relative to selection, locally beneficial alleles can be held at low frequency'
+    C: 'If migration occurs, selection stops'
+    D: 'Selection and migration can never act on the same locus'
+  answer: B
+  explain: 'At a locally selected locus, migration can oppose selection. If the effective migration rate is large relative to selection strength, local alleles may not spread even if they are beneficial locally.'
+- type: MultiChoice
+  text: 'Gene flow can facilitate adaptation when:'
   choices:
-    A: Parasites that feed primarily on sebum in sebaceous glands
-    B: Bacteria that colonize the dermal vasculature
-    C: Skin parasites that feed on keratin in hair, nails, and stratum corneum
-    D: Viruses that infect melanocytes and alter pigmentation
-  explain: The correct answer is 'Skin parasites that feed on keratin in hair, nails, and stratum corneum' because dermatophytes are keratinophilic fungi responsible for infections such as ringworm, athlete’s foot, and some nail infections. They are not bacteria, viruses, or organisms that primarily target sebum or blood vessels. This explanation elaborates the biological principles involved, describing underlying mechanisms and reasoning step by step.
-  text: How are dermatophytes best described in the context of skin infections?
-  type: MultiChoice
-
-- answer: A
+    A: 'Incoming alleles are advantageous in the recipient environment'
+    B: 'Incoming alleles are always neutral'
+    C: 'Populations are identical environments so selection is absent'
+    D: 'Mutation rate is zero'
+  answer: A
+  explain: 'If immigrants carry alleles that increase fitness in the recipient environment, those alleles can accelerate adaptation by providing useful variation without waiting for new mutations.'
+- type: MultiChoice
+  text: 'The term “adaptive introgression” (in the slides) refers to:'
   choices:
-    A: Onychomycosis
-    B: Tinea corporis (ringworm)
-    C: Tinea pedis (athlete’s foot)
-    D: Pityriasis versicolor
-  explain: The correct answer is 'Onychomycosis' because fungal infections of the nails often require systemic antifungal agents due to poor penetration of topical drugs into the nail plate, and these are frequently combined with topical therapy. Ringworm and athlete’s foot are usually managed effectively with topical treatments alone. This explanation elaborates the biological principles involved, describing underlying mechanisms and reasoning step by step.
-  text: For which of the following fungal conditions are systemic antifungal agents often used in addition to topical therapy?
-  type: MultiChoice
-
-- answer: C
+    A: 'Random allele-frequency shifts caused by drift'
+    B: 'Adaptive alleles moving between populations and helping local adaptation'
+    C: 'Recombination producing new alleles'
+    D: 'Selection removing migrants before they reproduce'
+  answer: B
+  explain: 'Adaptive introgression is gene flow of beneficial alleles across populations (or lineages) that increases fitness in the recipient population, effectively sharing adaptive variants.'
+- type: MultiChoice
+  text: 'Which scenario best illustrates maladaptive gene flow?'
   choices:
-    A: Presence of peptidoglycan in their cell walls
-    B: Use of cholesterol as the main membrane sterol
-    C: Use of ergosterol instead of cholesterol in their membranes
-    D: Lack of a nuclear membrane
-  explain: The correct answer is 'Use of ergosterol instead of cholesterol in their membranes' because fungi are eukaryotic cells that resemble human cells but contain ergosterol as their principal membrane sterol, providing a selective drug target. Peptidoglycan is characteristic of bacteria, and both fungi and humans have nuclear membranes. This explanation elaborates the biological principles involved, describing underlying mechanisms and reasoning step by step.
-  text: Which key difference between fungal and human cells provides a useful selective drug target?
-  type: MultiChoice
-
-- answer: D
+    A: 'A beneficial allele moves into a population and increases fitness'
+    B: 'Individuals migrate but never reproduce'
+    C: 'Alleles from a different environment enter and reduce local fitness'
+    D: 'A population experiences random sampling changes in allele frequency'
+  answer: C
+  explain: 'Maladaptive gene flow occurs when introduced alleles are poorly matched to the local environment and lower fitness, opposing local adaptation.'
+- type: MultiChoice
+  text: 'Which scenario best illustrates adaptive introgression?'
   choices:
-    A: Inhibit peptidoglycan synthesis
-    B: Block histamine release from mast cells
-    C: Destroy fungal DNA directly
-    D: Inhibit ergosterol biosynthesis in fungal membranes
-  explain: The correct answer is 'Inhibit ergosterol biosynthesis in fungal membranes' because topical azoles such as miconazole and clotrimazole impair synthesis of ergosterol, disrupting fungal membrane integrity and function. They do not target peptidoglycan, histamine release, or DNA directly. This explanation elaborates the biological principles involved, describing underlying mechanisms and reasoning step by step.
-  text: What is the primary mechanism of action of topical azole antifungals such as miconazole and clotrimazole?
-  type: MultiChoice
-
-- answer: B
+    A: 'A locally beneficial allele enters from another population and rises because it improves fitness'
+    B: 'A population loses variation due to a bottleneck'
+    C: 'Allele frequencies change only because of random chance'
+    D: 'Migration occurs but allele frequencies remain different forever'
+  answer: A
+  explain: 'Adaptive introgression is specifically about beneficial alleles arriving via gene flow and then being favored by selection in the recipient environment.'
+- type: MultiChoice
+  text: 'If gene flow is high between populations, you would generally expect population differentiation (for example, measured by FST) to be:'
   choices:
-    A: Decreased sebum production and reduced bacterial colonization
-    B: Plugged follicles containing sebum and dead cells plus Propionibacterium acnes infection
-    C: Autoimmune destruction of melanocytes in hair follicles
-    D: Fungal invasion of the stratum corneum
-  explain: The correct answer is 'Plugged follicles containing sebum and dead cells plus Propionibacterium acnes infection' because acne vulgaris involves obstruction of pilosebaceous units along with overgrowth of P. acnes and androgen-driven hyperactivity of sebaceous glands. Autoimmunity, melanocyte loss, and superficial fungal infection explain other skin diseases but not classic acne. This explanation elaborates the biological principles involved, describing underlying mechanisms and reasoning step by step.
-  text: Which pathophysiologic combination best describes acne vulgaris in adolescents?
-  type: MultiChoice
-
-- answer: C
+    A: 'Higher, because gene flow creates new alleles'
+    B: 'Lower, because gene flow homogenizes allele frequencies'
+    C: 'Unaffected, because FST only measures mutation'
+    D: 'Always equal to 1'
+  answer: B
+  explain: 'High gene flow reduces allele-frequency differences among populations, lowering genetic structure and typically reducing measures of differentiation such as FST.'
+- type: MultiChoice
+  text: 'Which statement best matches the phrase “populations change together” in the gene-flow plots?'
   choices:
-    A: Benzoyl peroxide, a systemic anti-androgen
-    B: Erythromycin, a topical antiseptic
-    C: Drospirenone, a systemic anti-androgen
-    D: Miconazole, a topical antibiotic
-  explain: The correct answer is 'Drospirenone, a systemic anti-androgen' because this agent reduces androgen-driven stimulation of sebaceous glands and can help control acne in appropriate patients. Benzoyl peroxide is a topical antiseptic, erythromycin is an antibiotic, and miconazole is an antifungal, so their primary mechanisms do not involve androgen blockade. This explanation elaborates the biological principles involved, describing underlying mechanisms and reasoning step by step.
-  text: Which medication primarily helps treat acne vulgaris by counteracting androgen stimulation of sebaceous glands?
-  type: MultiChoice
-
-- answer: A
+    A: 'Their allele frequencies become statistically independent'
+    B: 'Their allele frequencies become coupled and show similar temporal patterns'
+    C: 'Their allele frequencies stop changing entirely'
+    D: 'Their allele frequencies always become exactly equal in one generation'
+  answer: B
+  explain: 'Ongoing gene flow couples populations so their allele-frequency dynamics are correlated (they can still drift or respond to selection, but not independently).'
+- type: MultiChoice
+  text: 'Two populations are connected by gene flow but experience different selective pressures. What is the most accurate expectation?'
   choices:
-    A: A mutagenic and carcinogenic polycyclic aromatic hydrocarbon
-    B: A vitamin D precursor produced in the skin
-    C: A steroid hormone made by the adrenal cortex
-    D: An antihistamine used for allergies
-  explain: The correct answer is 'A mutagenic and carcinogenic polycyclic aromatic hydrocarbon' because benzo[a]pyrene is a pollutant generated by combustion processes and is known to damage DNA and promote skin cancer. It is not a vitamin precursor, steroid hormone, or therapeutic antihistamine. This explanation elaborates the biological principles involved, describing underlying mechanisms and reasoning step by step.
-  text: How is benzo[a]pyrene best classified in the context of environmental skin toxicants?
-  type: MultiChoice
-
-- answer: C
+    A: 'Local adaptation is impossible under any gene flow'
+    B: 'Gene flow can oppose divergence; local adaptation is most likely when selection is strong relative to migration'
+    C: 'Gene flow always increases divergence because it moves alleles'
+    D: 'Selection cannot operate because allele frequencies are forced equal'
+  answer: B
+  explain: 'Local adaptation can still occur with gene flow, but migration tends to homogenize populations. Divergence is most likely when selection is strong enough to counteract migration at relevant loci.'
+- type: MultiChoice
+  text: 'Which pair correctly matches process to typical effect on allele-frequency differences between populations?'
   choices:
-    A: A benign pigment that causes tanning
-    B: A cholesterol-lowering drug given orally
-    C: A teratogenic chlorinated polycyclic aromatic hydrocarbon
-    D: A topical antifungal used for nail infections
-  explain: The correct answer is 'A teratogenic chlorinated polycyclic aromatic hydrocarbon' because dioxin (TCDD) belongs to a class of chlorinated PAHs and is particularly noted for its embryotoxic and teratogenic effects. It is not a pigment, a lipid-lowering medication, or an antifungal drug. This explanation elaborates the biological principles involved, describing underlying mechanisms and reasoning step by step.
-  text: What is the major toxicologic concern associated with dioxin (TCDD) exposure?
-  type: MultiChoice
-
-- answer: A
+    A: 'Gene flow: increases differences; drift: eliminates differences'
+    B: 'Gene flow: decreases differences; drift: can increase differences by random divergence'
+    C: 'Gene flow: no effect; selection: always decreases differences'
+    D: 'Gene flow: fixes alleles immediately; selection: randomizes them'
+  answer: B
+  explain: 'Gene flow homogenizes, reducing differences. Drift can make populations diverge by chance (especially with no gene flow), increasing differences over time.'
+- type: TrueFalse
+  text: 'Migration is the movement of individuals; gene flow is the movement of alleles between populations due to migration.'
+  answer: true
+  explain: 'This is true. Migration is individual movement, while gene flow is the genetic consequence when migrants contribute alleles to the recipient gene pool.'
+- type: TrueFalse
+  text: 'Gene flow tends to make populations more genetically similar over time.'
+  answer: true
+  explain: 'This is true. By exchanging allele copies, gene flow reduces between-population allele-frequency differences and opposes divergence.'
+- type: TrueFalse
+  text: 'Gene flow can either hinder or facilitate adaptation depending on whether incoming alleles are maladaptive or adaptive in the recipient environment.'
+  answer: true
+  explain: 'This is true. Maladaptive gene flow can swamp local selection, while adaptive introgression can deliver beneficial alleles that speed adaptation.'
+- type: TrueFalse
+  text: 'If allele frequencies change between generations, natural selection must be acting.'
+  answer: false
+  explain: 'This is false. Allele frequencies can change due to gene flow, drift, or mutation as well; selection is only one of several evolutionary forces.'
+- type: ShortAnswer
+  text: 'Define gene flow.'
+  answer: 'Gene flow is the movement of alleles between populations caused by migration and successful reproduction of migrants.'
+- type: ShortAnswer
+  text: 'What is genetic swamping?'
+  answer: 'Genetic swamping is when high gene flow prevents local adaptation by overwhelming the effect of local natural selection, often by continually introducing maladaptive alleles.'
+- type: ShortAnswer
+  text: 'What is adaptive introgression?'
+  answer: 'Adaptive introgression is gene flow that transfers beneficial alleles between populations, allowing selection to spread adaptive variants without waiting for new mutations.'
+- type: MultiChoice
+  text: 'Which statement best defines natural selection?'
   choices:
-    A: DNA
-    B: Collagen fibers in the dermis
-    C: Melanin granules in melanocytes
-    D: Ceramide lipids in the stratum corneum
-  explain: The correct answer is 'DNA' because UV photons are absorbed by nucleic acids, producing DNA lesions such as thymine dimers that can lead to mutations if not repaired. Damage to collagen, melanin, or lipids can also occur but DNA is the primary molecular target in photomutagenesis. This explanation elaborates the biological principles involved, describing underlying mechanisms and reasoning step by step.
-  text: In photomutagenesis, what is the primary molecular target of UV radiation in skin cells?
-  type: MultiChoice
-
-- answer: D
+    A: 'Random change in allele frequencies due to chance events'
+    B: 'Differential survival and reproduction of individuals/genotypes due to differences in phenotypes'
+    C: 'Movement of alleles between populations caused by migration'
+    D: 'Permanent change in DNA sequence caused by replication errors'
+  answer: B
+  explain: 'Natural selection is nonrandom: phenotypic differences linked to genotypes cause consistent differences in survival and reproductive output, shifting phenotype and allele frequencies over generations.'
+- type: MultiChoice
+  text: 'In the slides, natural selection is described as a process that changes the frequency of:'
   choices:
-    A: Enhanced collagen cross-linking that strengthens skin
-    B: Immediate formation of the acid mantle
-    C: Increased synthesis of sebum in sebaceous glands
-    D: Mutations in the tumor suppressor gene p53 that can lead to cancer
-  explain: The correct answer is 'Mutations in the tumor suppressor gene p53 that can lead to cancer' because UV-induced DNA damage can alter p53, impairing its role in controlling cell cycle and apoptosis, and thereby promoting carcinogenesis. Collagen changes, pH alterations, and sebum production are not the defining outcomes of photomutagenesis. This explanation elaborates the biological principles involved, describing underlying mechanisms and reasoning step by step.
-  text: What is a critical long-term consequence of UV-induced DNA damage to the tumor suppressor p53 in skin cells?
-  type: MultiChoice
-
-- answer: B
+    A: 'Only phenotypes, not alleles'
+    B: 'Only alleles, not phenotypes'
+    C: 'Both phenotypes and alleles'
+    D: 'Neither phenotypes nor alleles'
+  answer: C
+  explain: 'Selection acts through phenotypes but its evolutionary consequence is a change in allele frequencies and the associated phenotypes.'
+- type: MultiChoice
+  text: 'Which statement best captures the idea of "selection for" versus "selection against" a trait?'
   choices:
-    A: Application of lactic acid to the skin surface
-    B: UV exposure converting 7-dehydrocholesterol to pre-vitamin D3
-    C: Renal conversion of 25-hydroxyvitamin D3 to its active form
-    D: Hepatic conversion of pre-vitamin D3 to 7-dehydrocholesterol
-  explain: The correct answer is 'UV exposure converting 7-dehydrocholesterol to pre-vitamin D3' because this is the initial UV-dependent step in vitamin D synthesis in the skin. The liver and kidney carry out subsequent hydroxylations, and lactic acid is part of the acid mantle rather than the vitamin D pathway. This explanation elaborates the biological principles involved, describing underlying mechanisms and reasoning step by step.
-  text: Which event initiates the cutaneous synthesis of vitamin D3 from 7-dehydrocholesterol?
-  type: MultiChoice
-
-- answer: C
+    A: 'Selection for a trait increases the trait and its underlying allele(s); selection against decreases them'
+    B: 'Selection for increases allele frequency but always decreases the phenotype'
+    C: 'Selection against increases the trait but decreases the allele'
+    D: 'Selection for and against only apply to phenotypes, never alleles'
+  answer: A
+  explain: 'When a trait is favored, the alleles contributing to that phenotype tend to rise in frequency; when disfavored, both trait and alleles tend to decline.'
+- type: MultiChoice
+  text: 'An adaptation is best described as:'
   choices:
-    A: Skin
-    B: Liver
-    C: Kidney
-    D: Intestine
-  explain: The correct answer is 'Kidney' because after UV-dependent formation in the skin and 25-hydroxylation in the liver, vitamin D3 is converted into its hormonally active form by a second hydroxylation step in the kidney. The skin and liver participate earlier, and the intestine is a major target organ rather than the site of final activation. This explanation elaborates the biological principles involved, describing underlying mechanisms and reasoning step by step.
-  text: Which organ performs the final activation step that converts 25-hydroxyvitamin D3 into its active hormone form?
-  type: MultiChoice
-
-- answer: B
+    A: 'A trait acquired during an individuals lifetime due to environmental exposure'
+    B: 'An inherited trait that increases survival and reproductive success in a specific environment'
+    C: 'Any trait that increases population size regardless of heredity'
+    D: 'A random change produced by genetic drift'
+  answer: B
+  explain: 'Adaptations are genetically based traits shaped by selection that improve fitness in a particular environment; acclimation within a lifetime is not adaptation.'
+- type: MultiChoice
+  text: 'Fitness is best defined as:'
   choices:
-    A: Maintain neutral pH at the skin surface
-    B: Protect keratinocytes from UV-induced DNA damage by absorbing and scattering UV
-    C: Increase transepidermal water loss to cool the body
-    D: Stimulate sebaceous gland activity during puberty
-  explain: The correct answer is 'Protect keratinocytes from UV-induced DNA damage by absorbing and scattering UV' because melanin pigment in the epidermis acts as a natural sunscreen that reduces penetration of harmful UV photons to the DNA in basal cells. It does not primarily regulate pH, water loss, or sebum production. This explanation elaborates the biological principles involved, describing underlying mechanisms and reasoning step by step.
-  text: What is the primary protective role of melanin in the skin?
-  type: MultiChoice
-
-- answer: C
+    A: 'How strong or healthy an individual looks'
+    B: 'The amount of genetic information an individual contributes to the next generations'
+    C: 'The ability to avoid predators without reproducing'
+    D: 'The number of offspring produced by the population as a whole'
+  answer: B
+  explain: 'Fitness is a quantitative measure of genetic contribution to future generations. It combines survival and reproduction, not appearance or population-level totals.'
+- type: MultiChoice
+  text: 'Which list contains the core ingredients required for natural selection to produce evolution?'
   choices:
-    A: Albinism
-    B: Melasma
-    C: Vitiligo
-    D: Psoriasis
-  explain: The correct answer is 'Vitiligo' because this condition involves patchy loss of skin pigmentation due to destruction or loss of melanocytes in affected areas. Albinism is a generalized genetic absence of pigment, melasma presents as tan or dark discoloration often in pregnancy, and psoriasis is an inflammatory scaly disease rather than a pigment-loss disorder. This explanation elaborates the biological principles involved, describing underlying mechanisms and reasoning step by step.
-  text: Which condition is characterized by patchy areas of depigmented skin resulting from melanocyte cell death?
-  type: MultiChoice
-
-- answer: C
+    A: 'No mutation, no migration, random mating, large population size'
+    B: 'Variation, heredity, differential survival/reproduction, and environment-imposed limiting factors'
+    C: 'Recombination, meiosis, mitosis, and cytokinesis'
+    D: 'Only competition and predation'
+  answer: B
+  explain: 'Selection needs heritable variation and consistent differences in survival/reproduction caused by environmental conditions and limiting resources.'
+- type: MultiChoice
+  text: 'A trait that increases survival but reduces reproduction would generally:'
   choices:
-    A: Basal cell carcinoma
-    B: Squamous cell carcinoma
-    C: Malignant melanoma
-    D: Actinic keratosis
-  explain: The correct answer is 'Malignant melanoma' because although it is less common than basal or squamous cell carcinoma, melanoma arising from melanocytes is the most lethal form of skin cancer due to its high metastatic potential. Basal cell and squamous cell carcinomas are more frequent but generally less aggressive when treated early. This explanation elaborates the biological principles involved, describing underlying mechanisms and reasoning step by step.
-  text: Which form of skin cancer is relatively rare but has the highest lethality?
-  type: MultiChoice
-
-- answer: A
+    A: 'Always be selected for'
+    B: 'Always be selected against'
+    C: 'Depend on the net effect on fitness (survival times reproduction)'
+    D: 'Have no effect on fitness by definition'
+  answer: C
+  explain: 'Fitness integrates both survival and reproduction. A tradeoff can still be favored if overall genetic contribution increases.'
+- type: MultiChoice
+  text: 'In the Galapagos finch drought example, selection for large beaks is predicted to cause:'
   choices:
-    A: BRAF V600E-mutant B-Raf kinase
-    B: Epidermal growth factor receptor (EGFR)
-    C: HER2/neu receptor
-    D: Tumor necrosis factor alpha
-  explain: The correct answer is 'BRAF V600E-mutant B-Raf kinase' because vemurafenib is a targeted inhibitor that specifically blocks the constitutively active B-Raf kinase produced by the V600E mutation in many melanomas. EGFR, HER2, and TNF-alpha are important in other cancers and inflammatory diseases but are not the primary targets of vemurafenib. This explanation elaborates the biological principles involved, describing underlying mechanisms and reasoning step by step.
-  text: Vemurafenib is used in advanced malignant melanoma. What is its primary molecular target?
-  type: MultiChoice
-
-- answer: B
+    A: 'A decrease in average beak size over generations'
+    B: 'No change because drought is not genetic'
+    C: 'An increase in average beak size because beak size has a genetic basis'
+    D: 'Immediate fixation of the largest beak genotype in one generation'
+  answer: C
+  explain: 'If large beaks improve access to scarce large seeds during drought and beak size is heritable, survivors leave more offspring and the population mean shifts upward over generations.'
+- type: MultiChoice
+  text: 'Directional selection is best described as:'
   choices:
-    A: A topical sunscreen that prevents UV uptake by melanoma cells
-    B: A PCR-based companion diagnostic that detects BRAF V600E mutations
-    C: A vaccine that induces antibodies against melanoma cells
-    D: A serum assay that measures circulating melanin levels
-  explain: The correct answer is 'A PCR-based companion diagnostic that detects BRAF V600E mutations' because the cobas mutation test is used to identify patients whose melanomas harbor the BRAF mutation and are therefore candidates for vemurafenib therapy. It is not a sunscreen, vaccine, or routine serum biomarker test. This explanation elaborates the biological principles involved, describing underlying mechanisms and reasoning step by step.
-  text: What is the clinical role of the cobas mutation test in managing malignant melanoma?
-  type: MultiChoice
-
-- answer: C
+    A: 'Selection favoring the mean trait value, reducing variation'
+    B: 'Selection favoring one extreme of a trait distribution, shifting the mean'
+    C: 'Selection favoring both extremes, producing a unimodal distribution'
+    D: 'Selection maintaining multiple phenotypes at similar frequencies'
+  answer: B
+  explain: 'Directional selection increases the frequency of one extreme phenotype (or allele), shifting the trait distribution in one direction.'
+- type: MultiChoice
+  text: 'Disruptive selection is best described as:'
   choices:
-    A: Eukaryotes – MRSA, a common cause of skin and soft tissue infections
-    B: Bacteria – Giardia, a flagellated intestinal parasite
-    C: Archaea – part of the human microbiome but rarely involved in disease
-    D: Eukaryotes – Salmonella enterica, a gram-negative rod causing GI infection
-  explain: The correct answer is 'Archaea – part of the human microbiome but rarely involved in disease' because archaea form one of the three domains of life and are found in humans but only rarely cause disease. MRSA and Salmonella are bacteria, not eukaryotes, and Giardia is a protozoan eukaryote rather than a bacterium. This explanation clarifies how each example maps to its correct domain.
-  text: Which pairing of domain and example organism is correct?
-  type: MultiChoice
-
-- answer: Because they lack cellular structure and independent metabolism, and can only replicate by hijacking a host cell’s machinery.
-  explain: Viruses and prions are not classified as living organisms because they do not have cells, cannot generate their own energy, and cannot reproduce on their own. Viruses are essentially packages of nucleic acid and protein (sometimes with a lipid envelope) that must infect cells to replicate, while prions are misfolded proteins without any genome. This explanation highlights the key criteria for defining life and why viruses and prions do not meet them.
-  text: Why are viruses and prions not considered living organisms?
-  type: ShortAnswer
-
-- answer: B
+    A: 'Selection against the mean trait value, favoring extremes and producing a bimodal distribution'
+    B: 'Selection for the mean trait value, producing a narrow unimodal distribution'
+    C: 'Selection that makes allele frequencies constant by definition'
+    D: 'Selection that favors heterozygotes only'
+  answer: A
+  explain: 'Disruptive selection favors individuals at both extremes and selects against intermediates, often generating a bimodal trait distribution.'
+- type: MultiChoice
+  text: 'Stabilizing selection is best described as:'
   choices:
-    A: Deep purple stain due to a thick peptidoglycan layer without an outer membrane
-    B: Thin peptidoglycan layer located in a periplasm between inner and outer membranes containing LPS
-    C: No peptidoglycan at all and a single lipid bilayer
-    D: Thick peptidoglycan with teichoic acids and no outer membrane
-  explain: The correct answer is 'Thin peptidoglycan layer located in a periplasm between inner and outer membranes containing LPS' because gram-negative bacteria have a thin peptidoglycan cell wall between two membranes and an outer membrane rich in lipopolysaccharide. This arrangement often leads them not to retain the crystal violet stain and contributes to their distinctive biology. Answers A and D describe gram-positive structure, and option C describes an organism without a cell wall.
-  text: Which description best fits a gram-negative bacterium and its cell envelope?
-  type: MultiChoice
-
-- answer: Because the outer membrane and periplasmic space protect the peptidoglycan, and beta-lactamases in the periplasm can inactivate beta-lactam drugs before they reach their target.
-  explain: Gram-negative bacteria are often more resistant to beta-lactam antibiotics because the outer membrane acts as a permeability barrier and limits drug entry, while the periplasmic space houses beta-lactamase enzymes that degrade the antibiotic. In contrast, gram-positive bacteria expose a thick peptidoglycan layer directly to the environment without an outer membrane, so beta-lactam drugs more easily reach and inhibit their cell wall synthesis. This explanation ties bacterial envelope architecture to antibiotic susceptibility.
-  text: Why do gram-negative bacteria tend to be more resistant to beta-lactam antibiotics than gram-positive bacteria?
-  type: ShortAnswer
-
-- answer: C
+    A: 'Selection favoring extremes and increasing variation'
+    B: 'Selection favoring the mean trait value and selecting against deviations'
+    C: 'Selection that always fixes an allele'
+    D: 'A random walk in allele frequencies'
+  answer: B
+  explain: 'Stabilizing selection reduces variance by penalizing individuals far from an optimal mean phenotype and can counteract variation introduced by mutation, gene flow, or drift.'
+- type: MultiChoice
+  text: 'Which example best matches stabilizing selection in the slides?'
   choices:
-    A: Shigella flexneri is less virulent than commensal E. coli because it lacks plasmids.
-    B: Salmonella enterica is avirulent because it does not carry any virulence genes.
-    C: Shigella flexneri carries a large virulence plasmid with pathogenic genes that commensal E. coli lacks.
-    D: Commensal E. coli strains cause diarrhea because they share identical plasmids with Shigella flexneri.
-  explain: The correct answer is 'Shigella flexneri carries a large virulence plasmid with pathogenic genes that commensal E. coli lacks' because Shigella and E. coli are genetically very similar except for the presence of a pathogenic virulence plasmid in Shigella. This plasmid encodes virulence factors that enable invasion and diarrhea. Commensal E. coli do not carry this plasmid, while Salmonella enterica also carries virulence genes but often integrates them into its chromosome rather than relying on a large plasmid.
-  text: What best explains why Shigella flexneri causes severe diarrheal disease while commensal E. coli strains usually do not?
-  type: MultiChoice
-
-- answer: B
+    A: 'Drought favoring large beaks in finches'
+    B: 'Intermediate camouflage being worst, favoring two morphs'
+    C: 'Infant mortality increasing for very low and very high birthweight'
+    D: 'A allele fixing in every population under directional selection'
+  answer: C
+  explain: 'Higher mortality at both low and high birthweights implies selection against extremes and favoring an intermediate optimum, the signature of stabilizing selection.'
+- type: MultiChoice
+  text: 'The Timema stick insect example illustrates disruptive selection because:'
   choices:
-    A: Transformation
-    B: Transduction
-    C: Conjugation
-    D: Binary fission
-  explain: The correct answer is 'Transduction' because this form of horizontal gene transfer involves bacteriophages that infect bacteria, integrate into their genomes, and can accidentally package host DNA when new phage particles are assembled. When these phages infect another bacterium, they introduce donor bacterial DNA into the new host. Transformation is uptake of naked DNA from the environment, conjugation is direct DNA transfer via cell–cell contact, and binary fission is simply asexual reproduction, not gene transfer.
-  text: A bacteriophage infects a bacterium, packages some of its DNA, and then delivers that DNA into another bacterium. What horizontal gene transfer mechanism is this?
-  type: MultiChoice
-
-- answer: D
+    A: 'Only one morph is ever favored'
+    B: 'Intermediate forms are poorly camouflaged on both host plants'
+    C: 'The mean phenotype has the highest fitness'
+    D: 'Selection is random with respect to camouflage'
+  answer: B
+  explain: 'When each extreme morph matches a different host plant and intermediates match neither, fitness is highest at the extremes and lowest in the middle.'
+- type: MultiChoice
+  text: 'Balancing selection (as presented) is a special form of selection that:'
   choices:
-    A: Tapeworm – protozoan
-    B: Candida albicans – protozoan
-    C: Giardia – helminth
-    D: Tapeworm – helminth
-  explain: The correct answer is 'Tapeworm – helminth' because tapeworms are multicellular parasitic worms (helminths) that often have complex life cycles involving intermediate hosts. Candida albicans is a fungus, and Giardia is a flagellated protozoan, not a helminth. This explanation reinforces the major categories of eukaryotic pathogens.
-  text: Which pairing between organism and type of eukaryotic pathogen is correct?
-  type: MultiChoice
-
-- answer: Because many helminths require an intermediate non-human host in the environment to complete parts of their life cycle and then transmit infectious stages to humans.
-  explain: Many helminth parasites undergo different developmental stages in more than one host species. An intermediate host such as a snail, fly, or mosquito supports larval or asexual stages that then produce infectious forms that enter the definitive human host. This multi-host cycle increases transmission opportunities but also creates points where environmental or vector control can break the cycle.
-  text: Why do many helminth infections involve a second, non-human host such as a snail or mosquito?
-  type: ShortAnswer
-
-- answer: A
+    A: 'Eliminates variation faster than directional selection'
+    B: 'Maintains two or more phenotypic forms and preserves variation'
+    C: 'Is identical to genetic drift'
+    D: 'Requires migration to operate'
+  answer: B
+  explain: 'Unlike directional, stabilizing, or disruptive selection which often reduce variation, balancing selection maintains multiple phenotypes/alleles in the population.'
+- type: MultiChoice
+  text: 'Which outcome is most consistent with balancing selection in allele-frequency plots?'
   choices:
-    A: Injection of sporozoites by a mosquito, then replication first in the liver before infecting red blood cells
-    B: Injection of merozoites into red blood cells where they remain for the entire life cycle
-    C: Inhalation of spores that travel directly into the brain
-    D: Direct penetration of skin by adult worms that live only in lymph nodes
-  explain: The correct answer is 'Injection of sporozoites by a mosquito, then replication first in the liver before infecting red blood cells' because malaria is transmitted when Anopheles mosquitoes inject sporozoites, which initially infect hepatocytes. After a liver stage, merozoites are released into the bloodstream, where they cyclically infect and rupture red blood cells, leading to anemia and recurrent fevers. The other options describe unrelated life cycles.
-  text: Which sequence best describes the early stages of Plasmodium (malaria) infection in humans?
-  type: MultiChoice
-
-- answer: By destroying red blood cells and blocking small blood vessels, which together cause severe anemia, tissue hypoxia, metabolic disturbances, organ failure, seizures, and potentially coma and death.
-  explain: Malaria parasites multiply within red blood cells, leading to their rupture and loss, which causes profound anemia and lethargy. In addition, parasitized RBCs can adhere to capillary endothelium and clog microvessels, especially in the brain and vital organs, leading to acidosis, hypoglycemia, and organ failure. This combination of anemia and microvascular obstruction underlies the severe clinical manifestations of malaria.
-  text: How does malaria infection cause severe and sometimes fatal disease in young children?
-  type: ShortAnswer
-
-- answer: B
+    A: 'One allele deterministically rises to fixation in all replicates'
+    B: 'Allele frequencies fluctuate around an intermediate value over time'
+    C: 'Allele frequencies change independently only due to drift'
+    D: 'Allele frequencies instantly become equal due to gene flow'
+  answer: B
+  explain: 'Balancing selection maintains polymorphism, so allele frequencies tend to remain away from 0 and 1, often hovering near an equilibrium.'
+- type: MultiChoice
+  text: 'Alternative male mating strategies with similar fitness (alpha, beta, gamma) are an example of:'
   choices:
-    A: A healthy adult with no prior illness develops thrush after starting a new high-fiber diet.
-    B: A patient develops oral and vaginal yeast overgrowth after a course of broad-spectrum antibiotics.
-    C: A hiker develops a mild rash after brushing against plants in the Southwest desert.
-    D: A child acquires ringworm of the scalp from sharing hats at school.
-  explain: The correct answer is 'A patient develops oral and vaginal yeast overgrowth after a course of broad-spectrum antibiotics' because candidiasis often arises from overgrowth of commensal Candida albicans when antibiotic treatment disrupts the normal microbiota that keep it in check. Diet changes, contact dermatitis, and ringworm (a dermatophyte fungus, not Candida) are not classic triggers of Candida overgrowth.
-  text: Which clinical scenario best illustrates how candidiasis usually develops?
-  type: MultiChoice
-
-- answer: C
+    A: 'Directional selection driving fixation'
+    B: 'Balancing selection maintaining multiple morphs'
+    C: 'Convergent evolution between species'
+    D: 'Genetic drift eliminating variation'
+  answer: B
+  explain: 'If different strategies yield comparable reproductive success, selection can maintain multiple male morphs in the population rather than eliminating all but one.'
+- type: MultiChoice
+  text: 'Which statement best distinguishes coevolution from convergent evolution?'
   choices:
-    A: It is a common community-acquired cold virus in healthy children.
-    B: It is an easily treated fungus that rarely invades the bloodstream.
-    C: It is a drug-resistant fungal pathogen that causes hospital-acquired bloodstream and wound infections, especially in immunocompromised patients with invasive devices.
-    D: It is a harmless skin commensal that never causes clinical disease.
-  explain: The correct answer is 'It is a drug-resistant fungal pathogen that causes hospital-acquired bloodstream and wound infections, especially in immunocompromised patients with invasive devices' because Candida auris is an emerging nosocomial threat, notable for multidrug resistance and persistent colonization of healthcare environments. It is not a benign commensal or a simple cold virus, and infections can be difficult to treat.
-  text: What makes Candida auris an especially concerning pathogen in healthcare settings?
-  type: MultiChoice
-
-- answer: A
+    A: 'Coevolution occurs between interacting species; convergence produces similar traits in lineages without recent common ancestry'
+    B: 'Coevolution is always random; convergence is always selected'
+    C: 'Coevolution only occurs in plants; convergence only occurs in animals'
+    D: 'They are the same concept'
+  answer: A
+  explain: 'Coevolution involves reciprocal evolutionary change between interacting species (for example, plant defenses and herbivore counter-defenses). Convergence is similarity shaped by similar selection pressures in unrelated lineages.'
+- type: MultiChoice
+  text: 'Coevolutionary interactions highlighted in the slides include:'
   choices:
-    A: A lipid envelope derived from host cell membrane surrounding a protein capsid and viral genome
-    B: A rigid peptidoglycan cell wall surrounding a cytoplasm and nucleus
-    C: A cellulose cell wall with chloroplasts and mitochondria
-    D: A naked protein particle with no nucleic acid at all
-  explain: The correct answer is 'A lipid envelope derived from host cell membrane surrounding a protein capsid and viral genome' because many enveloped viruses bud from host cells and wrap themselves in host-derived lipid bilayer containing viral glycoproteins. Beneath the envelope is a protein capsid that packages the viral RNA or DNA genome. Peptidoglycan and cellulose walls are features of bacteria and plants/fungi, respectively, and a particle with no nucleic acid at all would not be a typical virus.
-  text: Which structure best describes an enveloped virus?
-  type: MultiChoice
-
-- answer: Because their genomes cannot be directly used by host ribosomes for protein synthesis, so they must bring their own polymerases or enzymes to transcribe or replicate their nucleic acids inside the host cell.
-  explain: Negative-sense RNA viruses carry an RNA-dependent RNA polymerase because host cells do not have an enzyme that can copy negative-sense RNA into a readable positive-sense strand. Many DNA viruses that remain in the cytoplasm similarly bring their own DNA polymerases, since they do not access the nuclear replication machinery. In both cases, the incoming genome is not immediately translatable, so viral proteins must be delivered with the virion to initiate replication.
-  text: Why must negative-sense RNA viruses (and many cytoplasmic DNA viruses) carry specific polymerase proteins within the virion when they infect a new cell?
-  type: ShortAnswer
-
-- answer: B
+    A: 'Plants evolving chemical defenses and herbivores evolving resistance or specialized feeding structures'
+    B: 'Drift causing allele fixation in small populations'
+    C: 'Migration homogenizing allele frequencies'
+    D: 'Random mating producing Hardy-Weinberg equilibrium'
+  answer: A
+  explain: 'Antagonistic or mutualistic interactions (herbivory, pollination) can drive reciprocal adaptation across species.'
+- type: MultiChoice
+  text: 'Convergent evolution (convergence) refers to:'
   choices:
-    A: A human host that serves as the only reservoir for the parasite
-    B: An animal host in which the parasite completes part of its life cycle before infecting humans
-    C: A non-living environmental surface contaminated with parasite eggs
-    D: A human cell type that is preferentially infected by viruses
-  explain: The correct answer is 'An animal host in which the parasite completes part of its life cycle before infecting humans' because a zoonotic host is a non-human animal that harbors the parasite and helps maintain transmission. Parasites may undergo developmental stages in these hosts before spreading to humans. Reservoirs can also be environmental, but that is not what 'zoonotic host' specifically refers to.
-  text: In the context of parasite life cycles, what is a zoonotic host?
-  type: MultiChoice
-
-- answer: By reducing exposure to environmental or animal reservoirs and vectors—for example through sanitation, safe food and water, vector control, and protective barriers such as bed nets.
-  explain: Preventing parasitic infection focuses on breaking the links between infectious agents, their non-human hosts, and human hosts. Measures like clean water, proper sewage disposal, cooking food thoroughly, controlling mosquitoes or snails, and using insecticide-treated bed nets all limit the opportunities for parasites to move from their environmental or animal reservoirs into people.
-  text: How do public health interventions typically reduce the risk of parasitic infections in human populations?
-  type: ShortAnswer
-
-- answer: C
+    A: 'Similar traits evolving in organisms that do not share recent common ancestry, often due to similar environments'
+    B: 'Trait divergence in organisms that share ancestry'
+    C: 'Selection maintaining multiple phenotypes within a population'
+    D: 'Gene flow making populations identical'
+  answer: A
+  explain: 'Convergence is similarity not due to shared recent ancestry but due to similar selective pressures producing similar solutions.'
+- type: MultiChoice
+  text: 'Adaptive radiation is best described as:'
   choices:
-    A: Endogenous virus integrated only into liver cells of an adult
-    B: Exogenous virus remaining exclusively outside host genomes
-    C: Integration of a retrovirus into gamete DNA, followed by spread through the population and fixation
-    D: A bacteriophage integrating only into bacterial chromosomes
-  explain: The correct answer is 'Integration of a retrovirus into gamete DNA, followed by spread through the population and fixation' because endogenous retroviruses arise when a retrovirus infects germline cells, integrates into their DNA, and is passed on to offspring. Over time, such insertions can become fixed in the population. Somatic integrations or bacteriophage infections do not create heritable endogenous viruses in humans.
-  text: How can an exogenous retrovirus become an endogenous part of a host species’ genome?
-  type: MultiChoice
-
-- answer: An ancient viral gene now encodes a protein that allows placental cells to fuse and access maternal nutrients, which is essential for human placental development.
-  explain: One striking example of viral domestication is that a gene derived from an ancient retrovirus has been co-opted to form syncytin, a protein required for placental cell fusion. This viral envelope–like protein enables the placenta to invade maternal tissue and obtain nutrients for the fetus. Thus, a once-pathogenic virus contributed a function that is now critical for successful mammalian reproduction.
-  text: Give one example of how an endogenous retroviral element has become beneficial in humans.
-  type: ShortAnswer
-
-- answer: A
+    A: 'Multiple species evolving similar traits due to similar environments'
+    B: 'One lineage diversifying into multiple forms adapted to different niches, often from a common ancestor'
+    C: 'A population losing genetic diversity due to drift'
+    D: 'Selection always reducing phenotypic variation'
+  answer: B
+  explain: 'Adaptive radiation produces many specialized forms from a common ancestor as populations adapt to different resources or habitats, as illustrated by finch diversification.'
+- type: MultiChoice
+  text: 'Which option best captures Darwins finch takeaway from the slides?'
   choices:
-    A: Misfolding of a normal PrPᶜ protein into a PrPˢᶜ form that induces further misfolding, leading to spongiform brain damage
-    B: Overproduction of viral capsid proteins that lyse neurons
-    C: Autoimmune attack on myelin caused by molecular mimicry
-    D: Hypersensitivity reaction to dietary proteins in the gut
-  explain: The correct answer is 'Misfolding of a normal PrPᶜ protein into a PrPˢᶜ form that induces further misfolding, leading to spongiform brain damage' because prion diseases are caused by an abnormal, protease-resistant conformation of the PrP protein that templates additional misfolding. Accumulation of PrPˢᶜ causes neuronal loss and the characteristic sponge-like holes in brain tissue. There is no viral genome, autoimmune reaction, or allergy driving the pathology.
-  text: What is the fundamental pathogenic mechanism underlying prion diseases such as mad cow disease and kuru?
-  type: MultiChoice
-
-- answer: Because prion proteins are unusually resistant to heat, UV, and common disinfectants, allowing infectious PrPˢᶜ to persist in soil and on vegetation that grazing animals repeatedly encounter.
-  explain: Chronic Wasting Disease and other prion disorders are difficult to eradicate from contaminated environments because the misfolded prion protein binds to soil and plant surfaces and is not easily destroyed by standard sterilization methods. As a result, susceptible animals can be re-exposed by grazing long after the original infected animal has died, sustaining transmission cycles.
-  text: Why can prion diseases like Chronic Wasting Disease continue to spread in a pasture long after infected animals are removed?
-  type: ShortAnswer
-
-- answer: C
+    A: 'Different foods and habitats lead to different adaptations, but the finches share common ancestry'
+    B: 'Finches are unrelated but look similar because of convergence'
+    C: 'Finch beaks change only due to gene flow'
+    D: 'Beak size is not heritable'
+  answer: A
+  explain: 'The key idea is diversification (adaptive radiation) from a shared ancestor, with different ecological niches favoring different beak morphologies.'
+- type: MultiChoice
+  text: 'Artificial selection differs from natural selection because:'
   choices:
-    A: Host, pathogen, vaccines
-    B: Agent, antibodies, antibiotics
-    C: Infectious agent, host, and environment (including vectors and reservoirs)
-    D: Innate immunity, adaptive immunity, and microbiota
-  explain: The correct answer is 'Infectious agent, host, and environment (including vectors and reservoirs)' because the classic host–agent–environment model emphasizes interactions between the pathogen, susceptible hosts, and environmental conditions (such as season, vectors, and animal reservoirs) that favor or impede transmission. Vaccines, antibodies, and microbiota are important but are not the three core components of this model.
-  text: In the host–agent–environment model of infectious disease, which three components interact to determine whether infection occurs?
-  type: MultiChoice
-
-- answer: By targeting the pathogen directly (e.g., antimicrobials), strengthening host defenses (e.g., vaccination), or altering the environment (e.g., sanitation, vector control, masking) to reduce opportunities for transmission.
-  explain: Public health strategies such as clean water and sewage systems, insecticide-treated nets and vector control, vaccines, and appropriate antimicrobial therapy all work by modifying one or more corners of the host–agent–environment triangle. Reducing environmental contamination, lowering vector density, boosting host immunity, or killing pathogens all make it less likely that a susceptible host encounters an infectious dose in a conducive environment.
-  text: How do public health interventions use the host–agent–environment framework to reduce infectious disease?
-  type: ShortAnswer
-
-- answer: D
+    A: 'Artificial selection is random; natural selection is nonrandom'
+    B: 'Artificial selection is driven by human choice of breeders, while natural selection is driven by environmental fitness differences'
+    C: 'Artificial selection does not change allele frequencies'
+    D: 'Natural selection only occurs in domesticated species'
+  answer: B
+  explain: 'Both are nonrandom processes that can change allele frequencies, but the agent of selection differs: humans impose breeding criteria in artificial selection.'
+- type: MultiChoice
+  text: 'Sexual selection is best defined as selection on traits that:'
   choices:
-    A: Aedes mosquitoes transmitting malaria parasites
-    B: Culex mosquitoes transmitting Borrelia burgdorferi
-    C: Ixodes ticks transmitting Plasmodium species
-    D: Ixodes ticks transmitting Borrelia burgdorferi
-  explain: The correct answer is 'Ixodes ticks transmitting Borrelia burgdorferi' because Lyme disease is caused by the spirochete Borrelia burgdorferi and transmitted by Ixodes (deer) ticks. Malaria is transmitted by Anopheles mosquitoes, and Plasmodium species are protozoan parasites, not bacteria. The other pairings therefore do not match.
-  text: Which vector–pathogen combination correctly describes Lyme disease?
-  type: MultiChoice
-
-- answer: Because nymph-stage Ixodes ticks feed aggressively on small mammals and humans during warmer months, and people have more outdoor exposure in spring and summer.
-  explain: Transmission of Lyme disease peaks in late spring and summer when Ixodes ticks are in their nymph stage. Nymphs are small and hard to detect, yet they are very active and take blood meals from hosts. At the same time, human outdoor activity increases, so the chance of unnoticed tick bites and Borrelia transmission rises.
-  text: Why is the risk of acquiring Lyme disease highest during the spring and summer months?
-  type: ShortAnswer
-
-- answer: B
+    A: 'Improve survival in harsh climates'
+    B: 'Improve chances of acquiring mates and reproducing'
+    C: 'Reduce mutation rate'
+    D: 'Prevent gene flow'
+  answer: B
+  explain: 'Sexual selection targets traits that increase mating success, which can increase reproductive output even if the traits have survival costs.'
+- type: MultiChoice
+  text: 'Sexual dimorphism is often driven by sexual selection and refers to:'
   choices:
-    A: History of present illness
-    B: Social history
-    C: Medical history
-    D: Family history
-  explain: The correct answer is 'Social history' because information about occupation, congregate living, homelessness, and travel patterns falls under social history and can strongly influence infectious risk. History of present illness focuses on the current symptoms and timing, medical history on prior illnesses and immunosuppression, and family history on inherited or shared diseases.
-  text: In which part of the clinical history would you most appropriately document a patient’s homelessness and recent travel to another country?
-  type: MultiChoice
-
-- answer: Because many infections are geographically restricted, so knowing where a patient has recently lived or traveled helps narrow the list of likely pathogens.
-  explain: Travel history is especially important in infectious disease because some pathogens (such as malaria parasites, Coccidioides causing valley fever, or certain arboviruses) are endemic only in specific regions. A febrile patient who has recently visited an endemic area has a different differential diagnosis than someone who has not, guiding appropriate testing and treatment.
-  text: Why is recent travel history particularly important when evaluating a patient with fever?
-  type: ShortAnswer
-
-- answer: C
+    A: 'Differences in phenotype between sexes, such as size or coloration'
+    B: 'Differences between species in the same habitat'
+    C: 'Differences between genotypes within one sex only'
+    D: 'Differences caused only by genetic drift'
+  answer: A
+  explain: 'Sexual dimorphism describes male-female differences in phenotype. Sexual selection can exaggerate traits in one sex when they increase mating success.'
+- type: MultiChoice
+  text: 'Female choice can yield direct benefits when males provide:'
   choices:
-    A: Innate immunity is slow and highly specific; adaptive immunity is rapid and nonspecific.
-    B: Innate immunity relies on antibodies; adaptive immunity relies only on neutrophils.
-    C: Innate immunity provides an immediate, nonspecific response, whereas adaptive immunity develops over days and is highly specific with memory.
-    D: Innate and adaptive immunity are identical except for their location in the body.
-  explain: The correct answer is 'Innate immunity provides an immediate, nonspecific response, whereas adaptive immunity develops over days and is highly specific with memory' because innate defenses (barriers, complement, phagocytes, NK cells) act quickly and recognize broad patterns, while adaptive responses (B and T cells) require activation and clonal expansion but generate antigen-specific antibodies and memory cells. The other options reverse or oversimplify these distinctions.
-  text: Which statement best distinguishes innate from adaptive immunity?
-  type: MultiChoice
-
-- answer: B cells produce and secrete antigen-specific antibodies, while T cells recognize antigen (often presented with antibodies or MHC) and orchestrate or directly carry out cell-mediated immune responses.
-  explain: In adaptive immunity, B lymphocytes differentiate into plasma cells that secrete antibodies targeting specific antigens, contributing to neutralization, opsonization, and complement activation. T lymphocytes recognize antigen via their T-cell receptors and can help B cells (helper T cells) or kill infected or malignant cells (cytotoxic T cells). Together they provide specificity and memory that complement the rapid but nonspecific innate response.
-  text: What are the primary roles of B cells and T cells in adaptive immunity?
-  type: ShortAnswer
-
-- answer: A
+    A: 'Only costly ornaments and nothing else'
+    B: 'Food gifts, parental care, or access to high-quality territories'
+    C: 'Lower mutation rates'
+    D: 'Guaranteed fixation of alleles'
+  answer: B
+  explain: 'Direct benefits are tangible resources or services that increase female reproductive success, such as food, protection, help raising offspring, or a better nesting site.'
+- type: MultiChoice
+  text: 'Indirect genetic benefits in sexual selection refer to:'
   choices:
-    A: Skin with its acidic pH, tight junctions, and antimicrobial peptides
-    B: Complement proteins circulating in the bloodstream
-    C: Antigen-specific IgG antibodies
-    D: Cytotoxic T lymphocytes
-  explain: The correct answer is 'Skin with its acidic pH, tight junctions, and antimicrobial peptides' because barrier defenses such as intact skin physically block pathogen entry and are part of the innate immune system. Complement proteins and antibodies circulate internally, and cytotoxic T cells are adaptive immune effectors, not surface barriers.
-  text: Which of the following is an example of a barrier defense in the innate immune system?
-  type: MultiChoice
-
-- answer: By trapping inhaled particles in mucus and using coordinated ciliary beating to move the mucus upward so it can be coughed up or swallowed, thereby clearing pathogens from the respiratory tract.
-  explain: The mucociliary escalator of the respiratory tract consists of mucus-producing epithelial cells and ciliated cells. Particles, including microbes, stick to the mucus, and ciliary motion sweeps this mucus layer toward the pharynx. From there, it is either expectorated or swallowed and exposed to gastric acid, reducing the chance of infection in the lower airways.
-  text: How does the mucociliary escalator help protect the respiratory tract from infection?
-  type: ShortAnswer
-
-- answer: C
+    A: 'Immediate food gifts from males'
+    B: 'Genes that improve offspring quality or attractiveness, even if males provide no resources'
+    C: 'Migration introducing alleles'
+    D: 'Random allele changes from drift'
+  answer: B
+  explain: 'Indirect benefits occur when choosing a mate improves genetic quality of offspring (or their mating success) rather than providing direct resources.'
+- type: MultiChoice
+  text: 'The handicap hypothesis argues that:'
   choices:
-    A: Antibiotics directly strengthen tight junctions in the intestinal epithelium.
-    B: Antibiotics selectively kill only pathogenic bacteria, leaving the microbiota unchanged.
-    C: Broad-spectrum antibiotics can deplete commensal bacteria that provide tonic TLR signaling and barrier protection, making the intestine more susceptible to injury and infection.
-    D: Antibiotics convert gram-negative bacteria into harmless archaea.
-  explain: The correct answer is 'Broad-spectrum antibiotics can deplete commensal bacteria that provide tonic TLR signaling and barrier protection, making the intestine more susceptible to injury and infection' because normal microbiota secrete ligands that stimulate pattern-recognition receptors and help maintain epithelial integrity. When antibiotics wipe out these commensals, epithelial repair and defense are impaired, and opportunistic pathogens or toxins can more easily cause damage.
-  text: How can broad-spectrum antibiotic use increase a patient’s risk of intestinal injury or infection?
-  type: MultiChoice
-
-- answer: Commensal bacteria colonize the gut early in life and provide constant low-level stimulation of innate receptors like TLRs, helping the immune system learn to distinguish harmless microbes from true pathogens.
-  explain: During birth and breastfeeding, infants acquire Lactobacillus and other commensals that form a protective microbiota. These organisms produce molecules that bind TLRs and other PRRs on epithelial and immune cells, promoting appropriate barrier function and immune maturation. This early training reduces overreaction to benign stimuli while preserving the ability to mount strong responses to genuine pathogens.
-  text: How do commensal bacteria help “train” the developing immune system in infants?
-  type: ShortAnswer
-
-- answer: B
+    A: 'Costly ornaments signal high genetic quality because only vigorous males can afford them'
+    B: 'Ornaments always reduce fitness and are selected against'
+    C: 'Only drift can explain ornaments'
+    D: 'Females choose mates randomly'
+  answer: A
+  explain: 'If an ornament is costly, surviving with it can credibly signal condition or genetic quality, making it a potentially reliable mating signal.'
+- type: MultiChoice
+  text: 'The sexy son hypothesis predicts that female choice can be favored because:'
   choices:
-    A: Gram-positive bacteria and helminths
-    B: Gram-negative bacteria with exposed outer membranes
-    C: Fungi and helminths
-    D: All pathogens equally
-  explain: The correct answer is 'Gram-negative bacteria with exposed outer membranes' because the membrane attack complex (MAC) forms pores in lipid bilayers and is particularly effective against gram-negative bacteria, whose outer membranes are accessible. Thick peptidoglycan layers in gram-positive bacteria and the size or structure of fungi and helminths make them relatively resistant to direct MAC-mediated lysis.
-  text: Against which type of pathogen is the complement membrane attack complex (MAC) most effective?
-  type: MultiChoice
-
-- answer: A
+    A: 'Sons inherit attractiveness and gain high mating success, increasing the females genetic representation'
+    B: 'Sons inherit lower mutation rates'
+    C: 'Sons always survive better than daughters'
+    D: 'Female choice prevents selection'
+  answer: A
+  explain: 'Choosing attractive males can yield indirect benefits through sons that are themselves attractive and produce many offspring, amplifying the mothers genetic contribution.'
+- type: TrueFalse
+  text: 'Natural selection is a nonrandom process because differential survival and reproduction depend on phenotype differences in a particular environment.'
+  answer: true
+  explain: 'This is true. Environmental context determines which phenotypes have higher fitness, so allele-frequency change is biased rather than purely stochastic.'
+- type: TrueFalse
+  text: 'Fitness is only about surviving; reproduction does not matter.'
+  answer: false
+  explain: 'This is false. Fitness measures genetic contribution to future generations, which requires reproduction. Survival matters mainly because it enables reproduction.'
+- type: TrueFalse
+  text: 'Directional selection can drive an allele to fixation if it consistently increases fitness.'
+  answer: true
+  explain: 'This is true. If an allele provides a consistent fitness advantage and is heritable, selection tends to increase its frequency and can lead to fixation.'
+- type: TrueFalse
+  text: 'Stabilizing selection typically increases phenotypic variance by favoring both extremes.'
+  answer: false
+  explain: 'This is false. Stabilizing selection favors intermediate phenotypes and selects against extremes, generally reducing variance.'
+- type: TrueFalse
+  text: 'Balancing selection is notable because it can maintain genetic and phenotypic variation instead of reducing it.'
+  answer: true
+  explain: 'This is true. Balancing selection keeps multiple forms in the population, maintaining polymorphism over time.'
+- type: ShortAnswer
+  text: 'State the definition of natural selection in one sentence.'
+  answer: 'Natural selection is the differential survival and reproduction of individuals/genotypes due to phenotype differences, causing nonrandom changes in phenotype and allele frequencies over generations.'
+- type: ShortAnswer
+  text: 'Compare directional, disruptive, and stabilizing selection in terms of how they change a trait distribution.'
+  answer: 'Directional selection shifts the distribution toward one extreme (mean changes). Disruptive selection favors both extremes and selects against intermediates (often bimodal). Stabilizing selection favors intermediate values and selects against extremes (variance decreases).'
+- type: ShortAnswer
+  text: 'Give one reason gene flow can oppose local adaptation under natural selection.'
+  answer: 'Gene flow can introduce alleles adapted to a different environment, which can lower local fitness and counteract selection, reducing the rate or extent of local adaptation.'
+- type: MultiChoice
+  text: 'Which statement best explains why populations (not individuals) are the smallest unit of evolutionary change?'
   choices:
-    A: Binding of antibodies to antigens on a pathogen surface
-    B: Spontaneous hydrolysis of C3 on pathogen surfaces
-    C: Recognition of mannose residues by lectins
-    D: Release of interferon-gamma from T cells
-  explain: The correct answer is 'Binding of antibodies to antigens on a pathogen surface' because the classical complement pathway is initiated when C1q binds to the Fc region of antibodies (typically IgG or IgM) that are already bound to antigens. Spontaneous C3 hydrolysis describes the alternative pathway, and lectin binding describes the lectin pathway, while interferon-gamma is a cytokine that activates macrophages rather than complement.
-  text: What event primarily triggers activation of the classical complement pathway?
-  type: MultiChoice
-
-- answer: Because it allows plasma proteins, antibodies, complement, and white blood cells to leave the bloodstream and reach the site of infection more easily.
-  explain: Increased vascular permeability during inflammation loosens endothelial junctions, causing fluid and proteins to leak into the tissue. While this contributes to swelling and sometimes pain, it also delivers critical immune effectors—such as antibodies, complement, and phagocytes—to the infected area, enhancing pathogen clearance and tissue repair.
-  text: Why is increased vascular permeability at an infection site an important part of the innate inflammatory response?
-  type: ShortAnswer
-
-- answer: C
+    A: 'Individuals change their DNA during life in response to the environment'
+    B: 'Evolution is defined as a change in allele frequency across generations, which is a population-level property'
+    C: 'Individuals can only reproduce once, so they cannot evolve'
+    D: 'Populations never mate randomly, so individuals cannot evolve'
+  answer: B
+  explain: 'Allele frequencies are defined over a gene pool. Individuals can undergo development or acclimation, but evolution (in this context) is tracked as allele-frequency change across generations in a population.'
+- type: MultiChoice
+  text: 'A gene pool is best defined as:'
   choices:
-    A: They lower body temperature to inhibit immune cell function.
-    B: They permanently block blood flow to infected tissues.
-    C: They induce fever, which can slow pathogen replication and enhance immune activity.
-    D: They suppress production of acute-phase proteins in the liver.
-  explain: The correct answer is 'They induce fever, which can slow pathogen replication and enhance immune activity' because cytokines such as IL-6 and TNF act on the hypothalamus to raise the body’s set-point temperature. Modest fevers can inhibit growth of some microbes and improve leukocyte function. They do not primarily lower temperature, permanently block blood flow, or suppress acute-phase protein production.
-  text: How do pro-inflammatory cytokines like IL-6 and TNF help control infection at the systemic level?
-  type: MultiChoice
-
-- answer: A
+    A: 'All genotypes observed in a single individual'
+    B: 'All copies of every allele at loci of interest in all members of a population'
+    C: 'Only the dominant alleles in a population'
+    D: 'Only the alleles present in gametes'
+  answer: B
+  explain: 'The gene pool is the complete collection of alleles (all copies) at the loci you care about across the population.'
+- type: MultiChoice
+  text: 'Allele frequency is best described as:'
   choices:
-    A: Lipopolysaccharide (LPS), flagellin, and viral RNA recognized by Toll-like receptors
-    B: Host DNA and self-proteins recognized by Toll-like receptors
-    C: Antigen-specific epitopes recognized by antibodies
-    D: Nutrient molecules such as glucose and amino acids
-  explain: The correct answer is 'Lipopolysaccharide (LPS), flagellin, and viral RNA recognized by Toll-like receptors' because pathogen-associated molecular patterns (PAMPs) include conserved microbial structures like LPS from gram-negative bacteria, bacterial flagellin, and unique forms of viral nucleic acid. TLRs are pattern recognition receptors that detect these PAMPs. Self-DNA and nutrients are not typical PAMPs, and antibody–epitope recognition is mediated by adaptive receptors, not TLRs.
-  text: Which of the following best illustrates pathogen-associated molecular patterns (PAMPs) and their recognition?
-  type: MultiChoice
-
-- answer: By driving production of pro-inflammatory cytokines and costimulatory molecules that recruit and activate immune cells, and by promoting dendritic cell maturation and antigen presentation to T cells, thereby linking innate sensing to adaptive responses.
-  explain: When TLRs on innate immune cells bind PAMPs, signaling pathways (such as NF-κB activation) induce cytokine secretion and upregulation of costimulatory molecules. These changes enhance phagocytosis, recruit additional innate effectors, and help dendritic cells present antigens effectively to T lymphocytes. As a result, innate detection of pathogens shapes the magnitude and quality of the adaptive T- and B-cell responses.
-  text: How does Toll-like receptor (TLR) signaling help connect innate immunity to adaptive immunity?
-  type: ShortAnswer
-
-- answer: C
+    A: 'The number of individuals with a genotype divided by population size'
+    B: 'The proportion of a specific allele out of the total number of alleles in the gene pool'
+    C: 'The probability that a phenotype will appear in one generation'
+    D: 'The fraction of heterozygotes in the population'
+  answer: B
+  explain: 'Allele frequency is computed over alleles in the gene pool (for diploids, total alleles at a locus equals 2N).'
+- type: MultiChoice
+  text: 'Genotype frequency is best described as:'
   choices:
-    A: Staphylococcus aureus colonization of the nasal cavities
-    B: A viral infection of the heart muscle after a respiratory infection
-    C: Viridans streptococci adhering to fibrin–platelet clots on damaged cardiac valves and forming vegetations
-    D: Autoimmune destruction of cardiac myocytes in response to self-antigens
-  explain: The correct answer is 'Viridans streptococci adhering to fibrin–platelet clots on damaged cardiac valves and forming vegetations' because infective endocarditis involves colonization of previously damaged endocardial surfaces by organisms like viridans streptococci. These bacteria stick to fibrin–platelet deposits, activating monocytes and coagulation pathways that enlarge vegetations and can produce painful Osler nodes or painless Janeway lesions. The other options describe different cardiac pathologies.
-  text: Which scenario best describes the pathogenesis of infective (bacterial) endocarditis?
-  type: MultiChoice
-
-- answer: Viridans streptococci adhere to fibrin–platelet clots on damaged endocardium, activate monocytes to produce tissue factor and cytokines, and thereby stimulate further coagulation and platelet deposition, enlarging the vegetations.
-  explain: In infective endocarditis, prior damage to a valve or endocardial surface leads to small fibrin–platelet deposits. Viridans streptococci can attach to these deposits and trigger an inflammatory response that upregulates tissue factor activity. This, in turn, drives additional clotting and platelet recruitment, so bacterial colonies become embedded in growing vegetations that can embolize or damage the valve.
-  text: Briefly describe how viridans streptococci promote the growth of endocardial vegetations once they attach to a damaged valve.
-  type: ShortAnswer
-
-- answer: B
+    A: 'The proportion of a specific allele out of the total number of alleles'
+    B: 'The number of individuals with a genotype divided by total population size'
+    C: 'The probability an allele will mutate'
+    D: 'The percentage of loci that are polymorphic'
+  answer: B
+  explain: 'Genotype frequency counts individuals of each genotype and divides by N (the number of individuals).'
+- type: MultiChoice
+  text: 'A population is polymorphic at a locus when:'
   choices:
-    A: Its ability to produce exotoxins that destroy red blood cells
-    B: Its IgA1 protease and polysaccharide capsule that help it evade mucosal immunity and opsonization
-    C: Its ability to replicate only in the gastrointestinal tract
-    D: Its strict confinement to the skin and subcutaneous tissues
-  explain: The correct answer is 'Its IgA1 protease and polysaccharide capsule that help it evade mucosal immunity and opsonization' because pneumococcus colonizes the nasopharynx, where IgA1 protease helps it evade secretory IgA, and its capsule inhibits complement deposition and phagocytosis in the bloodstream. These virulence factors facilitate invasion of the bloodstream and central nervous system. It is not restricted to the GI tract or skin.
-  text: Which virulence factors of Streptococcus pneumoniae are most important for its ability to cause meningitis?
-  type: MultiChoice
-
-- answer: Because rapid killing of large numbers of bacteria releases cell wall components into the CSF, provoking intense inflammation and brain swelling, so early corticosteroids help blunt this inflammatory response and reduce complications.
-  explain: When antibiotics lyse pneumococci in the subarachnoid space, components such as cell wall fragments and toxins stimulate a strong inflammatory response that can increase intracranial pressure and worsen neurologic damage. Administering steroids just before or with the first antibiotic dose dampens this inflammatory cascade, improving outcomes in many patients with bacterial meningitis.
-  text: Why are corticosteroids often given together with the first dose of antibiotics in suspected pneumococcal meningitis?
-  type: ShortAnswer
-
-- answer: A
+    A: 'There is exactly one allele in the gene pool at that locus'
+    B: 'There are two or more alleles in the gene pool at that locus'
+    C: 'All individuals are heterozygous at that locus'
+    D: 'All individuals are homozygous at that locus'
+  answer: B
+  explain: 'Polymorphic means more than one allele is present in the population gene pool at that locus.'
+- type: MultiChoice
+  text: 'An allele is fixed (monomorphic) at a locus when:'
   choices:
-    A: They bind to intestinal epithelial receptors, increase adenylyl cyclase activity and cAMP, and drive secretion of chloride, water, and electrolytes into the lumen.
-    B: They directly lyse intestinal epithelial cells, causing bloody diarrhea and ulceration.
-    C: They decrease cAMP and cause constipation, allowing bacteria to remain in the gut longer.
-    D: They only act on liver cells, causing jaundice.
-  explain: The correct answer is 'They bind to intestinal epithelial receptors, increase adenylyl cyclase activity and cAMP, and drive secretion of chloride, water, and electrolytes into the lumen' because cholera toxin and ETEC enterotoxins have A and B subunits; the B subunit binds to intestinal cell surfaces, allowing the A subunit to enter and persistently activate adenylyl cyclase. Elevated cAMP opens ion channels, leading to massive fluid secretion and watery diarrhea.
-  text: How do cholera toxin and enterotoxigenic E. coli (ETEC) enterotoxins cause profuse watery diarrhea?
-  type: MultiChoice
-
-- answer: Because the primary danger is life-threatening loss of fluid and electrolytes, so replacing those losses prevents hypovolemic shock and metabolic derangements while the infection runs its course.
-  explain: Enterotoxin-mediated diarrheal illnesses usually do not damage the intestinal mucosa directly but cause enormous fluid loss into the gut lumen. Without aggressive oral or IV rehydration and electrolyte replacement, patients can develop severe dehydration, acidosis, and death. Antibiotics may play a role in some cases, but fluid and electrolyte therapy is the cornerstone of management.
-  text: Why is aggressive fluid and electrolyte replacement the mainstay of treatment in severe cholera-like diarrheal illness?
-  type: ShortAnswer
-
-- answer: C
+    A: 'Its frequency is 0.5'
+    B: 'Its frequency is 1.0, so the gene pool contains only that allele'
+    C: 'The population mates randomly'
+    D: 'The population experiences gene flow'
+  answer: B
+  explain: 'Fixation means one allele is at 100 percent frequency; the locus is monomorphic in that population.'
+- type: MultiChoice
+  text: 'Hardy-Weinberg equilibrium (HWE) is best described as:'
   choices:
-    A: Any infection with a fever, regardless of organ dysfunction
-    B: Bacteremia without any systemic response
-    C: Life-threatening organ dysfunction caused by a dysregulated host response to infection
-    D: A local infection confined to a skin abscess
-  explain: The correct answer is 'Life-threatening organ dysfunction caused by a dysregulated host response to infection' because modern definitions of sepsis emphasize that it is not just infection or bacteremia, but an exaggerated, maladaptive systemic response that impairs organ function. Simple fever, isolated bacteremia, or localized abscesses do not meet criteria for sepsis without evidence of such organ dysfunction.
-  text: Which statement best defines sepsis?
-  type: MultiChoice
+    A: 'A population always evolving due to natural selection'
+    B: 'A model describing expected genotype frequencies when a population is not evolving and mates randomly'
+    C: 'A model that requires strong selection to maintain allele frequencies'
+    D: 'A model describing changes in genotype frequencies caused by migration'
+  answer: B
+  explain: 'HWE is an evolutionary null model: if assumptions hold, allele and genotype frequencies remain constant and genotype frequencies follow p^2, 2pq, q^2.'
+- type: MultiChoice
+  text: 'If a locus has two alleles with frequencies p and q, which relationship must hold?'
+  choices:
+    A: 'p + q = 0'
+    B: 'p + q = 1'
+    C: 'p - q = 1'
+    D: 'p^2 + q^2 = 1'
+  answer: B
+  explain: 'Allele frequencies are proportions of all alleles at the locus, so they must sum to 1 when there are only two alleles.'
+- type: MultiChoice
+  text: 'Under HWE, which expression gives the expected frequency of heterozygotes?'
+  choices:
+    A: 'p^2'
+    B: 'q^2'
+    C: '2pq'
+    D: 'p + q'
+  answer: C
+  explain: 'In HWE with two alleles, expected genotype frequencies are p^2 (AA), 2pq (Aa), and q^2 (aa).'
+- type: MultiChoice
+  text: 'Under HWE, if p = 0.7 and q = 0.3, what is the expected heterozygote frequency?'
+  choices:
+    A: '0.09'
+    B: '0.21'
+    C: '0.42'
+    D: '0.49'
+  answer: C
+  explain: 'Expected heterozygotes are 2pq = 2*0.7*0.3 = 0.42.'
+- type: MultiChoice
+  text: 'Under HWE, if q^2 = 0.16, what is q?'
+  choices:
+    A: '0.04'
+    B: '0.2'
+    C: '0.4'
+    D: '0.8'
+  answer: C
+  explain: 'q is the square root of q^2. sqrt(0.16) = 0.4.'
+- type: MultiChoice
+  text: 'Under HWE, if q^2 = 0.16, what is p?'
+  choices:
+    A: '0.2'
+    B: '0.4'
+    C: '0.6'
+    D: '0.8'
+  answer: C
+  explain: 'If q = 0.4 then p = 1 - q = 0.6.'
+- type: MultiChoice
+  text: 'Under HWE, if q = 0.2, what is the expected frequency of homozygous recessive individuals?'
+  choices:
+    A: '0.04'
+    B: '0.16'
+    C: '0.2'
+    D: '0.8'
+  answer: A
+  explain: 'Homozygous recessive frequency is q^2, so 0.2^2 = 0.04.'
+- type: MultiChoice
+  text: 'A population meets the conditions for HWE only if:'
+  choices:
+    A: 'Selection, mutation, and migration occur, but drift does not'
+    B: 'There is no selection, no mutation, no migration, no drift (large population), and mating is random'
+    C: 'Selection is weak and mutation is rare'
+    D: 'The population is small, so drift is negligible'
+  answer: B
+  explain: 'HWE requires no selection, no mutation, no migration, no drift (achieved by large population size), and random mating.'
+- type: MultiChoice
+  text: 'A deviation from HWE genotype frequencies most directly suggests that:'
+  choices:
+    A: 'The population is definitely undergoing gene flow'
+    B: 'The population is evolving and/or mating non-randomly because at least one HWE assumption is violated'
+    C: 'Allele frequencies must be p = q = 0.5'
+    D: 'The locus is fixed'
+  answer: B
+  explain: 'Departures from HWE indicate that some evolutionary process (selection, mutation, drift, migration) or nonrandom mating is operating.'
+- type: MultiChoice
+  text: 'Suppose N = 100 diploid individuals with genotype counts AA = 36, Aa = 48, aa = 16. What is p, the frequency of allele A?'
+  choices:
+    A: '0.36'
+    B: '0.48'
+    C: '0.60'
+    D: '0.70'
+  answer: C
+  explain: 'Total alleles = 2N = 200. Count A alleles: AA contributes 2*36 = 72, Aa contributes 48, total A = 120. p = 120/200 = 0.60.'
+- type: MultiChoice
+  text: 'Using the same counts (AA = 36, Aa = 48, aa = 16; N = 100), what is q, the frequency of allele a?'
+  choices:
+    A: '0.16'
+    B: '0.24'
+    C: '0.40'
+    D: '0.60'
+  answer: C
+  explain: 'Either compute a-alleles directly or use q = 1 - p. With p = 0.60, q = 0.40.'
+- type: MultiChoice
+  text: 'In a diploid population, which expression gives the total number of alleles at a locus?'
+  choices:
+    A: 'N'
+    B: '2N'
+    C: 'N/2'
+    D: 'p + q'
+  answer: B
+  explain: 'Each diploid individual carries two alleles per locus, so total alleles is 2N.'
+- type: MultiChoice
+  text: 'If p = 0.6 and q = 0.4, which expected genotype frequency is largest under HWE?'
+  choices:
+    A: 'p^2'
+    B: '2pq'
+    C: 'q^2'
+    D: 'All are equal'
+  answer: B
+  explain: 'p^2 = 0.36, 2pq = 0.48, q^2 = 0.16; the heterozygotes are most common here.'
+- type: MultiChoice
+  text: 'Genetic drift is best defined as:'
+  choices:
+    A: 'Nonrandom increase of beneficial alleles'
+    B: 'Random change in allele frequencies from one generation to the next due to random sampling'
+    C: 'Movement of alleles between populations due to migration'
+    D: 'Permanent DNA change at the nucleotide level'
+  answer: B
+  explain: 'Drift is stochastic: allele frequencies change due to sampling noise in who reproduces and which gametes unite.'
+- type: MultiChoice
+  text: 'Why are the effects of genetic drift stronger in small populations?'
+  choices:
+    A: 'Selection is always stronger in small populations'
+    B: 'Sampling error is larger when sample sizes are small, so allele frequencies fluctuate more'
+    C: 'Mutation rates increase as population size decreases'
+    D: 'Small populations always mate non-randomly'
+  answer: B
+  explain: 'Random sampling variance increases as N decreases, causing bigger generation-to-generation deviations and faster fixation or loss.'
+- type: MultiChoice
+  text: 'A common long-term consequence of strong drift is:'
+  choices:
+    A: 'Increased genetic variation'
+    B: 'Loss of genetic variation and more frequent fixation of alleles'
+    C: 'Stable polymorphism at all loci'
+    D: 'Guaranteed adaptation to local conditions'
+  answer: B
+  explain: 'By chance, drift can drive alleles to fixation or loss, reducing variation especially in small populations.'
+- type: MultiChoice
+  text: 'Which of the following is a sampling source that can generate drift?'
+  choices:
+    A: 'The fertilization lottery (random transmission of alleles) and random mortality events'
+    B: 'Only mutation'
+    C: 'Only natural selection'
+    D: 'Only nonrandom mating'
+  answer: A
+  explain: 'Drift arises from random sampling in gamete transmission and random demographic events that remove individuals and their alleles.'
+- type: MultiChoice
+  text: 'The founder effect occurs when:'
+  choices:
+    A: 'A population becomes very large, reducing drift'
+    B: 'A small number of individuals colonize or become isolated, forming a new population that is a random subset of the source'
+    C: 'A population experiences sustained gene flow'
+    D: 'Selection favors heterozygotes'
+  answer: B
+  explain: 'A new population started by few individuals can have allele frequencies that differ from the source just by chance, magnifying drift.'
+- type: MultiChoice
+  text: 'The bottleneck effect occurs when:'
+  choices:
+    A: 'A small group founds a new population on an island'
+    B: 'A sudden, severe reduction in population size leaves only a fraction of the original genetic diversity'
+    C: 'Migration increases variation'
+    D: 'Mutation stops occurring'
+  answer: B
+  explain: 'Bottlenecks reduce N sharply within a population; survivors are a random sample, so many alleles can be lost.'
+- type: MultiChoice
+  text: 'Which pairing correctly matches effect to scenario?'
+  choices:
+    A: 'Founder effect: sudden crash in N within a population; Bottleneck: colonization by few individuals'
+    B: 'Founder effect: colonization by few individuals; Bottleneck: sudden crash in N within a population'
+    C: 'Founder effect: nonrandom mating; Bottleneck: mutation'
+    D: 'Founder effect: selection; Bottleneck: selection'
+  answer: B
+  explain: 'Founder effect is about establishing a new population from few individuals; bottleneck is about a temporary drastic reduction in population size.'
+- type: MultiChoice
+  text: 'Gene flow is best defined as:'
+  choices:
+    A: 'Movement of alleles between populations due to migration'
+    B: 'Random change in allele frequency due to chance'
+    C: 'Nonrandom increase of alleles that improve fitness'
+    D: 'A permanent change in nucleotide sequence'
+  answer: A
+  explain: 'Gene flow changes allele frequencies by moving alleles across population boundaries via migrating individuals or gametes.'
+- type: MultiChoice
+  text: 'Over time, gene flow tends to make populations:'
+  choices:
+    A: 'More genetically similar'
+    B: 'More genetically different'
+    C: 'Monomorphic at all loci'
+    D: 'Completely immune to drift'
+  answer: A
+  explain: 'Migration mixes alleles, reducing differences in allele frequencies between populations.'
+- type: MultiChoice
+  text: 'Genetic swamping refers to a case where:'
+  choices:
+    A: 'Selection is so strong that it fixes an allele immediately'
+    B: 'High gene flow introduces maladaptive alleles that prevent local adaptation'
+    C: 'Drift creates new beneficial alleles'
+    D: 'Mutation rates increase due to migration'
+  answer: B
+  explain: 'If incoming alleles are not favored in the local environment, heavy gene flow can overwhelm local selection and slow or prevent adaptation.'
+- type: MultiChoice
+  text: 'Adaptive introgression refers to a case where:'
+  choices:
+    A: 'A beneficial allele spreads into a population via gene flow, helping adaptation without requiring a new mutation there'
+    B: 'A harmful allele spreads due to drift'
+    C: 'Selection removes all immigrant alleles'
+    D: 'Two populations become isolated, stopping gene flow'
+  answer: A
+  explain: 'Gene flow can transfer alleles that are advantageous in the recipient environment, accelerating adaptation by importing useful variation.'
+- type: MultiChoice
+  text: 'Natural selection is best defined as:'
+  choices:
+    A: 'Random change in allele frequencies due to chance events'
+    B: 'Nonrandom process where certain genotypes or phenotypes have higher survival and reproduction in a particular environment'
+    C: 'Movement of alleles between populations'
+    D: 'Formation of new alleles by mutation only'
+  answer: B
+  explain: 'Selection is environment-dependent and directional: fitness differences cause systematic changes in phenotype and allele frequencies.'
+- type: MultiChoice
+  text: 'In this unit, fitness is best described as:'
+  choices:
+    A: 'Physical strength or health'
+    B: 'A quantitative measure of the genetic information contributed to the next generation'
+    C: 'The ability to survive without reproducing'
+    D: 'The number of predators an organism avoids'
+  answer: B
+  explain: 'Fitness is about genetic contribution to future generations; survival matters mainly as it enables reproduction.'
+- type: MultiChoice
+  text: 'Adaptation is best described as:'
+  choices:
+    A: 'A non-heritable trait acquired during a lifetime'
+    B: 'A match between organisms and their environment produced by inherited traits that improve fitness'
+    C: 'Any trait that appears frequently, regardless of fitness'
+    D: 'A trait produced by genetic drift'
+  answer: B
+  explain: 'Adaptations are heritable traits shaped by selection because they increase fitness in a specific environment.'
+- type: MultiChoice
+  text: 'Directional selection is expected to:'
+  choices:
+    A: 'Favor intermediate phenotypes and reduce variance'
+    B: 'Favor one extreme phenotype, shifting the mean trait value over generations'
+    C: 'Favor both extremes and produce a bimodal distribution'
+    D: 'Maintain multiple forms at similar frequencies by definition'
+  answer: B
+  explain: 'Directional selection increases the frequency of one extreme phenotype (and associated alleles), pushing the distribution in one direction.'
+- type: MultiChoice
+  text: 'Disruptive selection is expected to:'
+  choices:
+    A: 'Favor both extremes and select against intermediate phenotypes'
+    B: 'Favor intermediate phenotypes and select against extremes'
+    C: 'Always eliminate variation'
+    D: 'Operate only through gene flow'
+  answer: A
+  explain: 'Disruptive selection penalizes intermediates, often producing or reinforcing bimodality in the trait distribution.'
+- type: MultiChoice
+  text: 'Stabilizing selection is expected to:'
+  choices:
+    A: 'Increase phenotypic variance by favoring extremes'
+    B: 'Reduce phenotypic variance by favoring intermediate phenotypes and selecting against extremes'
+    C: 'Randomly change allele frequencies'
+    D: 'Always create two peaks in the distribution'
+  answer: B
+  explain: 'Stabilizing selection keeps traits near an optimum, reducing extremes and often decreasing variance.'
+- type: MultiChoice
+  text: 'Balancing selection is notable because it:'
+  choices:
+    A: 'Always fixes the A allele'
+    B: 'Maintains two or more phenotypic forms, preserving variation rather than reducing it'
+    C: 'Is identical to genetic drift'
+    D: 'Requires mutation to stop'
+  answer: B
+  explain: 'Balancing selection maintains polymorphism by favoring multiple forms or producing stable equilibria, so variation persists.'
+- type: MultiChoice
+  text: 'Which example best matches balancing selection in the study guide?'
+  choices:
+    A: 'Human birth weight where average has lowest mortality'
+    B: 'Timema stick insects with poor intermediate camouflage'
+    C: 'Male mating strategies with alpha, beta, gamma forms maintained'
+    D: 'A drought favoring larger beaks'
+  answer: C
+  explain: 'Alternative male strategies can persist when they yield comparable fitness outcomes, maintaining multiple phenotypic forms.'
+- type: MultiChoice
+  text: 'Sexual selection is best defined as selection for traits that:'
+  choices:
+    A: 'Improve survival in harsh climates'
+    B: 'Improve chances of acquiring mates and reproducing'
+    C: 'Increase mutation rates'
+    D: 'Prevent migration'
+  answer: B
+  explain: 'Sexual selection targets mating success; traits can be favored even if they carry survival costs, as long as net reproductive success increases.'
+- type: MultiChoice
+  text: 'Sexual dimorphism refers to:'
+  choices:
+    A: 'Differences in phenotype between sexes often driven by sexual selection'
+    B: 'Differences between populations caused by drift'
+    C: 'Differences between alleles at a locus'
+    D: 'Differences only in genotype, never phenotype'
+  answer: A
+  explain: 'Dimorphism is male-female phenotype divergence (size, coloration, morphology), frequently produced by sexual selection.'
+- type: MultiChoice
+  text: 'The handicap hypothesis proposes that:'
+  choices:
+    A: 'Costly ornaments are unreliable signals because they reduce survival'
+    B: 'Only weak males can afford costly ornaments'
+    C: 'Costly ornaments can be honest signals of vigor because only high-quality individuals can bear the cost'
+    D: 'Female choice is random'
+  answer: C
+  explain: 'If an ornament is expensive to maintain, surviving with it can credibly indicate condition or genetic quality (signal honesty through cost).'
+- type: MultiChoice
+  text: 'The sexy son hypothesis proposes that female choice can be favored because:'
+  choices:
+    A: 'Females receive direct food gifts from males'
+    B: 'Females gain indirect genetic benefits through sons that inherit attractiveness and have high mating success'
+    C: 'Females reduce gene flow'
+    D: 'Females prevent selection from acting'
+  answer: B
+  explain: 'The benefit is indirect: attractive sons can produce more offspring, increasing the mothers genetic representation in future generations.'
+- type: MultiChoice
+  text: 'Adaptive radiation is best described as:'
+  choices:
+    A: 'Similar traits evolving in unrelated lineages due to similar environments'
+    B: 'Rapid diversification from a common ancestor into multiple forms adapted to different niches'
+    C: 'Loss of variation due to drift'
+    D: 'Allele frequencies staying constant under HWE'
+  answer: B
+  explain: 'Adaptive radiation generates many specialized species from a shared ancestor as populations exploit different ecological opportunities.'
+- type: MultiChoice
+  text: 'Convergent evolution refers to:'
+  choices:
+    A: 'Reciprocal evolutionary change between interacting species'
+    B: 'Similar traits evolving in lineages without recent common ancestry due to similar selection pressures'
+    C: 'Random allele frequency change in small populations'
+    D: 'Gene flow homogenizing populations'
+  answer: B
+  explain: 'Convergence is similarity not due to recent shared ancestry; it reflects similar problems producing similar evolutionary solutions.'
+- type: MultiChoice
+  text: 'Coevolution refers to:'
+  choices:
+    A: 'Similarity due to shared ancestry'
+    B: 'Reciprocal evolutionary change between interacting species (for example, flowers and pollinators)'
+    C: 'Allele frequency change only due to drift'
+    D: 'Random mating within a population'
+  answer: B
+  explain: 'Coevolution is an interaction-driven feedback: change in one species selects for change in the other and vice versa.'
+- type: MultiChoice
+  text: 'Which statement best distinguishes gene flow from genetic drift?'
+  choices:
+    A: 'Gene flow is random; drift is nonrandom'
+    B: 'Gene flow moves alleles between populations; drift changes allele frequencies by chance sampling within populations'
+    C: 'Gene flow requires small populations; drift requires large populations'
+    D: 'Gene flow is mutation; drift is selection'
+  answer: B
+  explain: 'Gene flow is migration-mediated allele transfer among populations; drift is stochastic allele-frequency change due to sampling variance.'
+- type: MultiChoice
+  text: 'Which statement best distinguishes natural selection from genetic drift?'
+  choices:
+    A: 'Selection is random; drift is nonrandom'
+    B: 'Selection is nonrandom with respect to fitness; drift is random sampling with respect to fitness'
+    C: 'Selection only occurs in small populations; drift only occurs in large populations'
+    D: 'Selection changes allele frequencies; drift does not'
+  answer: B
+  explain: 'Selection has direction because fitness differs among phenotypes; drift is stochastic and can move alleles up or down regardless of fitness.'
+- type: MultiChoice
+  text: 'A population has p = 0.8 for allele A. Under HWE, what is the expected frequency of aa individuals?'
+  choices:
+    A: '0.04'
+    B: '0.16'
+    C: '0.20'
+    D: '0.64'
+  answer: A
+  explain: 'If p = 0.8, then q = 0.2 and q^2 = 0.04.'
+- type: MultiChoice
+  text: 'A population has p = 0.55 and q = 0.45. Under HWE, what is the expected frequency of heterozygotes?'
+  choices:
+    A: '0.2475'
+    B: '0.495'
+    C: '0.3025'
+    D: '0.2025'
+  answer: B
+  explain: '2pq = 2*0.55*0.45 = 0.495.'
+- type: MultiChoice
+  text: 'Observed genotypes are AA = 10, Aa = 80, aa = 10 (N = 100). Under HWE with p = 0.5 and q = 0.5, what is the expected number of Aa individuals?'
+  choices:
+    A: '25'
+    B: '50'
+    C: '75'
+    D: '80'
+  answer: B
+  explain: 'Expected heterozygote frequency is 2pq = 0.5, so expected count is 0.5*100 = 50.'
+- type: MultiChoice
+  text: 'If observed genotype counts differ from HWE expectations, the most correct interpretation is:'
+  choices:
+    A: 'Evolution is definitely occurring due to selection specifically'
+    B: 'At least one HWE assumption is violated; one or more evolutionary processes or nonrandom mating may be operating'
+    C: 'The population is necessarily in HWE because allele frequencies still sum to 1'
+    D: 'Mutation must be the only cause'
+  answer: B
+  explain: 'Departures from HWE do not uniquely identify the cause; they indicate the null model is violated.'
+- type: MultiChoice
+  text: 'Which scenario would most directly violate the random mating assumption of HWE?'
+  choices:
+    A: 'Individuals preferentially mate with genetically similar partners'
+    B: 'The population is very large'
+    C: 'No individuals migrate in or out'
+    D: 'No mutations occur at the locus'
+  answer: A
+  explain: 'Assortative mating is nonrandom mating, which can shift genotype frequencies away from HWE even without changing allele frequencies immediately.'
+- type: MultiChoice
+  text: 'Which scenario most directly violates the no-drift assumption of HWE?'
+  choices:
+    A: 'A population size of 10,000 with random mating'
+    B: 'A population size of 30 with random mating'
+    C: 'No migration occurs'
+    D: 'No mutation occurs'
+  answer: B
+  explain: 'Small population size increases sampling error and drift, violating the large-population requirement.'
+- type: MultiChoice
+  text: 'Which scenario most directly violates the no-migration assumption of HWE?'
+  choices:
+    A: 'Individuals move into the population each generation and reproduce'
+    B: 'Individuals mate randomly'
+    C: 'The allele is recessive'
+    D: 'The allele is neutral'
+  answer: A
+  explain: 'Immigration or emigration changes allele frequencies by moving alleles across population boundaries.'
+- type: MultiChoice
+  text: 'Which scenario most directly violates the no-selection assumption of HWE?'
+  choices:
+    A: 'All genotypes have equal survival and reproduction'
+    B: 'One genotype has consistently higher reproductive success in the current environment'
+    C: 'The population is large'
+    D: 'No individuals migrate'
+  answer: B
+  explain: 'Fitness differences among genotypes cause selection, moving allele frequencies away from HWE expectations.'
+- type: MultiChoice
+  text: 'Which scenario most directly violates the no-mutation assumption of HWE?'
+  choices:
+    A: 'Alleles convert between forms at a measurable rate each generation'
+    B: 'Mating is random'
+    C: 'Population is large'
+    D: 'No migration occurs'
+  answer: A
+  explain: 'Mutation creates or transforms alleles, changing allele frequencies over time and violating the no-mutation condition.'
+- type: TrueFalse
+  text: 'If a population is in Hardy-Weinberg equilibrium, allele frequencies remain constant across generations at that locus.'
+  answer: true
+  explain: 'Under the HWE assumptions, there is no evolutionary process changing allele frequencies and random mating produces stable genotype proportions.'
+- type: TrueFalse
+  text: 'A locus can be polymorphic and still be in Hardy-Weinberg equilibrium.'
+  answer: true
+  explain: 'HWE allows multiple alleles to persist at fixed frequencies; polymorphism just means more than one allele is present.'
+- type: TrueFalse
+  text: 'Genetic drift is a nonrandom process because it favors alleles that increase fitness.'
+  answer: false
+  explain: 'Drift is random with respect to fitness; selection is the nonrandom process tied to fitness differences.'
+- type: TrueFalse
+  text: 'Genetic drift tends to reduce genetic variation within a population over time, especially in small populations.'
+  answer: true
+  explain: 'Drift can randomly fix or eliminate alleles, decreasing heterozygosity and allele diversity.'
+- type: TrueFalse
+  text: 'Gene flow always speeds up local adaptation by adding genetic variation.'
+  answer: false
+  explain: 'Gene flow can help if incoming alleles are beneficial (adaptive introgression), but it can hinder adaptation if incoming alleles are maladaptive (genetic swamping).'
+- type: TrueFalse
+  text: 'Natural selection can change both phenotype frequencies and allele frequencies.'
+  answer: true
+  explain: 'Selection acts through phenotype-fitness differences and produces evolutionary change as allele frequencies shift across generations.'
+- type: TrueFalse
+  text: 'Stabilizing selection typically increases variance by favoring extreme phenotypes.'
+  answer: false
+  explain: 'Stabilizing selection favors intermediate phenotypes and selects against extremes, often reducing variance.'
+- type: TrueFalse
+  text: 'Balancing selection is unusual compared with other forms of selection because it can maintain variation rather than erode it.'
+  answer: true
+  explain: 'Balancing selection maintains two or more forms, preventing fixation and preserving polymorphism.'
+- type: TrueFalse
+  text: 'Convergent evolution requires two species to interact directly with each other.'
+  answer: false
+  explain: 'Direct interaction is characteristic of coevolution. Convergence can occur in unrelated lineages facing similar environments without interacting.'
+- type: TrueFalse
+  text: 'Coevolution can occur in mutualistic or antagonistic interactions, such as flowers and pollinators.'
+  answer: true
+  explain: 'Reciprocal selective pressures can arise from cooperation or conflict, producing matched evolutionary change.'
+- type: ShortAnswer
+  text: 'Define evolution at the population level as used in this unit.'
+  answer: 'Evolution at the population level is a change in allele frequency over generations.'
+- type: ShortAnswer
+  text: 'State the two Hardy-Weinberg equations for allele and genotype frequencies (two alleles).'
+  answer: 'Allele frequencies: p + q = 1. Genotype frequencies: p^2 + 2pq + q^2 = 1.'
+- type: ShortAnswer
+  text: 'List the conditions (assumptions) required for Hardy-Weinberg equilibrium.'
+  answer: 'No selection, no mutation, no drift (large population), no migration, and random mating.'
+- type: ShortAnswer
+  text: 'Explain in one sentence what it means if observed genotype frequencies deviate from Hardy-Weinberg expectations.'
+  answer: 'At least one Hardy-Weinberg assumption is violated, implying the population is evolving and/or mating non-randomly at that locus.'
+- type: ShortAnswer
+  text: 'Define genetic drift and name two sources of random sampling that can cause it.'
+  answer: 'Genetic drift is random change in allele frequencies due to sampling; sources include the fertilization lottery and random mortality events (for example storms or lightning).'
+- type: ShortAnswer
+  text: 'Differentiate founder effect and bottleneck effect in one sentence each.'
+  answer: 'Founder effect: a new population is started by a small random subset of individuals from a source population. Bottleneck effect: a population experiences a sudden reduction in size so survivors are a random subset of the original gene pool.'
+- type: ShortAnswer
+  text: 'Define gene flow and give one reason it can interfere with local adaptation.'
+  answer: 'Gene flow is movement of alleles between populations via migration; it can interfere when maladaptive alleles enter a population and reduce the effectiveness of local selection (genetic swamping).'
+- type: ShortAnswer
+  text: 'Define adaptive introgression.'
+  answer: 'Adaptive introgression is the movement of beneficial alleles into a population via gene flow, allowing adaptation without requiring a new mutation in that population.'
+- type: ShortAnswer
+  text: 'Define fitness as used in natural selection.'
+  answer: 'Fitness is a quantitative measure of the genetic information an individual contributes to the next generation.'
+- type: ShortAnswer
+  text: 'Compare directional, disruptive, stabilizing, and balancing selection in terms of how each affects variation.'
+  answer: 'Directional shifts the mean toward one extreme; disruptive favors extremes and penalizes intermediates; stabilizing favors intermediates and reduces variance; balancing maintains multiple forms and preserves variation.'
 
-- answer: By triggering a massive release of pro-inflammatory cytokines from macrophages and other cells, which increases vascular permeability and causes plasma to leak into tissues, leading to hypotension, decreased organ perfusion, and ultimately multi-organ failure.
-  explain: Lipopolysaccharide (LPS) from gram-negative bacteria activates innate immune receptors and drives a cytokine storm. Systemic vasodilation and leaky capillaries cause intravascular volume depletion and low blood pressure. As perfusion to vital organs such as the kidneys, liver, and heart falls, their function deteriorates, resulting in the multi-organ failure characteristic of septic shock.
-  text: How can endotoxin (LPS) from gram-negative bacteria lead to septic shock and multi-organ failure?
-  type: ShortAnswer
+
