@@ -3,491 +3,765 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>ExamSim Web — Endless Mode</title>
+<title>ExamSim Web</title>
 <script src="https://cdn.jsdelivr.net/npm/js-yaml@4.1.0/dist/js-yaml.min.js"></script>
 <style>
   :root {
-    --bg:#0f1116; --panel:#111827; --fg:#e5e7eb; --sub:#cbd5e1; --accent:#2563eb;
-    --muted:#1f2937; --select:#0b1220; --green:#22c55e; --red:#ef4444;
+    --bg: #0f1116;
+    --panel: #111827;
+    --fg: #e5e7eb;
+    --sub: #cbd5e1;
+    --accent: #2563eb;
+    --accent-soft: #1d4ed8;
+    --muted: #1f2937;
+    --green: #22c55e;
+    --red: #ef4444;
   }
-  html,body{margin:0;height:100%;background:var(--bg);color:var(--fg);font:16px/1.4 "Segoe UI",system-ui,-apple-system,sans-serif}
-  .wrap{max-width:1100px;margin:0 auto;padding:20px}
-  .topbar{display:flex;gap:12px;align-items:center;margin-bottom:14px}
-  h1{font-size:22px;margin:0 12px 0 0}
-  .btn{background:var(--accent);color:#fff;border:none;border-radius:10px;padding:10px 16px;cursor:pointer}
-  .btn.secondary{background:#374151}
-  .exam-title{color:var(--sub);font-weight:600}
-  .panel{background:var(--panel);border:1px solid var(--muted);border-radius:14px;margin:12px 0}
-  .panel .head{padding:14px 16px 6px 16px;font-weight:700}
-  .q{padding:10px 16px 14px 16px;border-top:1px solid var(--muted)}
-  .q:first-child{border-top:none}
 
-  /* TITLE ABOVE, BAR BELOW */
-  .qtitle{font-weight:600;margin-bottom:6px}
-  .accRow{display:flex;justify-content:flex-end;gap:8px;margin:2px 0 8px}
-  @media (max-width:700px){ .accRow{justify-content:flex-start} }
+  html, body {
+    margin: 0;
+    min-height: 100%;
+    background:
+      radial-gradient(circle at top, rgba(37, 99, 235, 0.16), transparent 32%),
+      linear-gradient(180deg, #0b1020 0%, #0f1116 45%, #0f1116 100%);
+    color: var(--fg);
+    font: 16px/1.45 "Segoe UI", system-ui, -apple-system, sans-serif;
+  }
 
-  .choices .row{display:flex; align-items:center; gap:10px; margin:8px 0}
-  .choices input[type="radio"], .choices input[type="checkbox"]{transform:translateY(1px)}
-  .choices label{color:var(--sub); cursor:pointer}
+  .wrap {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 24px 20px 40px;
+  }
 
-  textarea{width:100%;min-height:110px;background:var(--bg);color:var(--fg);border:1px solid var(--muted);border-radius:8px;padding:8px;font-family:ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace}
-  textarea.error{border-color:var(--red); box-shadow:0 0 0 2px color-mix(in srgb, var(--red) 20%, transparent)}
-  select{background:var(--panel);color:var(--fg);border:1px solid var(--muted);border-radius:8px;padding:4px}
-  .legend{color:var(--sub);font-size:13px;margin:6px 0 8px}
-  .row{display:flex;gap:12px;align-items:center;margin:6px 0}
-  .explain{display:none;margin-top:8px;color:#94a3b8}
-  .foot{display:flex;justify-content:space-between;align-items:center;padding:14px 16px;border-top:1px solid var(--muted)}
-  .score{font-weight:700}
-  .mark{color:#94a3b8;font-size:13px}
-  .q.correct .qtitle{color:var(--green)}
-  .q.wrong .qtitle{color:var(--red)}
-  .hint{background:#0b1220;border:1px dashed #1f2a44;border-radius:10px;padding:8px 10px;margin-top:8px;color:#a5b4fc}
-  .controls{display:flex;gap:10px;flex-wrap:wrap}
-  input[type="file"]{display:none}
-  .filebtn{background:#1f2937;color:#e5e7eb;border:1px solid #374151;padding:8px 12px;border-radius:8px;cursor:pointer}
-  a.dl{color:#93c5fd;text-decoration:none}
-  .small{font-size:13px;color:#9ca3af}
-  .status{font-size:13px;margin-left:6px}
+  .topbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 16px;
+    margin-bottom: 18px;
+  }
 
-  /* accuracy bar */
-  .acc{display:flex; align-items:center; gap:8px; min-width:220px}
-  .acc .bar{width:160px;height:8px;background:var(--muted);border-radius:999px;overflow:hidden;display:flex}
-  .acc .g{height:100%;background:var(--green);width:0%}
-  .acc .r{height:100%;background:var(--red);width:100%}
-  .acc .txt{font-size:12px;color:var(--sub);min-width:70px;text-align:right}
-  .acc.hide{display:none}
-  .pill{padding:2px 8px;border-radius:999px;background:#0b1220;border:1px solid #243145;color:#a5b4fc;font-size:12px}
+  .brand h1 {
+    margin: 0;
+    font-size: 30px;
+    line-height: 1.05;
+  }
+
+  .brand .subhead {
+    color: #98a7c2;
+    margin-top: 8px;
+  }
+
+  .status-stack {
+    display: grid;
+    gap: 8px;
+    min-width: 280px;
+  }
+
+  .status-chip {
+    background: rgba(17, 24, 39, 0.82);
+    border: 1px solid #23314a;
+    border-radius: 999px;
+    padding: 8px 12px;
+    color: var(--sub);
+    font-size: 13px;
+  }
+
+  .tabs {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 18px;
+  }
+
+  .tab-btn,
+  .btn,
+  .filebtn {
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background 120ms ease, transform 120ms ease, border-color 120ms ease;
+  }
+
+  .tab-btn {
+    background: rgba(11, 18, 32, 0.9);
+    color: #bfd0ef;
+    border: 1px solid #243145;
+    padding: 11px 14px;
+    font-weight: 600;
+  }
+
+  .tab-btn.active {
+    background: linear-gradient(180deg, var(--accent), var(--accent-soft));
+    border-color: transparent;
+    color: #fff;
+  }
+
+  .tab-btn:hover,
+  .btn:hover,
+  .filebtn:hover {
+    transform: translateY(-1px);
+  }
+
+  .view {
+    display: none;
+  }
+
+  .view.active {
+    display: block;
+  }
+
+  .panel {
+    background: rgba(17, 24, 39, 0.92);
+    border: 1px solid var(--muted);
+    border-radius: 18px;
+    margin: 12px 0;
+    overflow: hidden;
+    box-shadow: 0 18px 45px rgba(0, 0, 0, 0.22);
+  }
+
+  .panel .head {
+    padding: 16px 18px 8px;
+    font-weight: 700;
+  }
+
+  .panel .body,
+  .q {
+    padding: 12px 18px 16px;
+  }
+
+  .q {
+    border-top: 1px solid var(--muted);
+  }
+
+  .q:first-child {
+    border-top: none;
+  }
+
+  .summary-grid,
+  .hero-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 12px;
+  }
+
+  .mini-card {
+    background: rgba(11, 18, 32, 0.86);
+    border: 1px solid #243145;
+    border-radius: 14px;
+    padding: 14px;
+  }
+
+  .mini-card .label {
+    color: #8fa1bf;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 6px;
+  }
+
+  .mini-card .value {
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  .mini-card .hint {
+    margin-top: 6px;
+    color: #95a6c6;
+    font-size: 13px;
+  }
+
+  .btn {
+    background: var(--accent);
+    color: #fff;
+    padding: 10px 16px;
+  }
+
+  .btn.secondary {
+    background: #374151;
+  }
+
+  .btn.status-indicator {
+    width: 100%;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 800;
+    letter-spacing: 0.04em;
+    padding: 14px 18px;
+    cursor: default;
+    border: 1px solid transparent;
+  }
+
+  .btn.status-indicator.online {
+    background: linear-gradient(180deg, #22c55e, #15803d);
+    color: #f0fdf4;
+  }
+
+  .btn.status-indicator.offline {
+    background: linear-gradient(180deg, #ef4444, #991b1b);
+    color: #fef2f2;
+  }
+
+  .btn:disabled,
+  .tab-btn:disabled {
+    opacity: 0.45;
+    cursor: not-allowed;
+    transform: none;
+  }
+
+  .controls {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .small,
+  .legend,
+  .status {
+    color: #9ca3af;
+    font-size: 13px;
+  }
+
+  textarea,
+  input[type="number"],
+  input[type="text"] {
+    width: 100%;
+    background: #0d1424;
+    color: var(--fg);
+    border: 1px solid var(--muted);
+    border-radius: 10px;
+    padding: 10px 12px;
+    box-sizing: border-box;
+  }
+
+  textarea {
+    min-height: 110px;
+    resize: vertical;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+  }
+
+  textarea.error {
+    border-color: var(--red);
+    box-shadow: 0 0 0 2px rgba(239, 68, 68, 0.16);
+  }
+
+  input[type="file"] {
+    display: none;
+  }
+
+  .filebtn {
+    display: inline-flex;
+    align-items: center;
+    background: #1f2937;
+    color: #e5e7eb;
+    border: 1px solid #374151;
+    padding: 10px 14px;
+  }
+
+  .empty-state {
+    border: 1px dashed #30425f;
+    background: rgba(11, 18, 32, 0.62);
+    border-radius: 16px;
+    padding: 18px;
+    color: #a8b7d3;
+  }
+
+  .split {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 12px;
+  }
+
+  .stack {
+    display: grid;
+    gap: 12px;
+  }
+
+  .file-list {
+    color: #9fb0cc;
+    font-size: 13px;
+    white-space: pre-wrap;
+  }
+
+  .job-list {
+    display: grid;
+    gap: 10px;
+  }
+
+  .job-item {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    align-items: center;
+    padding: 12px 14px;
+    border-radius: 14px;
+    background: rgba(11, 18, 32, 0.72);
+    border: 1px solid #243145;
+  }
+
+  .job-meta {
+    min-width: 0;
+  }
+
+  .job-name {
+    font-weight: 600;
+    word-break: break-word;
+  }
+
+  .job-copy {
+    color: #95a6c6;
+    font-size: 13px;
+    margin-top: 4px;
+  }
+
+  .job-status {
+    flex: 0 0 auto;
+    padding: 6px 10px;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: 700;
+    border: 1px solid #334155;
+    background: #111827;
+    color: #d1d5db;
+  }
+
+  .job-status.processing {
+    color: #bfdbfe;
+    border-color: #3b82f6;
+    background: rgba(37, 99, 235, 0.16);
+  }
+
+  .job-status.completed {
+    color: #bbf7d0;
+    border-color: #22c55e;
+    background: rgba(34, 197, 94, 0.14);
+  }
+
+  .job-status.error {
+    color: #fecaca;
+    border-color: #ef4444;
+    background: rgba(239, 68, 68, 0.14);
+  }
+
+  .loading-dots {
+    display: inline-flex;
+    gap: 4px;
+    margin-left: 8px;
+    vertical-align: middle;
+  }
+
+  .loading-dots span {
+    width: 6px;
+    height: 6px;
+    border-radius: 999px;
+    background: #93c5fd;
+    animation: pulseDots 1.1s infinite ease-in-out;
+  }
+
+  .loading-dots span:nth-child(2) { animation-delay: 0.15s; }
+  .loading-dots span:nth-child(3) { animation-delay: 0.3s; }
+
+  @keyframes pulseDots {
+    0%, 80%, 100% { transform: scale(0.6); opacity: 0.45; }
+    40% { transform: scale(1); opacity: 1; }
+  }
+
+  .dropzone {
+    border: 1px dashed #385072;
+    background: rgba(11, 18, 32, 0.72);
+    border-radius: 16px;
+    padding: 20px;
+    color: #b8c7e2;
+    transition: border-color 120ms ease, background 120ms ease, transform 120ms ease;
+  }
+
+  .dropzone.active {
+    border-color: #60a5fa;
+    background: rgba(37, 99, 235, 0.12);
+    transform: translateY(-1px);
+  }
+
+  .dropzone-title {
+    font-weight: 700;
+    margin-bottom: 6px;
+  }
+
+  .dropzone-copy {
+    color: #95a6c6;
+    font-size: 14px;
+  }
+
+  .qtitle {
+    font-weight: 600;
+    margin-bottom: 6px;
+  }
+
+  .accRow {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+    margin: 2px 0 8px;
+  }
+
+  .choices .row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 8px 0;
+  }
+
+  .choices input[type="radio"],
+  .choices input[type="checkbox"] {
+    transform: translateY(1px);
+  }
+
+  .choices label {
+    color: var(--sub);
+    cursor: pointer;
+  }
+
+  .row {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    margin: 6px 0;
+  }
+
+  .explain {
+    display: none;
+    margin-top: 8px;
+    color: #94a3b8;
+  }
+
+  .foot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 18px;
+    border-top: 1px solid var(--muted);
+  }
+
+  .score {
+    font-weight: 700;
+  }
+
+  .mark {
+    color: #94a3b8;
+    font-size: 13px;
+  }
+
+  .q.correct .qtitle {
+    color: var(--green);
+  }
+
+  .q.wrong .qtitle {
+    color: var(--red);
+  }
+
+  .hint-box {
+    background: #0b1220;
+    border: 1px dashed #1f2a44;
+    border-radius: 10px;
+    padding: 8px 10px;
+    margin-top: 8px;
+    color: #a5b4fc;
+  }
+
+  .acc {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    min-width: 220px;
+  }
+
+  .acc .bar {
+    width: 160px;
+    height: 8px;
+    background: var(--muted);
+    border-radius: 999px;
+    overflow: hidden;
+    display: flex;
+  }
+
+  .acc .g {
+    height: 100%;
+    background: var(--green);
+    width: 0%;
+  }
+
+  .acc .r {
+    height: 100%;
+    background: var(--red);
+    width: 100%;
+  }
+
+  .acc .txt {
+    font-size: 12px;
+    color: var(--sub);
+    min-width: 70px;
+    text-align: right;
+  }
+
+  .acc.hide {
+    display: none;
+  }
+
+  .pill {
+    padding: 2px 8px;
+    border-radius: 999px;
+    background: #0b1220;
+    border: 1px solid #243145;
+    color: #a5b4fc;
+    font-size: 12px;
+  }
+
+  @media (max-width: 860px) {
+    .split {
+      grid-template-columns: 1fr;
+    }
+
+    .foot,
+    .topbar,
+    .accRow {
+      align-items: flex-start;
+    }
+  }
 </style>
 </head>
 <body>
 <div class="wrap">
   <div class="topbar">
-    <h1>ExamSim Web</h1>
-    <div class="exam-title" id="examName">— no exam loaded</div>
-  </div>
-
-  <div class="panel">
-    <div class="head">Load exam</div>
-    <div class="q">
-      <div class="controls">
-        <label class="filebtn">Choose YAML… <input id="fileInput" type="file" accept=".yml,.yaml" /></label>
-        <button class="btn secondary" id="demoBtn">Load sample</button>
-        <button class="btn secondary" id="exam5Btn">Load Exam5</button>
-        <span class="small">Paste or pick a YAML that follows desktop ExamSim.</span>
-      </div>
+    <div class="brand">
+      <h1>ExamSim Web</h1>
+      <div class="subhead">Prototype shell for Endless Mode, generator flow, and exam selection.</div>
     </div>
-    <div class="q">
-      <div class="legend">Or paste YAML below</div>
-      <textarea id="yamlPaste" placeholder="Paste ExamSim YAML here…"></textarea>
-      <div class="controls">
-        <button class="btn" id="loadFromTextBtn">Load from text</button>
-        <button class="btn secondary" id="saveTextBtn">Download pasted YAML</button>
-        <span id="pasteStatus" class="status small"></span>
-      </div>
+    <div class="status-stack">
+      <div class="status-chip" id="currentExamChip">Current exam: none loaded</div>
+      <div class="status-chip" id="selectedExamChip">Selected exam: none selected</div>
     </div>
   </div>
 
-  <!-- Study settings -->
-  <div class="panel" id="settingsPanel" style="display:none;">
-    <div class="head">Study settings</div>
-    <div class="q">
-      <div class="controls">
-        <label>Iterations:
-          <input id="iterInput" type="number" min="1" step="1" value="3" style="width:80px;margin-left:6px;background:var(--panel);color:var(--fg);border:1px solid var(--muted);border-radius:8px;padding:6px">
-        </label>
-        <label style="display:flex;align-items:center;gap:6px;">
-          <input id="accToggle" type="checkbox" checked> Show Accuracy
-        </label>
-        <button class="btn secondary" id="shuffleBtn" title="Rebuild and reshuffle with current settings">Shuffle now</button>
-        <button class="btn" id="applyBtn" title="Save settings and rebuild">Apply</button>
-        <span id="counts" class="pill">Base: — • Iter: 3 • Rendered: —</span>
-      </div>
-      <div class="small">Each question is duplicated <b>Iterations</b> times, then the whole set is shuffled.</div>
-    </div>
+  <div class="tabs" id="tabBar">
+    <button class="tab-btn active" data-tab="endless">Endless Mode</button>
+    <button class="tab-btn" data-tab="generator">Exam Generator</button>
+    <button class="tab-btn" data-tab="select">Select Exam</button>
   </div>
 
-  <div id="examContainer" class="panel" style="display:none;">
-    <div class="head" id="examHeader"></div>
-    <div id="qList"></div>
-    <div class="foot">
-      <div class="score" id="scoreBox">Score: —</div>
-      <div>
-        <button class="btn" id="submitBtn">Submit</button>
-        <button class="btn secondary" id="resetBtn">Reset</button>
+  <section class="view active" data-view="endless">
+    <div class="panel">
+      <div class="head">Endless Mode</div>
+      <div class="body">
+        <div class="summary-grid">
+          <div class="mini-card">
+            <div class="label">Selected Exam</div>
+            <div class="value" id="endlessSelectedExamName">None selected</div>
+            <div class="hint">Phase 2 will load the current selection into Endless Mode.</div>
+          </div>
+          <div class="mini-card">
+            <div class="label">Saved Exams</div>
+            <div class="value" id="savedExamCount">0</div>
+            <div class="hint">Local persistent storage is now wired in.</div>
+          </div>
+          <div class="mini-card">
+            <div class="label">Session State</div>
+            <div class="value" id="sessionStateLabel">Idle</div>
+            <div class="hint">Active run persistence will be implemented next.</div>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
 
-  <div id="tips" class="small">
-    Tip: click the <b>?</b> on any question to grade just that item and show its explanation without submitting. That attempt counts toward accuracy.
-  </div>
+    <div class="panel">
+      <div class="head">Load exam</div>
+      <div class="q">
+        <div class="controls">
+          <label class="filebtn">Choose YAML... <input id="fileInput" type="file" accept=".yml,.yaml" /></label>
+          <button class="btn secondary" id="demoBtn">Load sample</button>
+          <button class="btn secondary" id="loadSelectedExamBtn" disabled>Load Selected Exam</button>
+          <span class="small">Existing direct load flow remains available while the saved-exam flow is being built.</span>
+        </div>
+      </div>
+      <div class="q">
+        <div class="legend">Or paste YAML below</div>
+        <textarea id="yamlPaste" placeholder="Paste ExamSim YAML here..."></textarea>
+        <div class="controls">
+          <button class="btn" id="loadFromTextBtn">Load from text</button>
+          <button class="btn secondary" id="saveTextBtn">Download pasted YAML</button>
+          <span id="pasteStatus" class="status"></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel" id="settingsPanel" style="display:none;">
+      <div class="head">Study settings</div>
+      <div class="q">
+        <div class="controls">
+          <label>Iterations:
+            <input id="iterInput" type="number" min="1" step="1" value="3" style="width:88px;">
+          </label>
+          <label style="display:flex;align-items:center;gap:6px;">
+            <input id="accToggle" type="checkbox" checked> Show Accuracy
+          </label>
+          <button class="btn secondary" id="shuffleBtn" title="Rebuild and reshuffle with current settings">Shuffle now</button>
+          <button class="btn" id="applyBtn" title="Save settings and rebuild">Apply</button>
+          <span id="counts" class="pill">Base: - • Iter: 3 • Rendered: -</span>
+        </div>
+        <div class="small">Each question is duplicated <b>Iterations</b> times, then the whole set is shuffled.</div>
+      </div>
+    </div>
+
+    <div id="examContainer" class="panel" style="display:none;">
+      <div class="head" id="examHeader"></div>
+      <div id="qList"></div>
+      <div class="foot">
+        <div class="score" id="scoreBox">Score: -</div>
+        <div class="controls">
+          <button class="btn" id="submitBtn">Submit</button>
+          <button class="btn secondary" id="resetBtn">Reset</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="tips" class="small">
+      Tip: click the <b>?</b> on any question to grade just that item and show its explanation without submitting. That attempt counts toward accuracy.
+    </div>
+  </section>
+
+  <section class="view" data-view="generator">
+    <div class="panel">
+      <div class="head">Exam Generator</div>
+      <div class="body split">
+        <div class="stack">
+          <button class="btn status-indicator offline" id="generatorOnlineBtn" type="button" aria-live="polite">Generator Offline</button>
+          <div class="mini-card">
+            <div class="label">Exam Name</div>
+            <input id="generatorExamName" type="text" placeholder="Biology Chapter 5" />
+          </div>
+          <div class="mini-card">
+            <div class="label">Homework Upload</div>
+            <div class="dropzone" id="generatorDropzone">
+              <div class="dropzone-title">Drag and drop homework here</div>
+              <div class="dropzone-copy">Or use the attach button below on desktop or mobile.</div>
+            </div>
+            <div class="controls">
+              <label class="filebtn">Attach homework... <input id="generatorFileInput" type="file" multiple accept=".pdf,.txt,.md,.csv,image/*" /></label>
+              <button class="btn" id="generateExamBtn">Generate YAML</button>
+            </div>
+            <div class="hint">Supports text files, PDFs, and images. PDFs and images are sent to the model directly.</div>
+            <div class="file-list" id="generatorFileList">No homework attached.</div>
+            <div class="status" id="generatorStatus">Local API idle.</div>
+            <div id="generatorProgressSummary" class="status"></div>
+            <div id="generatorProgressList" class="job-list"></div>
+          </div>
+        </div>
+        <div class="mini-card">
+          <div class="label">Flow</div>
+          <div class="hint">Attach homework, generate structured questions through the local backend, review the YAML, then load it into Endless Mode or export it later.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel">
+      <div class="head">Generated YAML</div>
+      <div class="body stack">
+        <div class="summary-grid">
+          <div class="mini-card">
+            <div class="label">Draft Exam Name</div>
+            <div class="value" id="generatorDraftName">Untitled exam</div>
+          </div>
+          <div class="mini-card">
+            <div class="label">Draft Files</div>
+            <div class="value" id="generatorDraftFiles">0</div>
+          </div>
+          <div class="mini-card">
+            <div class="label">Draft YAML</div>
+            <div class="value" id="generatorDraftYaml">Empty</div>
+          </div>
+        </div>
+        <textarea id="generatorYamlPreview" placeholder="Generated YAML will appear here."></textarea>
+        <div class="controls">
+          <button class="btn" id="saveGeneratedExamBtn" disabled>Export and Save as Exam</button>
+          <button class="btn secondary" id="downloadGeneratedYamlBtn" disabled>Download YAML</button>
+          <button class="btn secondary" id="loadGeneratedYamlBtn" disabled>Load In Endless Mode</button>
+          <button class="btn secondary" id="clearGeneratedExamBtn">Clear Exam</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="view" data-view="select">
+    <div class="panel">
+      <div class="head">Select Exam</div>
+      <div class="body">
+        <div class="hero-grid">
+          <div class="mini-card">
+            <div class="label">Saved Exams</div>
+            <div class="value" id="selectSavedCount">0</div>
+            <div class="hint">Sorted by most recently created once the full page lands.</div>
+          </div>
+          <div class="mini-card">
+            <div class="label">Selected Exam</div>
+            <div class="value" id="selectCurrentName">None selected</div>
+            <div class="hint">Single-selection model is already reflected in app state.</div>
+          </div>
+          <div class="mini-card">
+            <div class="label">Recently Deleted</div>
+            <div class="value" id="deletedExamCount">0</div>
+            <div class="hint">Recovery storage is reserved in app state now.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel">
+      <div class="head">Saved Exams</div>
+      <div class="body">
+        <div id="selectExamList" class="stack"></div>
+      </div>
+    </div>
+
+    <div class="panel">
+      <div class="head">Recently Deleted</div>
+      <div class="body">
+        <div id="recentlyDeletedList" class="stack"></div>
+      </div>
+    </div>
+  </section>
 </div>
 
 <script>
-/* ---------- helpers ---------- */
 const $ = sel => document.querySelector(sel);
-const el = (tag, cls) => { const e = document.createElement(tag); if (cls) e.className = cls; return e; };
-const shuffle = arr => { for (let i=arr.length-1;i>0;i--){ const j=Math.floor(Math.random()*(i+1)); [arr[i],arr[j]]=[arr[j],arr[i]] } return arr; };
-function dl(filename, text) {
-  const blob = new Blob([text], {type: "text/plain;charset=utf-8"});
-  const a = document.createElement("a");
-  a.href = URL.createObjectURL(blob);
-  a.download = filename;
-  a.click();
-  setTimeout(()=>URL.revokeObjectURL(a.href), 4000);
-}
-function toBool(v){ if (typeof v === "boolean") return v; if (typeof v === "string") return v.trim().toLowerCase().startsWith("t"); return false; }
-function hashStr(s){ let h=0; for (let i=0;i<s.length;i++){ h=(h<<5)-h + s.charCodeAt(i); h|=0; } return ("00000000"+(h>>>0).toString(16)).slice(-8); }
+const $$ = sel => [...document.querySelectorAll(sel)];
+const el = (tag, cls) => {
+  const node = document.createElement(tag);
+  if (cls) node.className = cls;
+  return node;
+};
 
-/* ---------- globals ---------- */
-let BASE_QUESTIONS = [];
-let QUESTIONS = [];
-let RENDER = [];
-let EXAM_NAME = "Exam";
-let SETTINGS = { iterations: 3, showAccuracy: true };
-const LS_SETTINGS = "examsim_settings_v2";
+const APP_STORAGE_KEY = "examsim_app_state_v1";
+const SETTINGS_KEY = "examsim_settings_v2";
 const PASTE_KEY = "examsim_yaml_paste";
-let ACCURACY = {};
-let BAR_REGISTRY = {};
 
-/* ---------- accuracy persistence ---------- */
-const accKey = () => "examsim_acc_"+EXAM_NAME;
-function loadAccuracy(){ try{ ACCURACY = JSON.parse(localStorage.getItem(accKey())||"{}"); }catch{ ACCURACY={}; } }
-function saveAccuracy(){ localStorage.setItem(accKey(), JSON.stringify(ACCURACY)); }
-function getAcc(baseId){ return ACCURACY[baseId] || {c:0,t:0}; }
-function recordAttempt(baseId, correct){
-  const rec = ACCURACY[baseId] || {c:0,t:0};
-  rec.t += 1; if (correct) rec.c += 1;
-  ACCURACY[baseId] = rec; saveAccuracy(); updateAccBar(baseId);
-}
-function updateAccBar(baseId){
-  const rec = getAcc(baseId);
-  const pct = rec.t ? Math.round((rec.c/rec.t)*100) : 0;
-  const greenW = rec.t ? (rec.c/rec.t)*100 : 0;
-  const redW   = 100 - greenW;
-  const pack = BAR_REGISTRY[baseId] || {bars:[],txts:[]};
-  pack.bars.forEach(([g,r])=>{ g.style.width = greenW+"%"; r.style.width = redW+"%"; });
-  pack.txts.forEach(t=> t.textContent = `${pct}% (${rec.c}/${rec.t})`);
-}
-
-/* ---------- load & normalize ---------- */
-function normalizeQuestion(q){
-  const t = q.type;
-  const base = { type:t, text: String(q.text||"").trim(), explain: (q.explain ?? "").toString() };
-  if (t === "TrueFalse") return { ...base, answer: toBool(q.answer) };
-  if (t === "MultiChoice"){
-    const ch = q.choices||{};
-    return { ...base, choices: ch, answer: String(q.answer||"").toUpperCase() };
+const DEFAULT_APP_STATE = {
+  currentTab: "endless",
+  library: [],
+  selectedExamId: null,
+  recentlyDeleted: [],
+  endlessSession: null,
+  generatorDraft: {
+    examName: "",
+    yamlText: "",
+    files: [],
+    currentJobId: null,
+    jobSnapshot: null
   }
-  if (t === "MultiSelect"){
-    const ch = q.choices||{};
-    let ans = q.answer ?? [];
-    if (typeof ans === "string") ans = [ans];
-    ans = ans.map(s => String(s).toUpperCase()).sort();
-    return { ...base, choices: ch, answer: ans };
-  }
-  if (t === "Matching"){ return { ...base, pairs: q.pairs, options: q.options, answer: q.answer }; }
-  if (t === "ShortAnswer" || t === "ProblemScen"){ return { ...base, answer: "" }; }
-  throw new Error("Unsupported type: " + t);
-}
+};
 
-function loadYAML(text, name="Exam"){
-  let data;
-  try{
-    data = jsyaml.load(text);
-    if (!Array.isArray(data)) throw new Error("Top-level YAML must be a list of question objects.");
-  }catch(e){
-    alert("YAML parse error:\n" + e.message);
-    return;
-  }
-  BASE_QUESTIONS = data.map(normalizeQuestion).map(q=>{
-    const id = hashStr(JSON.stringify(q));
-    return { ...q, baseId:id };
-  });
-  EXAM_NAME = name.replace(/\.(yml|yaml)$/i,"");
-  $("#examName").textContent = "— " + EXAM_NAME;
-  $("#settingsPanel").style.display = "block";
-  try{
-    SETTINGS = JSON.parse(localStorage.getItem(LS_SETTINGS) || "{}");
-    SETTINGS.iterations = Math.max(1, Number(SETTINGS.iterations||3));
-    SETTINGS.showAccuracy = SETTINGS.showAccuracy !== false;
-  }catch{ SETTINGS = {iterations:3, showAccuracy:true}; }
-  $("#iterInput").value = SETTINGS.iterations;
-  $("#accToggle").checked = SETTINGS.showAccuracy;
-
-  loadAccuracy();
-  buildDeck();
-  renderExam();
-}
-
-function buildDeck(){
-  $("#counts").textContent = `Base: ${BASE_QUESTIONS.length} • Iter: ${SETTINGS.iterations} • Rendered: ${BASE_QUESTIONS.length*SETTINGS.iterations}`;
-  const base = shuffle([...BASE_QUESTIONS]);
-  QUESTIONS = [];
-  for (let k=0;k<SETTINGS.iterations;k++){
-    base.forEach(q => QUESTIONS.push({ ...q, cloneOf:q.baseId, seq:k }));
-  }
-  shuffle(QUESTIONS);
-}
-
-/* ---------- render ---------- */
-function renderExam(){
-  RENDER = [];
-  BAR_REGISTRY = {};
-  $("#examContainer").style.display = "block";
-  $("#examHeader").textContent = `${EXAM_NAME} — ${QUESTIONS.length} Questions (base ${BASE_QUESTIONS.length} × ${SETTINGS.iterations})`;
-  $("#scoreBox").textContent = "Score: —";
-
-  const qList = $("#qList");
-  qList.innerHTML = "";
-
-  QUESTIONS.forEach((q, idx) => {
-    const qDiv   = el("div","q");
-
-    // TITLE (line 1)
-    const title  = el("div","qtitle");
-    title.textContent = `${idx+1}. ${q.text}`;
-    qDiv.appendChild(title);
-
-    // ACCURACY (line 2)
-    const accWrap = createAccUI(q.baseId);
-    const accRow  = el("div","accRow");
-    accRow.appendChild(accWrap.wrap);
-    if (!SETTINGS.showAccuracy) accWrap.wrap.classList.add("hide");
-    qDiv.appendChild(accRow);
-
-    const area  = el("div","area"); qDiv.appendChild(area);
-
-    const meta = { type:q.type, node:qDiv, titleNode:title, explain:q.explain, baseId:q.baseId, counted:false, instanceId: `${q.baseId}_${idx}_${Date.now()%1e6}` };
-
-    if (q.type === "TrueFalse") {
-      const choices = el("div","choices");
-      [["T","True"],["F","False"]].forEach(([v,lab])=>{
-        const id = `q${idx}_${v}`;
-        const row = el("div","row");
-        const r = el("input"); r.type="radio"; r.name=`q${idx}`; r.value=v; r.id=id;
-        const L = el("label"); L.setAttribute("for", id); L.textContent=`${lab}`;
-        row.appendChild(r); row.appendChild(L); choices.appendChild(row);
-      });
-      area.appendChild(choices);
-      meta.getUser = () => {
-        const sel = [...choices.querySelectorAll("input[type=radio]")].find(i=>i.checked);
-        return sel ? sel.value : "";
-      };
-      meta.grade = () => {
-        const val = meta.getUser(); const ans = q.answer ? "T" : "F";
-        colorize(qDiv, val && val===ans);
-        markChoicesABCD(choices, ans, val);
-        return (val===ans) ? 1 : 0;
-      };
-
-    } else if (q.type === "MultiChoice") {
-      const choices = el("div","choices");
-      ["A","B","C","D"].forEach(letter=>{
-        const id = `q${idx}_${letter}`;
-        const row = el("div","row");
-        const r = el("input"); r.type="radio"; r.name=`q${idx}`; r.value=letter; r.id=id;
-        const L = el("label"); L.setAttribute("for", id);
-        L.textContent = `${letter}. ${q.choices?.[letter] ?? ""}`;
-        row.appendChild(r); row.appendChild(L); choices.appendChild(row);
-      });
-      area.appendChild(choices);
-      meta.getUser = () => {
-        const sel = [...choices.querySelectorAll("input[type=radio]")].find(i=>i.checked);
-        return sel ? sel.value : "";
-      };
-      meta.grade = () => {
-        const val = meta.getUser(); const ans = q.answer;
-        colorize(qDiv, val && val===ans);
-        markChoicesABCD(choices, ans, val);
-        return (val===ans) ? 1 : 0;
-      };
-
-    } else if (q.type === "MultiSelect") {
-      const choices = el("div","choices");
-      ["A","B","C","D"].forEach(letter=>{
-        const id = `q${idx}_${letter}`;
-        const row = el("div","row");
-        const c = el("input"); c.type="checkbox"; c.value=letter; c.id=id;
-        const L = el("label"); L.setAttribute("for", id);
-        L.textContent = `${letter}. ${q.choices?.[letter] ?? ""}`;
-        row.appendChild(c); row.appendChild(L); choices.appendChild(row);
-      });
-      area.appendChild(choices);
-      meta.getUser = () => ([...choices.querySelectorAll("input[type=checkbox]:checked")].map(i=>i.value).sort());
-      meta.grade = () => {
-        const picks = meta.getUser(); const ans = (q.answer||[]).slice().sort();
-        const ok = JSON.stringify(picks)===JSON.stringify(ans);
-        colorize(qDiv, ok);
-        markChoicesMulti(choices, ans, picks);
-        return ok ? 1 : 0;
-      };
-
-    } else if (q.type === "Matching") {
-      const legend = el("div","legend");
-      legend.textContent = "Options: " + ["A","B","C","D"].map(k=>`${k}: ${q.options[k]}`).join("    ");
-      area.appendChild(legend);
-      const rows = [];
-      [1,2,3,4].forEach(n=>{
-        const row = el("div","row");
-        const left = el("div"); left.textContent = `${n}) ${q.pairs[n] || q.pairs[String(n)] || ""}`;
-        const sel = el("select");
-        ["","A","B","C","D"].forEach(k=>{ const o=el("option"); o.value=k; o.textContent=k||"—"; sel.appendChild(o); });
-        row.appendChild(left); row.appendChild(sel); area.appendChild(row);
-        rows.push({left, sel});
-      });
-      meta.getUser = () => { const m={}; [1,2,3,4].forEach((n,i)=> m[n] = rows[i].sel.value || ""); return m; };
-      meta.grade = () => {
-        const user = meta.getUser(); const ans = q.answer; let score=0;
-        [1,2,3,4].forEach((n,i)=>{ const ok = (user[n] === (ans[n] || ans[String(n)])); rows[i].left.style.color = ok ? "var(--green)" : "var(--red)"; if (ok) score++; });
-        colorize(qDiv, score===4); return score/4;
-      };
-
-    } else if (q.type === "ShortAnswer" || q.type === "ProblemScen") {
-      const ta = el("textarea"); ta.placeholder = "Type your answer…";
-      const mark = el("label","mark");
-      const cb = el("input"); cb.type="checkbox"; cb.style.marginRight="6px";
-      mark.appendChild(cb); mark.appendChild(document.createTextNode("Mark as correct (manual)"));
-      area.appendChild(ta); area.appendChild(mark);
-      meta.getUser = () => ({ text: ta.value.trim(), marked: cb.checked });
-      meta.grade = () => { const u = meta.getUser(); const ok = !!u.marked; colorize(qDiv, ok); return ok ? 1 : 0; };
-    }
-
-    // explanation + peek
-    const expl = el("div","explain");
-    const hint = el("div","hint"); hint.textContent = q.explain || "(no explanation)";
-    expl.appendChild(hint); area.appendChild(expl);
-
-    const ctrl = el("div"); ctrl.style.display="flex"; ctrl.style.gap="10px"; ctrl.style.marginTop="8px";
-    const peekBtn = el("button","btn secondary"); peekBtn.textContent = " ?"; peekBtn.title = "Grade this question and show the explanation (does not submit)";
-    peekBtn.addEventListener("click", ()=>{
-      const res = meta.grade();
-      if (!meta.counted){ recordAttempt(meta.baseId, res >= 1); meta.counted = true; }
-      expl.style.display = "block";
-    });
-    ctrl.appendChild(peekBtn); area.appendChild(ctrl);
-
-    qList.appendChild(qDiv);
-    RENDER.push(meta);
-
-    updateAccBar(q.baseId);
-  });
-
-  $("#submitBtn").onclick = submitAll;
-  $("#resetBtn").onclick = ()=>{ buildDeck(); renderExam(); };
-}
-
-function createAccUI(baseId){
-  const wrap = el("div","acc");
-  const bar  = el("div","bar");
-  const g = el("div","g"), r = el("div","r");
-  bar.appendChild(g); bar.appendChild(r);
-  const txt  = el("div","txt"); txt.textContent = "0% (0/0)";
-  wrap.appendChild(bar); wrap.appendChild(txt);
-  const reg = BAR_REGISTRY[baseId] || {bars:[], txts:[]};
-  reg.bars.push([g,r]); reg.txts.push(txt);
-  BAR_REGISTRY[baseId] = reg;
-  return {wrap, bar, g, r, txt};
-}
-
-/* ---------- mark helpers ---------- */
-function colorize(node, ok){ node.classList.remove("correct","wrong"); node.classList.add(ok?"correct":"wrong"); }
-function markChoicesABCD(container, ans, picked){
-  container.querySelectorAll("label").forEach(l=>l.style.color="var(--sub)");
-  container.querySelectorAll("input").forEach(i=>{
-    const lab = container.querySelector(`label[for="${i.id}"]`);
-    if (!lab) return;
-    if (i.value===ans) lab.style.color="var(--green)";
-    if (picked && i.value===picked && picked!==ans) lab.style.color="var(--red)";
-  });
-}
-function markChoicesMulti(container, ansList, picks){
-  container.querySelectorAll("label").forEach(l=>l.style.color="var(--sub)");
-  container.querySelectorAll("input[type=checkbox]").forEach(i=>{
-    const lab = container.querySelector(`label[for="${i.id}"]`);
-    if (!lab) return;
-    if (ansList.includes(i.value)) lab.style.color="var(--green)";
-    if (picks.includes(i.value) && !ansList.includes(i.value)) lab.style.color="var(--red)";
-  });
-}
-
-/* ---------- grading ---------- */
-function submitAll(){
-  let got = 0;
-  let lines = [];
-  RENDER.forEach((m,i)=>{
-    const q = QUESTIONS[i];
-    const score = m.grade();
-    got += score;
-    if (!m.counted){ recordAttempt(m.baseId, score >= 1); m.counted = true; }
-    const userStr = userAsString(m, q);
-    const expectStr = keyAsString(q);
-    const status = (q.type==="Matching" ? `${Math.round(score*4)}/4` : (score>=1 ? "CORRECT" : "WRONG"));
-    lines.push(`Q${i+1} [${q.type}] -> ${status}\n  Your: ${userStr}\n  Key:  ${expectStr}`);
-  });
-  const pct = (got / RENDER.length) * 100;
-  $("#scoreBox").textContent = `Score: ${got.toFixed(2)}/${RENDER.length}  (${pct.toFixed(1)}%)`;
-
-  const stamp = new Date().toISOString().replace('T',' ').slice(0,19);
-  const head = [
-    `Exam: ${EXAM_NAME}`,
-    `Timestamp: ${stamp}`,
-    `Score: ${got.toFixed(2)}/${RENDER.length} (${pct.toFixed(1)}%)`,
-    "-".repeat(60)
-  ];
-  dl(`ExamSim_${Date.now()}.txt`, head.concat(lines).join("\n")+"\n");
-}
-
-function userAsString(m, q){
-  try{
-    if (q.type==="TrueFalse") return (m.getUser()||"(blank)");
-    if (q.type==="MultiChoice") return (m.getUser()||"(blank)");
-    if (q.type==="MultiSelect"){ const arr = m.getUser(); return arr.length?arr.join(","):"(none)"; }
-    if (q.type==="Matching"){ const mm=m.getUser(); return [1,2,3,4].map(n=>`${n}->${mm[n]||"_"}`).join(", "); }
-    if (q.type==="ShortAnswer"||q.type==="ProblemScen"){ const u=m.getUser(); return (u.text||"(blank)") + (u.marked?"  [MARKED CORRECT]":""); }
-  }catch(e){}
-  return "";
-}
-function keyAsString(q){
-  if (q.type==="TrueFalse") return q.answer ? "T" : "F";
-  if (q.type==="MultiChoice") return q.answer;
-  if (q.type==="MultiSelect") return (q.answer||[]).join(",");
-  if (q.type==="Matching") return [1,2,3,4].map(n=>`${n}->${q.answer[n]||q.answer[String(n)]}`).join(", ");
-  if (q.type==="ShortAnswer"||q.type==="ProblemScen") return "(manual)";
-  return "";
-}
-
-/* ---------- file + sample + paste ---------- */
-$("#fileInput").addEventListener("change", async (e)=>{
-  const f = e.target.files[0]; if (!f) return;
-  const txt = await f.text();
-  loadYAML(txt, f.name);
-});
-const pasteArea = $("#yamlPaste"), pasteStatus = $("#pasteStatus");
-pasteArea.value = localStorage.getItem(PASTE_KEY) || "";
-pasteArea.addEventListener("input", ()=>{
-  localStorage.setItem(PASTE_KEY, pasteArea.value);
-  pasteArea.classList.remove("error");
-  pasteStatus.textContent = pasteArea.value.trim() ? `${pasteArea.value.length} chars` : "";
-});
-$("#loadFromTextBtn").addEventListener("click", ()=>{
-  const text = pasteArea.value.trim();
-  if (!text){ pasteArea.classList.add("error"); pasteStatus.textContent = "Paste YAML first."; return; }
-  try{
-    const parsed = jsyaml.load(text);
-    if (!Array.isArray(parsed)) throw new Error("Top-level YAML must be a list.");
-    pasteArea.classList.remove("error"); loadYAML(text, "Pasted YAML");
-    pasteStatus.textContent = `Loaded ${parsed.length} questions`;
-  }catch(err){
-    pasteArea.classList.add("error"); pasteStatus.textContent = "YAML error — see alert";
-    alert("YAML parse error:\n" + err.message);
-  }
-});
-$("#saveTextBtn").addEventListener("click", ()=> dl("ExamSim_Pasted.yml", pasteArea.value||""));
-
-$("#demoBtn").addEventListener("click", ()=>{
-  const sample = `- type: MultiChoice
+const DEMO_SAMPLE = `- type: MultiChoice
   text: "Which drug is a direct renin inhibitor?"
   choices: {A: "Lisinopril", B: "Aliskiren", C: "Losartan", D: "Amlodipine"}
   answer: B
@@ -496,56 +770,1069 @@ $("#demoBtn").addEventListener("click", ()=>{
   text: "High-dose loop diuretics can cause ototoxicity."
   answer: true
   explain: "Rapid/high doses can injure the inner ear."
-- type: MultiSelect
-  text: "Which ACE inhibitors are active (not prodrugs)?"
-  choices: {A: "Captopril", B: "Lisinopril", C: "Enalapril", D: "Ramipril"}
-  answer: [A, B]
-  explain: "Captopril and lisinopril are active; many others are ester prodrugs."
-- type: Matching
-  text: "Match class → target"
-  pairs: {"1":"Loops", "2":"Thiazides", "3":"Amiloride", "4":"Acetazolamide"}
-  options: {A:"NCC (DCT)", B:"ENaC (CD)", C:"CA (PCT)", D:"NKCC2 (TAL)"}
-  answer: {"1":"D","2":"A","3":"B","4":"C"}
-  explain: "Each class hits a signature transporter."
 - type: ShortAnswer
   text: "What lab value do you monitor with spironolactone?"
   answer: ""
   explain: "Potassium (risk of hyperkalemia)."
 `;
-  pasteArea.value = sample; localStorage.setItem(PASTE_KEY, sample);
-  pasteStatus.textContent = `${sample.length} chars (sample)`;
-  loadYAML(sample, "Demo Exam");
-});
 
-  $("#exam5Btn").addEventListener("click", async ()=>{
+let APP_STATE = loadAppState();
+let BASE_QUESTIONS = [];
+let QUESTIONS = [];
+let RENDER = [];
+let EXAM_NAME = "Exam";
+let SETTINGS = loadSettings();
+let ACCURACY = {};
+let BAR_REGISTRY = {};
+let GENERATOR_FILES = [];
+let GENERATOR_POLL = null;
+let GENERATOR_HEALTH_POLL = null;
+
+function setGeneratorAvailability(isOnline, detail = "") {
+  const button = $("#generatorOnlineBtn");
+  if (!button) return;
+  button.classList.toggle("online", !!isOnline);
+  button.classList.toggle("offline", !isOnline);
+  button.textContent = isOnline ? "Generator Online" : "Generator Offline";
+  button.title = detail || (isOnline
+    ? "The local generator backend is reachable and configured."
+    : "The local generator backend is unreachable or missing configuration.");
+}
+
+function setGeneratorFiles(files) {
+  GENERATOR_FILES = [...files];
+  updateGeneratorDraft({
+    files: GENERATOR_FILES.map(file => ({
+      name: file.name,
+      size: file.size,
+      type: file.type
+    }))
+  });
+  $("#generatorStatus").textContent = GENERATOR_FILES.length
+    ? `${GENERATOR_FILES.length} file(s) attached.`
+    : "Local API idle.";
+}
+
+function loadAppState() {
   try {
-    const response = await fetch("exam5.yml");
-    if (!response.ok) throw new Error("Could not fetch exam5.yml");
-    const yamlText = await response.text();
-    pasteArea.value = yamlText;
-    localStorage.setItem(PASTE_KEY, yamlText);
-    pasteStatus.textContent = `${yamlText.length} chars (Exam5)`;
-    loadYAML(yamlText, "Exam5");
-  } catch (err) {
-    alert("Failed to load Exam5:\n" + err.message);
+    const raw = JSON.parse(localStorage.getItem(APP_STORAGE_KEY) || "null");
+    if (!raw || typeof raw !== "object") {
+      return cloneDefaultState();
+    }
+    return {
+      ...cloneDefaultState(),
+      ...raw,
+      generatorDraft: {
+        ...cloneDefaultState().generatorDraft,
+        ...(raw.generatorDraft || {})
+      }
+    };
+  } catch {
+    return cloneDefaultState();
   }
-});
+}
 
+function cloneDefaultState() {
+  return {
+    currentTab: "endless",
+    library: [],
+    selectedExamId: null,
+    recentlyDeleted: [],
+    endlessSession: null,
+    generatorDraft: {
+      examName: "",
+      yamlText: "",
+      files: [],
+      currentJobId: null,
+      jobSnapshot: null
+    }
+  };
+}
 
-/* ---------- settings ---------- */
-$("#applyBtn").addEventListener("click", ()=>{
-  SETTINGS.iterations = Math.max(1, Number($("#iterInput").value||3));
-  SETTINGS.showAccuracy = $("#accToggle").checked;
-  localStorage.setItem(LS_SETTINGS, JSON.stringify(SETTINGS));
-  buildDeck(); renderExam();
-});
-$("#shuffleBtn").addEventListener("click", ()=>{ buildDeck(); renderExam(); });
-$("#accToggle").addEventListener("change", ()=>{
-  SETTINGS.showAccuracy = $("#accToggle").checked;
-  localStorage.setItem(LS_SETTINGS, JSON.stringify(SETTINGS));
-  document.querySelectorAll(".acc").forEach(elm => elm.classList.toggle("hide", !SETTINGS.showAccuracy));
-});
+function saveAppState() {
+  localStorage.setItem(APP_STORAGE_KEY, JSON.stringify(APP_STATE));
+}
+
+function loadSettings() {
+  try {
+    const raw = JSON.parse(localStorage.getItem(SETTINGS_KEY) || "{}");
+    return {
+      iterations: Math.max(1, Number(raw.iterations || 3)),
+      showAccuracy: raw.showAccuracy !== false
+    };
+  } catch {
+    return { iterations: 3, showAccuracy: true };
+  }
+}
+
+function saveSettings() {
+  localStorage.setItem(SETTINGS_KEY, JSON.stringify(SETTINGS));
+}
+
+function selectedExam() {
+  return APP_STATE.library.find(exam => exam.id === APP_STATE.selectedExamId) || null;
+}
+
+function sortedLibrary() {
+  return [...APP_STATE.library].sort((a, b) => {
+    const aTime = Date.parse(a.updatedAt || a.createdAt || 0);
+    const bTime = Date.parse(b.updatedAt || b.createdAt || 0);
+    return bTime - aTime;
+  });
+}
+
+function examStorageName(name) {
+  const cleaned = String(name || "").trim().replace(/\s+/g, " ");
+  return cleaned || "Untitled Exam";
+}
+
+function sortedRecentlyDeleted() {
+  return [...APP_STATE.recentlyDeleted].sort((a, b) => {
+    const aTime = Date.parse(a.deletedAt || 0);
+    const bTime = Date.parse(b.deletedAt || 0);
+    return bTime - aTime;
+  });
+}
+
+function isJobRunning(job) {
+  return job && (job.status === "queued" || job.status === "processing");
+}
+
+function setGeneratorJob(job) {
+  updateGeneratorDraft({
+    currentJobId: job ? job.id : null,
+    jobSnapshot: job || null
+  });
+}
+
+function stopGeneratorPolling() {
+  if (GENERATOR_POLL) {
+    clearInterval(GENERATOR_POLL);
+    GENERATOR_POLL = null;
+  }
+}
+
+async function pollGeneratorJob(jobId) {
+  const response = await fetch(`/api/generate-exam-jobs/${jobId}`);
+  const payload = await response.json();
+  if (!response.ok) {
+    throw new Error(payload.error || "Failed to load generation job.");
+  }
+
+  setGeneratorJob(payload);
+
+  if (payload.result?.yamlText) {
+    updateGeneratorDraft({
+      examName: payload.result.examTitle || APP_STATE.generatorDraft.examName,
+      yamlText: payload.result.yamlText
+    });
+    $("#generatorStatus").textContent = payload.status === "completed_with_errors"
+      ? "Generation completed with some file errors."
+      : `Generated ${payload.result.questionCount} questions.`;
+  }
+
+  if (!isJobRunning(payload)) {
+    stopGeneratorPolling();
+  }
+}
+
+function startGeneratorPolling(jobId) {
+  stopGeneratorPolling();
+  const tick = async () => {
+    try {
+      await pollGeneratorJob(jobId);
+    } catch (error) {
+      stopGeneratorPolling();
+      $("#generatorStatus").textContent = error.message;
+      logClient("generator_job_poll_error", {
+        jobId,
+        message: error.message
+      });
+    }
+  };
+  tick();
+  GENERATOR_POLL = setInterval(tick, 1200);
+}
+
+async function checkGeneratorAvailability() {
+  try {
+    const response = await fetch("/api/health", { cache: "no-store" });
+    const payload = await response.json();
+    const isOnline = response.ok && payload.ok && payload.configured;
+    setGeneratorAvailability(isOnline, isOnline
+      ? "Generator Online"
+      : payload.configured === false
+        ? "Generator backend is running, but OPENAI_API_KEY is not configured."
+        : "Generator backend health check failed.");
+  } catch {
+    setGeneratorAvailability(false, "Generator backend is unreachable.");
+  }
+}
+
+function startGeneratorAvailabilityPolling() {
+  if (GENERATOR_HEALTH_POLL) {
+    clearInterval(GENERATOR_HEALTH_POLL);
+  }
+  checkGeneratorAvailability();
+  GENERATOR_HEALTH_POLL = setInterval(checkGeneratorAvailability, 5000);
+}
+
+function statusLabel(status) {
+  if (status === "completed_with_errors") return "Completed With Errors";
+  if (!status) return "Queued";
+  return status.replace(/_/g, " ").replace(/\b\w/g, s => s.toUpperCase());
+}
+
+function syncEndlessSession(extra = {}) {
+  if (!QUESTIONS.length) {
+    APP_STATE.endlessSession = null;
+    saveAppState();
+    renderShell();
+    return;
+  }
+
+  const answers = {};
+  RENDER.forEach((meta, index) => {
+    if (!meta.getUser) return;
+    try {
+      answers[index] = meta.getUser();
+    } catch {
+      answers[index] = null;
+    }
+  });
+
+  APP_STATE.endlessSession = {
+    examName: EXAM_NAME,
+    baseQuestions: BASE_QUESTIONS,
+    questions: QUESTIONS,
+    settings: { ...SETTINGS },
+    answers,
+    scoreText: $("#scoreBox")?.textContent || "Score: -",
+    updatedAt: new Date().toISOString(),
+    ...extra
+  };
+  saveAppState();
+  renderShell();
+}
+
+function savedAnswerFor(index) {
+  return APP_STATE.endlessSession?.answers?.[index];
+}
+
+function restoreEndlessSession() {
+  const session = APP_STATE.endlessSession;
+  if (!session || !Array.isArray(session.questions) || !session.questions.length) {
+    return false;
+  }
+
+  EXAM_NAME = String(session.examName || "Exam");
+  BASE_QUESTIONS = Array.isArray(session.baseQuestions) ? session.baseQuestions : [];
+  QUESTIONS = Array.isArray(session.questions) ? session.questions : [];
+  SETTINGS = {
+    ...SETTINGS,
+    ...(session.settings || {})
+  };
+  saveSettings();
+  $("#settingsPanel").style.display = "block";
+  $("#iterInput").value = SETTINGS.iterations;
+  $("#accToggle").checked = SETTINGS.showAccuracy;
+  loadAccuracy();
+  renderExam();
+  if (session.scoreText) {
+    $("#scoreBox").textContent = session.scoreText;
+  }
+  renderShell();
+  return true;
+}
+
+function setCurrentTab(tab) {
+  APP_STATE.currentTab = tab;
+  saveAppState();
+  renderTabs();
+}
+
+function renderTabs() {
+  $$(".tab-btn").forEach(btn => {
+    btn.classList.toggle("active", btn.dataset.tab === APP_STATE.currentTab);
+  });
+  $$(".view").forEach(view => {
+    view.classList.toggle("active", view.dataset.view === APP_STATE.currentTab);
+  });
+}
+
+function renderShell() {
+  const selected = selectedExam();
+  const exams = sortedLibrary();
+  const deleted = sortedRecentlyDeleted();
+  const job = APP_STATE.generatorDraft.jobSnapshot;
+  const currentExamText = BASE_QUESTIONS.length ? EXAM_NAME : "none loaded";
+  $("#currentExamChip").textContent = `Current exam: ${currentExamText}`;
+  $("#selectedExamChip").textContent = `Selected exam: ${selected ? selected.name : "none selected"}`;
+  $("#endlessSelectedExamName").textContent = selected ? selected.name : "None selected";
+  $("#savedExamCount").textContent = String(APP_STATE.library.length);
+  $("#selectSavedCount").textContent = String(APP_STATE.library.length);
+  $("#deletedExamCount").textContent = String(APP_STATE.recentlyDeleted.length);
+  $("#selectCurrentName").textContent = selected ? selected.name : "None selected";
+  $("#sessionStateLabel").textContent = APP_STATE.endlessSession ? "Saved" : "Idle";
+  $("#generatorDraftName").textContent = APP_STATE.generatorDraft.examName || "Untitled exam";
+  $("#generatorDraftFiles").textContent = String(APP_STATE.generatorDraft.files.length);
+  $("#generatorDraftYaml").textContent = APP_STATE.generatorDraft.yamlText ? "Ready" : "Empty";
+  $("#generatorExamName").value = APP_STATE.generatorDraft.examName || "";
+  $("#generatorYamlPreview").value = APP_STATE.generatorDraft.yamlText || "";
+  $("#generateExamBtn").disabled = isJobRunning(job);
+  $("#saveGeneratedExamBtn").disabled = !APP_STATE.generatorDraft.yamlText || isJobRunning(job);
+  $("#downloadGeneratedYamlBtn").disabled = !APP_STATE.generatorDraft.yamlText;
+  $("#loadGeneratedYamlBtn").disabled = !APP_STATE.generatorDraft.yamlText;
+  $("#generatorFileList").textContent = GENERATOR_FILES.length
+    ? GENERATOR_FILES.map(file => `${file.name} (${Math.ceil(file.size / 1024)} KB)`).join("\n")
+    : "No homework attached.";
+  $("#loadSelectedExamBtn").disabled = !selected;
+
+  const progressSummary = $("#generatorProgressSummary");
+  const progressList = $("#generatorProgressList");
+  progressList.innerHTML = "";
+  if (job) {
+    const completedItems = job.items.filter(item => item.status === "completed").length;
+    progressSummary.innerHTML = isJobRunning(job)
+      ? `Processing ${completedItems}/${job.items.length} files <span class="loading-dots"><span></span><span></span><span></span></span>`
+      : `Job status: ${statusLabel(job.status)}`;
+
+    job.items.forEach(item => {
+      const row = el("div", "job-item");
+      const metaWrap = el("div", "job-meta");
+      const name = el("div", "job-name");
+      name.textContent = item.name;
+      const copy = el("div", "job-copy");
+      const extra = item.status === "completed"
+        ? `${item.questionCount} questions generated`
+        : item.error
+          ? item.error
+          : `Target ${item.questionTarget} questions`;
+      copy.textContent = extra;
+      const badge = el("div", `job-status ${item.status === "processing" || item.status === "queued" ? "processing" : item.status === "completed" ? "completed" : item.status === "error" ? "error" : ""}`);
+      badge.textContent = statusLabel(item.status);
+      metaWrap.appendChild(name);
+      metaWrap.appendChild(copy);
+      row.appendChild(metaWrap);
+      row.appendChild(badge);
+      progressList.appendChild(row);
+    });
+  } else {
+    progressSummary.textContent = "";
+  }
+
+  const list = $("#selectExamList");
+  list.innerHTML = "";
+  if (!exams.length) {
+    const empty = el("div", "empty-state");
+    empty.textContent = "No saved exams yet. Generate one, then use Export and Save as Exam.";
+    list.appendChild(empty);
+  }
+
+  exams.forEach(exam => {
+    const card = el("div", "mini-card");
+    const name = el("div", "value");
+    name.textContent = exam.name;
+    const meta = el("div", "hint");
+    const stamp = exam.updatedAt || exam.createdAt || "";
+    meta.textContent = `Updated ${new Date(stamp).toLocaleString()} • ${exam.sourceFiles?.length || 0} source file(s)`;
+    const controls = el("div", "controls");
+    controls.style.marginTop = "10px";
+    const selectBtn = el("button", exam.id === APP_STATE.selectedExamId ? "btn" : "btn secondary");
+    selectBtn.textContent = exam.id === APP_STATE.selectedExamId ? "Selected" : "Select";
+    selectBtn.disabled = exam.id === APP_STATE.selectedExamId;
+    selectBtn.addEventListener("click", () => {
+      APP_STATE.selectedExamId = exam.id;
+      saveAppState();
+      renderShell();
+    });
+    const loadBtn = el("button", "btn secondary");
+    loadBtn.textContent = "Load";
+    loadBtn.addEventListener("click", () => {
+      APP_STATE.selectedExamId = exam.id;
+      saveAppState();
+      renderShell();
+      loadYAML(exam.yamlText, exam.name);
+      setCurrentTab("endless");
+    });
+    const deleteBtn = el("button", "btn secondary");
+    deleteBtn.textContent = "Delete";
+    deleteBtn.addEventListener("click", () => {
+      const now = new Date().toISOString();
+      APP_STATE.library = APP_STATE.library.filter(item => item.id !== exam.id);
+      APP_STATE.recentlyDeleted = [
+        {
+          ...exam,
+          deletedAt: now
+        },
+        ...APP_STATE.recentlyDeleted.filter(item => item.id !== exam.id)
+      ];
+      if (APP_STATE.selectedExamId === exam.id) {
+        APP_STATE.selectedExamId = null;
+      }
+      saveAppState();
+      renderShell();
+    });
+    controls.appendChild(selectBtn);
+    controls.appendChild(loadBtn);
+    controls.appendChild(deleteBtn);
+    card.appendChild(name);
+    card.appendChild(meta);
+    card.appendChild(controls);
+    list.appendChild(card);
+  });
+
+  const deletedList = $("#recentlyDeletedList");
+  deletedList.innerHTML = "";
+  if (!deleted.length) {
+    const emptyDeleted = el("div", "empty-state");
+    emptyDeleted.textContent = "No recently deleted exams.";
+    deletedList.appendChild(emptyDeleted);
+  }
+
+  deleted.forEach(exam => {
+    const card = el("div", "mini-card");
+    const name = el("div", "value");
+    name.textContent = exam.name;
+    const meta = el("div", "hint");
+    meta.textContent = `Deleted ${new Date(exam.deletedAt).toLocaleString()}`;
+    const controls = el("div", "controls");
+    controls.style.marginTop = "10px";
+    const restoreBtn = el("button", "btn secondary");
+    restoreBtn.textContent = "Restore";
+    restoreBtn.addEventListener("click", () => {
+      const restored = {
+        ...exam,
+        updatedAt: new Date().toISOString()
+      };
+      delete restored.deletedAt;
+      APP_STATE.recentlyDeleted = APP_STATE.recentlyDeleted.filter(item => item.id !== exam.id);
+      APP_STATE.library = [restored, ...APP_STATE.library.filter(item => item.id !== exam.id)];
+      saveAppState();
+      renderShell();
+    });
+    controls.appendChild(restoreBtn);
+    card.appendChild(name);
+    card.appendChild(meta);
+    card.appendChild(controls);
+    deletedList.appendChild(card);
+  });
+}
+
+function shuffle(arr) {
+  for (let i = arr.length - 1; i > 0; i -= 1) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [arr[i], arr[j]] = [arr[j], arr[i]];
+  }
+  return arr;
+}
+
+function dl(filename, text) {
+  const blob = new Blob([text], { type: "text/plain;charset=utf-8" });
+  const anchor = document.createElement("a");
+  anchor.href = URL.createObjectURL(blob);
+  anchor.download = filename;
+  anchor.click();
+  setTimeout(() => URL.revokeObjectURL(anchor.href), 4000);
+}
+
+function toBool(v) {
+  if (typeof v === "boolean") return v;
+  if (typeof v === "string") return v.trim().toLowerCase().startsWith("t");
+  return false;
+}
+
+function hashStr(s) {
+  let h = 0;
+  for (let i = 0; i < s.length; i += 1) {
+    h = (h << 5) - h + s.charCodeAt(i);
+    h |= 0;
+  }
+  return `00000000${(h >>> 0).toString(16)}`.slice(-8);
+}
+
+function accKey() {
+  return `examsim_acc_${EXAM_NAME}`;
+}
+
+function loadAccuracy() {
+  try {
+    ACCURACY = JSON.parse(localStorage.getItem(accKey()) || "{}");
+  } catch {
+    ACCURACY = {};
+  }
+}
+
+function saveAccuracy() {
+  localStorage.setItem(accKey(), JSON.stringify(ACCURACY));
+}
+
+function getAcc(baseId) {
+  return ACCURACY[baseId] || { c: 0, t: 0 };
+}
+
+function recordAttempt(baseId, correct) {
+  const rec = ACCURACY[baseId] || { c: 0, t: 0 };
+  rec.t += 1;
+  if (correct) rec.c += 1;
+  ACCURACY[baseId] = rec;
+  saveAccuracy();
+  updateAccBar(baseId);
+}
+
+function updateAccBar(baseId) {
+  const rec = getAcc(baseId);
+  const pct = rec.t ? Math.round((rec.c / rec.t) * 100) : 0;
+  const greenW = rec.t ? (rec.c / rec.t) * 100 : 0;
+  const redW = 100 - greenW;
+  const pack = BAR_REGISTRY[baseId] || { bars: [], txts: [] };
+  pack.bars.forEach(([g, r]) => {
+    g.style.width = `${greenW}%`;
+    r.style.width = `${redW}%`;
+  });
+  pack.txts.forEach(node => {
+    node.textContent = `${pct}% (${rec.c}/${rec.t})`;
+  });
+}
+
+function normalizeQuestion(q) {
+  const t = q.type;
+  const base = {
+    type: t,
+    text: String(q.text || "").trim(),
+    explain: (q.explain ?? "").toString()
+  };
+  if (t === "TrueFalse") return { ...base, answer: toBool(q.answer) };
+  if (t === "MultiChoice") return { ...base, choices: q.choices || {}, answer: String(q.answer || "").toUpperCase() };
+  if (t === "MultiSelect") {
+    let ans = q.answer ?? [];
+    if (typeof ans === "string") ans = [ans];
+    return {
+      ...base,
+      choices: q.choices || {},
+      answer: ans.map(v => String(v).toUpperCase()).sort()
+    };
+  }
+  if (t === "Matching") return { ...base, pairs: q.pairs, options: q.options, answer: q.answer };
+  if (t === "ShortAnswer" || t === "ProblemScen") return { ...base, answer: "" };
+  throw new Error(`Unsupported type: ${t}`);
+}
+
+function loadYAML(text, name = "Exam") {
+  let data;
+  try {
+    data = jsyaml.load(text);
+    if (!Array.isArray(data)) throw new Error("Top-level YAML must be a list of question objects.");
+  } catch (err) {
+    alert(`YAML parse error:\n${err.message}`);
+    return;
+  }
+
+  BASE_QUESTIONS = data.map(normalizeQuestion).map(q => ({
+    ...q,
+    baseId: hashStr(JSON.stringify(q))
+  }));
+
+  EXAM_NAME = name.replace(/\.(yml|yaml)$/i, "");
+  $("#settingsPanel").style.display = "block";
+  $("#iterInput").value = SETTINGS.iterations;
+  $("#accToggle").checked = SETTINGS.showAccuracy;
+  loadAccuracy();
+  buildDeck();
+  renderExam();
+  syncEndlessSession({ scoreText: "Score: -" });
+  renderShell();
+}
+
+function updateGeneratorDraft(partial) {
+  APP_STATE.generatorDraft = {
+    ...APP_STATE.generatorDraft,
+    ...partial
+  };
+  saveAppState();
+  renderShell();
+}
+
+function clearGeneratorState() {
+  stopGeneratorPolling();
+  GENERATOR_FILES = [];
+  APP_STATE.generatorDraft = {
+    examName: "",
+    yamlText: "",
+    files: [],
+    currentJobId: null,
+    jobSnapshot: null
+  };
+  saveAppState();
+  const fileInput = $("#generatorFileInput");
+  if (fileInput) fileInput.value = "";
+  $("#generatorStatus").textContent = "Generator cleared.";
+  renderShell();
+}
+
+function saveGeneratedExamToLibrary() {
+  if (!APP_STATE.generatorDraft.yamlText) {
+    throw new Error("No generated YAML is available to save.");
+  }
+
+  const now = new Date().toISOString();
+  const name = examStorageName(APP_STATE.generatorDraft.examName);
+  const existing = APP_STATE.library.find(exam => exam.name.toLowerCase() === name.toLowerCase());
+  const record = existing
+    ? {
+        ...existing,
+        yamlText: APP_STATE.generatorDraft.yamlText,
+        updatedAt: now,
+        sourceFiles: APP_STATE.generatorDraft.files
+      }
+    : {
+        id: `exam_${Date.now().toString(36)}_${Math.random().toString(36).slice(2, 8)}`,
+        name,
+        yamlText: APP_STATE.generatorDraft.yamlText,
+        createdAt: now,
+        updatedAt: now,
+        sourceFiles: APP_STATE.generatorDraft.files
+      };
+
+  APP_STATE.library = existing
+    ? APP_STATE.library.map(exam => exam.id === existing.id ? record : exam)
+    : [record, ...APP_STATE.library];
+  APP_STATE.selectedExamId = record.id;
+  saveAppState();
+  renderShell();
+  return record;
+}
+
+function logClient(message, details = {}) {
+  fetch("/api/client-log", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify({
+      message,
+      details
+    })
+  }).catch(() => {
+    // If the backend is unreachable, the missing server log is itself diagnostic.
+  });
+}
+
+function buildDeck() {
+  $("#counts").textContent = `Base: ${BASE_QUESTIONS.length} • Iter: ${SETTINGS.iterations} • Rendered: ${BASE_QUESTIONS.length * SETTINGS.iterations}`;
+  const base = shuffle([...BASE_QUESTIONS]);
+  QUESTIONS = [];
+  for (let k = 0; k < SETTINGS.iterations; k += 1) {
+    base.forEach(q => QUESTIONS.push({ ...q, cloneOf: q.baseId, seq: k }));
+  }
+  shuffle(QUESTIONS);
+}
+
+function renderExam() {
+  RENDER = [];
+  BAR_REGISTRY = {};
+  $("#examContainer").style.display = "block";
+  $("#examHeader").textContent = `${EXAM_NAME} - ${QUESTIONS.length} Questions`;
+  $("#scoreBox").textContent = "Score: -";
+
+  const qList = $("#qList");
+  qList.innerHTML = "";
+
+  QUESTIONS.forEach((q, idx) => {
+    const qDiv = el("div", "q");
+    const title = el("div", "qtitle");
+    title.textContent = `${idx + 1}. ${q.text}`;
+    qDiv.appendChild(title);
+
+    const accWrap = createAccUI(q.baseId);
+    const accRow = el("div", "accRow");
+    accRow.appendChild(accWrap.wrap);
+    if (!SETTINGS.showAccuracy) accWrap.wrap.classList.add("hide");
+    qDiv.appendChild(accRow);
+
+    const area = el("div");
+    qDiv.appendChild(area);
+    const meta = { type: q.type, node: qDiv, baseId: q.baseId, counted: false };
+    const savedAnswer = savedAnswerFor(idx);
+
+    if (q.type === "TrueFalse" || q.type === "MultiChoice") {
+      const choices = el("div", "choices");
+      const options = q.type === "TrueFalse"
+        ? [["T", "True"], ["F", "False"]]
+        : ["A", "B", "C", "D"].map(letter => [letter, `${letter}. ${q.choices?.[letter] ?? ""}`]);
+
+      options.forEach(([value, label]) => {
+        const id = `q${idx}_${value}`;
+        const row = el("div", "row");
+        const input = el("input");
+        input.type = "radio";
+        input.name = `q${idx}`;
+        input.value = value;
+        input.id = id;
+        input.checked = savedAnswer === value;
+        input.addEventListener("change", () => {
+          syncEndlessSession();
+        });
+        const lab = el("label");
+        lab.setAttribute("for", id);
+        lab.textContent = label;
+        row.appendChild(input);
+        row.appendChild(lab);
+        choices.appendChild(row);
+      });
+
+      area.appendChild(choices);
+      meta.getUser = () => {
+        const selected = [...choices.querySelectorAll("input[type=radio]")].find(node => node.checked);
+        return selected ? selected.value : "";
+      };
+      meta.grade = () => {
+        const picked = meta.getUser();
+        const answer = q.type === "TrueFalse" ? (q.answer ? "T" : "F") : q.answer;
+        colorize(qDiv, picked && picked === answer);
+        markChoicesABCD(choices, answer, picked);
+        return picked === answer ? 1 : 0;
+      };
+    } else if (q.type === "ShortAnswer") {
+      const ta = el("textarea");
+      ta.placeholder = "Type your answer...";
+      ta.value = savedAnswer?.text || "";
+      ta.addEventListener("input", () => {
+        syncEndlessSession();
+      });
+      const mark = el("label", "mark");
+      const cb = el("input");
+      cb.type = "checkbox";
+      cb.style.marginRight = "6px";
+      cb.checked = !!savedAnswer?.marked;
+      cb.addEventListener("change", () => {
+        syncEndlessSession();
+      });
+      mark.appendChild(cb);
+      mark.appendChild(document.createTextNode("Mark as correct (manual)"));
+      area.appendChild(ta);
+      area.appendChild(mark);
+      meta.getUser = () => ({ text: ta.value.trim(), marked: cb.checked });
+      meta.grade = () => {
+        const ok = !!meta.getUser().marked;
+        colorize(qDiv, ok);
+        return ok ? 1 : 0;
+      };
+    }
+
+    const explain = el("div", "explain");
+    const hint = el("div", "hint-box");
+    hint.textContent = q.explain || "(no explanation)";
+    explain.appendChild(hint);
+    area.appendChild(explain);
+
+    const ctrl = el("div", "controls");
+    ctrl.style.marginTop = "8px";
+    const peekBtn = el("button", "btn secondary");
+    peekBtn.textContent = "?";
+    peekBtn.title = "Grade this question and show the explanation";
+    peekBtn.addEventListener("click", () => {
+      const res = meta.grade();
+      if (!meta.counted) {
+        recordAttempt(meta.baseId, res >= 1);
+        meta.counted = true;
+      }
+      explain.style.display = "block";
+    });
+    ctrl.appendChild(peekBtn);
+    area.appendChild(ctrl);
+
+    qList.appendChild(qDiv);
+    RENDER.push(meta);
+    updateAccBar(q.baseId);
+  });
+}
+
+function createAccUI(baseId) {
+  const wrap = el("div", "acc");
+  const bar = el("div", "bar");
+  const g = el("div", "g");
+  const r = el("div", "r");
+  const txt = el("div", "txt");
+  txt.textContent = "0% (0/0)";
+  bar.appendChild(g);
+  bar.appendChild(r);
+  wrap.appendChild(bar);
+  wrap.appendChild(txt);
+  const reg = BAR_REGISTRY[baseId] || { bars: [], txts: [] };
+  reg.bars.push([g, r]);
+  reg.txts.push(txt);
+  BAR_REGISTRY[baseId] = reg;
+  return { wrap };
+}
+
+function colorize(node, ok) {
+  node.classList.remove("correct", "wrong");
+  node.classList.add(ok ? "correct" : "wrong");
+}
+
+function markChoicesABCD(container, answer, picked) {
+  container.querySelectorAll("label").forEach(label => {
+    label.style.color = "var(--sub)";
+  });
+  container.querySelectorAll("input").forEach(input => {
+    const label = container.querySelector(`label[for="${input.id}"]`);
+    if (!label) return;
+    if (input.value === answer) label.style.color = "var(--green)";
+    if (picked && input.value === picked && picked !== answer) label.style.color = "var(--red)";
+  });
+}
+
+function submitAll() {
+  let got = 0;
+  RENDER.forEach(meta => {
+    const score = meta.grade();
+    got += score;
+    if (!meta.counted) {
+      recordAttempt(meta.baseId, score >= 1);
+      meta.counted = true;
+    }
+  });
+  const pct = RENDER.length ? (got / RENDER.length) * 100 : 0;
+  $("#scoreBox").textContent = `Score: ${got.toFixed(2)}/${RENDER.length} (${pct.toFixed(1)}%)`;
+  syncEndlessSession();
+}
+
+function bindEvents() {
+  $("#tabBar").addEventListener("click", event => {
+    const btn = event.target.closest(".tab-btn");
+    if (!btn) return;
+    setCurrentTab(btn.dataset.tab);
+  });
+
+  $("#fileInput").addEventListener("change", async event => {
+    const file = event.target.files[0];
+    if (!file) return;
+    const text = await file.text();
+    loadYAML(text, file.name);
+  });
+
+  const pasteArea = $("#yamlPaste");
+  const pasteStatus = $("#pasteStatus");
+  pasteArea.value = localStorage.getItem(PASTE_KEY) || "";
+  pasteArea.addEventListener("input", () => {
+    localStorage.setItem(PASTE_KEY, pasteArea.value);
+    pasteStatus.textContent = pasteArea.value.trim() ? `${pasteArea.value.length} chars` : "";
+  });
+
+  $("#loadFromTextBtn").addEventListener("click", () => {
+    const text = pasteArea.value.trim();
+    if (!text) {
+      pasteArea.classList.add("error");
+      pasteStatus.textContent = "Paste YAML first.";
+      return;
+    }
+    pasteArea.classList.remove("error");
+    loadYAML(text, "Pasted YAML");
+    pasteStatus.textContent = "Loaded";
+  });
+
+  $("#saveTextBtn").addEventListener("click", () => {
+    dl("ExamSim_Pasted.yml", pasteArea.value || "");
+  });
+
+  $("#demoBtn").addEventListener("click", () => {
+    pasteArea.value = DEMO_SAMPLE;
+    localStorage.setItem(PASTE_KEY, DEMO_SAMPLE);
+    $("#pasteStatus").textContent = `${DEMO_SAMPLE.length} chars (sample)`;
+    loadYAML(DEMO_SAMPLE, "Demo Exam");
+  });
+
+  $("#loadSelectedExamBtn").addEventListener("click", () => {
+    const selected = selectedExam();
+    if (!selected) return;
+    loadYAML(selected.yamlText, selected.name);
+  });
+
+  $("#generatorExamName").addEventListener("input", event => {
+    updateGeneratorDraft({ examName: event.target.value });
+  });
+
+  $("#generatorFileInput").addEventListener("change", event => {
+    setGeneratorFiles(event.target.files);
+  });
+
+  const dropzone = $("#generatorDropzone");
+  ["dragenter", "dragover"].forEach(type => {
+    dropzone.addEventListener(type, event => {
+      event.preventDefault();
+      dropzone.classList.add("active");
+    });
+  });
+  ["dragleave", "dragend", "drop"].forEach(type => {
+    dropzone.addEventListener(type, event => {
+      event.preventDefault();
+      dropzone.classList.remove("active");
+    });
+  });
+  dropzone.addEventListener("drop", event => {
+    const files = [...event.dataTransfer.files];
+    if (!files.length) return;
+    setGeneratorFiles(files);
+    const fileInput = $("#generatorFileInput");
+    try {
+      const dt = new DataTransfer();
+      files.forEach(file => dt.items.add(file));
+      fileInput.files = dt.files;
+    } catch {
+      // Some browsers do not allow programmatic assignment. The generator still works.
+    }
+  });
+
+  $("#generateExamBtn").addEventListener("click", async () => {
+    if (!GENERATOR_FILES.length) {
+      $("#generatorStatus").textContent = "Attach at least one homework file first.";
+      logClient("generate_click_without_files");
+      return;
+    }
+
+    const formData = new FormData();
+    formData.append("examName", APP_STATE.generatorDraft.examName || "");
+    GENERATOR_FILES.forEach(file => {
+      formData.append("homework", file);
+    });
+
+    updateGeneratorDraft({
+      yamlText: "",
+      currentJobId: null,
+      jobSnapshot: null
+    });
+    $("#generatorStatus").textContent = "Starting generation job...";
+    logClient("generate_exam_click", {
+      examName: APP_STATE.generatorDraft.examName || "",
+      fileCount: GENERATOR_FILES.length,
+      files: GENERATOR_FILES.map(file => ({
+        name: file.name,
+        size: file.size,
+        type: file.type
+      })),
+      href: window.location.href,
+      online: navigator.onLine
+    });
+
+    try {
+      const response = await fetch("/api/generate-exam-jobs", {
+        method: "POST",
+        body: formData
+      });
+      const payload = await response.json();
+
+      if (!response.ok) {
+        logClient("generate_exam_http_error", {
+          status: response.status,
+          payload
+        });
+        throw new Error(payload.error || "Generation failed.");
+      }
+
+      setGeneratorJob(payload);
+      $("#generatorStatus").textContent = "Generation job started.";
+      logClient("generate_exam_job_started", {
+        jobId: payload.jobId || payload.id,
+        fileCount: payload.items?.length || 0
+      });
+      startGeneratorPolling(payload.jobId || payload.id);
+    } catch (error) {
+      logClient("generate_exam_fetch_failure", {
+        message: error.message,
+        stack: error.stack || null,
+        href: window.location.href,
+        online: navigator.onLine
+      });
+      $("#generatorStatus").textContent = error.message;
+    }
+  });
+
+  $("#downloadGeneratedYamlBtn").addEventListener("click", () => {
+    if (!APP_STATE.generatorDraft.yamlText) return;
+    const name = (APP_STATE.generatorDraft.examName || "Generated Exam").replace(/[^\w\- ]+/g, "").trim() || "Generated Exam";
+    dl(`${name}.yml`, APP_STATE.generatorDraft.yamlText);
+  });
+
+  $("#saveGeneratedExamBtn").addEventListener("click", () => {
+    try {
+      const record = saveGeneratedExamToLibrary();
+      $("#generatorStatus").textContent = `Saved "${record.name}" to Select Exam.`;
+      logClient("save_generated_exam_success", {
+        examId: record.id,
+        examName: record.name
+      });
+      setCurrentTab("select");
+    } catch (error) {
+      $("#generatorStatus").textContent = error.message;
+      logClient("save_generated_exam_failure", {
+        message: error.message
+      });
+    }
+  });
+
+  $("#loadGeneratedYamlBtn").addEventListener("click", () => {
+    if (!APP_STATE.generatorDraft.yamlText) return;
+    const generatedName = APP_STATE.generatorDraft.examName || "Generated Exam";
+    const pasteArea = $("#yamlPaste");
+    pasteArea.value = APP_STATE.generatorDraft.yamlText;
+    localStorage.setItem(PASTE_KEY, APP_STATE.generatorDraft.yamlText);
+    $("#pasteStatus").textContent = `${APP_STATE.generatorDraft.yamlText.length} chars (generated)`;
+    loadYAML(APP_STATE.generatorDraft.yamlText, generatedName);
+    setCurrentTab("endless");
+  });
+
+  $("#clearGeneratedExamBtn").addEventListener("click", () => {
+    clearGeneratorState();
+    logClient("clear_generated_exam");
+  });
+
+  $("#applyBtn").addEventListener("click", () => {
+    SETTINGS.iterations = Math.max(1, Number($("#iterInput").value || 3));
+    SETTINGS.showAccuracy = $("#accToggle").checked;
+    saveSettings();
+    buildDeck();
+    renderExam();
+    syncEndlessSession({ scoreText: "Score: -" });
+  });
+
+  $("#shuffleBtn").addEventListener("click", () => {
+    buildDeck();
+    renderExam();
+    syncEndlessSession({ scoreText: "Score: -" });
+  });
+
+  $("#accToggle").addEventListener("change", () => {
+    SETTINGS.showAccuracy = $("#accToggle").checked;
+    saveSettings();
+    document.querySelectorAll(".acc").forEach(node => {
+      node.classList.toggle("hide", !SETTINGS.showAccuracy);
+    });
+    if (QUESTIONS.length) syncEndlessSession();
+  });
+
+  $("#submitBtn").addEventListener("click", submitAll);
+  $("#resetBtn").addEventListener("click", () => {
+    buildDeck();
+    renderExam();
+    syncEndlessSession({ scoreText: "Score: -" });
+  });
+}
+
+bindEvents();
+renderTabs();
+if (!restoreEndlessSession()) {
+  renderShell();
+}
+startGeneratorAvailabilityPolling();
+
+if (APP_STATE.generatorDraft.currentJobId && isJobRunning(APP_STATE.generatorDraft.jobSnapshot)) {
+  startGeneratorPolling(APP_STATE.generatorDraft.currentJobId);
+}
+
+if (localStorage.getItem(PASTE_KEY)) {
+  $("#pasteStatus").textContent = `${$("#yamlPaste").value.length} chars`;
+}
 </script>
 </body>
 </html>
-
